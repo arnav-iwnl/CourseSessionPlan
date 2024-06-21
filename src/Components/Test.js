@@ -63,6 +63,24 @@ const DynamicForm = () => {
     link.href = URL.createObjectURL(jsonBlob);
     link.download = 'selectedData.json';
     link.click();
+    // try {
+    //   const response = await fetch('/save-form', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(selectedData),
+    //   });
+      
+    //   if (response.ok) {
+    //     alert('Data saved successfully');
+    //   } else {
+    //     alert('Failed to save data');
+    //   }
+    // } catch (error) {
+    //   console.error('Error saving data:', error);
+    //   alert('Error saving data');
+    // }
   };
 
   const isWeekend = (date) => {
