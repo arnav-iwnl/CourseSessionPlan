@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import './calendarBG.css';
 
 const DynamicForm = () => {
   const [data, setData] = useState([]);
@@ -13,11 +14,13 @@ const DynamicForm = () => {
   const [selectedHour, setSelectedHour] = useState('');
   const [customHour, setCustomHour] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [holidays, setHolidays] = useState([]);
 
   useEffect(() => {
-    // Replace with actual data fetching
     const fetchData = async () => {
-      const response = await fetch('/JSON/alpha_data.json'); // Update the path if needed
+      const response = await fetch('/JSON/alpha_data.json');
       const jsonData = await response.json();
       setData(jsonData);
       setCourses([...new Set(jsonData.map(item => item['Course Name']))]);
@@ -51,6 +54,49 @@ const DynamicForm = () => {
     }
   }, [selectedModule, selectedCourse, data]);
 
+  useEffect(() => {
+    const fetchDate = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/getDate');
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        } else {
+          const data = await response.json();
+          setStartDate(data.startDate);
+          setEndDate(data.endDate);
+        }
+      } catch (error) {
+        console.log("Error Fetching Data", error);
+      }
+    }
+    fetchDate();
+  }, []);
+
+  useEffect(() => {
+    const fetchHolidays = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/getHolidays', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ startDate, endDate })
+        });
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setHolidays(data);
+      } catch (error) {
+        console.error('Error fetching holidays:', error);
+      }
+    };
+
+    if (startDate && endDate) {
+      fetchHolidays();
+    }
+  }, [startDate, endDate]);
+
   const handleSubmit = async () => {
     const selectedData = {
       date: selectedDate.toISOString().split('T')[0],
@@ -67,7 +113,7 @@ const DynamicForm = () => {
 
   const isWeekend = (date) => {
     const day = date.getDay();
-    return day === 0 || day === 6; // Sunday (0) or Saturday (6)
+    return day === 0 || day === 6;
   };
 
   const tileDisabled = ({ date }) => isWeekend(date);
@@ -78,6 +124,10 @@ const DynamicForm = () => {
     }
   };
 
+  const filteredHolidays = holidays.filter(
+    (holiday) => holiday.holiday !== 1 && !isWeekend(new Date(holiday.date))
+  );
+
   return (
     <Container>
       <h1 className="my-4">Dynamic Form</h1>
@@ -86,6 +136,34 @@ const DynamicForm = () => {
         value={selectedDate}
         tileDisabled={tileDisabled}
       />
+      <div>
+        <h1>Date Information</h1>
+        <p>Start Date: {startDate}</p>
+        <p>End Date: {endDate}</p>
+      </div>
+      <div>
+        <h1>Working Days</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredHolidays.map((holiday, index) => {
+              const date = new Date(holiday.date);
+              const day = date.toLocaleDateString('en-US', { weekday: 'long' });
+              return (
+                <tr key={index}>
+                  <td>{day}</td>
+                  <td>{holiday.date}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
       <Form>
         <Row className="mb-3">
           <Col>

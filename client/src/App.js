@@ -1,5 +1,5 @@
 import React from 'react';
-import DynamicForm from './Components/Test';
+import DynamicForm from './Components/DynamicForm';
 
 function App() {
   return (
