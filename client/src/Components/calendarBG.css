@@ -1,0 +1,36 @@
+.holiday-tile {
+  background-color: red !important;
+}
+
+.react-calendar{
+  width: 50%;
+}
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;  
+}
+
+.table tbody td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.holiday {
+  background-color: red !important;
+  color: white !important;
+}
+
+.assigned {
+  background-color: blue !important;
+  color: white !important;
+}
+
+.courses_field{
+  display: flex;
+  flex-direction: row;
+}
