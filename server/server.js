@@ -89,7 +89,6 @@ app.post('/checkDates', cors(corsOptions),(req, res) => {
   
       // Filter out holidays from dates array
       const filteredDates = dates.filter(date => !holidays.includes(date));
-      console.log(events)
   
       res.json({ workingDaysList: filteredDates, events});
     });
