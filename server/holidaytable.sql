@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2024 at 12:38 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- Generation Time: Jun 28, 2024 at 11:53 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `holidays`
+-- Database: `test`
 --
 
 -- --------------------------------------------------------
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `holidaytable` (
   `id` int(11) NOT NULL,
-  `date` varchar(11) NOT NULL,
+  `date` date NOT NULL,
   `name` varchar(250) NOT NULL,
   `type` varchar(250) NOT NULL,
-  `holiday` int(11) DEFAULT 0
+  `holiday` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,18 +40,41 @@ CREATE TABLE `holidaytable` (
 --
 
 INSERT INTO `holidaytable` (`id`, `date`, `name`, `type`, `holiday`) VALUES
-(201, '02-02-24', 'Groundhog Day', 'cultural', 0),
-(202, '03-14-24', 'Pi Day', 'educational', 0),
-(203, '05-01-24', 'May Day', 'international', 1),
-(204, '06-05-24', 'World Environment Day', 'environmental', 0),
-(205, '07-04-24', 'Independence Day', 'national', 1),
-(206, '08-19-24', 'World Photography Day', 'cultural', 0),
-(207, '09-21-24', 'International Day of Peace', 'international', 1),
-(208, '10-31-24', 'Halloween', 'cultural', 0),
-(209, '11-11-24', 'Veterans Day', 'national', 1),
-(210, '12-25-24', 'Christmas Day', 'religious', 1),
-(211, '07-08-24', 'START', 'teaching', 0),
-(212, '10-5-24', 'END', 'non teach', 0);
+(1, '2024-07-08', 'START', 'Public Holiday', 0),
+(2, '2024-07-22', 'Public Event', 'Event', 1),
+(3, '2024-10-17', 'END', 'Working Day', 0),
+(4, '2024-09-01', 'Public Holiday', 'Public Holiday', 1),
+(5, '2024-09-15', 'Public Event', 'Event', 1),
+(6, '2024-09-21', 'Public Holiday', 'Public Holiday', 1),
+(7, '2024-10-01', 'Public Holiday', 'Public Holiday', 1),
+(9, '2024-07-09', 'Working Day', 'Normal Working Day', 0),
+(10, '2024-07-10', 'Working Day', 'Normal Working Day', 0),
+(11, '2024-07-11', 'Working Day', 'Normal Working Day', 0),
+(12, '2024-07-12', 'Working Day', 'Normal Working Day', 0),
+(13, '2024-07-15', 'Working Day', 'Normal Working Day', 0),
+(14, '2024-07-16', 'Working Day', 'Normal Working Day', 0),
+(15, '2024-07-17', 'Working Day', 'Normal Working Day', 0),
+(16, '2024-07-18', 'Working Day', 'Normal Working Day', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `holidaytable`
+--
+ALTER TABLE `holidaytable`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `holidaytable`
+--
+ALTER TABLE `holidaytable`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

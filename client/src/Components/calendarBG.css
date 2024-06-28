@@ -1,5 +1,5 @@
 .holiday-tile {
-  background-color: red !important;
+  color: red !important;
 }
 
 .react-calendar{
@@ -21,8 +21,7 @@
 }
 
 .holiday {
-  background-color: red !important;
-  color: white !important;
+  color: red !important;
 }
 
 .assigned {

@@ -2,11 +2,13 @@ const express = require('express')
 const cors = require('cors')
 const db = require('./db')
 const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 
 
-app.use(express.json())
+// app.use(express.json())
 app.use(bodyParser.json());
 
 PORT = 5000
@@ -21,9 +23,13 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.options('/checkDates', cors(corsOptions)); // Enable preflight request handling
 app.options('/getEvents', cors(corsOptions)); // Enable preflight request handling
+
+
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 })
+
+// Fetching Start Date and End Date
 
 app.get('/getDate',cors(corsOptions) ,(req, res) => {
     const getStartDateQuery = "SELECT date FROM holidaytable WHERE name = 'START'";
@@ -40,8 +46,8 @@ app.get('/getDate',cors(corsOptions) ,(req, res) => {
                     return res.status(500).json({ msg: "Error fetching end date" });
                 } else {
                     res.json({
-                        startDate: startDateResults[0]?.date,
-                        endDate: endDateResults[0]?.date
+                        startDate: startDateResults[0]?.date.toISOString().split('T')[0],
+                        endDate: endDateResults[0]?.date.toISOString().split('T')[0]
                     });
                 }
             });
@@ -49,9 +55,7 @@ app.get('/getDate',cors(corsOptions) ,(req, res) => {
     });
 });
 
-
-
-
+// Checking Working Dates
 
 app.post('/checkDates', cors(corsOptions),(req, res) => {
     const { dates } = req.body;
@@ -74,17 +78,40 @@ app.post('/checkDates', cors(corsOptions),(req, res) => {
   
       const holidays = [];
       const events = [];
+  
       results.forEach(row => {
         if (row.holiday) {
-          holidays.push(row.date.toISOString().split('T')[0]);
+          holidays.push(row.date);
         } else {
-          events.push({ date: row.date.toISOString().split('T')[0], name: row.name, type: row.type }); // Collect events
+          events.push({ date: row.date, name: row.name, type: row.type }); // Collect events
         }
       });
   
       // Filter out holidays from dates array
       const filteredDates = dates.filter(date => !holidays.includes(date));
+      console.log(events)
   
       res.json({ workingDaysList: filteredDates, events});
     });
   });
+
+// Custom Data updating in json
+
+
+
+app.post('/updateData', cors(corsOptions), (req, res) => {
+  const updatedData = req.body; // Assuming req.body contains updated data
+  // const newDataFilePath = path.join(__dirname, 'JSON','updated_alpha_data.json');
+  const clientJsonFilePath = path.join(__dirname, '..', 'client', 'public', 'JSON', 'updated.json');
+
+
+  // Write updated data to a new file
+  fs.writeFile(clientJsonFilePath, JSON.stringify(updatedData, null, 2), (err) => {
+    if (err) {
+      console.error('Error writing updated data:', err);
+      return res.status(500).json({ error: 'Error writing updated data' });
+    }
+    console.log('Data updated successfully in JSON/updated.json');
+    res.json({ msg: 'Data updated successfully' });
+  });
+});
