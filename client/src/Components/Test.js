@@ -4,7 +4,6 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Tooltip } from 'react-tooltip';
 
 const DynamicForm = () => {
   const [data, setData] = useState([]);
@@ -179,10 +178,6 @@ const getTitleClassName = ({ date }) => {
 
   return hasAssignments ? 'assigned' : null;
 };
-
-
-
-
 
 const getTileContent = ({ date, view }) => {
   if (view === 'month') {

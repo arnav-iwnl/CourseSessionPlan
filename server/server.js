@@ -7,8 +7,6 @@ const path = require('path');
 
 const app = express();
 
-
-// app.use(express.json())
 app.use(bodyParser.json());
 
 PORT = 5000
@@ -102,8 +100,6 @@ app.post('/updateData', cors(corsOptions), (req, res) => {
   const updatedData = req.body; // Assuming req.body contains updated data
   // const newDataFilePath = path.join(__dirname, 'JSON','updated_alpha_data.json');
   const clientJsonFilePath = path.join(__dirname, '..', 'client', 'public', 'JSON', 'updated.json');
-
-
   // Write updated data to a new file
   fs.writeFile(clientJsonFilePath, JSON.stringify(updatedData, null, 2), (err) => {
     if (err) {
