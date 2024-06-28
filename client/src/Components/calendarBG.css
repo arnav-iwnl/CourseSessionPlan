@@ -2,9 +2,6 @@
   color: red !important;
 }
 
-.react-calendar{
-  width: 50%;
-}
 .table thead th {
   background-color: #343a40;
   color: white;
@@ -33,3 +30,9 @@
   display: flex;
   flex-direction: row;
 }
+
+.react-calendar{
+  width: 100%;
+  max-height: 30rem;
+}
+

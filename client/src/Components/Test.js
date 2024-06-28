@@ -3,6 +3,7 @@ import { Container, Form, Button, Table ,Row , Col} from 'react-bootstrap';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './calendarBG.css';
+import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip } from 'react-tooltip';
 
 const DynamicForm = () => {
@@ -10,7 +11,6 @@ const DynamicForm = () => {
   const [courses, setCourses] = useState([]);
   const [workingDays, setWorkingDays] = useState([]);
   const [events, setEvents] = useState([]);
-  const [selectedDate, setSelectedDate] = useState(new Date());
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [assignments, setAssignments] = useState([]);
@@ -18,7 +18,7 @@ const DynamicForm = () => {
   const [newContent, setNewContent] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [selectedModule, setSelectedModule] = useState('');
-  const [error, setError] = useState(null);
+
 
   useEffect(() => {
     const fetchJsonData = async () => {
@@ -166,46 +166,51 @@ const DynamicForm = () => {
     setAssignments(assignments);
   };
 
-  const getTitleClassName = ({date, assignments}) => {
-    const currentDate = new Date(date);
-    currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
-  
-    const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
-  
-    const hasAssignments = assignments.some(assignment => {
-      const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
-      return assignmentDate === formattedDate;
-    });
-  
-    return hasAssignments ? 'assigned' : null;
-  };
+const getTitleClassName = ({ date }) => {
+  const currentDate = new Date(date);
+  currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
+
+  const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
+
+  const hasAssignments = assignments.some(assignment => {
+    const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
+    return assignmentDate === formattedDate;
+  });
+
+  return hasAssignments ? 'assigned' : null;
+};
 
 
 
-  const getTileContent = ({ date, view }) => {
-    if (view === 'month') {
-      const formattedDate = date.toISOString().split('T')[0];
-      const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
-      if (dayAssignments.length > 0) {
-        return (
-          <div className="tile-content">
-            {dayAssignments.map((assignment, index) => (
-              <div key={index}>
-                <div 
-                  data-tooltip-id={`tooltip-${formattedDate}-${index}`}
-                  data-tooltip-content={`${assignment.course}: ${assignment.module}`}
-                >
-                  {`${assignment.course}: ${assignment.module.substring(0, 10)}${assignment.module.length > 10 ? "..." : ""}`}
-                </div>
-                <Tooltip id={`tooltip-${formattedDate}-${index}`} />
+
+
+const getTileContent = ({ date, view }) => {
+  if (view === 'month') {
+    const formattedDate = date.toISOString().split('T')[0];
+    const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
+    if (dayAssignments.length > 0) {
+      return (
+        <div className="tile-content">
+          {dayAssignments.map((assignment, index) => (
+            <React.Fragment key={index}>
+              <div 
+                className="assignment-indicator"
+                data-tooltip-id={`tooltip-${formattedDate}-${index}`}
+                data-tooltip-content={`${assignment.course}: ${assignment.module}`}
+              >
+                •
               </div>
-            ))}
-          </div>
-        );
-      }
+            </React.Fragment>
+          ))}
+        </div>
+      );
     }
-    return null;
-  };
+  }
+  return null;
+};
+
+
+
 
   const handleAddContent = async () => {
     if (!selectedCourse || !selectedModule || !newContent) {
@@ -253,22 +258,11 @@ const DynamicForm = () => {
   return (
     <Container>
       <h1 className="text-center mb-4">Session Plan</h1>
-      <Calendar
-      titleContent = {getTileContent}
-        tileClassName={({ date }) => {
-          const currentDate = new Date(date);
-          currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
-        
-          const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
-        
-          const hasAssignments = assignments.some(assignment => {
-            const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
-            return assignmentDate === formattedDate;
-          });
-        
-          return hasAssignments ? 'assigned' : null;
-        }}
+      <Calendar 
+        tileClassName={getTitleClassName}
+        titleContent = {getTileContent}
       />
+      
       <div className="mt-2">
         <h2>Session Date Information</h2>
         <p>Start Date: {startDate}</p>
