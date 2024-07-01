@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table ,Row , Col} from 'react-bootstrap';
+import { useNavigate , useLocation} from 'react-router-dom';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './calendarBG.css';
+import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 
-const DynamicForm = () => {
+const FacultyPage = () => {
   const [data, setData] = useState([]);
   const [courses, setCourses] = useState([]);
   const [workingDays, setWorkingDays] = useState([]);
@@ -16,6 +17,10 @@ const DynamicForm = () => {
   const [newContent, setNewContent] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [selectedModule, setSelectedModule] = useState('');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { name } = location.state || {}; 
+
 
 
   useEffect(() => {
@@ -247,15 +252,38 @@ const getTileContent = ({ date, view }) => {
     }
   };
 
+  const handleLogout = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/clearUpdatedJson', {
+        method: 'POST',
+      });
 
+      if (!response.ok) {
+        throw new Error('Failed to clear updated.json');
+      }
+
+      // Clear user session or token if needed
+      // Redirect to the authentication page
+      navigate('/auth');
+    } catch (error) {
+      console.error('Error during logout:', error);
+    }
+  };
 
   return (
     <Container>
-      <h1 className="text-center mb-4">Session Plan</h1>
-      {/* <Calendar 
+      <div className='d-flex justify-content-between flex-row my-2'>
+      {name && <h1>Hello, FAC {name}!</h1>}
+        <Button className="px-5 py-2"variant="danger" onClick={handleLogout}>Logout</Button>
+      </div>
+
+
+
+
+      <Calendar 
         tileClassName={getTitleClassName}
         titleContent = {getTileContent}
-      /> */}
+      />
       
       <div className="mt-2">
         <h2>Session Date Information</h2>
@@ -359,4 +387,4 @@ const getTileContent = ({ date, view }) => {
   );
 };
 
-export default DynamicForm;
+export default FacultyPage;
