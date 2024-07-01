@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table ,Row , Col} from 'react-bootstrap';
 import { useNavigate, useLocation  } from 'react-router-dom';
 import Calendar from 'react-calendar';
+import ParentComponent from '../Calendar/ParentCalendar';
 import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -277,10 +278,11 @@ const getTileContent = ({ date, view }) => {
       </div>
       
       
-      <Calendar 
+      {/* <Calendar 
         tileClassName={getTitleClassName}
         titleContent = {getTileContent}
-      />
+      /> */}
+      <ParentComponent />
       
       <div className="mt-2">
         <h2>Session Date Information</h2>

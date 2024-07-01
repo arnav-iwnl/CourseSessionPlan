@@ -31,7 +31,7 @@ app.listen(PORT, () => {
 
 
 
-//Get User Credentials
+//Sign Up Credentials
 app.post('/SignUp', cors(corsOptions) ,(req, res) => {
   const { name, email, password } = req.body;
   
@@ -86,12 +86,6 @@ app.post('/SignIn', cors(corsOptions) ,(req, res) => {
 });
 
 
-
-
-
-
-
-
 // Fetching Start Date and End Date
 app.get('/getDate',cors(corsOptions) ,(req, res) => {
     const getStartDateQuery = "SELECT date FROM holidaytable WHERE name = 'Start_Session_SE/TE/BE'";
@@ -127,7 +121,7 @@ app.post('/checkDates', cors(corsOptions),(req, res) => {
     }
   
     const query = `
-      SELECT date, name, type, holiday
+      SELECT date,holiday
       FROM holidaytable
       WHERE date IN (?)`
     ;
@@ -138,21 +132,19 @@ app.post('/checkDates', cors(corsOptions),(req, res) => {
         return res.status(500).json({ error: 'Error fetching holidays and events' });
       }
   
+      const events = results;
       const holidays = [];
-      const events = [];
   
-      results.forEach(row => {
-        if (row.holiday) {
-          holidays.push(row.date);
-        } else {
-          events.push({ date: row.date, name: row.name, type: row.type }); // Collect events
+      events.forEach(event => {
+        if (event.holiday == 1) {
+          holidays.push(event.date);
         }
       });
   
       // Filter out holidays from dates array
       const filteredDates = dates.filter(date => !holidays.includes(date));
   
-      res.json({ workingDaysList: filteredDates, events});
+      res.json({ workingDaysList: filteredDates});
     });
   });
 
@@ -172,18 +164,78 @@ app.post('/updateData', cors(corsOptions), (req, res) => {
   });
 });
 
+//Update Existing Holiday or Event
+app.put('/updateHoliday/:id', cors(corsOptions), (req, res) => {
+  const { id } = req.params;
+  const { date, name, type, institute_level, department_level, holiday } = req.body;
+
+  // SQL query to update the holiday entry
+  const query = `
+    UPDATE holidaytable 
+    SET 
+      date = ?, 
+      name = ?, 
+      type = ?, 
+      institute_level = ?, 
+      department_level = ?, 
+      holiday = ?
+    WHERE 
+      id = ?`;
+
+  db.query(query, [date, name, type, institute_level, department_level, holiday, id], (err, result) => {
+    if (err) {
+      console.error('Error updating holiday:', err);
+      return res.status(500).json({ message: 'Server error' });
+    }
+    
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: 'Holiday not found' });
+    }
+
+    res.json({ message: 'Holiday updated successfully' });
+  });
+});
+
+//Creation of Holiday
+app.post('/createHoliday', cors(corsOptions), (req, res) => {
+  const { date, name, type, institute_level, department_level, holiday } = req.body;
+
+  const query = 'INSERT INTO holidaytable (date, name, type, institute_level, department_level, holiday) VALUES (?, ?, ?, ?, ?, ?)';
+  const values = [date, name, type, institute_level, department_level, holiday];
+
+  db.query(query, values, (err, result) => {
+    if (err) {
+      console.error('Error creating holiday:', err);
+      return res.status(500).json({ message: 'Server error' });
+    }
+
+    res.status(201).json({ message: 'Holiday created successfully', id: result.insertId });
+  });
+});
 
 
+app.get('/getHolidayByDate', cors(corsOptions), (req, res) => {
+  const { date } = req.query;
 
+  const query = 'SELECT * FROM holidaytable WHERE date = ?';
+  db.query(query, [date], (err, results) => {
+    if (err) {
+      console.error('Error fetching holiday:', err);
+      return res.status(500).json({ message: 'Server error' });
+    }
 
+    if (results.length === 0) {
+      return res.status(404).json(null); // No holiday found
+    }
 
-
-
+    res.json(results[0]); // Return the first matching holiday
+  });
+});
 
 
 //Fetching
 app.get('/getEvents', (req, res) => {
-  const sql = 'SELECT name, date, holiday, institute_level, department_level FROM events';
+  const sql = 'SELECT name, date, holiday, institute_level, department_level FROM holidaytable';
   db.query(sql, (err, result) => {
     if (err) {
       res.status(500).json({ error: 'Query failed: ' + err });
@@ -225,8 +277,6 @@ app.get('/getEvents', (req, res) => {
 
 
 //Clearing Updated.json after logout.
-
-
 app.post('/clearUpdatedJson',cors(corsOptions), (req, res) => {
   const filePath = path.join(__dirname, '..', 'client', 'public', 'JSON', 'updated.json');
   fs.writeFile(filePath, JSON.stringify([]), (err) => {
