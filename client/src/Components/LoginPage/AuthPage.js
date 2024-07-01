@@ -105,6 +105,7 @@ const AuthPage = ({ onLogin }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                autoComplete=''
               />
             </Form.Group>
 

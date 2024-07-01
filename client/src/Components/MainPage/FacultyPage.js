@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table ,Row , Col} from 'react-bootstrap';
-import { useNavigate , useLocation} from 'react-router-dom';
-import Calendar from 'react-calendar';
+import { useNavigate, useLocation  } from 'react-router-dom';
+import ParentComponent from '../Calendar/ParentCalendar';
 import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -17,29 +17,52 @@ const FacultyPage = () => {
   const [newContent, setNewContent] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [selectedModule, setSelectedModule] = useState('');
+  const [bufferDates, setBufferDates] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
   const { name } = location.state || {}; 
 
 
-
   useEffect(() => {
     const fetchJsonData = async () => {
       try {
-        const response = await fetch('/JSON/updated.json', { cache: 'no-store' });
-        if (!response.ok) {
+        // Attempt to fetch updated.json
+        const updatedResponse = await fetch('JSON/updated.json', { cache: 'no-store' });
+        // console.log('updated.json response:', updatedResponse);
+        
+        if (!updatedResponse.ok) {
           throw new Error('updated.json not found');
         }
-        const data = await response.json();
-        return data;
+        
+        // Parse updated.json
+        const updatedData = await updatedResponse.json();
+        // console.log('updated.json data:', updatedData);
+        
+        // Check if updated.json is empty (assuming empty means no keys or all values are empty arrays/objects)
+        const isEmpty = Object.values(updatedData).every(
+          value => Array.isArray(value) ? value.length === 0 : Object.keys(value).length === 0
+        );
+        
+        if (isEmpty) {
+          // console.warn('updated.json is empty, falling back to alpha_data.json');
+          throw new Error('updated.json is empty');
+        }
+    
+        // Return non-empty updated.json data
+        return updatedData;
+        
       } catch (error) {
-        console.warn('Fetching updated.json failed, falling back to alpha_data.json:', error);
-        const response = await fetch('/JSON/alpha_data.json', { cache: 'no-store' });
-        if (!response.ok) {
+        // Fetch alpha_data.json if updated.json is not available or empty
+        // console.warn('Falling back to alpha_data.json:', error);
+        const alphaResponse = await fetch('JSON/alpha_data.json', { cache: 'no-store' });
+        if (!alphaResponse.ok) {
           throw new Error('Failed to fetch alpha_data.json');
         }
-        const data = await response.json();
-        return data;
+        
+        // Parse alpha_data.json
+        const alphaData = await alphaResponse.json();
+        // console.log('alpha_data.json data:', alphaData);
+        return alphaData;
       }
     };
 
@@ -125,49 +148,121 @@ const FacultyPage = () => {
     }));
   };
 
+
   const assignCoursesModulesHours = () => {
     const assignments = [];
     const courseModulesMap = new Map();
-
+  
     // Group modules by course
     courses.forEach(course => {
-      const courseModules = data.filter(item => item['Course Name'] === course);
-      const modules = [];
-      courseModules.forEach(module => {
-        const moduleHours = Array.isArray(module['Divided Content']) ? module['Divided Content'] : [module['Divided Content']];
-        moduleHours.forEach(hour => {
-          modules.push({
+      const courseModules = data
+        .filter(item => item['Course Name'] === course)
+        .flatMap(module => {
+          const moduleHours = Array.isArray(module['Divided Content']) 
+            ? module['Divided Content'] 
+            : [module['Divided Content']];
+          return moduleHours.map(hour => ({
             course,
             module: module['Module'],
             hour
-          });
+          }));
         });
-      });
-      courseModulesMap.set(course, modules);
+      courseModulesMap.set(course, courseModules);
     });
-
+  
+    // Track used modules with indices
+    const usedModulesIndices = new Map();
+    const assignedDates = new Set(); // Track assigned dates
+  
     // Assign modules to each working day based on selected days
     workingDays.forEach(day => {
       courses.forEach(course => {
         if (courseDays[course][day.dayOfWeek]) {
           const courseModules = courseModulesMap.get(course);
+  
           if (courseModules && courseModules.length > 0) {
-            const moduleIndex = assignments.length % courseModules.length;
-            const module = courseModules[moduleIndex];
-            assignments.push({
-              date: day.date,
-              dayOfWeek: day.dayOfWeek,
-              course: module.course,
-              module: module.module,
-              hour: module.hour
-            });
+            if (!usedModulesIndices.has(course)) {
+              usedModulesIndices.set(course, 0); // Initialize index for each course
+            }
+  
+            const moduleIndex = usedModulesIndices.get(course);
+            
+            // Check if all modules are assigned
+            if (moduleIndex < courseModules.length) {
+              const module = courseModules[moduleIndex];
+  
+              assignments.push({
+                date: day.date,
+                dayOfWeek: day.dayOfWeek,
+                course: module.course,
+                module: module.module,
+                hour: module.hour
+              });
+  
+              assignedDates.add(day.date); // Mark the date as assigned
+  
+              // Update the index
+              usedModulesIndices.set(course, moduleIndex + 1);
+            }
           }
         }
       });
     });
-
+  
+    // Determine buffer dates (dates that were not assigned)
+    const bufferDates = workingDays.filter(day => !assignedDates.has(day.date)).map(day => day.date);
+  
+    console.log('Assigned Dates:', Array.from(assignedDates));
+    console.log('Buffer Dates:', bufferDates);
+    setBufferDates(bufferDates);
     setAssignments(assignments);
   };
+  
+  
+  
+  // const assignCoursesModulesHours = () => {
+  //   const assignments = [];
+  //   const courseModulesMap = new Map();
+
+  //   // Group modules by course
+  //   courses.forEach(course => {
+  //     const courseModules = data.filter(item => item['Course Name'] === course);
+  //     const modules = [];
+  //     courseModules.forEach(module => {
+  //       const moduleHours = Array.isArray(module['Divided Content']) ? module['Divided Content'] : [module['Divided Content']];
+  //       moduleHours.forEach(hour => {
+  //         modules.push({
+  //           course,
+  //           module: module['Module'],
+  //           hour
+  //         });
+  //       });
+  //     });
+  //     courseModulesMap.set(course, modules);
+  //   });
+
+  //   // Assign modules to each working day based on selected days
+  //   workingDays.forEach(day => {
+  //     courses.forEach(course => {
+  //       if (courseDays[course][day.dayOfWeek]) {
+  //         const courseModules = courseModulesMap.get(course);
+  //         if (courseModules && courseModules.length > 0) {
+  //           const moduleIndex = assignments.length % courseModules.length;
+  //           const module = courseModules[moduleIndex];
+  //           assignments.push({
+  //             date: day.date,
+  //             dayOfWeek: day.dayOfWeek,
+  //             course: module.course,
+  //             module: module.module,
+  //             hour: module.hour
+  //           });
+  //         }
+  //       }
+  //     });
+  //   });
+
+  //   setAssignments(assignments);
+  // };
 
 const getTitleClassName = ({ date }) => {
   const currentDate = new Date(date);
@@ -261,39 +356,36 @@ const getTileContent = ({ date, view }) => {
       if (!response.ok) {
         throw new Error('Failed to clear updated.json');
       }
-
-      // Clear user session or token if needed
-      // Redirect to the authentication page
       navigate('/auth');
     } catch (error) {
       console.error('Error during logout:', error);
     }
   };
 
+
+
   return (
     <Container>
-      <div className='d-flex justify-content-between flex-row my-2'>
-      {name && <h1>Hello, FAC {name}!</h1>}
+        <div className='d-flex justify-content-between flex-row my-2'>
+        {name && <h1>Hello, Faculty {name}!</h1>}
         <Button className="px-5 py-2"variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
-
-
-
-
-      <Calendar 
+      
+      
+      {/* <Calendar 
         tileClassName={getTitleClassName}
         titleContent = {getTileContent}
-      />
+      /> */}
+      <ParentComponent />
       
       <div className="mt-2">
         <h2>Session Date Information</h2>
         <p>Start Date: {startDate}</p>
         <p>End Date: {endDate}</p>
       </div>
+
+
       <div>
-
-
-
         <div>
           <h2 className="my-2">Add Custom Lecture</h2>
           <Form className="mb-2">
@@ -330,11 +422,6 @@ const getTileContent = ({ date, view }) => {
             </Form.Group>
           </Form>
         </div>
-
-
-
-
-
       </div>
 
 
@@ -371,17 +458,25 @@ const getTileContent = ({ date, view }) => {
             </tr>
           </thead>
           <tbody>
-            {assignments.map((assignment, index) => (
-              <tr key={index}>
-                <td className="text-center">{assignment.date}</td>
-                <td className="text-center">{assignment.dayOfWeek}</td>
-                <td className="text-center">{assignment.course}</td>
-                <td className="text-center">{assignment.module}</td>
-                <td className="text-center">{assignment.hour}</td>
-              </tr>
-            ))}
+          {assignments.map((assignment, index) => (
+  <tr key={index}>
+    <td className="text-center">{assignment.date}</td>
+    <td className="text-center">{assignment.dayOfWeek}</td>
+    <td className="text-center">{assignment.course}</td>
+    <td className="text-center">{assignment.module}</td>
+    <td className="text-center">{assignment.hour}</td>
+  </tr>
+))}
           </tbody>
         </Table>
+        <h2> Buffer Dates </h2>
+        <div className='d-flex flex-row'>
+           <ul>
+           {bufferDates.map((date, index) => (
+             <li key={index}>{date}</li>
+           ))}
+         </ul>
+        </div>
       </div>
     </Container>
   );

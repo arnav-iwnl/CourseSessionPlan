@@ -279,7 +279,7 @@ app.get('/getEvents', (req, res) => {
 //Clearing Updated.json after logout.
 app.post('/clearUpdatedJson',cors(corsOptions), (req, res) => {
   const filePath = path.join(__dirname, '..', 'client', 'public', 'JSON', 'updated.json');
-  fs.writeFile(filePath, JSON.stringify([]), (err) => {
+  fs.writeFile(filePath, JSON.stringify(['{}']), (err) => {
     if (err) {
       return res.status(500).send('Error clearing updated.json');
     }
