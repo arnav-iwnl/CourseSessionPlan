@@ -219,6 +219,7 @@ const FacultyPage = () => {
   };
   
   
+  // PREVIOUS CODE IT WAS
   
   // const assignCoursesModulesHours = () => {
   //   const assignments = [];

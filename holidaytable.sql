@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2024 at 11:53 AM
+-- Generation Time: Jul 02, 2024 at 04:15 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -32,6 +32,8 @@ CREATE TABLE `holidaytable` (
   `date` date NOT NULL,
   `name` varchar(250) NOT NULL,
   `type` varchar(250) NOT NULL,
+  `institute_level` tinyint(1) NOT NULL DEFAULT 0,
+  `department_level` tinyint(1) NOT NULL DEFAULT 0,
   `holiday` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -39,22 +41,14 @@ CREATE TABLE `holidaytable` (
 -- Dumping data for table `holidaytable`
 --
 
-INSERT INTO `holidaytable` (`id`, `date`, `name`, `type`, `holiday`) VALUES
-(1, '2024-07-08', 'START', 'Public Holiday', 0),
-(2, '2024-07-22', 'Public Event', 'Event', 1),
-(3, '2024-10-17', 'END', 'Working Day', 0),
-(4, '2024-09-01', 'Public Holiday', 'Public Holiday', 1),
-(5, '2024-09-15', 'Public Event', 'Event', 1),
-(6, '2024-09-21', 'Public Holiday', 'Public Holiday', 1),
-(7, '2024-10-01', 'Public Holiday', 'Public Holiday', 1),
-(9, '2024-07-09', 'Working Day', 'Normal Working Day', 0),
-(10, '2024-07-10', 'Working Day', 'Normal Working Day', 0),
-(11, '2024-07-11', 'Working Day', 'Normal Working Day', 0),
-(12, '2024-07-12', 'Working Day', 'Normal Working Day', 0),
-(13, '2024-07-15', 'Working Day', 'Normal Working Day', 0),
-(14, '2024-07-16', 'Working Day', 'Normal Working Day', 0),
-(15, '2024-07-17', 'Working Day', 'Normal Working Day', 0),
-(16, '2024-07-18', 'Working Day', 'Normal Working Day', 0);
+INSERT INTO `holidaytable` (`id`, `date`, `name`, `type`, `institute_level`, `department_level`, `holiday`) VALUES
+(1, '2024-07-08', 'Start_Session_SE/TE/BE', 'Start Session for SE/TE/BE', 0, 0, 0),
+(2, '2024-07-22', 'Public Event', 'Event', 0, 0, 1),
+(3, '2024-10-17', 'End_Session_SE/TE/BE', 'End Session for SE/TE/BE', 0, 0, 0),
+(4, '2024-09-01', 'Public Holiday', 'Public Holiday', 0, 0, 1),
+(5, '2024-09-15', 'Public Event', 'Event', 0, 0, 1),
+(6, '2024-09-21', 'Public Holiday', 'Public Holiday', 0, 0, 1),
+(7, '2024-10-01', 'Public Holiday', 'Public Holiday', 0, 0, 1);
 
 --
 -- Indexes for dumped tables

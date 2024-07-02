@@ -238,7 +238,7 @@ const HodPage = () => {
   };
   
   
-  
+  // PREVIOUS CODE IT WAS
   // const assignCoursesModulesHours = () => {
   //   const assignments = [];
   //   const courseModulesMap = new Map();
