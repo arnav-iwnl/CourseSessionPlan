@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PdfDownloader from './pdf'; // Adjust the path as needed
 import './styles/CalendarTable.css';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 const CalendarTable = () => {
   const [events, setEvents] = useState([]);
