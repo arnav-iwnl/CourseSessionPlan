@@ -1,0 +1,141 @@
+.calendar-container {
+    padding: 20px;
+  }
+  
+  .date-selector {
+    display: flex;
+  
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+  
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .weekend {
+    color: red;
+  }
+  
+  .calendar-day {
+    min-height: 80px;
+  }
+  
+  .day-number {
+    font-weight: bold;
+  }
+  
+  .event {
+    background-color: #f9f9f9;
+    margin-top: 5px;
+  
+    border-radius: 3px;
+    border: 1px solid #ddd;
+  }
+  .calendar-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .weekend {
+    background-color: #f0f0f0;
+  }
+  
+  .red {
+    background-color: red;
+    color: white;
+  }
+  
+  .green {
+    background-color: green;
+    color: white;
+  }
+  
+  .dark-green {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+  
+  .dark-blue {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  .dark-orange {
+    background-color: darkorange;
+    color: white;
+  }
+  
+  .orange {
+    background-color: orange;
+    color: white;
+  }
+  
+  .dark-pink {
+    background-color: darkpink;
+    color: white;
+  }
+  
+  .pink {
+    background-color: pink;
+    color: white;
+  }
+  
+  /* Add other event-specific styles here if needed */
+  .calendar-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .date-selector {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .month {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .weekend {
+    background-color: lightgray;
+  }
+  
+  .holiday {
+    background-color: red;
+    color: white;
+  }
+  
+  .day-number {
+    font-size: 14px;
+  }
+  
+  #pdf-content {
+    margin-top: 20px;
+  }
+  

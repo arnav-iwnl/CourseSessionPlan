@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Form, Button, Table ,Row , Col} from 'react-bootstrap';
-import Calendar from 'react-calendar';
+import { Container, Form, Button, Table, Row, Col } from 'react-bootstrap';
+import { useNavigate, useLocation } from 'react-router-dom';
+import ParentComponent from '../Calendar/ParentCalendar';
 import 'react-calendar/dist/Calendar.css';
-import './calendarBG.css';
+import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
+import toast from 'react-hot-toast';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
-const DynamicForm = () => {
+const FacultyPage = () => {
   const [data, setData] = useState([]);
   const [courses, setCourses] = useState([]);
   const [workingDays, setWorkingDays] = useState([]);
@@ -16,25 +20,43 @@ const DynamicForm = () => {
   const [newContent, setNewContent] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [selectedModule, setSelectedModule] = useState('');
+  const [bufferDates, setBufferDates] = useState([]);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { name } = location.state || {};
 
 
   useEffect(() => {
     const fetchJsonData = async () => {
       try {
-        const response = await fetch('/JSON/updated.json', { cache: 'no-store' });
-        if (!response.ok) {
+        const updatedResponse = await fetch('JSON/updated.json', { cache: 'no-store' });
+
+        if (!updatedResponse.ok) {
           throw new Error('updated.json not found');
         }
-        const data = await response.json();
-        return data;
+
+        const updatedData = await updatedResponse.json();
+
+        const isEmpty = Object.values(updatedData).every(
+          value => Array.isArray(value) ? value.length === 0 : Object.keys(value).length === 0
+        );
+
+        if (isEmpty) {
+
+          throw new Error('updated.json is empty');
+        }
+
+        return updatedData;
+
       } catch (error) {
-        console.warn('Fetching updated.json failed, falling back to alpha_data.json:', error);
-        const response = await fetch('/JSON/alpha_data.json', { cache: 'no-store' });
-        if (!response.ok) {
+        const alphaResponse = await fetch('JSON/alpha_data.json', { cache: 'no-store' });
+        if (!alphaResponse.ok) {
           throw new Error('Failed to fetch alpha_data.json');
         }
-        const data = await response.json();
-        return data;
+
+        const alphaData = await alphaResponse.json();
+
+        return alphaData;
       }
     };
 
@@ -67,10 +89,7 @@ const DynamicForm = () => {
         const holidaysData = await holidaysResponse.json();
         const finalWorkingDaysList = holidaysData.workingDaysList;
         setWorkingDays(finalWorkingDaysList);
-        // setEvents(holidaysData.events);
 
-
-        // Initialize courseDays state
         const initialCourseDays = courseNames.reduce((acc, course) => {
           acc[course] = { Monday: false, Tuesday: false, Wednesday: false, Thursday: false, Friday: false };
           return acc;
@@ -92,11 +111,11 @@ const DynamicForm = () => {
 
     while (currentDate <= endDateObj) {
       const dayOfWeek = currentDate.getDay();
-      if (dayOfWeek !== 0 && dayOfWeek !== 6) { // Exclude weekends (Sunday and Saturday)
+      if (dayOfWeek !== 0 && dayOfWeek !== 6) {
         const formattedDate = currentDate.toISOString().split('T')[0];
         workingDaysList.push({
           date: formattedDate,
-          dayOfWeek: getDayOfWeek(currentDate) // Assuming getDayOfWeek is a function returning day names
+          dayOfWeek: getDayOfWeek(currentDate)
         });
       }
       currentDate.setDate(currentDate.getDate() + 1);
@@ -120,91 +139,113 @@ const DynamicForm = () => {
     }));
   };
 
+
   const assignCoursesModulesHours = () => {
     const assignments = [];
     const courseModulesMap = new Map();
 
-    // Group modules by course
     courses.forEach(course => {
-      const courseModules = data.filter(item => item['Course Name'] === course);
-      const modules = [];
-      courseModules.forEach(module => {
-        const moduleHours = Array.isArray(module['Divided Content']) ? module['Divided Content'] : [module['Divided Content']];
-        moduleHours.forEach(hour => {
-          modules.push({
+      const courseModules = data
+        .filter(item => item['Course Name'] === course)
+        .flatMap(module => {
+          const moduleHours = Array.isArray(module['Divided Content'])
+            ? module['Divided Content']
+            : [module['Divided Content']];
+          return moduleHours.map(hour => ({
             course,
             module: module['Module'],
             hour
-          });
+          }));
         });
-      });
-      courseModulesMap.set(course, modules);
+      courseModulesMap.set(course, courseModules);
     });
+
+    // Track used modules with indices
+    const usedModulesIndices = new Map();
+    const assignedDates = new Set(); // Track assigned dates
 
     // Assign modules to each working day based on selected days
     workingDays.forEach(day => {
       courses.forEach(course => {
         if (courseDays[course][day.dayOfWeek]) {
           const courseModules = courseModulesMap.get(course);
+
           if (courseModules && courseModules.length > 0) {
-            const moduleIndex = assignments.length % courseModules.length;
-            const module = courseModules[moduleIndex];
-            assignments.push({
-              date: day.date,
-              dayOfWeek: day.dayOfWeek,
-              course: module.course,
-              module: module.module,
-              hour: module.hour
-            });
+            if (!usedModulesIndices.has(course)) {
+              usedModulesIndices.set(course, 0); // Initialize index for each course
+            }
+
+            const moduleIndex = usedModulesIndices.get(course);
+
+            // Check if all modules are assigned
+            if (moduleIndex < courseModules.length) {
+              const module = courseModules[moduleIndex];
+
+              assignments.push({
+                date: day.date,
+                dayOfWeek: day.dayOfWeek,
+                course: module.course,
+                module: module.module,
+                hour: module.hour
+              });
+
+              assignedDates.add(day.date); // Mark the date as assigned
+
+              // Update the index
+              usedModulesIndices.set(course, moduleIndex + 1);
+            }
           }
         }
       });
     });
 
+    // Determine buffer dates (dates that were not assigned)
+    const bufferDates = workingDays.filter(day => !assignedDates.has(day.date)).map(day => day.date);
+
+    console.log('Assigned Dates:', Array.from(assignedDates));
+    console.log('Buffer Dates:', bufferDates);
+    setBufferDates(bufferDates);
     setAssignments(assignments);
   };
 
-const getTitleClassName = ({ date }) => {
-  const currentDate = new Date(date);
-  currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
+  const getTitleClassName = ({ date }) => {
+    const currentDate = new Date(date);
+    currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
 
-  const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
+    const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
 
-  const hasAssignments = assignments.some(assignment => {
-    const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
-    return assignmentDate === formattedDate;
-  });
+    const hasAssignments = assignments.some(assignment => {
+      const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
+      return assignmentDate === formattedDate;
+    });
 
-  return hasAssignments ? 'assigned' : null;
-};
+    return hasAssignments ? 'assigned' : null;
+  };
 
-const getTileContent = ({ date, view }) => {
-  if (view === 'month') {
-    const formattedDate = date.toISOString().split('T')[0];
-    const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
-    if (dayAssignments.length > 0) {
-      return (
-        <div className="tile-content">
-          {dayAssignments.map((assignment, index) => (
-            <React.Fragment key={index}>
-              <div 
-                className="assignment-indicator"
-                data-tooltip-id={`tooltip-${formattedDate}-${index}`}
-                data-tooltip-content={`${assignment.course}: ${assignment.module}`}
-              >
-                •
-              </div>
-            </React.Fragment>
-          ))}
-        </div>
-      );
+  const getTileContent = ({ date, view }) => {
+    if (view === 'month') {
+      const formattedDate = date.toISOString().split('T')[0];
+      const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
+      if (dayAssignments.length > 0) {
+        return (
+          <div className="tile-content">
+            {dayAssignments.map((assignment, index) => (
+              <React.Fragment key={index}>
+                <div
+                  className="assignment-indicator"
+                  data-tooltip-id={`tooltip-${formattedDate}-${index}`}
+                  data-tooltip-content={`${assignment.course}: ${assignment.module}`}
+                >
+                  •
+                </div>
+              </React.Fragment>
+            ))}
+          </div>
+        );
+      }
     }
-  }
-  return null;
-};
-
-
-
+    return null;
+  };
 
   const handleAddContent = async () => {
     if (!selectedCourse || !selectedModule || !newContent) {
@@ -247,25 +288,65 @@ const getTileContent = ({ date, view }) => {
     }
   };
 
+  const handleLogout = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/clearUpdatedJson', {
+        method: 'POST',
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to clear updated.json');
+      }
+      toast.success(`${name} logged out successfully`)
+      navigate('/auth');
+    } catch (error) {
+      console.error('Error during logout:', error);
+    }
+  };
+
+  const handleDownloadPdf = async () => {
+    await generatePdf(assignments, bufferDates);
+  };
+
+  const generatePdf = async (assignments, bufferDates) => {
+    const doc = new jsPDF();
+
+    const tableData = assignments.map((assignment, index) => [
+      assignment.date,
+      "",
+      assignment.dayOfWeek,
+      assignment.course,
+      assignment.module,
+      assignment.hour,
+    ]);
+
+    doc.text("Assignments", 10, 10);
+    doc.autoTable({
+      head: [['Expected Date', 'Actual Date', 'Day of the Week', 'Course', 'Module', 'Hour']],
+      body: tableData,
+      startY: 20,
+    });
+    doc.save('assignments.pdf');
+  };
 
 
   return (
     <Container>
-      <h1 className="text-center mb-4">Session Plan</h1>
-      {/* <Calendar 
-        tileClassName={getTitleClassName}
-        titleContent = {getTileContent}
-      /> */}
-      
+      <div className='d-flex justify-content-between flex-row my-2'>
+        {name && <h1>Hello, Faculty {name}!</h1>}
+        <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
+      </div>
+
+      <ParentComponent />
+
       <div className="mt-2">
         <h2>Session Date Information</h2>
         <p>Start Date: {startDate}</p>
         <p>End Date: {endDate}</p>
       </div>
+
+
       <div>
-
-
-
         <div>
           <h2 className="my-2">Add Custom Lecture</h2>
           <Form className="mb-2">
@@ -302,11 +383,6 @@ const getTileContent = ({ date, view }) => {
             </Form.Group>
           </Form>
         </div>
-
-
-
-
-
       </div>
 
 
@@ -354,9 +430,20 @@ const getTileContent = ({ date, view }) => {
             ))}
           </tbody>
         </Table>
+        <Button variant="primary" onClick={handleDownloadPdf}>
+          Download PDF
+        </Button>
+        <h2> Buffer Dates </h2>
+        <div className='d-flex flex-row'>
+          <ul>
+            {bufferDates.map((date, index) => (
+              <li key={index}>{date}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Container>
   );
 };
 
-export default DynamicForm;
+export default FacultyPage;
