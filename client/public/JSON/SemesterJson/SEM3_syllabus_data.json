@@ -1,0 +1,977 @@
+[
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 1: 1; 1 Definition of Laplace transform, Condition of Existence of Laplace transform, 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 2: 2 Laplace Transform (L) of Standard Functions like \ud835\udc52 \ud835\udc4e\ud835\udc61 , \ud835\udc60\ud835\udc56\ud835\udc5b(\ud835\udc4e\ud835\udc61), \ud835\udc50\ud835\udc5c\ud835\udc60(\ud835\udc4e\ud835\udc61), \ud835\udc60\ud835\udc56\ud835\udc5b\u210e(\ud835\udc4e\ud835\udc61), \ud835\udc50\ud835\udc5c\ud835\udc60\u210e(\ud835\udc4e\ud835\udc61) and \ud835\udc61 \ud835\udc5b , \ud835\udc5b \u2265 0"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 3: 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 4: 3 Properties of Laplace Transform: Linearity, First Shifting Theorem, Second Shifting Theorem, change of scale Property, multiplication by t, Division by t, Laplace Transform of derivatives and integrals (Properties without proof)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 5: 1; 4 Evaluation of real integrals by using Laplace Transformation"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Laplace Transform",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 1: 2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 2: 1 Inverse Laplace Transform, Linearity property, use of standard\nformulae to find inverse Laplace Transform, finding Inverse Laplace\ntransform using derivatives,\n2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 3: 2 Partial fractions method to find inverse Laplace transform; 2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 4: 3 Inverse Laplace transform using Convolution theorem (without proof)\nSelf-learning Topics: Applications to solve initial and boundary value\nproblems involving ordinary differential equations"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": " Module: Inverse Laplace Transform\n",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 1: 3; 1 Dirichlet\u2019s conditions, Definition of Fourier series and Parseval\u2019s Identity(without proof) 3"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 2: 2 Fourier series of periodic function with period 2\uf070\uf020 and 2l, \uf033\uf02e\uf033\uf020Fourier series of even and odd functions 3"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 3: 4 Half range Sine and Cosine Series"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 4: Self-learning Topics: Complex form of Fourier Series, orthogonal and orthonormal set of functions, Fourier Transform"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Fourier Series:",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 1: 4"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 2: 1 Function f(z) of complex variable, limit, continuity and differentiability\nof f(z)\uf02c\uf020Analytic function, necessary and sufficient conditions for f(z) to be\n analytic (without proof),\n4"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 3: 2 Cauchy-Riemann equations in cartesian coordinates (without proof)\n4"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 4: 3 Milne-Thomson method to determine analytic function f(z) when real\npart (u) or Imaginary part (v) or its combination (u+v or u-v) is given"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 5: 4; 4 Harmonic function, Harmonic conjugate and orthogonal trajectories\nSelf-learning Topics: Conformal mapping, line"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Complex Variables:",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 1: 5; 1 Karl Pearson\u2019s Coefficient of correlation (r) 5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 2: 2 Spearman\u2019s Rank correlation coefficient (R) (with repeated and nonrepeated ranks) 5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 3: 3 Lines of regression 5; 4 Fitting of first and second degree curves"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 4: Self-learning Topics: Covariance, fitting of exponential curve"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Statistical Techniques ",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 1: 6; 1 Definition and basics of probability, conditional probability, 6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 2: 2 Total Probability Theorem and Baye\u2019s theorem 6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 3: 3 Discrete and continuous random variable with probability distribution and probability density function; 6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 4: 4 Expectation of random variables with mean, variance and standard deviation, moment generating function up to four moments"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 5: Self-learning Topics: Skewness and Kurtosis of distribution (data)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-III",
+    "Module": "Module: Probability ",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Defining, Declaring and Initialization of structure variables"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Accessing members of a structure, Array of structures, Nested structures, Pointers to structures"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 1: Introduction to Data Structures: Linear and Non Linear Data Structures, Static and Dynamic Data Structures"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 2: Concept of Stack and Queue"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 3: Array Implementation of Stack and Queue, Circular Queue, Double Ended Queue, Priority Queue"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 4: Concept of Linked Lists; Singly linked lists, doubly linked lists and circular linked lists"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 5: Insertion, deletion, update and copying operations with Singly linked lists, doubly linked lists and circular linked lists"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 6: Reversing a singly linked list"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 7: Self-learning Topics: Linked List Implementation of Stack,\nLinked List implementation of Queue, Circular Queue, Double Ended Queue, Priority Queue"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Introduction to Stacks, Queues and Linked Lists",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 1: Introduction to Trees: Terminology, Types of Binary trees; Non recursive Preorder, in-order and post-order traversal"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 2: Creation of binary trees from the traversal of binary trees"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 3: Binary search tree: Traversal, searching, insertion and deletion in binary search tree"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 4: Threaded Binary Tree: Finding in-order successor and predecessor of a node in threaded tree"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 5: Insertion and deletion in threaded binary tree; AVL Tree: Searching and traversing in AVL trees"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 6: Tree Rotations: Right Rotation, Left Rotation; Insertion and Deletion in an AVL Tree"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Trees",
+    "Divided Content": "Hour 7: B-tree: Searching, Insertion, Deletion from leaf node and non- leaf node"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Graphs",
+    "Divided Content": "Hour 1: Introduction to Graphs: Undirected Graph, Directed Graph, graph terminology, Connectivity in Undirected and Directed Graphs"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Graphs",
+    "Divided Content": "Hour 2: Spanning tree"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Graphs",
+    "Divided Content": "Hour 3: Representation of graph: adjacency matrix, adjacency list, Transitive closure of a directed graph and path matrix"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Graphs",
+    "Divided Content": "Hour 4: Traversals: Breadth First Search, Depth First Search; Self-learning Topics:  Implementation of BFS, DFS"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Graphs",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 1: Recursion: Writing a recursive function, Flow of control in recursive functions, Winding and unwinding phase, Recursive data structures, Implementation of recursion"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 2: Tail recursion; Indirect and Direct Recursion"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 3: Storage Management: Sequential Fit Methods: First Fit, Best Fit and Worst Fit methods"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 4: Fragmentation, Freeing Memory, Boundary Tag Method; Buddy Systems: Binary Buddy System, Fibonacci Buddy System"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 5: Compaction, Garbage Collection; Self-learning Topics: Implementation of recursion function"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Recursion and Storage Management",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Searching and Sorting",
+    "Divided Content": "Hour 1: Searching: Sequential Search, Binary Search; Hashing:  Hash Functions: Truncation, Mid-square Method, Folding Method, Division Method"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Searching and Sorting",
+    "Divided Content": "Hour 2: Collision Resolution: Open Addressing: Linear Probing, Quadratic Probing, Double Hashing, Separate Chaining Bucket Hashing"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Searching and Sorting",
+    "Divided Content": "Hour 3: Analysis of all searching techniques\nSorting: Insertion sort, Selection sort, Merge sort, Quick sort and Radix sort"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Searching and Sorting",
+    "Divided Content": "Hour 4: Analysis of all sorting techniques\nSelf-learning Topics: Implementation of different sorting techniques and searching"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Searching and Sorting",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 1: Applications of Linked Lists: Addition of 2 Polynomials and Multiplication of 2 polynomials"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 2: Applications of Stacks: Reversal of a String, Checking validity of an expression containing nested parenthesis, Function calls, Polish Notation: Introduction to infix, prefix and postfix expressions and their evaluation and conversions"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 3: Application of Queues: Scheduling, Round Robin Scheduling Applications of Trees: Huffman Tree and Heap Sort"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 4: Applications of Graphs: Dijkstra\u2019s Algorithm, Minimum Spanning Tree: Prim\u2019s Algorithm, Kruskal\u2019s Algorithm"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 5: Self-learning Topics: Implementation of applications for Stack, Queues, Linked List, Trees and Graph"
+  },
+  {
+    "Course Name": "Data Structure and Analysis",
+    "Module": "Applications of Data Structures",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: CommentBasic  knowledge  of  operating  systems and file systems, Any programming"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Database System Concepts and Architecture",
+    "Divided Content": "Hour 1: Introduction,   Characteristics   of   Databases,   File system v/s Database system, Data abstraction and Data  Independence,  DBMS  system  architecture, Database Administrator (DBA), Role of DBA\nSelf-learning   Topics:      Identify   the   types   of Databases"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Database System Concepts and Architecture",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Database System Concepts and Architecture",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Database System Concepts and Architecture",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Database System Concepts and Architecture",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "The Entity- Relationship Model",
+    "Divided Content": "Hour 1: Conceptual  Modeling  of  a  database,  The  Entity- Relationship (ER) Model, Entity Type, Entity Sets, Attributes     and     Keys,     Relationship     Types, Relationship Sets, Weak entity Types Generalization,   Specialization   and   Aggregation, Extended Entity-Relationship (EER) Model"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "The Entity- Relationship Model",
+    "Divided Content": "Hour 2: Self-learning Topics:  Design an ER model for any real time case study"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "The Entity- Relationship Model",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "The Entity- Relationship Model",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "The Entity- Relationship Model",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Model & Relational Algebra",
+    "Divided Content": "Hour 1: Introduction to Relational Model, Relational Model Constraints and\nRelational  Database  Schemas,  Concept  of  Keys: Primary   Kay,   Secondary   key,    Foreign   Key, Mapping the ER and EER Model to the Relational Model,    Introduction    to    Relational    Algebra, Relational     Algebra     expressions     for     Unary Relational Operations,\n\uf0b7             Set Theory operations,\n\uf0b7                Binary Relational operation Relational Algebra Queries\nSelf-learning Topics: Map the ER model designed in module II to relational schema"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Model & Relational Algebra",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Model & Relational Algebra",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Model & Relational Algebra",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Model & Relational Algebra",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 1: Overview of SQL, Data Definition\nCommands,  Set  operations,  aggregate  function, null  values,  Data  Manipulation  commands,  Data Control  commands,  Complex  Retrieval  Queries using Group By, Recursive Queries, nested Queries"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 2: Integrity      constraints      in      SQL"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 3: Database Programming      with      JDBC,      Security      and authorization: Grant & Revoke in SQL Functions and Procedures in SQL and cursors"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 4: Indexing:Basic Concepts,\nOrdered Indices, Index Definition in SQL\nSelf-learning Topics:  Physical design of database\nfor the relational model designed in module III and fire various queries"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Structured Query Language (SQL) & Indexing",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 1: Design     guidelines     for     relational     Schema, Functional   Dependencies,   Database   tables   and normalization,  The  need  for  normalization,  The normalization   process,   Improving   the   design, Definition  of  Normal  Forms-  1NF,  2NF,  3NF  & The Boyce-Codd Normal Form (BCNF)"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 2: Self-learning   Topics:   Consider   any   real   time application and normalization upto 3NF/BCNF"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Relational Database Design",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 1: Transaction:\nTransaction    concept,    State    Diagram,    ACID Properties,     Transaction     Control     Commands, Concurrent  Executions,  Serializability  \u2013  Conflict and View,\nConcurrency Control:\nLock-based-protocols,        Deadlock        handling Timestamp-based protocols,\nRecovery System:\nRecovery Concepts, Log based recovery"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 2: Self-learning Topics: Study the various deadlock situation which may occur for a database designed in module V"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Database Management System",
+    "Module": "Transactions Management and Concurrency and Recovery",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Terminologies in communication systems, analog and\ndigital  electronics"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Introduction",
+    "Divided Content": "Hour 1: Basics of analog communication and digital communication systems (Block diagram), Electromagnetic Spectrum and application, Types of Communication channels"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Introduction",
+    "Divided Content": "Hour 2: Self-learning Topics: Applications areas of analog and digital communication"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Introduction",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 1: Basics of signal representation and analyses, Introduction to Fourier Transform, its properties (time and frequency shifting, Fourier transform of unit step, delta and gate function"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 2: Types of Noise, Noise parameters \u2013Signal to noise ratio, Noise factor, Noise figure, Friss formula and Equivalent noise temperature"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 3: Self-learning Topics: Practice Numerical on above topic"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Noise and Fourier Representation of Signal and System",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 1: Need for modulation,\nAmplitude Modulation Techniques:  DSBFC AM,DSBSC-AM, SSB SC AM- block diagram spectrum, waveforms, bandwidth,\nPower calculations"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 2: Generation of AM using Diode, generation of DSB using Balanced modulator, Generation of SSB using Phase Shift Method"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 3: AM Transmitter (Block Diagram)\nAM Receivers \u2013 Block diagram of TRF receivers and Super heterodyne receiver and its  characteristics- Sensitivity, Selectivity, Fidelity, Image frequency and its rejection\nand double spotting\nAngle Modulation\nFM: Principle of FM- waveforms, spectrum, bandwidth"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 4: Pre- emphasis and de-emphasis in FM, FM generation: Direct method \u2013Varactor diode Modulator, Indirect method (Armstrong method) block diagram and waveforms"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 5: FM demodulator: Foster Seeley discriminator, Ratio detector"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 6: Self-learning Topics: Use of AM and FM in Modern Communication Technology"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 7: Challenges faced by radio business"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 10: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 11: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Amplitude and Angle modulation Techniques.",
+    "Divided Content": "Hour 12: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 1: Sampling theorem for low pass and band pass signals with proof, \nAnti- aliasing filter, PAM, PWM and PPM generation and\nDegeneration"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 2: Quantization process, Pulse code modulation, Delta modulation,\nAdaptive delta modulation"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 3: Introduction to Line Codes and ISI; Self-learning Topics: Implementation of Pulse code\nmodulation and demodulation"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Pulse Analog Modulation and Digital Modulation",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Multiplexing and Digital Band Pass Modulation Techniques",
+    "Divided Content": "Hour 1: Principle of Time Division  Multiplexing, Frequency Division Multiplexing , Orthogonal Frequency Division Multiplexing and its applications"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Multiplexing and Digital Band Pass Modulation Techniques",
+    "Divided Content": "Hour 2: ASK, FSK, PSK QPSK Generation and detection; Self-learning Topics: Implement TDM, FDM, OFDM"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Multiplexing and Digital Band Pass Modulation Techniques",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Multiplexing and Digital Band Pass Modulation Techniques",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Radiation and Propagation of Waves",
+    "Divided Content": "Hour 1: Electromagnetic radiation, fundamentals, types of propagation, ground wave, sky wave, space wave tropospheric scatter propagation\nSelf-learning Topics: List the real time examples for different types of propagation waves"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Radiation and Propagation of Waves",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Radiation and Propagation of Waves",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Principle of Communication",
+    "Module": "Radiation and Propagation of Waves",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Compilation and interpretation Focus on overview of\ncompilation steps"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 1: Introduction to different programming  paradigms; Names, Scopes, and Bindings, Scope Rules, Storage Management"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 2: Type Systems, Type Checking, Equality Testing and Assignment"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 3: Subroutine and Control Abstraction: Stack Layout, Calling sequence, parameter passing\nGeneric subroutines and modules"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 4: Exception handling, Coroutines and Events; Self-Learning Topic: Implementation of basic concepts using programming language"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Introduction to Programming Paradigms and Core Language Design Issues",
+    "Divided Content": "Hour 10: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Imperative Paradigm: Data Abstraction in Object Orientation",
+    "Divided Content": "Hour 1: Grouping of data and Operations- Encapsulation, Overloading, Polymorphism, Inheritance, Initialization and Finalization, Dynamic Binding"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Imperative Paradigm: Data Abstraction in Object Orientation",
+    "Divided Content": "Hour 2: Self-Learning Topic: Implementation of OOP concepts using preferrably C++ and Java language"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Imperative Paradigm: Data Abstraction in Object Orientation",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Imperative Paradigm: Data Abstraction in Object Orientation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Imperative Paradigm: Data Abstraction in Object Orientation",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 1: Introduction     to     Lambda     Calculus,     Functional Programming Concepts, Evaluation order, Higher order functions, I/O-Streams and Monads"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 2: Self-Learning Topic: Implementation of programs using functional programming Language Haskel can refer to hacker rank website for problem statements"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Functional Programming",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 1: Logic Programming with PROLOG - Resolution and Unification, Lists, Arithmetic execution order, imperative control flow, database manipulation, PROLOG facilities and deficiencies"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 2: Self-Learning Topic: Identification of different\napplication domains for use of Prolog and Logic programming"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Declarative Programming Paradigm: Logic Programming",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Concurrency",
+    "Divided Content": "Hour 1: Concurrent Programming Fundamentals, Implementing synchronisation, Message Passing - Background and Motivation, Multithreaded programs, Communication and Synchronization, Language and Libraries, Thread creation Syntax"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Concurrency",
+    "Divided Content": "Hour 2: Self-Learning Topic: Study Implementation of concurrency concepts for real time application"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Concurrency",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Concurrency",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Scripting Languages",
+    "Divided Content": "Hour 1: Common characteristics, Different Problem domains for using scripting,Use of scripting in Web development\u2013server and clients side scripting, Innovative features of scripting languages - Names and Scopes, string and pattern manipulation, data types,\nobject orientation"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Scripting Languages",
+    "Divided Content": "Hour 2: Self-Learning Topic: Review small client server application code in any scripting language to realise\napplicability of features learned in Module"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Scripting Languages",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Scripting Languages",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Paradigms and Computer Programming Fundamentals",
+    "Module": "Alternative Paradigms: Scripting Languages",
+    "Divided Content": "Hour 5: Review and practice"
+  }
+]
