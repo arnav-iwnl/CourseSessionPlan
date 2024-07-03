@@ -1,4 +1,8 @@
 const db = require('../db')
+const path = require('path');
+const fs = require('fs');
+
+
 
 const getDateController = (req, res) => {
     const getStartDateQuery = "SELECT date FROM holidaytable WHERE name = 'Start_Session_SE/TE/BE'";
@@ -61,7 +65,10 @@ const checkDateController = (req, res) => {
 
 const updateDateController = (req, res) => {
     const updatedData = req.body; // Assuming req.body contains updated data
-    const clientJsonFilePath = path.join(__dirname, '..', 'client', 'public', 'JSON', 'updated.json');
+
+    const clientJsonFilePath = path.join(__dirname,'..','..', 'client', 'public', 'JSON', 'updated.json');
+    console.log(clientJsonFilePath)
+
     // Write updated data to a new file
     fs.writeFile(clientJsonFilePath, JSON.stringify(updatedData, null, 2), (err) => {
         if (err) {
@@ -72,7 +79,6 @@ const updateDateController = (req, res) => {
         res.json({ msg: 'Data updated successfully' });
     });
 }
-
 
 module.exports = {
     getDateController,

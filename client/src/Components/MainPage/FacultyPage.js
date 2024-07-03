@@ -208,46 +208,11 @@ const FacultyPage = () => {
     setAssignments(assignments);
   };
 
-  const getTitleClassName = ({ date }) => {
-    const currentDate = new Date(date);
-    currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
+  
+  const handleAddContent = async (event) => {
+    event.preventDefault();
 
-    const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
 
-    const hasAssignments = assignments.some(assignment => {
-      const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
-      return assignmentDate === formattedDate;
-    });
-
-    return hasAssignments ? 'assigned' : null;
-  };
-
-  const getTileContent = ({ date, view }) => {
-    if (view === 'month') {
-      const formattedDate = date.toISOString().split('T')[0];
-      const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
-      if (dayAssignments.length > 0) {
-        return (
-          <div className="tile-content">
-            {dayAssignments.map((assignment, index) => (
-              <React.Fragment key={index}>
-                <div
-                  className="assignment-indicator"
-                  data-tooltip-id={`tooltip-${formattedDate}-${index}`}
-                  data-tooltip-content={`${assignment.course}: ${assignment.module}`}
-                >
-                  •
-                </div>
-              </React.Fragment>
-            ))}
-          </div>
-        );
-      }
-    }
-    return null;
-  };
-
-  const handleAddContent = async () => {
     if (!selectedCourse || !selectedModule || !newContent) {
       alert('Please fill all fields');
       return;
@@ -269,6 +234,7 @@ const FacultyPage = () => {
     const updatedData = [...data, newEntry];
     setData(updatedData);
 
+
     try {
       const response = await fetch('http://localhost:5000/updateData', {
         method: 'POST',
@@ -281,8 +247,7 @@ const FacultyPage = () => {
       if (!response.ok) {
         throw new Error('Failed to update data');
       }
-
-      alert('Data updated successfully');
+      toast.success(`Data updated successfully`);
     } catch (error) {
       console.error('Error updating data:', error);
     }
@@ -349,7 +314,7 @@ const FacultyPage = () => {
       <div>
         <div>
           <h2 className="my-2">Add Custom Lecture</h2>
-          <Form className="mb-2">
+          <Form className="mb-2" onSubmit={handleAddContent}>
             <Form.Group as={Row} className="mb-3">
               <Form.Label column sm="3">Select Course</Form.Label>
               <Col sm="9">
@@ -377,10 +342,12 @@ const FacultyPage = () => {
               <Col sm="9">
                 <Form.Control type="text" value={newContent} onChange={(e) => setNewContent(e.target.value)} />
               </Col>
-              <div className="d-flex justify-content-end mt-2">
-                <Button variant='primary' onClick={handleAddContent}>Add Content</Button>
-              </div>
+              
             </Form.Group>
+            <div className="d-flex justify-content-end mt-2">
+                <Button variant='primary' type = "submit">Add Content</Button>
+              </div>
+
           </Form>
         </div>
       </div>

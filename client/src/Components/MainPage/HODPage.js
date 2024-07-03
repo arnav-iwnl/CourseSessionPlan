@@ -219,49 +219,10 @@ const HodPage = () => {
     setAssignments(assignments);
   };
 
-  const getTitleClassName = ({ date }) => {
-    const currentDate = new Date(date);
-    currentDate.setDate(currentDate.getDate() + 1); // Adjust date if necessary
 
-    const formattedDate = currentDate.toISOString().split('T')[0]; // Format adjusted date
-
-    const hasAssignments = assignments.some(assignment => {
-      const assignmentDate = new Date(assignment.date).toISOString().split('T')[0];
-      return assignmentDate === formattedDate;
-    });
-
-    return hasAssignments ? 'assigned' : null;
-  };
-
-  const getTileContent = ({ date, view }) => {
-    if (view === 'month') {
-      const formattedDate = date.toISOString().split('T')[0];
-      const dayAssignments = assignments.filter(assignment => assignment.date === formattedDate);
-      if (dayAssignments.length > 0) {
-        return (
-          <div className="tile-content">
-            {dayAssignments.map((assignment, index) => (
-              <React.Fragment key={index}>
-                <div
-                  className="assignment-indicator"
-                  data-tooltip-id={`tooltip-${formattedDate}-${index}`}
-                  data-tooltip-content={`${assignment.course}: ${assignment.module}`}
-                >
-                  •
-                </div>
-              </React.Fragment>
-            ))}
-          </div>
-        );
-      }
-    }
-    return null;
-  };
-
-
-
-
-  const handleAddContent = async () => {
+// Adding Custom Content
+  const handleAddContent = async (event) => {
+    event.preventDefault();
     if (!selectedCourse || !selectedModule || !newContent) {
       alert('Please fill all fields');
       return;
@@ -302,6 +263,8 @@ const HodPage = () => {
     }
   };
 
+
+  // Function to LogOut
   const handleLogout = async () => {
     try {
       const response = await fetch('http://localhost:5000/clearUpdatedJson', {

@@ -23,13 +23,19 @@ const getEventController = (req, res) => {
                 holidays.push(event.date);
             }
             if (event.institute_level == 1) {
-                instituteLevelEvents.push(event.date);
+                const currentDate = new Date(event.date);
+                currentDate.setDate(currentDate.getDate() + 1);
+                const date = new Date(currentDate);
+                instituteLevelEvents.push(date.toISOString().split('T')[0]);
             }
             if (event.department_level == 1) {
-                departmentEvents.push(event.date);
+                const currentDate = new Date(event.date);
+                currentDate.setDate(currentDate.getDate() + 1);
+                const date = new Date(currentDate);
+                departmentEvents.push(date.toISOString().split('T')[0]);
             }
         });
-
+        
         res.json({
             events,
             holidays,

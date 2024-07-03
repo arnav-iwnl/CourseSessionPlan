@@ -12,21 +12,22 @@ const { getEventController } = require('./Controller/eventController');
 const app = express();
 
 app.use(bodyParser.json());
-
 PORT = 5000
 
 const corsOptions = {
   origin: 'http://localhost:3000', // Allow requests from React development server
-  methods: ['POST', 'GET'], // Allow only POST requests
+  methods: ['POST', 'GET', 'PUT'], // Allow only POST requests
   allowedHeaders: ['Content-Type'], // Allow only Content-Type header
 };
 
 app.use(cors(corsOptions));
 app.options('/checkDates', cors(corsOptions)); // Enable preflight request handling
+app.options('/updateData', cors(corsOptions)); // Enable preflight request handling
 app.options('/getEvents', cors(corsOptions)); // Enable preflight request handling
 app.options('/clearUpdatedJson', cors(corsOptions)); // Enable preflight request handling
 app.options('/signup', cors(corsOptions)); // Enable preflight request handling
 app.options('/signin', cors(corsOptions)); // Enable preflight request handling
+app.options('/updateHoliday:id', cors(corsOptions)); // Enable preflight request handling
 
 
 app.listen(PORT, () => {
@@ -63,7 +64,7 @@ app.get('/getHolidayByDate', cors(corsOptions), getHolidayController);
 
 
 //Fetching
-app.get('/getEvents', getEventController);
+app.get('/getEvents', cors(corsOptions),getEventController);
 
 
 
