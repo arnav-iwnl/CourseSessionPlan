@@ -39,6 +39,14 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route
+              path="/mapping"
+              element={
+                <ProtectedRoute isAllowed={user}>
+                  <MappingCO />
+                </ProtectedRoute>
+              }
+            />
             <Route path="*" element={<Navigate to="/auth" />} />
           </Routes>
         </Router>

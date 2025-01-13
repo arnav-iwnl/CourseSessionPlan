@@ -268,6 +268,14 @@ const FacultyPage = () => {
       console.error('Error during logout:', error);
     }
   };
+  const handleMapping = async ()=>{
+    try{
+      toast.success(`You have switched to CO-PO Mapping page`)
+      navigate('/mapping');
+    }catch (error) {
+      console.error('Error navigating to Mapping Page:', error);
+    }
+  }
 
   const handleDownloadPdf = async () => {
     await generatePdf(assignments, bufferDates);
@@ -299,9 +307,9 @@ const FacultyPage = () => {
     <Container>
       <div className='d-flex justify-content-between flex-row my-2'>
         {name && <h1>Hello, Faculty {name}!</h1>}
+        <Button className='px-5 py-2' variant='secondary' onClick={handleMapping}>CO and PO Mapping</Button>
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
-
       <ParentComponent />
 
       <div className="mt-2">

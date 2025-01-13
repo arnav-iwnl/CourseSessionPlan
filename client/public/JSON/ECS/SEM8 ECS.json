@@ -1,0 +1,1191 @@
+{
+  "Artificial Intelligence": [
+    {
+      "id": 1,
+      "Module Name": "Module: Knowledge and Reasoning",
+      "Detailed Content": [
+        {
+          "4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems": [
+            "Hour 1 : 4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems",
+            "Hour 2 : 4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems",
+            "Hour 3 : 4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems"
+          ]
+        },
+        {
+          "4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,": [
+            "Hour 1 : 4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,",
+            "Hour 2 : 4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,",
+            "Hour 3 : 4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,"
+          ]
+        },
+        {
+          "4.3 Predicate Logic, FOPL, Syntax, Semantics, Quantification, Inference rules in\nFOPL, Introduction to logic programming (PROLOG)": [
+            "Hour 1 : 4.3 Predicate Logic, FOPL, Syntax, Semantics, Quantification, Inference rules in\nFOPL, Introduction to logic programming (PROLOG)",
+            "Hour 2 : 4.3 Predicate Logic, FOPL, Syntax, Semantics, Quantification, Inference rules in\nFOPL, Introduction to logic programming (PROLOG)"
+          ]
+        },
+        {
+          "4.4 Forward Chaining, Backward Chaining and Resolution in FOPL": [
+            "Hour 1 : 4.4 Forward Chaining, Backward Chaining and Resolution in FOPL",
+            "Hour 2 : 4.4 Forward Chaining, Backward Chaining and Resolution in FOPL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module: Planning and Learning",
+      "Detailed Content": [
+        {
+          "6.1 The planning problem, Partial order planning, total order planning.": [
+            "Hour 1 : 6.1 The planning problem, Partial order planning, total order planning."
+          ]
+        },
+        {
+          "6.2 Learning in AI, Learning Agent, Concepts of Supervised, Unsupervised, Semi\n-Supervised Learning, Reinforcement Learning, Ensemble Learning": [
+            "Hour 1 : 6.2 Learning in AI, Learning Agent, Concepts of Supervised, Unsupervised, Semi\n-Supervised Learning, Reinforcement Learning, Ensemble Learning",
+            "Hour 2 : 6.2 Learning in AI, Learning Agent, Concepts of Supervised, Unsupervised, Semi\n-Supervised Learning, Reinforcement Learning, Ensemble Learning"
+          ]
+        },
+        {
+          "6.3 Expert Systems, Components of Expert System: Knowledge base, Inference\nengine, user interface, working memory, Development of Expert Systems": [
+            "Hour 1 : 6.3 Expert Systems, Components of Expert System: Knowledge base, Inference\nengine, user interface, working memory, Development of Expert Systems",
+            "Hour 2 : 6.3 Expert Systems, Components of Expert System: Knowledge base, Inference\nengine, user interface, working memory, Development of Expert Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module: Reasoning Under Uncertainty ",
+      "Detailed Content": [
+        {
+          "5.1 Handling Uncertain Knowledge, Random Variables, Prior and Posterior\nProbability, Inference using Full Joint Distribution": [
+            "Hour 1 : 5.1 Handling Uncertain Knowledge, Random Variables, Prior and Posterior\nProbability, Inference using Full Joint Distribution",
+            "Hour 2 : 5.1 Handling Uncertain Knowledge, Random Variables, Prior and Posterior\nProbability, Inference using Full Joint Distribution"
+          ]
+        },
+        {
+          "5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks": [
+            "Hour 1 : 5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks",
+            "Hour 2 : 5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks",
+            "Hour 3 : 5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:Intelligent Agents ",
+      "Detailed Content": [
+        {
+          "2.1 Introduction of agents, Structure of Intelligent Agent, Characteristics of\nIntelligent Agents": [
+            "Hour 1 : 2.1 Introduction of agents, Structure of Intelligent Agent, Characteristics of\nIntelligent Agents"
+          ]
+        },
+        {
+          "2.2 Types of Agents, Simple Reflex, Model Based, Goal Based, Utility Based\nAgents": [
+            "Hour 1 : 2.2 Types of Agents, Simple Reflex, Model Based, Goal Based, Utility Based\nAgents"
+          ]
+        },
+        {
+          "2.3 Environment Types, Deterministic, Stochastic, Static, Dynamic, Observable,\nSemi-observable, Single Agent, Multi Agent": [
+            "Hour 1 : 2.3 Environment Types, Deterministic, Stochastic, Static, Dynamic, Observable,\nSemi-observable, Single Agent, Multi Agent",
+            "Hour 2 : 2.3 Environment Types, Deterministic, Stochastic, Static, Dynamic, Observable,\nSemi-observable, Single Agent, Multi Agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:Introduction to Artificial Intelligence",
+      "Detailed Content": [
+        {
+          "1.1 Artificial Intelligence (AI), AI Perspectives: Acting and Thinking humanly,\nActing and Thinking rationally": [
+            "Hour 1 : 1.1 Artificial Intelligence (AI), AI Perspectives: Acting and Thinking humanly,\nActing and Thinking rationally"
+          ]
+        },
+        {
+          "1.2 History of AI, Applications of AI, The present state of AI, Ethics in AI": [
+            "Hour 1 : 1.2 History of AI, Applications of AI, The present state of AI, Ethics in AI",
+            "Hour 2 : 1.2 History of AI, Applications of AI, The present state of AI, Ethics in AI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Solving Problems by Searching",
+      "Detailed Content": [
+        {
+          "3.1 Definition, State space representation, Problem as a state space search,\nProblem formulation, Well-defined problems ": [
+            "Hour 1 : 3.1 Definition, State space representation, Problem as a state space search,\nProblem formulation, Well-defined problems ",
+            "Hour 2 : 3.1 Definition, State space representation, Problem as a state space search,\nProblem formulation, Well-defined problems "
+          ]
+        },
+        {
+          "3.2 Solving Problems by Searching, Performance evaluation of search strategies,\nTime Complexity, Space Complexity, Completeness, Optimality": [
+            "Hour 1 : 3.2 Solving Problems by Searching, Performance evaluation of search strategies,\nTime Complexity, Space Complexity, Completeness, Optimality",
+            "Hour 2 : 3.2 Solving Problems by Searching, Performance evaluation of search strategies,\nTime Complexity, Space Complexity, Completeness, Optimality"
+          ]
+        },
+        {
+          "3.3 Uninformed Search, Depth First Search, Breadth First Search, Depth Limited\nSearch, Iterative Deepening Search, Uniform Cost Search,\nBidirectional Search": [
+            "Hour 1 : 3.3 Uninformed Search, Depth First Search, Breadth First Search, Depth Limited\nSearch, Iterative Deepening Search, Uniform Cost Search,\nBidirectional Search",
+            "Hour 2 : 3.3 Uninformed Search, Depth First Search, Breadth First Search, Depth Limited\nSearch, Iterative Deepening Search, Uniform Cost Search,\nBidirectional Search"
+          ]
+        },
+        {
+          "3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm": [
+            "Hour 1 : 3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm",
+            "Hour 2 : 3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm",
+            "Hour 3 : 3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm"
+          ]
+        },
+        {
+          "3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning": [
+            "Hour 1 : 3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning",
+            "Hour 2 : 3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning",
+            "Hour 3 : 3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning"
+          ]
+        }
+      ]
+    }
+  ],
+  "Computer Networks": [
+    {
+      "id": 1,
+      "Module Name": "Module: Application layer",
+      "Detailed Content": [
+        {
+          "6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface": [
+            "Hour 1 : 6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface",
+            "Hour 2 : 6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface",
+            "Hour 3 : 6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface"
+          ]
+        },
+        {
+          "6.2 Standard Client Server applications: World Wide Web and HTTP, FTP,\nElectronic Mail, TELNET, Secure Shell (SSH), Domain Name System (DNS)": [
+            "Hour 1 : 6.2 Standard Client Server applications: World Wide Web and HTTP, FTP,\nElectronic Mail, TELNET, Secure Shell (SSH), Domain Name System (DNS)",
+            "Hour 2 : 6.2 Standard Client Server applications: World Wide Web and HTTP, FTP,\nElectronic Mail, TELNET, Secure Shell (SSH), Domain Name System (DNS)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module: Data Link Layer",
+      "Detailed Content": [
+        {
+          "3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat": [
+            "Hour 1 : 3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour 2 : 3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour 3 : 3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour 4 : 3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat"
+          ]
+        },
+        {
+          "3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x": [
+            "Hour 1 : 3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour 2 : 3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour 3 : 3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour 4 : 3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module: Introduction to Data Communications and Networking",
+      "Detailed Content": [
+        {
+          "1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services": [
+            "Hour 1 : 1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services",
+            "Hour 2 : 1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services",
+            "Hour 3 : 1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services"
+          ]
+        },
+        {
+          "1.2 Reference models: Layer details of OSI, TCP/IP models. Communication\nbetween layers. Internet": [
+            "Hour 1 : 1.2 Reference models: Layer details of OSI, TCP/IP models. Communication\nbetween layers. Internet",
+            "Hour 2 : 1.2 Reference models: Layer details of OSI, TCP/IP models. Communication\nbetween layers. Internet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module: Network layer",
+      "Detailed Content": [
+        {
+          "4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6": [
+            "Hour 1 : 4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour 2 : 4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour 3 : 4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour 4 : 4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6"
+          ]
+        },
+        {
+          "4.2 Routing algorithms: Intra-domain Routing -Shortest Path, Distance Vector\nAlgorithms, Link State Routing, Inter-domain Routing Protocols. ": [
+            "Hour 1 : 4.2 Routing algorithms: Intra-domain Routing -Shortest Path, Distance Vector\nAlgorithms, Link State Routing, Inter-domain Routing Protocols. ",
+            "Hour 2 : 4.2 Routing algorithms: Intra-domain Routing -Shortest Path, Distance Vector\nAlgorithms, Link State Routing, Inter-domain Routing Protocols. "
+          ]
+        },
+        {
+          "4.3 Congestion control algorithms: Open loop congestion control, Closed loop\ncongestion control, QoS parameters.": [
+            "Hour 1 : 4.3 Congestion control algorithms: Open loop congestion control, Closed loop\ncongestion control, QoS parameters.",
+            "Hour 2 : 4.3 Congestion control algorithms: Open loop congestion control, Closed loop\ncongestion control, QoS parameters."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module: Transport Layer",
+      "Detailed Content": [
+        {
+          "5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers": [
+            "Hour 1 : 5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour 2 : 5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour 3 : 5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour 4 : 5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers"
+          ]
+        },
+        {
+          "5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start": [
+            "Hour 1 : 5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start",
+            "Hour 2 : 5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start",
+            "Hour 3 : 5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Physical Layer",
+      "Detailed Content": [
+        {
+          "2.1 Guided Transmission Media: Twisted pair, Coaxial, Fiber optics": [
+            "Hour 1 : 2.1 Guided Transmission Media: Twisted pair, Coaxial, Fiber optics",
+            "Hour 2 : 2.1 Guided Transmission Media: Twisted pair, Coaxial, Fiber optics"
+          ]
+        },
+        {
+          "2.2 Unguided media (Wireless Transmission): Radio Waves, Microwave, Bluetooth,\nInfrared, Circuit and Packet Switching": [
+            "Hour 1 : 2.2 Unguided media (Wireless Transmission): Radio Waves, Microwave, Bluetooth,\nInfrared, Circuit and Packet Switching",
+            "Hour 2 : 2.2 Unguided media (Wireless Transmission): Radio Waves, Microwave, Bluetooth,\nInfrared, Circuit and Packet Switching"
+          ]
+        },
+        {
+          "2.3 Network Devices: Repeaters, Hubs, Switches, Routers and Gateways": [
+            "Hour 1 : 2.3 Network Devices: Repeaters, Hubs, Switches, Routers and Gateways",
+            "Hour 2 : 2.3 Network Devices: Repeaters, Hubs, Switches, Routers and Gateways"
+          ]
+        }
+      ]
+    }
+  ],
+  "Data Warehousing and Mining": [
+    {
+      "id": 1,
+      "Module Name": "Module:Classification and Prediction ",
+      "Detailed Content": [
+        {
+          "5.1 Definition, Decision tree induction": [
+            "Hour 1 : 5.1 Definition, Decision tree induction"
+          ]
+        },
+        {
+          "5.2 Bayesian classification ": [
+            "Hour 1 : 5.2 Bayesian classification ",
+            "Hour 2 : 5.2 Bayesian classification "
+          ]
+        },
+        {
+          "5.3 Introduction to prediction, Linear and logistic regression techniques ": [
+            "Hour 1 : 5.3 Introduction to prediction, Linear and logistic regression techniques "
+          ]
+        },
+        {
+          "5.4 Accuracy and error measures.": [
+            "Hour 1 : 5.4 Accuracy and error measures."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:Cluster analysis ",
+      "Detailed Content": [
+        {
+          "6.1 Definition, Distance Measures, ": [
+            "Hour 1 : 6.1 Definition, Distance Measures, ",
+            "Hour 2 : 6.1 Definition, Distance Measures, "
+          ]
+        },
+        {
+          "6.2 Clustering Algorithms: Partitioning- K means and K-medoids, ": [
+            "Hour 1 : 6.2 Clustering Algorithms: Partitioning- K means and K-medoids, ",
+            "Hour 2 : 6.2 Clustering Algorithms: Partitioning- K means and K-medoids, "
+          ]
+        },
+        {
+          "6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering": [
+            "Hour 1 : 6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering",
+            "Hour 2 : 6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering",
+            "Hour 3 : 6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:Data Mining and Data pre-processing",
+      "Detailed Content": [
+        {
+          "3.1 Introduction to data mining, Architecture for Data Mining,": [
+            "Hour 1 : 3.1 Introduction to data mining, Architecture for Data Mining,"
+          ]
+        },
+        {
+          "3.2 KDD process, Data Mining Functionalities, Interestingness Measures, ": [
+            "Hour 1 : 3.2 KDD process, Data Mining Functionalities, Interestingness Measures, "
+          ]
+        },
+        {
+          "3.3 Classification of data mining system, major issues in data mining.": [
+            "Hour 1 : 3.3 Classification of data mining system, major issues in data mining."
+          ]
+        },
+        {
+          "3.4 Data Summarization, Data Cleaning, Data Integration and Transformation,": [
+            "Hour 1 : 3.4 Data Summarization, Data Cleaning, Data Integration and Transformation,"
+          ]
+        },
+        {
+          "3.5 Data Reduction, Data Discretization And Concept Hierarchy Generalization.": [
+            "Hour 1 : 3.5 Data Reduction, Data Discretization And Concept Hierarchy Generalization.",
+            "Hour 2 : 3.5 Data Reduction, Data Discretization And Concept Hierarchy Generalization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:Data Warehousing and Dimension Modelling",
+      "Detailed Content": [
+        {
+          "1.1 Introduction to Data Warehouse, Characteristics of Data Warehouse": [
+            "Hour 1 : 1.1 Introduction to Data Warehouse, Characteristics of Data Warehouse"
+          ]
+        },
+        {
+          "1.2 Components of Data warehouse Architecture, Data warehouse architecture": [
+            "Hour 1 : 1.2 Components of Data warehouse Architecture, Data warehouse architecture"
+          ]
+        },
+        {
+          "1.3 Data warehouses versus Data Marts,": [
+            "Hour 1 : 1.3 Data warehouses versus Data Marts,"
+          ]
+        },
+        {
+          "1.4 E-R Modelling versus Dimensional Modelling,": [
+            "Hour 1 : 1.4 E-R Modelling versus Dimensional Modelling,"
+          ]
+        },
+        {
+          "1.5 Data Warehouse Schemas; Star Schema, Snowflake Schema, Fact Less Fact\nTable, Fact Constellation Schema. ": [
+            "Hour 1 : 1.5 Data Warehouse Schemas; Star Schema, Snowflake Schema, Fact Less Fact\nTable, Fact Constellation Schema. ",
+            "Hour 2 : 1.5 Data Warehouse Schemas; Star Schema, Snowflake Schema, Fact Less Fact\nTable, Fact Constellation Schema. "
+          ]
+        },
+        {
+          "1.6 Inside Dimensional Table, Inside Fact Table, ": [
+            "Hour 1 : 1.6 Inside Dimensional Table, Inside Fact Table, "
+          ]
+        },
+        {
+          "1.7 Update to the dimension tables. OLTP Systems versus OLAP": [
+            "Hour 1 : 1.7 Update to the dimension tables. OLTP Systems versus OLAP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:ETL and OLAP",
+      "Detailed Content": [
+        {
+          "2.1 Major steps in ETL process Data Extraction Methods": [
+            "Hour 1 : 2.1 Major steps in ETL process Data Extraction Methods"
+          ]
+        },
+        {
+          "2.2 Data Transformation; Basic Tasks in Transformation, Major Data Transformation\nTypes": [
+            "Hour 1 : 2.2 Data Transformation; Basic Tasks in Transformation, Major Data Transformation\nTypes",
+            "Hour 2 : 2.2 Data Transformation; Basic Tasks in Transformation, Major Data Transformation\nTypes"
+          ]
+        },
+        {
+          "2.3 Data Loading Techniques": [
+            "Hour 1 : 2.3 Data Loading Techniques"
+          ]
+        },
+        {
+          "2.4 What is Multidimensional Data, OLAP Models: MOLAP, ROLAP. ": [
+            "Hour 1 : 2.4 What is Multidimensional Data, OLAP Models: MOLAP, ROLAP. "
+          ]
+        },
+        {
+          "2.5 OLAP operations: Slice, Dice, Rollup, Drilldown and Pivot.": [
+            "Hour 1 : 2.5 OLAP operations: Slice, Dice, Rollup, Drilldown and Pivot."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Mining frequent patterns and associations",
+      "Detailed Content": [
+        {
+          "4.1 Market Basket Analysis, Frequent Item sets, Closed Item sets, and Association\nRule": [
+            "Hour 1 : 4.1 Market Basket Analysis, Frequent Item sets, Closed Item sets, and Association\nRule",
+            "Hour 2 : 4.1 Market Basket Analysis, Frequent Item sets, Closed Item sets, and Association\nRule"
+          ]
+        },
+        {
+          "4.2 Frequent Pattern Mining, Efficient and Scalable Frequent Item set Mining\nMethods: Apriori Algorithm, Association Rule Generation, Improving the\nEfficiency of Apriori, ": [
+            "Hour 1 : 4.2 Frequent Pattern Mining, Efficient and Scalable Frequent Item set Mining\nMethods: Apriori Algorithm, Association Rule Generation, Improving the\nEfficiency of Apriori, ",
+            "Hour 2 : 4.2 Frequent Pattern Mining, Efficient and Scalable Frequent Item set Mining\nMethods: Apriori Algorithm, Association Rule Generation, Improving the\nEfficiency of Apriori, "
+          ]
+        },
+        {
+          "4.3 FP growth ": [
+            "Hour 1 : 4.3 FP growth "
+          ]
+        },
+        {
+          "4.4 Mining various kinds of association rules – Multilevel and Multidimensional": [
+            "Hour 1 : 4.4 Mining various kinds of association rules – Multilevel and Multidimensional",
+            "Hour 2 : 4.4 Mining various kinds of association rules – Multilevel and Multidimensional"
+          ]
+        }
+      ]
+    }
+  ],
+  "Digital Signal Processing": [
+    {
+      "id": 1,
+      "Module Name": "Module:DSP Processors and Applications ",
+      "Detailed Content": [
+        {
+          "6.1 General purpose digital signal processors, DSP processor architecture, Selecting\ndigital signal processors, Special purpose DSP hardware": [
+            "Hour 1 : 6.1 General purpose digital signal processors, DSP processor architecture, Selecting\ndigital signal processors, Special purpose DSP hardware",
+            "Hour 2 : 6.1 General purpose digital signal processors, DSP processor architecture, Selecting\ndigital signal processors, Special purpose DSP hardware"
+          ]
+        },
+        {
+          "6.2 Applications of DSP: Radar Signal Processing and Speech Processing ": [
+            "Hour 1 : 6.2 Applications of DSP: Radar Signal Processing and Speech Processing ",
+            "Hour 2 : 6.2 Applications of DSP: Radar Signal Processing and Speech Processing "
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:Discrete Fourier Transform and Fast Fourier Transform",
+      "Detailed Content": [
+        {
+          "3.1 DFT, Relation between DFT and DTFT, IDFT": [
+            "Hour 1 : 3.1 DFT, Relation between DFT and DTFT, IDFT",
+            "Hour 2 : 3.1 DFT, Relation between DFT and DTFT, IDFT"
+          ]
+        },
+        {
+          "3.2 Properties of DFT, circular convolution of sequences using DFT": [
+            "Hour 1 : 3.2 Properties of DFT, circular convolution of sequences using DFT",
+            "Hour 2 : 3.2 Properties of DFT, circular convolution of sequences using DFT"
+          ]
+        },
+        {
+          "3.3 Fast Fourier transforms (FFT), Radix-2 decimation in time and decimation in\nfrequency FFT algorithms, inverse FFT ": [
+            "Hour 1 : 3.3 Fast Fourier transforms (FFT), Radix-2 decimation in time and decimation in\nfrequency FFT algorithms, inverse FFT ",
+            "Hour 2 : 3.3 Fast Fourier transforms (FFT), Radix-2 decimation in time and decimation in\nfrequency FFT algorithms, inverse FFT "
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:Discrete-Time Signal and Discrete-Time Systems",
+      "Detailed Content": [
+        {
+          "1.1 Introduction to Digital Signal Processing, Sampling and Reconstruction, Standard\nDT Signals, Concept of Digital Frequency, Representation of DT signal using\nStandard DT Signals, Signal Manipulations-shifting, reversal, scaling, addition,\nmultiplication.": [
+            "Hour 1 : 1.1 Introduction to Digital Signal Processing, Sampling and Reconstruction, Standard\nDT Signals, Concept of Digital Frequency, Representation of DT signal using\nStandard DT Signals, Signal Manipulations-shifting, reversal, scaling, addition,\nmultiplication.",
+            "Hour 2 : 1.1 Introduction to Digital Signal Processing, Sampling and Reconstruction, Standard\nDT Signals, Concept of Digital Frequency, Representation of DT signal using\nStandard DT Signals, Signal Manipulations-shifting, reversal, scaling, addition,\nmultiplication."
+          ]
+        },
+        {
+          "1.2 Classification of Discrete-Time Signals, Classification of Discrete-Systems, LTI\nsystem, Impulse Response.": [
+            "Hour 1 : 1.2 Classification of Discrete-Time Signals, Classification of Discrete-Systems, LTI\nsystem, Impulse Response.",
+            "Hour 2 : 1.2 Classification of Discrete-Time Signals, Classification of Discrete-Systems, LTI\nsystem, Impulse Response."
+          ]
+        },
+        {
+          "1.3 Linear Convolution, Circular Convolution- Emphasis on graphical method, linear\nconvolution using Circular Convolution. Software simulation - Impulse Response,\nStep Response, convolution, Correlation.": [
+            "Hour 1 : 1.3 Linear Convolution, Circular Convolution- Emphasis on graphical method, linear\nconvolution using Circular Convolution. Software simulation - Impulse Response,\nStep Response, convolution, Correlation.",
+            "Hour 2 : 1.3 Linear Convolution, Circular Convolution- Emphasis on graphical method, linear\nconvolution using Circular Convolution. Software simulation - Impulse Response,\nStep Response, convolution, Correlation.",
+            "Hour 3 : 1.3 Linear Convolution, Circular Convolution- Emphasis on graphical method, linear\nconvolution using Circular Convolution. Software simulation - Impulse Response,\nStep Response, convolution, Correlation.",
+            "Hour 4 : 1.3 Linear Convolution, Circular Convolution- Emphasis on graphical method, linear\nconvolution using Circular Convolution. Software simulation - Impulse Response,\nStep Response, convolution, Correlation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:FIR Digital Filters",
+      "Detailed Content": [
+        {
+          "5.1 Characteristics of FIR digital filters, Minimum Phase, Maximum Phase, Mixed Phase and Linear Phase Filters Frequency response, location of the zero of linear phase FIR filters": [
+            "Hour 1 : 5.1 Characteristics of FIR digital filters, Minimum Phase, Maximum Phase, Mixed Phase and Linear Phase Filters Frequency response, location of the zero of linear phase FIR filters",
+            "Hour 2 : 5.1 Characteristics of FIR digital filters, Minimum Phase, Maximum Phase, Mixed Phase and Linear Phase Filters Frequency response, location of the zero of linear phase FIR filters",
+            "Hour 3 : 5.1 Characteristics of FIR digital filters, Minimum Phase, Maximum Phase, Mixed Phase and Linear Phase Filters Frequency response, location of the zero of linear phase FIR filters"
+          ]
+        },
+        {
+          "5.2 Design of FIR filters using window techniques -Rectangular, Hamming, Hanning,\nBlackman, Bartlett, Software simulation – Design of FIR Filters. ": [
+            "Hour 1 : 5.2 Design of FIR filters using window techniques -Rectangular, Hamming, Hanning,\nBlackman, Bartlett, Software simulation – Design of FIR Filters. ",
+            "Hour 2 : 5.2 Design of FIR filters using window techniques -Rectangular, Hamming, Hanning,\nBlackman, Bartlett, Software simulation – Design of FIR Filters. "
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:Frequency Domain Analysis using DTFT and Z Transform",
+      "Detailed Content": [
+        {
+          "2.1 Introduction to DTFT. Properties of DTFT. ": [
+            "Hour 1 : 2.1 Introduction to DTFT. Properties of DTFT. ",
+            "Hour 2 : 2.1 Introduction to DTFT. Properties of DTFT. "
+          ]
+        },
+        {
+          "2.2 Z transform - definition, properties of unilateral and bilateral Z Transform, Z\ntransform of standard signals, ROC, poles and zeros of transfer function, Inverse Z\ntransform": [
+            "Hour 1 : 2.2 Z transform - definition, properties of unilateral and bilateral Z Transform, Z\ntransform of standard signals, ROC, poles and zeros of transfer function, Inverse Z\ntransform",
+            "Hour 2 : 2.2 Z transform - definition, properties of unilateral and bilateral Z Transform, Z\ntransform of standard signals, ROC, poles and zeros of transfer function, Inverse Z\ntransform"
+          ]
+        },
+        {
+          "2.3 Analysis and characterization of LTI system using Z transform, impulse and step\nresponse, causality, stability, stability of causal system": [
+            "Hour 1 : 2.3 Analysis and characterization of LTI system using Z transform, impulse and step\nresponse, causality, stability, stability of causal system",
+            "Hour 2 : 2.3 Analysis and characterization of LTI system using Z transform, impulse and step\nresponse, causality, stability, stability of causal system",
+            "Hour 3 : 2.3 Analysis and characterization of LTI system using Z transform, impulse and step\nresponse, causality, stability, stability of causal system"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:IIR Digital Filters",
+      "Detailed Content": [
+        {
+          "4.1 Comparison of IIR and FIR filters, Types of IIR Filters, Analog filter\napproximations: Butterworth, Chebyshev I and II": [
+            "Hour 1 : 4.1 Comparison of IIR and FIR filters, Types of IIR Filters, Analog filter\napproximations: Butterworth, Chebyshev I and II",
+            "Hour 2 : 4.1 Comparison of IIR and FIR filters, Types of IIR Filters, Analog filter\napproximations: Butterworth, Chebyshev I and II",
+            "Hour 3 : 4.1 Comparison of IIR and FIR filters, Types of IIR Filters, Analog filter\napproximations: Butterworth, Chebyshev I and II"
+          ]
+        },
+        {
+          "4.2 Mapping of S-plane to Z-plane, impulse invariance method, bilinear transformation\nmethod, Design of IIR digital filters from analog filters with examples, Software\nsimulation – Design of IIR Filters": [
+            "Hour 1 : 4.2 Mapping of S-plane to Z-plane, impulse invariance method, bilinear transformation\nmethod, Design of IIR digital filters from analog filters with examples, Software\nsimulation – Design of IIR Filters",
+            "Hour 2 : 4.2 Mapping of S-plane to Z-plane, impulse invariance method, bilinear transformation\nmethod, Design of IIR digital filters from analog filters with examples, Software\nsimulation – Design of IIR Filters",
+            "Hour 3 : 4.2 Mapping of S-plane to Z-plane, impulse invariance method, bilinear transformation\nmethod, Design of IIR digital filters from analog filters with examples, Software\nsimulation – Design of IIR Filters"
+          ]
+        },
+        {
+          "4.3 Analog and digital frequency transformations ": [
+            "Hour 1 : 4.3 Analog and digital frequency transformations ",
+            "Hour 2 : 4.3 Analog and digital frequency transformations ",
+            "Hour 3 : 4.3 Analog and digital frequency transformations "
+          ]
+        }
+      ]
+    }
+  ],
+  "Electronic Product Design": [
+    {
+      "id": 1,
+      "Module Name": "Module:CUSTOMER CENTRIC APPROACH FOR PRODUCT DEVELOPMENT",
+      "Detailed Content": [
+        {
+          "1.1 Prototype, MVP, commercial product and related terminologies": [
+            "Hour 1 : 1.1 Prototype, MVP, commercial product and related terminologies",
+            "Hour 2 : 1.1 Prototype, MVP, commercial product and related terminologies"
+          ]
+        },
+        {
+          "1.2 Basics of customer discovery process, customer and value proposition": [
+            "Hour 1 : 1.2 Basics of customer discovery process, customer and value proposition",
+            "Hour 2 : 1.2 Basics of customer discovery process, customer and value proposition"
+          ]
+        },
+        {
+          "1.3 Understand product market fit, product failure, internal challenges for product\ndevelopment.": [
+            "Hour 1 : 1.3 Understand product market fit, product failure, internal challenges for product\ndevelopment.",
+            "Hour 2 : 1.3 Understand product market fit, product failure, internal challenges for product\ndevelopment."
+          ]
+        },
+        {
+          "1.4 Identify the available market place for the product.": [
+            "Hour 1 : 1.4 Identify the available market place for the product.",
+            "Hour 2 : 1.4 Identify the available market place for the product."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:HARDWARE DESIGN & TESTING METHODS",
+      "Detailed Content": [
+        {
+          "3.1 Design process, identifying the requirements, formulating specifications, design\nspecifications, system partitioning, functional design, architectural design,": [
+            "Hour 1 : 3.1 Design process, identifying the requirements, formulating specifications, design\nspecifications, system partitioning, functional design, architectural design,",
+            "Hour 2 : 3.1 Design process, identifying the requirements, formulating specifications, design\nspecifications, system partitioning, functional design, architectural design,"
+          ]
+        },
+        {
+          "3.2 Component selection criteria": [
+            "Hour 1 : 3.2 Component selection criteria",
+            "Hour 2 : 3.2 Component selection criteria"
+          ]
+        },
+        {
+          "3.3 Functional model v/s architectural model, prototyping, performance & efficiency\nmeasures, formulating a test plan, writing all the specifications, test procedures &\ntest cases, design reviews, module debug & testing – black box testing, white box\ntesting, grey box testing": [
+            "Hour 1 : 3.3 Functional model v/s architectural model, prototyping, performance & efficiency\nmeasures, formulating a test plan, writing all the specifications, test procedures &\ntest cases, design reviews, module debug & testing – black box testing, white box\ntesting, grey box testing",
+            "Hour 2 : 3.3 Functional model v/s architectural model, prototyping, performance & efficiency\nmeasures, formulating a test plan, writing all the specifications, test procedures &\ntest cases, design reviews, module debug & testing – black box testing, white box\ntesting, grey box testing",
+            "Hour 3 : 3.3 Functional model v/s architectural model, prototyping, performance & efficiency\nmeasures, formulating a test plan, writing all the specifications, test procedures &\ntest cases, design reviews, module debug & testing – black box testing, white box\ntesting, grey box testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:PRODUCT DEBUGGING & TESTING",
+      "Detailed Content": [
+        {
+          "5.1 Steps of debugging, the techniques for troubleshooting ": [
+            "Hour 1 : 5.1 Steps of debugging, the techniques for troubleshooting ",
+            "Hour 2 : 5.1 Steps of debugging, the techniques for troubleshooting "
+          ]
+        },
+        {
+          "5.2 Characterization, electromechanical components, passive components, active\ncomponents, active devices, operational amplifier, analog-to-digital conversion,\ndigital components, ": [
+            "Hour 1 : 5.2 Characterization, electromechanical components, passive components, active\ncomponents, active devices, operational amplifier, analog-to-digital conversion,\ndigital components, ",
+            "Hour 2 : 5.2 Characterization, electromechanical components, passive components, active\ncomponents, active devices, operational amplifier, analog-to-digital conversion,\ndigital components, "
+          ]
+        },
+        {
+          "5.3 Inspection & testing of components, process of simulation, prototyping & testing,\nintegration, validation & verification, EMI & EMC issues": [
+            "Hour 1 : 5.3 Inspection & testing of components, process of simulation, prototyping & testing,\nintegration, validation & verification, EMI & EMC issues",
+            "Hour 2 : 5.3 Inspection & testing of components, process of simulation, prototyping & testing,\nintegration, validation & verification, EMI & EMC issues"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:PRODUCT DEVELOPMENT CHALLENGES",
+      "Detailed Content": [
+        {
+          "2.1 Idea segmentation, product features, lab to market journey, Product development stages, product development challenges.": [
+            "Hour 1 : 2.1 Idea segmentation, product features, lab to market journey, Product development stages, product development challenges.",
+            "Hour 2 : 2.1 Idea segmentation, product features, lab to market journey, Product development stages, product development challenges.",
+            "Hour 3 : 2.1 Idea segmentation, product features, lab to market journey, Product development stages, product development challenges."
+          ]
+        },
+        {
+          "2.2 Electronic product classification and certifications requirement. Indian and international standard for product compliance": [
+            "Hour 1 : 2.2 Electronic product classification and certifications requirement. Indian and international standard for product compliance",
+            "Hour 2 : 2.2 Electronic product classification and certifications requirement. Indian and international standard for product compliance",
+            "Hour 3 : 2.2 Electronic product classification and certifications requirement. Indian and international standard for product compliance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:SOFTWARE DESIGN & TESTING METHODS",
+      "Detailed Content": [
+        {
+          "4.1 Types of software, the waterfall model of software development, models, metrics\n& software limitations, risk abatement & failure prevention": [
+            "Hour 1 : 4.1 Types of software, the waterfall model of software development, models, metrics\n& software limitations, risk abatement & failure prevention",
+            "Hour 2 : 4.1 Types of software, the waterfall model of software development, models, metrics\n& software limitations, risk abatement & failure prevention"
+          ]
+        },
+        {
+          "4.2 Software bugs & testing": [
+            "Hour 1 : 4.2 Software bugs & testing",
+            "Hour 2 : 4.2 Software bugs & testing"
+          ]
+        },
+        {
+          "4.3 Good programming practice, user interface, embedded & real-time software": [
+            "Hour 1 : 4.3 Good programming practice, user interface, embedded & real-time software",
+            "Hour 2 : 4.3 Good programming practice, user interface, embedded & real-time software"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:THE DOCUMENTATION PROCESS",
+      "Detailed Content": [
+        {
+          "Definition, needs & types of documentation, records, accountability & liability, audience, steps in preparation, presentation & preservation of documents": [
+            "Hour 1 : Definition, needs & types of documentation, records, accountability & liability, audience, steps in preparation, presentation & preservation of documents",
+            "Hour 2 : Definition, needs & types of documentation, records, accountability & liability, audience, steps in preparation, presentation & preservation of documents"
+          ]
+        },
+        {
+          "Methods of documentation, visual techniques, layout of documentation, bills of\nmaterials, manuals – instructional or operating manual, service and maintenance\nmanual,": [
+            "Hour 1 : Methods of documentation, visual techniques, layout of documentation, bills of\nmaterials, manuals – instructional or operating manual, service and maintenance\nmanual,",
+            "Hour 2 : Methods of documentation, visual techniques, layout of documentation, bills of\nmaterials, manuals – instructional or operating manual, service and maintenance\nmanual,"
+          ]
+        },
+        {
+          "Fault finding tree, software documentation practices": [
+            "Hour 1 : Fault finding tree, software documentation practices",
+            "Hour 2 : Fault finding tree, software documentation practices"
+          ]
+        }
+      ]
+    }
+  ],
+  "Embedded Systems and RTOS": [
+    {
+      "id": 1,
+      "Module Name": "Module: Embedded Hardware Elements ",
+      "Detailed Content": [
+        {
+          "2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.": [
+            "Hour 1 : 2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.",
+            "Hour 2 : 2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.",
+            "Hour 3 : 2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories."
+          ]
+        },
+        {
+          "2.2 Case Study: ARM Cortex-M3 Features, Architecture, Programmer’s model,\nSpecial\nRegisters, Operating Modes and States, MPU, Memory map and NVIC.": [
+            "Hour 1 : 2.2 Case Study: ARM Cortex-M3 Features, Architecture, Programmer’s model,\nSpecial\nRegisters, Operating Modes and States, MPU, Memory map and NVIC.",
+            "Hour 2 : 2.2 Case Study: ARM Cortex-M3 Features, Architecture, Programmer’s model,\nSpecial\nRegisters, Operating Modes and States, MPU, Memory map and NVIC."
+          ]
+        },
+        {
+          "2.3 Low power: - Need and techniques. Case study of Low Power modes in\nCortex-M3.": [
+            "Hour 1 : 2.3 Low power: - Need and techniques. Case study of Low Power modes in\nCortex-M3.",
+            "Hour 2 : 2.3 Low power: - Need and techniques. Case study of Low Power modes in\nCortex-M3."
+          ]
+        },
+        {
+          "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)": [
+            "Hour 1 : 2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour 2 : 2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour 3 : 2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour 4 : 2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour 5 : 2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)"
+          ]
+        },
+        {
+          "2.5 Selection criteria of Sensors and Actuators ": [
+            "Hour 1 : 2.5 Selection criteria of Sensors and Actuators "
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:Embedded Software",
+      "Detailed Content": [
+        {
+          "3.1 Program Modelling concepts: DFG, CDFG, FSM": [
+            "Hour 1 : 3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour 2 : 3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour 3 : 3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour 4 : 3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour 5 : 3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour 6 : 3.1 Program Modelling concepts: DFG, CDFG, FSM"
+          ]
+        },
+        {
+          "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion": [
+            "Hour 1 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour 2 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour 3 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour 4 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour 5 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour 6 : 3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:Introduction to Embedded Systems",
+      "Detailed Content": [
+        {
+          "1.1 Definition, Characteristics, Classification, Applications": [
+            "Hour 1 : 1.1 Definition, Characteristics, Classification, Applications"
+          ]
+        },
+        {
+          "1.2 Design metrics of Embedded system and Challenges in optimization of metrics": [
+            "Hour 1 : 1.2 Design metrics of Embedded system and Challenges in optimization of metrics",
+            "Hour 2 : 1.2 Design metrics of Embedded system and Challenges in optimization of metrics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:Introduction to Free RTOS ",
+      "Detailed Content": [
+        {
+          "Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures": [
+            "Hour 1 : Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures",
+            "Hour 2 : Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures",
+            "Hour 3 : Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:System Integration (Case Studies)",
+      "Detailed Content": [
+        {
+          "6.1 Embedded Product Design Life-Cycle (EDLC)- Waterfall Model": [
+            "Hour 1 : 6.1 Embedded Product Design Life-Cycle (EDLC)- Waterfall Model",
+            "Hour 2 : 6.1 Embedded Product Design Life-Cycle (EDLC)- Waterfall Model"
+          ]
+        },
+        {
+          "6.2 Hardware-Software Co-design": [
+            "Hour 1 : 6.2 Hardware-Software Co-design",
+            "Hour 2 : 6.2 Hardware-Software Co-design"
+          ]
+        },
+        {
+          "6.3 Case studies for Automatic Chocolate Vending Machine, Washing Machine,\nSmart Card, highlighting\ni) Specification requirements (choice of components), ii) Hardware architecture\niii) Software architecture": [
+            "Hour 1 : 6.3 Case studies for Automatic Chocolate Vending Machine, Washing Machine,\nSmart Card, highlighting\ni) Specification requirements (choice of components), ii) Hardware architecture\niii) Software architecture",
+            "Hour 2 : 6.3 Case studies for Automatic Chocolate Vending Machine, Washing Machine,\nSmart Card, highlighting\ni) Specification requirements (choice of components), ii) Hardware architecture\niii) Software architecture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Testing and Debugging Methodology",
+      "Detailed Content": [
+        {
+          "5.1 Testing & Debugging: Hardware testing tools, Boundary-scan/JTAG interface\nconcepts, Emulator.": [
+            "Hour 1 : 5.1 Testing & Debugging: Hardware testing tools, Boundary-scan/JTAG interface\nconcepts, Emulator."
+          ]
+        },
+        {
+          "5.2 Software Testing tools, simulator, debugger. White-Box and Black-Box\ntesting.": [
+            "Hour 1 : 5.2 Software Testing tools, simulator, debugger. White-Box and Black-Box\ntesting."
+          ]
+        }
+      ]
+    }
+  ],
+  "Industrial Automation": [
+    {
+      "id": 1,
+      "Module Name": "Module:Automation components",
+      "Detailed Content": [
+        {
+          "2.1 Sensors for temperature, pressure, force, displacement, speed, flow, level, humidity and pH measurement.": [
+            "Hour 1 : 2.1 Sensors for temperature, pressure, force, displacement, speed, flow, level, humidity and pH measurement.",
+            "Hour 2 : 2.1 Sensors for temperature, pressure, force, displacement, speed, flow, level, humidity and pH measurement.",
+            "Hour 3 : 2.1 Sensors for temperature, pressure, force, displacement, speed, flow, level, humidity and pH measurement."
+          ]
+        },
+        {
+          "2.2 Actuators, process control valves, Introduction of DC and AC servo drives for\nmotion control. Use of Contactors, Isolators, MCB, MCCB, Earth Breakers etc": [
+            "Hour 1 : 2.2 Actuators, process control valves, Introduction of DC and AC servo drives for\nmotion control. Use of Contactors, Isolators, MCB, MCCB, Earth Breakers etc",
+            "Hour 2 : 2.2 Actuators, process control valves, Introduction of DC and AC servo drives for\nmotion control. Use of Contactors, Isolators, MCB, MCCB, Earth Breakers etc",
+            "Hour 3 : 2.2 Actuators, process control valves, Introduction of DC and AC servo drives for\nmotion control. Use of Contactors, Isolators, MCB, MCCB, Earth Breakers etc",
+            "Hour 4 : 2.2 Actuators, process control valves, Introduction of DC and AC servo drives for\nmotion control. Use of Contactors, Isolators, MCB, MCCB, Earth Breakers etc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:Computer aided measurement and control systems ",
+      "Detailed Content": [
+        {
+          "3.1 Role of computers in measurement and control, Elements of computer aided\nmeasurement and control, man-machine interface, computer aided process\ncontrol hardware, process related interfaces, Communication and networking,\nIndustrial communication systems, Data transfer techniques": [
+            "Hour 1 : 3.1 Role of computers in measurement and control, Elements of computer aided\nmeasurement and control, man-machine interface, computer aided process\ncontrol hardware, process related interfaces, Communication and networking,\nIndustrial communication systems, Data transfer techniques",
+            "Hour 2 : 3.1 Role of computers in measurement and control, Elements of computer aided\nmeasurement and control, man-machine interface, computer aided process\ncontrol hardware, process related interfaces, Communication and networking,\nIndustrial communication systems, Data transfer techniques"
+          ]
+        },
+        {
+          "3.2 Computer aided process control software, Computer based data acquisition\nsystem": [
+            "Hour 1 : 3.2 Computer aided process control software, Computer based data acquisition\nsystem",
+            "Hour 2 : 3.2 Computer aided process control software, Computer based data acquisition\nsystem",
+            "Hour 3 : 3.2 Computer aided process control software, Computer based data acquisition\nsystem"
+          ]
+        },
+        {
+          "3.3 Internet of things (IoT) for plant automation": [
+            "Hour 1 : 3.3 Internet of things (IoT) for plant automation",
+            "Hour 2 : 3.3 Internet of things (IoT) for plant automation",
+            "Hour 3 : 3.3 Internet of things (IoT) for plant automation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:Distributed Control System",
+      "Detailed Content": [
+        {
+          "5.1 Overview of DCS, DCS software configuration, ": [
+            "Hour 1 : 5.1 Overview of DCS, DCS software configuration, ",
+            "Hour 2 : 5.1 Overview of DCS, DCS software configuration, "
+          ]
+        },
+        {
+          "5.2 DCS communication, DCS Supervisory Computer Tasks,": [
+            "Hour 1 : 5.2 DCS communication, DCS Supervisory Computer Tasks,",
+            "Hour 2 : 5.2 DCS communication, DCS Supervisory Computer Tasks,"
+          ]
+        },
+        {
+          "5.3 DCS integration with PLC and Computers, Features of DCS, Advantages of\nDCS": [
+            "Hour 1 : 5.3 DCS integration with PLC and Computers, Features of DCS, Advantages of\nDCS",
+            "Hour 2 : 5.3 DCS integration with PLC and Computers, Features of DCS, Advantages of\nDCS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:Introduction",
+      "Detailed Content": [
+        {
+          "1.1 Automation overview, Requirement of automation systems,": [
+            "Hour 1 : 1.1 Automation overview, Requirement of automation systems,"
+          ]
+        },
+        {
+          "1.2 Architecture of Industrial Automation system, Parameters of Industrial\nRevolution 4.0": [
+            "Hour 1 : 1.2 Architecture of Industrial Automation system, Parameters of Industrial\nRevolution 4.0",
+            "Hour 2 : 1.2 Architecture of Industrial Automation system, Parameters of Industrial\nRevolution 4.0"
+          ]
+        },
+        {
+          "1.3 Introduction of PLC and supervisory control and data acquisition (SCADA)": [
+            "Hour 1 : 1.3 Introduction of PLC and supervisory control and data acquisition (SCADA)"
+          ]
+        },
+        {
+          "1.4 Industrial bus systems: Mod bus & Profi-bus & Ether CAT": [
+            "Hour 1 : 1.4 Industrial bus systems: Mod bus & Profi-bus & Ether CAT",
+            "Hour 2 : 1.4 Industrial bus systems: Mod bus & Profi-bus & Ether CAT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:Overview of Industrial automation using robots",
+      "Detailed Content": [
+        {
+          "6.1 Basic construction and configuration of robot Pick and place robot": [
+            "Hour 1 : 6.1 Basic construction and configuration of robot Pick and place robot",
+            "Hour 2 : 6.1 Basic construction and configuration of robot Pick and place robot"
+          ]
+        },
+        {
+          "6.2 Welding robot.": [
+            "Hour 1 : 6.2 Welding robot.",
+            "Hour 2 : 6.2 Welding robot."
+          ]
+        },
+        {
+          "6.3 Robots in the medical field": [
+            "Hour 1 : 6.3 Robots in the medical field",
+            "Hour 2 : 6.3 Robots in the medical field"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Programmable logic controllers",
+      "Detailed Content": [
+        {
+          "4.1 Programmable controllers, Programmable logic controllers, Analog digital input\nand output modules": [
+            "Hour 1 : 4.1 Programmable controllers, Programmable logic controllers, Analog digital input\nand output modules",
+            "Hour 2 : 4.1 Programmable controllers, Programmable logic controllers, Analog digital input\nand output modules"
+          ]
+        },
+        {
+          "4.2 PLC programming, Ladder diagram, Sequential flow chart, PLC Communication\nand networking": [
+            "Hour 1 : 4.2 PLC programming, Ladder diagram, Sequential flow chart, PLC Communication\nand networking",
+            "Hour 2 : 4.2 PLC programming, Ladder diagram, Sequential flow chart, PLC Communication\nand networking"
+          ]
+        },
+        {
+          "4.3 PLC selection, PLC Installation, Advantage of using PLC for Industrial automation, Application of PLC to process control industries.": [
+            "Hour 1 : 4.3 PLC selection, PLC Installation, Advantage of using PLC for Industrial automation, Application of PLC to process control industries.",
+            "Hour 2 : 4.3 PLC selection, PLC Installation, Advantage of using PLC for Industrial automation, Application of PLC to process control industries."
+          ]
+        }
+      ]
+    }
+  ],
+  "Machine Learning": [
+    {
+      "id": 1,
+      "Module Name": "Module:Classification models",
+      "Detailed Content": [
+        {
+          "5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron": [
+            "Hour 1 : 5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour 2 : 5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour 3 : 5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour 4 : 5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron"
+          ]
+        },
+        {
+          "5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.": [
+            "Hour 1 : 5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour 2 : 5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour 3 : 5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour 4 : 5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm."
+          ]
+        },
+        {
+          "5.3 Logistic regression": [
+            "Hour 1 : 5.3 Logistic regression",
+            "Hour 2 : 5.3 Logistic regression",
+            "Hour 3 : 5.3 Logistic regression",
+            "Hour 4 : 5.3 Logistic regression"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Module:Clustering",
+      "Detailed Content": [
+        {
+          "4.1 Hebbian Learning rule": [
+            "Hour 1 : 4.1 Hebbian Learning rule",
+            "Hour 2 : 4.1 Hebbian Learning rule"
+          ]
+        },
+        {
+          "4.2 Expectation -Maximization algorithm for clustering": [
+            "Hour 1 : 4.2 Expectation -Maximization algorithm for clustering",
+            "Hour 2 : 4.2 Expectation -Maximization algorithm for clustering"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Module:Dimensionality Reduction",
+      "Detailed Content": [
+        {
+          "6.1 Curse of Dimensionality. ": [
+            "Hour 1 : 6.1 Curse of Dimensionality. ",
+            "Hour 2 : 6.1 Curse of Dimensionality. "
+          ]
+        },
+        {
+          "6.2 Feature Selection and Feature Extraction": [
+            "Hour 1 : 6.2 Feature Selection and Feature Extraction",
+            "Hour 2 : 6.2 Feature Selection and Feature Extraction"
+          ]
+        },
+        {
+          "6.3 Dimensionality Reduction Techniques, Principal Component Analysis.": [
+            "Hour 1 : 6.3 Dimensionality Reduction Techniques, Principal Component Analysis.",
+            "Hour 2 : 6.3 Dimensionality Reduction Techniques, Principal Component Analysis."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Module:Introduction to Machine Learning",
+      "Detailed Content": [
+        {
+          "1.1 Introduction to Machine Learning, Issues in Machine Learning, Application of\nMachine Learning, Steps of developing a Machine Learning Application.": [
+            "Hour 1 : 1.1 Introduction to Machine Learning, Issues in Machine Learning, Application of\nMachine Learning, Steps of developing a Machine Learning Application.",
+            "Hour 2 : 1.1 Introduction to Machine Learning, Issues in Machine Learning, Application of\nMachine Learning, Steps of developing a Machine Learning Application."
+          ]
+        },
+        {
+          "1.2 Supervised and Unsupervised Learning: Concepts of Classification, Clustering\nand prediction, Training, Testing and validation dataset, cross validation,\noverfitting and under fitting of model": [
+            "Hour 1 : 1.2 Supervised and Unsupervised Learning: Concepts of Classification, Clustering\nand prediction, Training, Testing and validation dataset, cross validation,\noverfitting and under fitting of model",
+            "Hour 2 : 1.2 Supervised and Unsupervised Learning: Concepts of Classification, Clustering\nand prediction, Training, Testing and validation dataset, cross validation,\noverfitting and under fitting of model"
+          ]
+        },
+        {
+          "1.3 Performance Measures: Measuring Quality of model- Confusion Matrix,\nAccuracy, Recall, Precision, Specificity, F1 Score, RMSE": [
+            "Hour 1 : 1.3 Performance Measures: Measuring Quality of model- Confusion Matrix,\nAccuracy, Recall, Precision, Specificity, F1 Score, RMSE",
+            "Hour 2 : 1.3 Performance Measures: Measuring Quality of model- Confusion Matrix,\nAccuracy, Recall, Precision, Specificity, F1 Score, RMSE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Module:Liner models",
+      "Detailed Content": [
+        {
+          "3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification": [
+            "Hour 1 : 3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour 2 : 3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour 3 : 3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour 4 : 3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification"
+          ]
+        },
+        {
+          "3.2 Support Vector Machines": [
+            "Hour 1 : 3.2 Support Vector Machines",
+            "Hour 2 : 3.2 Support Vector Machines",
+            "Hour 3 : 3.2 Support Vector Machines"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Module:Mathematical Foundation for ML",
+      "Detailed Content": [
+        {
+          "2.1 System of Linear equations, Norms, Inner products, Length of Vector, Distance\nbetween vectors, Orthogonal vectors": [
+            "Hour 1 : 2.1 System of Linear equations, Norms, Inner products, Length of Vector, Distance\nbetween vectors, Orthogonal vectors",
+            "Hour 2 : 2.1 System of Linear equations, Norms, Inner products, Length of Vector, Distance\nbetween vectors, Orthogonal vectors"
+          ]
+        },
+        {
+          "2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.": [
+            "Hour 1 : 2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.",
+            "Hour 2 : 2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.",
+            "Hour 3 : 2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications."
+          ]
+        }
+      ]
+    }
+  ]
+}

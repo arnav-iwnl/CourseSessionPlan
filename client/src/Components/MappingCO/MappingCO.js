@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import "./MappingTable.css"; // Import the CSS file
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 
-// PO database (JSON)
+import "./MappingTable.css"; // Import the CSS file
 import poDatabase from "./poDatabase.json"; // Adjust path accordingly
+
+// const navigate = useNavigate();
+
 
 const PO_DATABASE = poDatabase; // Use the imported JSON
 
@@ -68,6 +72,7 @@ const MappingCO = () => {
   return (
     <div className="container">
       <h2 className="title">CO-PO Mapping</h2>
+ {/* BUTTON TO ADD TO BACK FUNCTIOM */}
       <table className="table">
         <thead>
           <tr>
