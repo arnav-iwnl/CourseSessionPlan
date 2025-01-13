@@ -1,0 +1,111 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  .header-cell {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .co-cell {
+    background-color: #f0f8ff;
+    color: #1e90ff;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .cell {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: outline 0.3s;
+  }
+  
+  .cell:hover {
+    outline: 2px solid #1e90ff;
+  }
+  
+  .modal-title {
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 4px rgba(30, 144, 255, 0.5);
+  }
+  
+  .form-textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  ::placeholder {
+    color: #aaa;
+  }
+  
+  
+  .btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .save-btn {
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: white;
+    color: #1e90ff;
+    border: 1px solid #1e90ff;
+  }
+  

@@ -1,0 +1,723 @@
+[
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Complex Integration",
+        "Detailed Content": "1.1 Line Integral, Cauchy’s Integral theorem for simple connected and multiply\nconnected regions (without proof), Cauchy’s Integral formula (without proof). ",
+        "Hours": "3",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Complex Integration",
+        "Detailed Content": "1.2 Taylor’s and Laurent’s series (without proof). ",
+        "Hours": "2",
+        "CourseCode": "ECC401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Complex Integration",
+        "Detailed Content": "1.3 Definition of Singularity, Zeroes, poles of f(z), Residues, Cauchy’s Residue Theorem\n(without proof).",
+        "Hours": "2",
+        "CourseCode": "ECC401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Statistical Techniques ",
+        "Detailed Content": "2.1 Karl Pearson’s Coefficient of correlation (r) . ",
+        "Hours": "1",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Statistical Techniques ",
+        "Detailed Content": "2.2 Spearman’s Rank correlation coefficient (R) (repeated and non-repeated ranks) ",
+        "Hours": "2",
+        "CourseCode": "ECC401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Statistical Techniques ",
+        "Detailed Content": "2.3 Lines of regression",
+        "Hours": "1",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Statistical Techniques ",
+        "Detailed Content": "2.4 Fitting of first and second degree curves.",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Probability Distributions ",
+        "Detailed Content": "3.1. Baye’s Theorem, Random variable: Probability distribution for discrete and\ncontinuous random variables, Density function and distribution function.",
+        "Hours": "3",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Probability Distributions ",
+        "Detailed Content": "3.2 Expectation, mean and variance. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Probability Distributions ",
+        "Detailed Content": "3.3 Probability distribution: Poisson & normal distribution.",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module: Linear Algebra: Vector Spaces ",
+        "Detailed Content": "4.1 Vectors in n-dimensional vector space, norm, dot product, The Cauchy Schwarz\ninequality (with proof), Unit vector. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module: Linear Algebra: Vector Spaces ",
+        "Detailed Content": "4.2 Orthogonal projection, Orthonormal basis, Gram-Schmidt process for vectors.",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module: Linear Algebra: Vector Spaces ",
+        "Detailed Content": "4.3 Vector spaces over real field, subspaces. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Linear Algebra: Quadratic Forms",
+        "Detailed Content": "5.1 Quadratic forms over real field, Linear Transformation of Quadratic form,\n Reduction of Quadratic form to diagonal form using congruent transformation. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Linear Algebra: Quadratic Forms",
+        "Detailed Content": "5.2 Rank, Index and Signature of quadratic form, Sylvester’s law of inertia, Valueclass of a quadratic form-Definite, Semidefinite and Indefinite",
+        "Hours": "1",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Linear Algebra: Quadratic Forms",
+        "Detailed Content": "5.3 Reduction of Quadratic form to a canonical form using congruent\n transformations",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Linear Algebra: Quadratic Forms",
+        "Detailed Content": "5.4 Singular Value Decomposition. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Calculus of Variations:",
+        "Detailed Content": "6.1 Euler- Lagrange equation(Without Proof), When F does not contain y, When F does\nnot contain x, When F contains x,y,y’. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Calculus of Variations:",
+        "Detailed Content": "6.2 Isoperimetric problems-Lagrange Method.",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Engineering Mathematics - IV",
+        "Module Name": "Module:Calculus of Variations:",
+        "Detailed Content": "6.3 Functions involving higher order derivatives: Rayleigh-Ritz Method. ",
+        "Hours": "2",
+        "CourseCode": "ECC 401"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Frequency Response of Amplifiers",
+        "Detailed Content": "1.1 Low frequency response & analysis, effect of the coupling, bypass & load capacitances\non single stage MOSFET amplifier for common source (CS) configuration",
+        "Hours": "3",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Frequency Response of Amplifiers",
+        "Detailed Content": "1.2 High frequency response & analysis, effect of parasitic capacitances on MOSFET\namplifier, high frequency equivalent circuit of MOSFET, Miller's theorem, effect of\nMiller's capacitance, unity gain bandwidth (mathematical analysis & numerical\nexamples included) ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Frequency Response of Amplifiers",
+        "Detailed Content": "1.3 Introduction to multi-stage amplifiers – need & necessity, different types of couplings\n(DC, R-C & transformer) with advantages & disadvantages, the MOSFET cascode\namplifier (theoretical description only) ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Differential Amplifiers",
+        "Detailed Content": "2.1 Basic MOSFET differential amplifier, DC characteristics, transfer characteristics, small\nsignal (AC) analysis of only dual input balanced output (DIBO) for differential mode\ngain & common mode gain, common mode rejection ratio (CMRR) & input resistance /\nimpedance",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Differential Amplifiers",
+        "Detailed Content": "2.2 MOSFET differential amplifier with an active load (theoretical description & only\nmathematical analysis – no numerical examples)",
+        "Hours": "1",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Operational Amplifiers",
+        "Detailed Content": "3.1 The ideal operational amplifier (op-amp), internal block diagram of op-amp,\ncharacteristics of op-amp, ideal & practical op-amp parameters / specifications (no\ndetailed description or any analysis), mathematical model of op-amp, IC 741 op-amp\nwith pin diagram & description ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Operational Amplifiers",
+        "Detailed Content": "3.2 Operational amplifier open loop & closed loop configurations (theoretical description\nonly), the concept of virtual ground & virtual short ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Applications of Operational Amplifier ",
+        "Detailed Content": "4.1 Types of negative feedback – voltage series, voltage shunt, current series & current\nshunt (theoretical description only), the op-amp inverting amplifier & op-amp noninverting amplifier (mathematical analysis for derivation of output voltage only,\nnumerical examples & designing)",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Applications of Operational Amplifier ",
+        "Detailed Content": "4.2 Adder, summing amplifier, averaging circuit, subtractor, integrator (ideal),\ndifferentiator (ideal), difference amplifier, current amplifier & 3 op-amp\ninstrumentation amplifier (only mathematical analysis for derivation of output voltage\nwith numerical examples & designing included) ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Applications of Operational Amplifier ",
+        "Detailed Content": "4.3 Current to voltage converters (I to V) & voltage to current converters (V to I) – floating\nload & grounded load (mathematical analysis only – no numericals)",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Oscillators &Comparators",
+        "Detailed Content": "5.1 Oscillators: RC phase shift oscillator, Wien bridge oscillator & the crystal oscillator\n(theoretical description only – no mathematical analysis), numerical example & design\nproblem on RC phase shift oscillator & Wien bridge oscillator",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Oscillators &Comparators",
+        "Detailed Content": "5.2 Waveform Generators: Square wave generator & triangular wave generator (onlytheoretical description – no mathematical analysis or designing examples) ",
+        "Hours": "1",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Oscillators &Comparators",
+        "Detailed Content": "5.3 Comparators: Inverting comparator, non-inverting comparator, zero crossing detector\n(ZCD) & Schmitt Trigger (numerical examples & designing problem on the inverting\nSchmitt Trigger for both symmetrical & non-symmetrical configurations), window\ndetector / comparator (theoretical description only) ",
+        "Hours": "2",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Special Purpose Integrated Circuits ",
+        "Detailed Content": "6.1 IC 555 timer internal block diagram & pin configuration, operation in astable&\nmonostable multivibrator with mathematical analysis & numerical examples, design\nproblems on astable& monostable multivibrator, applications in astable& monostable\nconfiguration ",
+        "Hours": "1",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Special Purpose Integrated Circuits ",
+        "Detailed Content": "6.2 ADC 0808 / 0809 & interfacing, DAC0808 & interfacing (theoretical description only)",
+        "Hours": "6",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Electronic Circuits",
+        "Module Name": "Module:Special Purpose Integrated Circuits ",
+        "Detailed Content": "6.3 Functional block diagram & working of the LT 1070 monolithic switching regulator\n(theoretical description only)",
+        "Hours": "6",
+        "CourseCode": "ECC 402"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Introduction to Control Systems and Mathematical Models",
+        "Detailed Content": "1.1 Introduction to control systems: The control system, servomechanisms, digital\ncontrol. ",
+        "Hours": "3",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Introduction to Control Systems and Mathematical Models",
+        "Detailed Content": "1.2 Mathematical models: Transfer functions, block diagram algebra, block diagram\nreduction, signal flow graphs. ",
+        "Hours": "4",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Time response analysis and stability analysis in time domain",
+        "Detailed Content": "2.1 Time response analysis: standard test signals, time response of first and second order\nsystems, steady state errors and error constants.",
+        "Hours": "3",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Time response analysis and stability analysis in time domain",
+        "Detailed Content": "2.2 Stability in time domain: The concept of stability, necessary conditions for stability,\nHurwitz stability criterion, Routh stability criterion, relative stability analysis. ",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Time response analysis and stability analysis in time domain",
+        "Detailed Content": "2.3 Stability analysis using root locus technique. ",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Stability Analysis in frequency domain and Introduction to advances in control\nsystems",
+        "Detailed Content": "3.1 Introduction to frequency response analysis, correlation between time and frequency\ndomain.",
+        "Hours": "3",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Stability Analysis in frequency domain and Introduction to advances in control\nsystems",
+        "Detailed Content": "3.2 Stability analysis using Bode plots. ",
+        "Hours": "1",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Stability Analysis in frequency domain and Introduction to advances in control\nsystems",
+        "Detailed Content": "3.3 Nyquist stability criterion and stability analysis using Nyquist plot. ",
+        "Hours": "1",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Stability Analysis in frequency domain and Introduction to advances in control\nsystems",
+        "Detailed Content": "3.4 Introduction to advances in control systems: adaptive control, fuzzy logic control and\nneural networks. Introduction to distributed control systems. ",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Sensors and Transducers ",
+        "Detailed Content": "4.1 Introduction to sensors and transducers. Various types of sensors. Various types of\ntransducers and their principle of operation. Selection criteria of transducers.",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Sensors and Transducers ",
+        "Detailed Content": "4.2 Displacement and pressure transducers: potentiometers, pressure gauges, Linear\nvariable differential transducer (LVDT), strain gauges. ",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Sensors and Transducers ",
+        "Detailed Content": "4.3 Temperature transducers: working principle, ranges and applications of resistance\ntemperature detectors (RTD), thermocouple and thermistor temperature transducers.",
+        "Hours": "2",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Signal conditioning DAS, Data logger and SCADA",
+        "Detailed Content": "5.1 Introduction to instrumentation systems, data acquisition system (DAS), use of\nDAS in Intelligent instrumentation system. Design of pressure and temperature\nmeasurement system using DAS. Data logger, its types and applications. SCADAcommunication architecture, types, applications, open SCADA protocols. Cloud\nbased SCADA systems. Introduction to fibre optic instrumentation. ",
+        "Hours": "6",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Telemetry and Instrument communication standards",
+        "Detailed Content": "6.1 Introduction to telemetry, landline telemetry, radio telemetry and types of\nmultiplexing. ",
+        "Hours": "3",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Controls and\nInstrumentation",
+        "Module Name": "Module:Telemetry and Instrument communication standards",
+        "Detailed Content": "6.2 Instrument interfacing, Current loop, RS232/485, Field bus, Modbus, GPIB, USB\nProtocol, and HART communication Protocol",
+        "Hours": "3",
+        "CourseCode": "ECC 403"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8086 Microprocessor",
+        "Detailed Content": "1.1 8086 Architecture",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8086 Microprocessor",
+        "Detailed Content": "1.2 Memory Segmentation ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8086 Microprocessor",
+        "Detailed Content": "1.3 8086 pin description",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8086 Microprocessor",
+        "Detailed Content": "1.4 Interrupts and Interrupt service routines, Dedicated interrupts, Software interrupts",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 programming ",
+        "Detailed Content": "2.1 Addressing modes ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 programming ",
+        "Detailed Content": "2.2 Instruction Set and Assembler Directives ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 programming ",
+        "Detailed Content": "2.3 Assembly language programming ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part I ",
+        "Detailed Content": "3.1 Generating the 8086 System Clock and Reset Signals using 8284 clock generator ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part I ",
+        "Detailed Content": "3.2 8086 Minimum and Maximum Mode CPU Modules ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part I ",
+        "Detailed Content": "3.3 Minimum and Maximum Mode Timing Diagrams",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part I ",
+        "Detailed Content": "3.4 Memory interfacing. ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part II ",
+        "Detailed Content": "4.1 8255-PPI:Functional Block Diagram and description, Operating Modes ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part II ",
+        "Detailed Content": "4.2 8259- PIC: Functional Block Diagram and description, Cascaded mode of operation",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8086 Interfacing –Part II ",
+        "Detailed Content": "4.3 System design (including Memory and I/O) ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.1 Differences between a Microprocessor and Microcontroller ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.2 Architecture of 8051 ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.3 Memory Organization of the 8051 ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.4 Addressing modes ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.5 Instruction set ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:The 8051 Microcontroller",
+        "Detailed Content": "5.6 Assembly language programming. ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.1 I/O port programming ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.2 Programming 8051 Timers",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.3 Serial Port Programming",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.4 Interrupts Programming",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.5 LCD & Keyboard Interfacing",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.6 ADC, DAC & Sensor Interfacing ",
+        "Hours": "1",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Microprocessors\nand\nMicrocontrollers ",
+        "Module Name": "Module:8051 Interfacing ",
+        "Detailed Content": "6.7 Stepper Motor and DC motor Interfacing ",
+        "Hours": "2",
+        "CourseCode": "ECC\n404"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Set Theory and Logic ",
+        "Detailed Content": "1.1 Set Theory: Fundamentals - Sets and Subsets, Venn Diagrams, Operations on sets,\nLaws of Set Theory, Power Set,. ",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Set Theory and Logic ",
+        "Detailed Content": "1.2 Principle of Inclusion and Exclusion, Mathematical Induction. ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Set Theory and Logic ",
+        "Detailed Content": "1.3 Propositions and Logical operations, Truth tables,Equivalence, Implications",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Set Theory and Logic ",
+        "Detailed Content": "1.4 Laws of Logic, Normal Forms, Inference ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Set Theory and Logic ",
+        "Detailed Content": "1.5 Predicates and Quantifiers",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.1 Relations- Definition, Properties of Relations",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.2 Types of binary relations (Equivalence and partial ordered relations), ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.3 Closures, Poset, Hasse diagram and Lattice ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.4 Functions-Definition,Types of Functions (Injective, Surjective and Bijective) ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.5 Identity and Inverse Functions ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Relations and Functions",
+        "Detailed Content": "2.6 Pigeonhole Principle, Extended Pigeonhole Principle",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Graph Theory",
+        "Detailed Content": "3.1 Graphs and their basic properties - degree, path, cycle, subgraphs, Types of graphs.",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Graph Theory",
+        "Detailed Content": "3.2 Definitions, Paths and circuits: Eulerian and Hamiltonian, Planner Graph. ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Graph Theory",
+        "Detailed Content": "3.3 Isomorphism of graphs, Dijkstra Shortest Path Algorithm",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Graph Theory",
+        "Detailed Content": "3.4 Trees, Types of Trees",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Finite Automata",
+        "Detailed Content": "4.1 Introduction of Automata and its applications",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Finite Automata",
+        "Detailed Content": "4.2 Deterministic Finite Automata (DFA) and Nondeterministic Finite Automata (NFA):\nDefinitions, transition diagrams and Language recognizers, NFA to DFA\nConversion. ",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Finite Automata",
+        "Detailed Content": "4.3 Eliminating epsilon-transitions from NFA",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Finite Automata",
+        "Detailed Content": "4.4 FSM with output: Moore and Mealy machines. ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Regular Expression (RE) and Regular Grammar (RG) ",
+        "Detailed Content": "5.1 Regular Grammar and Regular Expression (RE): Definition,Equivalence and\nConversion from RE to RG and RG to RE. ",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Regular Expression (RE) and Regular Grammar (RG) ",
+        "Detailed Content": "5.2 Equivalence of RE and FA, Converting RE to FA and FA to RE. ",
+        "Hours": "3",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Context Free Grammar (CFG) and Push Down Automata(PDA) ",
+        "Detailed Content": "6.1 Grammars: Chomsky hierarchy, CFG- Definition, Sentential forms,\n Leftmost and Rightmost derivations",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Context Free Grammar (CFG) and Push Down Automata(PDA) ",
+        "Detailed Content": "Context Free languages (CFL): Parsing and Ambiguity.\nCFLs: Simplification and Applications.",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Context Free Grammar (CFG) and Push Down Automata(PDA) ",
+        "Detailed Content": "Normal Forms: Chomsky Normal Form ",
+        "Hours": "1",
+        "CourseCode": "ECC\n405"
+    },
+    {
+        "Course Name": "Discrete\nStructures and\nAutomata Theory ",
+        "Module Name": "Module:Context Free Grammar (CFG) and Push Down Automata(PDA) ",
+        "Detailed Content": "6.4 PDA- Definition, Transitions (Diagrams, Functions and Tables), Design of PDA\nwith Graphical Notation and Instantaneous Descriptions. ",
+        "Hours": "2",
+        "CourseCode": "ECC\n405"
+    }
+]
