@@ -7,6 +7,7 @@ import AuthPage from './Components/LoginPage/AuthPage';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './Context/authContext';
+import MappingCO from './Components/MappingCO/MappingCO';
 
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
 
   return (
     <AuthProvider>
-
       <div className="App">
         <Router>
           <Routes>
@@ -42,13 +42,9 @@ function App() {
             <Route path="*" element={<Navigate to="/auth" />} />
           </Routes>
         </Router>
-
-
-
-        {/* <DynamicForm /> */}
-
       </div>
     </AuthProvider>
+
   );
 }
 
