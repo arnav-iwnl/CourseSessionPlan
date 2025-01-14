@@ -8,6 +8,7 @@ import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './Context/authContext';
 import MappingCO from './Components/MappingCO/MappingCO';
+import FacultyPageLab from './Components/MainPage/Labs/FacultyPageLab';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
               path="/faculty"
               element={
                 <ProtectedRoute isAllowed={user}>
-                  <FacultyPage />
+                  <FacultyPageLab />
                 </ProtectedRoute>
               }
             />

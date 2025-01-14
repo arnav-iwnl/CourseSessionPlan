@@ -1,0 +1,212 @@
+[
+    {
+        "ECL401": {
+            "Lab Name": "Micro controllers Lab",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL402": {
+            "Lab Name": "Linear Integrated Circuits Lab.",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL403": {
+            "Lab Name": "Principles of Communication Engineering Lab.",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL404": {
+            "Lab Name": "Skill Lab: Python Programming",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL601": {
+            "Lab Name": "Electromagnetics and Antenna Lab",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL602": {
+            "Lab Name": "Computer Communication Network Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL603": {
+            "Lab Name": "Image Processing and Machine Vision Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL604": {
+            "Lab Name": "Skill Laboratory: Linux & Networking & Server Configuration",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL801": {
+            "Lab Name": "RF Design Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECL801": {
+            "Lab Name": "Wireless Networks Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECLDLO 8041": {
+            "Lab Name": "Optical Networks Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECLDLO 8042": {
+            "Lab Name": "Advanced Digital Signal Processing Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECLDLO 8043": {
+            "Lab Name": "Satellite Communica tion Laboratory",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    },
+    {
+        "ECLDLO 8044": {
+            "Lab Name": "Network Management in TeleCommunication",
+            "Experiment": [
+                {
+                    "No.": 1,
+                    "Content": "Experiment 1 details here"
+                },
+                {
+                    "No.": 2,
+                    "Content": "Experiment 2 details here"
+                }
+            ]
+        }
+    }
+]
