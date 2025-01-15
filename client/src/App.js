@@ -7,7 +7,7 @@ import AuthPage from './Components/LoginPage/AuthPage.js';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './Context/authContext.js';
-// import MappingCO from './Components/MappingCO/MappingCO';
+import MappingCO from './Components/MappingCO/MappingCO.js';
 
 function App() {
   const [user, setUser] = useState(null); // User state to track logged-in user
@@ -18,7 +18,6 @@ function App() {
 
   return (
     <AuthProvider>
-
       <div className="App">
         <Router>
           <Routes>
@@ -39,19 +38,12 @@ function App() {
                 </ProtectedRoute>
               }
             />
-            {/* <Route
-              path="/mapping"
-              element={
-                <ProtectedRoute isAllowed={user}>
-                  <MappingCO />
-                </ProtectedRoute>
-              }
-            /> */}
             <Route path="*" element={<Navigate to="/auth" />} />
           </Routes>
         </Router>
       </div>
     </AuthProvider>
+    
     // <> 
     //  <MappingCO />
     // </>

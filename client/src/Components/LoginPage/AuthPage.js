@@ -41,8 +41,8 @@ const AuthPage = ({ onLogin }) => {
     try {
       const endpoint = isSignup ? 'http://localhost:5000/SignUp' : 'http://localhost:5000/SignIn';
       const body = isSignup
-        ? JSON.stringify({ name, email, password, subjectCode: selectedSubjectCode })
-        : JSON.stringify({ email, password, subjectCode: selectedSubjectCode });
+        ? JSON.stringify({ name, email, password,  })
+        : JSON.stringify({ email, password });
 
       const response = await fetch(endpoint, {
         method: 'POST',
