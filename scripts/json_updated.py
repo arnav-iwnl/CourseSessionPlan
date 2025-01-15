@@ -4,6 +4,7 @@ import json
 def excel_to_course_json(excel_file, sheet_name):
     """
     Convert Excel sheet with course data to hierarchical JSON format with hour distribution.
+    Includes Course Code as a key-value pair with Course Name.
     Counts total hours per module and distributes detailed content across hours.
 
     Parameters:
@@ -16,8 +17,8 @@ def excel_to_course_json(excel_file, sheet_name):
     # Initialize result dictionary
     result = {}
 
-    # Group by Course Name
-    for course_name, course_group in df.groupby('Course Name'):
+    # Group by Course Code and Course Name together
+    for (course_code, course_name), course_group in df.groupby(['Course Code', 'Course Name']):
         course_modules = []
 
         # Group by Module within each course
@@ -51,7 +52,12 @@ def excel_to_course_json(excel_file, sheet_name):
 
             course_modules.append(module_data)
 
-        result[course_name] = course_modules
+        # Create course entry with both code and name
+        course_key = course_code  # Using course code as the key
+        result[course_key] = {
+            "Course Name": course_name,
+            "Modules": course_modules
+        }
 
     return result
 
@@ -62,9 +68,9 @@ def save_json(data, output_file):
 
 # Example usage
 if __name__ == "__main__":
-    excel_file = "Sem6_CE.xlsx"
-    sheet_name = "Sem6"
-    output_file = f"{sheet_name}_ECS_with_hours.json"
+    excel_file = "SEM4_CE.xlsx"
+    sheet_name = "Sheet1"
+    output_file = f"SEM4_CE.json"
 
     try:
         # Convert Excel to JSON with hour distribution

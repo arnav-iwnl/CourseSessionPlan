@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import CalendarTable from './CalendarComponent';
-import EventScheduler from './EventScheduler';
-import { useAuth } from '../../Context/authContext';
+import CalendarTable from './CalendarComponent.js';
+import EventScheduler from './EventScheduler.js';
+import { useAuth } from '../../Context/authContext.js';
 
 
 
-const ParentComponent = () => {
+const ParentCalendar = () => {
   const [events, setEvents] = useState([]);
   const { user } = useAuth()
 
@@ -24,4 +24,4 @@ const ParentComponent = () => {
   );
 };
 
-export default ParentComponent;
+export default ParentCalendar;

@@ -1,23 +1,35 @@
-// src/Components/LoginPage/AuthPage.js
 import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col, Alert, Card, } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col, Alert, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { useAuth } from '../../Context/authContext';
+import { useAuth } from '../../Context/authContext.js';
+// import { useSubject } from '../../Context/subjectContext';
 
 const AuthPage = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState(''); // Only needed for signup
+  const [name, setName] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isSignup, setIsSignup] = useState(false); // To toggle between signup and signin
+  const [isSignup, setIsSignup] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedSubjectCode, setSelectedSubjectCode] = useState('');
   const navigate = useNavigate();
+  const { login } = useAuth();
+  // const { setSubjectCode } = useSubject();
 
-  const { login } = useAuth()
+  // Nested subject options
+
+  // Handle category change and reset the subject dropdown
+  const handleCategoryChange = (e) => {
+    const category = e.target.value;
+    setSelectedCategory(category);
+    setSelectedSubjectCode(''); // Reset subject selection
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!email.endsWith('sies.edu.in')) {
       setError('You must use an sies.edu.in email address');
       return;
@@ -28,7 +40,9 @@ const AuthPage = ({ onLogin }) => {
 
     try {
       const endpoint = isSignup ? 'http://localhost:5000/SignUp' : 'http://localhost:5000/SignIn';
-      const body = isSignup ? JSON.stringify({ name, email, password }) : JSON.stringify({ email, password });
+      const body = isSignup
+        ? JSON.stringify({ name, email, password, subjectCode: selectedSubjectCode })
+        : JSON.stringify({ email, password, subjectCode: selectedSubjectCode });
 
       const response = await fetch(endpoint, {
         method: 'POST',
@@ -38,35 +52,34 @@ const AuthPage = ({ onLogin }) => {
         body: body,
       });
 
-      const contentType = response.headers.get("content-type");
-      if (contentType && contentType.indexOf("application/json") !== -1) {
+      const contentType = response.headers.get('content-type');
+      if (contentType && contentType.indexOf('application/json') !== -1) {
         const data = await response.json();
         if (!response.ok) {
           throw new Error(data.message || 'An error occurred');
         }
 
+        // Update the context with the selected subject code
+        // setSubjectCode(selectedSubjectCode);
+
         // Successful login/signup
-        onLogin(email); // Notify the App component of the login
+        onLogin(email);
         const userRole = email.startsWith('hod') ? 'hod' : 'faculty';
         login({ email, role: userRole, name: data.name });
 
-
         if (userRole === 'hod') {
-          toast.success(`${data.name} logged in successfully`)
+          toast.success(`${data.name} logged in successfully`);
           navigate('/hod', { state: { name: data.name } });
         } else {
-          toast.success(`${data.name} logged in successfully`)
+          toast.success(`${data.name} logged in successfully`);
           navigate('/faculty', { state: { name: data.name } });
         }
       } else {
-        // Handle non-JSON response
-        // const text = await response.text();
         throw new Error('The server returned an unexpected response');
       }
     } catch (error) {
       console.error('Error:', error);
-      toast.error(error.message)
-      // setError(error.message || 'An unexpected error occurred');
+      toast.error(error.message);
     } finally {
       setIsLoading(false);
     }
@@ -113,19 +126,52 @@ const AuthPage = ({ onLogin }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
-                    autoComplete=''
+                    autoComplete=""
                   />
                 </Form.Group>
 
+                {/* Category dropdown */}
+                {/* <Form.Group controlId="formCategory">
+                  <Form.Label>Category</Form.Label>
+                  <Form.Control as="select" value={selectedCategory} onChange={handleCategoryChange} required>
+                    <option value="">Select Category</option>
+                    {Object.keys(subjectsData).map((category) => (
+                      <option key={category} value={category}>
+                        {category}
+                      </option>
+                    ))}
+                  </Form.Control>
+                </Form.Group> */}
+
+                {/* Subject dropdown (conditional based on selected category) */}
+                {/* {selectedCategory && (
+                  <Form.Group controlId="formSubject">
+                    <Form.Label>Subject Code</Form.Label>
+                    <Form.Control
+                      as="select"
+                      value={selectedSubjectCode}
+                      onChange={(e) => setSelectedSubjectCode(e.target.value)}
+                      required
+                    >
+                      <option value="">Select Subject</option>
+                      {subjectsData[selectedCategory].map((subject) => (
+                        <option key={subject.code} value={subject.code}>
+                          {subject.name}
+                        </option>
+                      ))}
+                    </Form.Control>
+                  </Form.Group>
+                )} */}
+
                 <Button variant="primary" type="submit" className="w-100 mt-3" disabled={isLoading}>
-                  {isLoading ? 'Processing...' : (isSignup ? 'Sign Up' : 'Login')}
+                  {isLoading ? 'Processing...' : isSignup ? 'Sign Up' : 'Login'}
                 </Button>
 
                 <Button
                   variant="link"
                   onClick={() => {
                     setIsSignup(!isSignup);
-                    setError('');  // Clear any existing errors when switching modes
+                    setError('');
                   }}
                   className="w-100 mt-2"
                 >

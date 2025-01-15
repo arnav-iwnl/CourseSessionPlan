@@ -1,0 +1,1021 @@
+{
+  "ECC 601": {
+    "Course Name": "Embedded Systems and RTOS",
+    "Modules": [
+      {
+        "id": 1,
+        "Module Name": "Module: Embedded Hardware Elements ",
+        "Total Hours": 13,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "2.1 Features of Embedded cores- µC, ASIC, ASSP, SoC, FPGA, RISC and CISC\ncores. Types of memories.",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "2.2 Case Study: ARM Cortex-M3 Features, Architecture, Programmer’s model,\nSpecial\nRegisters, Operating Modes and States, MPU, Memory map and NVIC.",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "2.2 Case Study: ARM Cortex-M3 Features, Architecture, Programmer’s model,\nSpecial\nRegisters, Operating Modes and States, MPU, Memory map and NVIC.",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "2.3 Low power: - Need and techniques. Case study of Low Power modes in\nCortex-M3.",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "2.3 Low power: - Need and techniques. Case study of Low Power modes in\nCortex-M3.",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour Number": 8
+          },
+          "Hour 9": {
+            "Content": "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour Number": 9
+          },
+          "Hour 10": {
+            "Content": "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour Number": 10
+          },
+          "Hour 11": {
+            "Content": "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour Number": 11
+          },
+          "Hour 12": {
+            "Content": "2.4 Communication Interfaces: Comparative study of Serial communication\nInterfaces (RS-232, RS-485), SPI, I2C, CAN, USB (v2.0), Bluetooth, Zig-Bee.\n(Frame formats of above protocols are not expected)",
+            "Hour Number": 12
+          },
+          "Hour 13": {
+            "Content": "2.5 Selection criteria of Sensors and Actuators ",
+            "Hour Number": 13
+          }
+        }
+      },
+      {
+        "id": 2,
+        "Module Name": "Module:Embedded Software",
+        "Total Hours": 12,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "3.1 Program Modelling concepts: DFG, CDFG, FSM",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 8
+          },
+          "Hour 9": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 9
+          },
+          "Hour 10": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 10
+          },
+          "Hour 11": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 11
+          },
+          "Hour 12": {
+            "Content": "3.2 Real-time Operating system: - Need of RTOS in Embedded system software\nand comparison with GPOS, Task, Task states, Multi-tasking, Task scheduling,\nand Algorithms-Preemptive SJF, Round-Robin, Priority, Rate Monotonic\nScheduling, Earliest Deadline First.\nInter-process communication: Message queues, Mailbox, Event timers.\nTask synchronization: Need, Issues - Deadlock, Race condition, live Lock,\nSolutions using Mutex, Semaphores.\nShared data problem, Priority inversion",
+            "Hour Number": 12
+          }
+        }
+      },
+      {
+        "id": 3,
+        "Module Name": "Module:Introduction to Embedded Systems",
+        "Total Hours": 3,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "1.1 Definition, Characteristics, Classification, Applications",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "1.2 Design metrics of Embedded system and Challenges in optimization of metrics",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "1.2 Design metrics of Embedded system and Challenges in optimization of metrics",
+            "Hour Number": 3
+          }
+        }
+      },
+      {
+        "id": 4,
+        "Module Name": "Module:Introduction to Free RTOS ",
+        "Total Hours": 3,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "Free RTOS Task Management features, Resource Management features, Task\nSynchronization features, Event Management features, Calculate the CPU\nUtilization of an RTOS, Interrupt Management features, Time Management\nfeatures",
+            "Hour Number": 3
+          }
+        }
+      },
+      {
+        "id": 5,
+        "Module Name": "Module:System Integration (Case Studies)",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "6.1 Embedded Product Design Life-Cycle (EDLC)- Waterfall Model",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "6.1 Embedded Product Design Life-Cycle (EDLC)- Waterfall Model",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "6.2 Hardware-Software Co-design",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "6.2 Hardware-Software Co-design",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "6.3 Case studies for Automatic Chocolate Vending Machine, Washing Machine,\nSmart Card, highlighting\ni) Specification requirements (choice of components), ii) Hardware architecture\niii) Software architecture",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "6.3 Case studies for Automatic Chocolate Vending Machine, Washing Machine,\nSmart Card, highlighting\ni) Specification requirements (choice of components), ii) Hardware architecture\niii) Software architecture",
+            "Hour Number": 6
+          }
+        }
+      },
+      {
+        "id": 6,
+        "Module Name": "Module:Testing and Debugging Methodology",
+        "Total Hours": 2,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "5.1 Testing & Debugging: Hardware testing tools, Boundary-scan/JTAG interface\nconcepts, Emulator.",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "5.2 Software Testing tools, simulator, debugger. White-Box and Black-Box\ntesting.",
+            "Hour Number": 2
+          }
+        }
+      }
+    ]
+  },
+  "ECC602": {
+    "Course Name": "Artificial Intelligence",
+    "Modules": [
+      {
+        "id": 1,
+        "Module Name": "Module: Knowledge and Reasoning",
+        "Total Hours": 10,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "4.1 Definition and importance of Knowledge, Issues in Knowledge\nRepresentation, Knowledge Representation Systems, Properties of Knowledge\nRepresentation Systems",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "4.2 Propositional Logic (PL), Syntax, Semantics, Formal logic-connectives, truth\ntables, tautology, validity, well-formed-formula,",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "4.3 Predicate Logic, FOPL, Syntax, Semantics, Quantification, Inference rules in\nFOPL, Introduction to logic programming (PROLOG)",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "4.3 Predicate Logic, FOPL, Syntax, Semantics, Quantification, Inference rules in\nFOPL, Introduction to logic programming (PROLOG)",
+            "Hour Number": 8
+          },
+          "Hour 9": {
+            "Content": "4.4 Forward Chaining, Backward Chaining and Resolution in FOPL",
+            "Hour Number": 9
+          },
+          "Hour 10": {
+            "Content": "4.4 Forward Chaining, Backward Chaining and Resolution in FOPL",
+            "Hour Number": 10
+          }
+        }
+      },
+      {
+        "id": 2,
+        "Module Name": "Module: Planning and Learning",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "6.1 The planning problem, Partial order planning, total order planning.",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "6.2 Learning in AI, Learning Agent, Concepts of Supervised, Unsupervised, Semi\n-Supervised Learning, Reinforcement Learning, Ensemble Learning",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "6.2 Learning in AI, Learning Agent, Concepts of Supervised, Unsupervised, Semi\n-Supervised Learning, Reinforcement Learning, Ensemble Learning",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "6.3 Expert Systems, Components of Expert System: Knowledge base, Inference\nengine, user interface, working memory, Development of Expert Systems",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "6.3 Expert Systems, Components of Expert System: Knowledge base, Inference\nengine, user interface, working memory, Development of Expert Systems",
+            "Hour Number": 5
+          }
+        }
+      },
+      {
+        "id": 3,
+        "Module Name": "Module: Reasoning Under Uncertainty ",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "5.1 Handling Uncertain Knowledge, Random Variables, Prior and Posterior\nProbability, Inference using Full Joint Distribution",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "5.1 Handling Uncertain Knowledge, Random Variables, Prior and Posterior\nProbability, Inference using Full Joint Distribution",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "5.2 Bayes' Rule and its use, Bayesian Belief Networks, Reasoning in Belief\nNetworks",
+            "Hour Number": 5
+          }
+        }
+      },
+      {
+        "id": 4,
+        "Module Name": "Module:Intelligent Agents ",
+        "Total Hours": 4,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "2.1 Introduction of agents, Structure of Intelligent Agent, Characteristics of\nIntelligent Agents",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "2.2 Types of Agents, Simple Reflex, Model Based, Goal Based, Utility Based\nAgents",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "2.3 Environment Types, Deterministic, Stochastic, Static, Dynamic, Observable,\nSemi-observable, Single Agent, Multi Agent",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "2.3 Environment Types, Deterministic, Stochastic, Static, Dynamic, Observable,\nSemi-observable, Single Agent, Multi Agent",
+            "Hour Number": 4
+          }
+        }
+      },
+      {
+        "id": 5,
+        "Module Name": "Module:Introduction to Artificial Intelligence",
+        "Total Hours": 3,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "1.1 Artificial Intelligence (AI), AI Perspectives: Acting and Thinking humanly,\nActing and Thinking rationally",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "1.2 History of AI, Applications of AI, The present state of AI, Ethics in AI",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "1.2 History of AI, Applications of AI, The present state of AI, Ethics in AI",
+            "Hour Number": 3
+          }
+        }
+      },
+      {
+        "id": 6,
+        "Module Name": "Module:Solving Problems by Searching",
+        "Total Hours": 12,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "3.1 Definition, State space representation, Problem as a state space search,\nProblem formulation, Well-defined problems ",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "3.1 Definition, State space representation, Problem as a state space search,\nProblem formulation, Well-defined problems ",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "3.2 Solving Problems by Searching, Performance evaluation of search strategies,\nTime Complexity, Space Complexity, Completeness, Optimality",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "3.2 Solving Problems by Searching, Performance evaluation of search strategies,\nTime Complexity, Space Complexity, Completeness, Optimality",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "3.3 Uninformed Search, Depth First Search, Breadth First Search, Depth Limited\nSearch, Iterative Deepening Search, Uniform Cost Search,\nBidirectional Search",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "3.3 Uninformed Search, Depth First Search, Breadth First Search, Depth Limited\nSearch, Iterative Deepening Search, Uniform Cost Search,\nBidirectional Search",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm",
+            "Hour Number": 8
+          },
+          "Hour 9": {
+            "Content": "3.4 Informed Search, Heuristic Function, Admissible Heuristic, Informed Search\nTechnique, Greedy Best First Search, A* Search, Local Search, Hill Climbing\nSearch, Simulated Annealing Search, Optimization, Genetic Algorithm",
+            "Hour Number": 9
+          },
+          "Hour 10": {
+            "Content": "3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning",
+            "Hour Number": 10
+          },
+          "Hour 11": {
+            "Content": "3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning",
+            "Hour Number": 11
+          },
+          "Hour 12": {
+            "Content": "3.5 Game Playing, Adversarial Search Techniques, Mini-max Search, Alpha-Beta\nPruning",
+            "Hour Number": 12
+          }
+        }
+      }
+    ]
+  },
+  "ECC603": {
+    "Course Name": "Computer Networks",
+    "Modules": [
+      {
+        "id": 1,
+        "Module Name": "Module: Application layer",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "6.1 Application layer Paradigms, Client-Server Paradigm: Application Programming\nInterface",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "6.2 Standard Client Server applications: World Wide Web and HTTP, FTP,\nElectronic Mail, TELNET, Secure Shell (SSH), Domain Name System (DNS)",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "6.2 Standard Client Server applications: World Wide Web and HTTP, FTP,\nElectronic Mail, TELNET, Secure Shell (SSH), Domain Name System (DNS)",
+            "Hour Number": 5
+          }
+        }
+      },
+      {
+        "id": 2,
+        "Module Name": "Module: Data Link Layer",
+        "Total Hours": 8,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "3.1 DLL Design Issues - Services, Framing, Error Control, Flow Control, Error\nDetection and Correction Elementary Data Link protocols, Stop and Wait, Sliding\nWindow - Go Back N, Selective Repeat",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "3.2 Medium Access Control sublayer: Channel Allocation problem, Multiple access\nProtocol (Aloha, Carrier Sense Multiple Access (CSMA/CD), Local Area\nNetworks - Ethernet (802.3), Introduction to wireless LAN: 802.11x",
+            "Hour Number": 8
+          }
+        }
+      },
+      {
+        "id": 3,
+        "Module Name": "Module: Introduction to Data Communications and Networking",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "1.1 Introduction to computer networks, Network software, Layers and services,\nNetwork topologies, protocol hierarchies, design issues for the layers, connection\noriented and connectionless services",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "1.2 Reference models: Layer details of OSI, TCP/IP models. Communication\nbetween layers. Internet",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "1.2 Reference models: Layer details of OSI, TCP/IP models. Communication\nbetween layers. Internet",
+            "Hour Number": 5
+          }
+        }
+      },
+      {
+        "id": 4,
+        "Module Name": "Module: Network layer",
+        "Total Hours": 8,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "4.1 Network Layer design issues, Communication Primitives: Unicast, Multicast,\nBroadcast. Network Layer Protocols: IPv4 Datagram Format, IPv4 Addresses,\nIPv4 Addressing (classfull and classless), Sub-netting and Super-netting design\nproblems, IPv4 Protocol, IPv6 Packet Format, IPv6 Addressing, Transition from\nIPv4 to IPv6",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "4.2 Routing algorithms: Intra-domain Routing -Shortest Path, Distance Vector\nAlgorithms, Link State Routing, Inter-domain Routing Protocols. ",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "4.2 Routing algorithms: Intra-domain Routing -Shortest Path, Distance Vector\nAlgorithms, Link State Routing, Inter-domain Routing Protocols. ",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "4.3 Congestion control algorithms: Open loop congestion control, Closed loop\ncongestion control, QoS parameters.",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "4.3 Congestion control algorithms: Open loop congestion control, Closed loop\ncongestion control, QoS parameters.",
+            "Hour Number": 8
+          }
+        }
+      },
+      {
+        "id": 5,
+        "Module Name": "Module: Transport Layer",
+        "Total Hours": 7,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "5.1 The Transport Service: Transport service primitives, Berkeley Sockets,\nConnection management (Handshake), UDP, TCP, TCP state transition, TCP\ntimers",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "5.2 TCP Flow control (sliding Window), TCP Congestion Control: Slow Start",
+            "Hour Number": 7
+          }
+        }
+      },
+      {
+        "id": 6,
+        "Module Name": "Module:Physical Layer",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "2.1 Guided Transmission Media: Twisted pair, Coaxial, Fiber optics",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "2.1 Guided Transmission Media: Twisted pair, Coaxial, Fiber optics",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "2.2 Unguided media (Wireless Transmission): Radio Waves, Microwave, Bluetooth,\nInfrared, Circuit and Packet Switching",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "2.2 Unguided media (Wireless Transmission): Radio Waves, Microwave, Bluetooth,\nInfrared, Circuit and Packet Switching",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "2.3 Network Devices: Repeaters, Hubs, Switches, Routers and Gateways",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "2.3 Network Devices: Repeaters, Hubs, Switches, Routers and Gateways",
+            "Hour Number": 6
+          }
+        }
+      }
+    ]
+  },
+  "ECC604": {
+    "Course Name": "Data Warehousing and Mining",
+    "Modules": [
+      {
+        "id": 1,
+        "Module Name": "Module:Classification and Prediction ",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "5.1 Definition, Decision tree induction",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "5.2 Bayesian classification ",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "5.2 Bayesian classification ",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "5.3 Introduction to prediction, Linear and logistic regression techniques ",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "5.4 Accuracy and error measures.",
+            "Hour Number": 5
+          }
+        }
+      },
+      {
+        "id": 2,
+        "Module Name": "Module:Cluster analysis ",
+        "Total Hours": 7,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "6.1 Definition, Distance Measures, ",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "6.1 Definition, Distance Measures, ",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "6.2 Clustering Algorithms: Partitioning- K means and K-medoids, ",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "6.2 Clustering Algorithms: Partitioning- K means and K-medoids, ",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "6.3 Hierarchical clustering- Agglomerative clustering and Divisive clustering",
+            "Hour Number": 7
+          }
+        }
+      },
+      {
+        "id": 3,
+        "Module Name": "Module:Data Mining and Data pre-processing",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "3.1 Introduction to data mining, Architecture for Data Mining,",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "3.2 KDD process, Data Mining Functionalities, Interestingness Measures, ",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "3.3 Classification of data mining system, major issues in data mining.",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "3.4 Data Summarization, Data Cleaning, Data Integration and Transformation,",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "3.5 Data Reduction, Data Discretization And Concept Hierarchy Generalization.",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "3.5 Data Reduction, Data Discretization And Concept Hierarchy Generalization.",
+            "Hour Number": 6
+          }
+        }
+      },
+      {
+        "id": 4,
+        "Module Name": "Module:Data Warehousing and Dimension Modelling",
+        "Total Hours": 8,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "1.1 Introduction to Data Warehouse, Characteristics of Data Warehouse",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "1.2 Components of Data warehouse Architecture, Data warehouse architecture",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "1.3 Data warehouses versus Data Marts,",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "1.4 E-R Modelling versus Dimensional Modelling,",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "1.5 Data Warehouse Schemas; Star Schema, Snowflake Schema, Fact Less Fact\nTable, Fact Constellation Schema. ",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "1.5 Data Warehouse Schemas; Star Schema, Snowflake Schema, Fact Less Fact\nTable, Fact Constellation Schema. ",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "1.6 Inside Dimensional Table, Inside Fact Table, ",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "1.7 Update to the dimension tables. OLTP Systems versus OLAP",
+            "Hour Number": 8
+          }
+        }
+      },
+      {
+        "id": 5,
+        "Module Name": "Module:ETL and OLAP",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "2.1 Major steps in ETL process Data Extraction Methods",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "2.2 Data Transformation; Basic Tasks in Transformation, Major Data Transformation\nTypes",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "2.2 Data Transformation; Basic Tasks in Transformation, Major Data Transformation\nTypes",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "2.3 Data Loading Techniques",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "2.4 What is Multidimensional Data, OLAP Models: MOLAP, ROLAP. ",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "2.5 OLAP operations: Slice, Dice, Rollup, Drilldown and Pivot.",
+            "Hour Number": 6
+          }
+        }
+      },
+      {
+        "id": 6,
+        "Module Name": "Module:Mining frequent patterns and associations",
+        "Total Hours": 7,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "4.1 Market Basket Analysis, Frequent Item sets, Closed Item sets, and Association \nRule",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "4.1 Market Basket Analysis, Frequent Item sets, Closed Item sets, and Association \nRule",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "4.2 Frequent Pattern Mining, Efficient and Scalable Frequent Item set Mining\nMethods: Apriori Algorithm, Association Rule Generation, Improving the\nEfficiency of Apriori, ",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "4.2 Frequent Pattern Mining, Efficient and Scalable Frequent Item set Mining\nMethods: Apriori Algorithm, Association Rule Generation, Improving the\nEfficiency of Apriori, ",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "4.3 FP growth ",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "4.4 Mining various kinds of association rules – Multilevel and Multidimensional",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "4.4 Mining various kinds of association rules – Multilevel and Multidimensional",
+            "Hour Number": 7
+          }
+        }
+      }
+    ]
+  },
+  "ECCDO601": {
+    "Course Name": "Machine Learning",
+    "Modules": [
+      {
+        "id": 1,
+        "Module Name": "Module:Classification models",
+        "Total Hours": 12,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "5.1 Introduction, Fundamental concept, Evolution of Neural Networks, Biological\nNeuron, Artificial Neural Networks, NN architecture, McCulloch-Pitts Model.\nDesigning a simple network, Non-separable patterns, Perceptron model with\nBias. Activation functions, Binary, Bipolar, continuous, Ramp. Limitations of\nPerceptron",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour Number": 7
+          },
+          "Hour 8": {
+            "Content": "5.2 Perceptron Learning Rule. Delta Learning Rule (LMS-Widrow Hoff), Multilayer perceptron network. Adjusting weights of hidden layers. Error back\npropagation algorithm.",
+            "Hour Number": 8
+          },
+          "Hour 9": {
+            "Content": "5.3 Logistic regression",
+            "Hour Number": 9
+          },
+          "Hour 10": {
+            "Content": "5.3 Logistic regression",
+            "Hour Number": 10
+          },
+          "Hour 11": {
+            "Content": "5.3 Logistic regression",
+            "Hour Number": 11
+          },
+          "Hour 12": {
+            "Content": "5.3 Logistic regression",
+            "Hour Number": 12
+          }
+        }
+      },
+      {
+        "id": 2,
+        "Module Name": "Module:Clustering",
+        "Total Hours": 4,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "4.1 Hebbian Learning rule",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "4.1 Hebbian Learning rule",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "4.2 Expectation -Maximization algorithm for clustering",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "4.2 Expectation -Maximization algorithm for clustering",
+            "Hour Number": 4
+          }
+        }
+      },
+      {
+        "id": 3,
+        "Module Name": "Module:Dimensionality Reduction",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "6.1 Curse of Dimensionality. ",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "6.1 Curse of Dimensionality. ",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "6.2 Feature Selection and Feature Extraction",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "6.2 Feature Selection and Feature Extraction",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "6.3 Dimensionality Reduction Techniques, Principal Component Analysis.",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "6.3 Dimensionality Reduction Techniques, Principal Component Analysis.",
+            "Hour Number": 6
+          }
+        }
+      },
+      {
+        "id": 4,
+        "Module Name": "Module:Introduction to Machine Learning",
+        "Total Hours": 6,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "1.1 Introduction to Machine Learning, Issues in Machine Learning, Application of\nMachine Learning, Steps of developing a Machine Learning Application.",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "1.1 Introduction to Machine Learning, Issues in Machine Learning, Application of\nMachine Learning, Steps of developing a Machine Learning Application.",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "1.2 Supervised and Unsupervised Learning: Concepts of Classification, Clustering\nand prediction, Training, Testing and validation dataset, cross validation,\noverfitting and under fitting of model",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "1.2 Supervised and Unsupervised Learning: Concepts of Classification, Clustering\nand prediction, Training, Testing and validation dataset, cross validation,\noverfitting and under fitting of model",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "1.3 Performance Measures: Measuring Quality of model- Confusion Matrix,\nAccuracy, Recall, Precision, Specificity, F1 Score, RMSE",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "1.3 Performance Measures: Measuring Quality of model- Confusion Matrix,\nAccuracy, Recall, Precision, Specificity, F1 Score, RMSE",
+            "Hour Number": 6
+          }
+        }
+      },
+      {
+        "id": 5,
+        "Module Name": "Module:Liner models",
+        "Total Hours": 7,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "3.1 The least-squares method, Multivariate Linear Regression, Regularised\nRegression, Using Least-Squares Regression for classification",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "3.2 Support Vector Machines",
+            "Hour Number": 5
+          },
+          "Hour 6": {
+            "Content": "3.2 Support Vector Machines",
+            "Hour Number": 6
+          },
+          "Hour 7": {
+            "Content": "3.2 Support Vector Machines",
+            "Hour Number": 7
+          }
+        }
+      },
+      {
+        "id": 6,
+        "Module Name": "Module:Mathematical Foundation for ML",
+        "Total Hours": 5,
+        "Hour Distribution": {
+          "Hour 1": {
+            "Content": "2.1 System of Linear equations, Norms, Inner products, Length of Vector, Distance\nbetween vectors, Orthogonal vectors",
+            "Hour Number": 1
+          },
+          "Hour 2": {
+            "Content": "2.1 System of Linear equations, Norms, Inner products, Length of Vector, Distance\nbetween vectors, Orthogonal vectors",
+            "Hour Number": 2
+          },
+          "Hour 3": {
+            "Content": "2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.",
+            "Hour Number": 3
+          },
+          "Hour 4": {
+            "Content": "2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.",
+            "Hour Number": 4
+          },
+          "Hour 5": {
+            "Content": "2.2 Symmetric Positive Definite Matrices, Determinant, Trace, Eigenvalues and vectors, Orthogonal Projections, Diagonalization, SVD and its applications.",
+            "Hour Number": 5
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PdfDownloader from './pdf'; // Adjust the path as needed
+import PdfDownloader from './pdf.js'; // Adjust the path as needed
 import './styles/CalendarTable.css';
 
 

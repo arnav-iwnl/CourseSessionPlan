@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table, Row, Col } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
-import ParentComponent from '../Calendar/ParentCalendar';
+import ParentCalendar from '../Calendar/ParentCalendar.js';
 import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import toast from 'react-hot-toast';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
+// import { useSubject } from '../../Context/subjectContext';
+import { createClient } from '@supabase/supabase-js';
 
 const FacultyPage = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [courses, setCourses] = useState([]);
+  const [supaBaseData, setSupaBaseData] = useState([]);
   const [workingDays, setWorkingDays] = useState([]);
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
@@ -25,53 +28,82 @@ const FacultyPage = () => {
   const location = useLocation();
   const { name } = location.state || {};
 
+  const supabaseUrl = 'https://bogosjbvzcfcldahqzqv.supabase.co';
+  const supabaseKey =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc';
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+
+
+  const subjectCode = 'ECC401';
 
   useEffect(() => {
     const fetchJsonData = async () => {
       try {
-        const updatedResponse = await fetch('JSON/updated.json', { cache: 'no-store' });
+        // Fetch updated data from Supabase
+        const { data, error } = await supabase
+          .from('coursesessionplan') // Replace with your actual table name
+          .select('Updated') // Replace with your actual column name
+          .eq('Course Code', subjectCode);
 
-        if (!updatedResponse.ok) {
-          throw new Error('updated.json not found');
+        // Handle errors or empty responses
+        if (error || !data || data.length === 0 || !data[0].Updated) {
+          throw new Error('Failed to fetch or no "Updated" data available in Supabase.');
         }
 
-        const updatedData = await updatedResponse.json();
+        const updatedData = data[0].Updated;
 
-        const isEmpty = Object.values(updatedData).every(
-          value => Array.isArray(value) ? value.length === 0 : Object.keys(value).length === 0
-        );
+        // Check if the updated data is empty
+        const isEmpty = Array.isArray(updatedData)
+          ? updatedData.length === 0
+          : Object.keys(updatedData).length === 0;
 
         if (isEmpty) {
-
-          throw new Error('updated.json is empty');
+          throw new Error('"Updated" data is empty.');
         }
 
+        // console.log(updatedData);
         return updatedData;
-
       } catch (error) {
-        const alphaResponse = await fetch('JSON/alpha_data.json', { cache: 'no-store' });
-        if (!alphaResponse.ok) {
-          throw new Error('Failed to fetch alpha_data.json');
+        console.error('Error fetching "Updated" data:', error.message);
+
+        try {
+          // If there's an error or no updated data, fetch original data
+          const { data: alphaData, error: alphaError } = await supabase
+            .from('coursesessionplan') // Replace with your actual table name
+            .select('Original') // Replace with your actual column name
+            .eq('Course Code', subjectCode);
+
+          // Handle errors or empty responses
+          if (alphaError || !alphaData || alphaData.length === 0 || !alphaData[0].Original) {
+            throw new Error('Failed to fetch "Original" data from Supabase.');
+          }
+
+          // console.log(alphaData[0].Original);
+          return alphaData[0].Original;
+        } catch (alphaFetchError) {
+          console.error('Error fetching "Original" data:', alphaFetchError.message);
+          throw new Error('Unable to fetch any data from Supabase.');
         }
-
-        const alphaData = await alphaResponse.json();
-
-        return alphaData;
       }
     };
 
+
     const fetchDataAndAssign = async () => {
       try {
-        const jsonData = await fetchJsonData();
-        setData(jsonData);
-        const courseNames = [...new Set(jsonData.map(item => item['Course Name']))];
-        setCourses(courseNames);
+        const jsonData = await fetchJsonData(); // Fetch course data
+        // console.log(jsonData['Course Name']);
+        const courseName = jsonData['Course Name']; // Extract course name
+        setSupaBaseData(jsonData);
+        // Set course name (assuming you're storing it in a state variable)
+        setCourses([courseName]); // Wrap courseName in an array to match the courses variable structure
 
-        const datesResponse = await fetch('http://localhost:5000/getDate');
+        const datesResponse = await fetch('http://localhost:5000/getDate'); // Fetch date range
         const datesData = await datesResponse.json();
         setStartDate(datesData.startDate);
         setEndDate(datesData.endDate);
 
+        // Calculate working days between start and end date
         const workingDaysList = calculateWorkingDays(datesData.startDate, datesData.endDate);
 
         const holidaysResponse = await fetch('http://localhost:5000/checkDates', {
@@ -90,10 +122,8 @@ const FacultyPage = () => {
         const finalWorkingDaysList = holidaysData.workingDaysList;
         setWorkingDays(finalWorkingDaysList);
 
-        const initialCourseDays = courseNames.reduce((acc, course) => {
-          acc[course] = { Monday: false, Tuesday: false, Wednesday: false, Thursday: false, Friday: false };
-          return acc;
-        }, {});
+        // Initialize the course days state (Assuming default value is all false)
+        const initialCourseDays = { [courseName]: { Monday: false, Tuesday: false, Wednesday: false, Thursday: false, Friday: false } };
         setCourseDays(initialCourseDays);
 
       } catch (error) {
@@ -103,6 +133,7 @@ const FacultyPage = () => {
 
     fetchDataAndAssign();
   }, []);
+
 
   const calculateWorkingDays = (start, end) => {
     const workingDaysList = [];
@@ -140,44 +171,48 @@ const FacultyPage = () => {
   };
 
 
+
   const assignCoursesModulesHours = () => {
+    // const jsonData = await fetchJsonData();
+    const jsonData = supaBaseData;
+    // console.log(jsonData);
     const assignments = [];
     const courseModulesMap = new Map();
 
+    // Check if jsonData and jsonData.Modules exist
+    const modules = jsonData.Modules;
+    if (!modules || modules.length === 0) {
+      console.error('No modules available in the data');
+      return;
+    }
+
+    // Map the course to its respective modules and hours
     courses.forEach(course => {
-      const courseModules = data
-        .filter(item => item['Course Name'] === course)
-        .flatMap(module => {
-          const moduleHours = Array.isArray(module['Divided Content'])
-            ? module['Divided Content']
-            : [module['Divided Content']];
-          return moduleHours.map(hour => ({
-            course,
-            module: module['Module'],
-            hour
-          }));
-        });
+      const courseModules = modules.flatMap(module => {
+        // Flatten hour distribution for each module
+        return Object.values(module['Hour Distribution'] || {}).map(hour => ({
+          course,
+          module: module['Module Name'], // Correctly map the module name
+          hour: hour.Content || "", // Safely access 'Content'
+          hourNumber: hour['Hour Number'] || 0 // Track hour number for debugging or ordering
+        }));
+      });
+
       courseModulesMap.set(course, courseModules);
     });
 
-    // Track used modules with indices
-    const usedModulesIndices = new Map();
-    const assignedDates = new Set(); // Track assigned dates
+    const usedModulesIndices = new Map(); // Tracks the current index of assigned modules for each course
+    const assignedDates = new Set(); // Tracks which dates have assignments
 
-    // Assign modules to each working day based on selected days
+    // Assign modules to working days
     workingDays.forEach(day => {
       courses.forEach(course => {
-        if (courseDays[course][day.dayOfWeek]) {
+        if (courseDays[course]?.[day.dayOfWeek]) {
           const courseModules = courseModulesMap.get(course);
 
           if (courseModules && courseModules.length > 0) {
-            if (!usedModulesIndices.has(course)) {
-              usedModulesIndices.set(course, 0); // Initialize index for each course
-            }
+            const moduleIndex = usedModulesIndices.get(course) || 0;
 
-            const moduleIndex = usedModulesIndices.get(course);
-
-            // Check if all modules are assigned
             if (moduleIndex < courseModules.length) {
               const module = courseModules[moduleIndex];
 
@@ -186,93 +221,109 @@ const FacultyPage = () => {
                 dayOfWeek: day.dayOfWeek,
                 course: module.course,
                 module: module.module,
-                hour: module.hour
+                hour: module.hour,
+                hourNumber: module.hourNumber
               });
 
               assignedDates.add(day.date); // Mark the date as assigned
-
-              // Update the index
-              usedModulesIndices.set(course, moduleIndex + 1);
+              usedModulesIndices.set(course, moduleIndex + 1); // Increment index for the course
             }
           }
         }
       });
     });
 
-    // Determine buffer dates (dates that were not assigned)
-    const bufferDates = workingDays.filter(day => !assignedDates.has(day.date)).map(day => day.date);
+    // Calculate buffer dates (unassigned dates)
+    const bufferDates = workingDays
+      .filter(day => !assignedDates.has(day.date))
+      .map(day => day.date);
 
     console.log('Assigned Dates:', Array.from(assignedDates));
     console.log('Buffer Dates:', bufferDates);
+
     setBufferDates(bufferDates);
     setAssignments(assignments);
   };
 
-  
+
+
   const handleAddContent = async (event) => {
     event.preventDefault();
-
-
+  
+    // Ensure all required fields are provided
     if (!selectedCourse || !selectedModule || !newContent) {
       alert('Please fill all fields');
       return;
     }
-
-    // Determine the next hour number based on existing entries for the selected course and module
-    const existingEntries = data.filter(
-      item => item['Course Name'] === selectedCourse && item['Module'] === selectedModule
-    );
-
-    const nextHourNumber = existingEntries.length + 1;
-    const newEntry = {
-      "Course Name": selectedCourse,
-      "Module": selectedModule,
-      "Divided Content": `Hour ${nextHourNumber}: ${newContent}`
-    };
-
-    // Append new entry to data
-    const updatedData = [...data, newEntry];
-    setData(updatedData);
-
-
+  
     try {
-      const response = await fetch('http://localhost:5000/updateData', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(updatedData),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to update data');
+      // Get course data
+      const courseData = supaBaseData;
+  
+      // Find the selected module
+      const selectedModuleData = courseData.Modules.find(
+        (module) => module['Module Name'] === selectedModule
+      );
+  
+      if (!selectedModuleData) {
+        alert('Module not found in the course.');
+        return;
       }
-      toast.success(`Data updated successfully`);
+  
+      // Calculate the next hour number
+      const nextHourNumber = Object.keys(selectedModuleData['Hour Distribution']).length + 1;
+  
+      // Create the new hour entry
+      const newEntry = {
+        [`Hour ${nextHourNumber}`]: {
+          "Content": newContent,
+          "Hour Number": nextHourNumber,
+        },
+      };
+  
+      // Update the hour distribution in the selected module
+      selectedModuleData['Hour Distribution'] = {
+        ...selectedModuleData['Hour Distribution'],
+        ...newEntry,
+      };
+  
+      // Update the entire course data with the new entry
+      const { data, error } = await supabase
+        .from('coursesessionplan') // Replace with your table name
+        .update({ Updated: courseData }) // Update the 'Updated' column with the full JSON
+        .eq('Course Code', subjectCode); // Match the specific course using 'Course Code'
+  
+      if (error) {
+        throw new Error('Failed to update course data in Supabase');
+      }
+  
+      // Notify the user of success
+      toast.success(`Content added to ${selectedModule} successfully`);
     } catch (error) {
-      console.error('Error updating data:', error);
+      // Log and notify the user of errors
+      console.error('Error adding content to Supabase:', error);
+      toast.error('Failed to add content. Please try again.');
     }
   };
+  
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:5000/clearUpdatedJson', {
-        method: 'POST',
-      });
 
-      if (!response.ok) {
-        throw new Error('Failed to clear updated.json');
-      }
       toast.success(`${name} logged out successfully`)
       navigate('/auth');
     } catch (error) {
       console.error('Error during logout:', error);
-    }
-  };
-  const handleMapping = async ()=>{
-    try{
+    };
+  }
+
+
+
+  const handleMapping = async () => {
+    try {
       toast.success(`You have switched to CO-PO Mapping page`)
       navigate('/mapping');
-    }catch (error) {
+    } catch (error) {
       console.error('Error navigating to Mapping Page:', error);
     }
   }
@@ -293,9 +344,9 @@ const FacultyPage = () => {
       assignment.hour,
     ]);
 
-    doc.text("Assignments", 10, 10);
+    doc.text(`${subjectCode} : ${courses}`, 10, 10);
     doc.autoTable({
-      head: [['Expected Date', 'Actual Date', 'Day of the Week', 'Course', 'Module', 'Hour']],
+      head: [['Expected Date', '  Actual Date  ', 'Day of the Week', 'Course', 'Module', 'Hour']],
       body: tableData,
       startY: 20,
     });
@@ -310,7 +361,7 @@ const FacultyPage = () => {
         <Button className='px-5 py-2' variant='secondary' onClick={handleMapping}>CO and PO Mapping</Button>
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
-      <ParentComponent />
+      <ParenttCalendar />
 
       <div className="mt-2">
         <h2>Session Date Information</h2>
@@ -339,9 +390,19 @@ const FacultyPage = () => {
               <Col sm="9">
                 <Form.Control as="select" value={selectedModule} onChange={(e) => setSelectedModule(e.target.value)}>
                   <option value="">Select Module</option>
-                  {[...new Set(data.filter(item => item['Course Name'] === selectedCourse).map(item => item['Module']))].map((module, index) => (
-                    <option key={index} value={module}>{module}</option>
-                  ))}
+                  {
+                    // Filter by selected course, then extract module names
+                    [...new Set(
+                      [supaBaseData]
+                        .filter(item => item['Course Name'] === selectedCourse) // Filter by selected course
+                        .flatMap(item => item['Modules']) // Extract Modules array
+                        .map(module => module['Module Name']) // Map to module names
+                    )].map((module, index) => (
+                      <option key={index} value={module}>
+                        {module}
+                      </option>
+                    ))
+                  }
                 </Form.Control>
               </Col>
             </Form.Group>
@@ -350,11 +411,11 @@ const FacultyPage = () => {
               <Col sm="9">
                 <Form.Control type="text" value={newContent} onChange={(e) => setNewContent(e.target.value)} />
               </Col>
-              
+
             </Form.Group>
             <div className="d-flex justify-content-end mt-2">
-                <Button variant='primary' type = "submit">Add Content</Button>
-              </div>
+              <Button variant='primary' type="submit">Add Content</Button>
+            </div>
 
           </Form>
         </div>
@@ -382,7 +443,7 @@ const FacultyPage = () => {
       </div>
       <Button className="my-4" onClick={assignCoursesModulesHours}>Assign Modules</Button>
       <div>
-        <h1>Assignments</h1>
+        <h1>Schdeule Course</h1>
         <Table striped bordered hover className="assignment-table">
           <thead>
             <tr>
