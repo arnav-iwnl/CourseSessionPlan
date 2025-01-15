@@ -7,6 +7,9 @@ const supabaseKey =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+
+const subjetCode = "ECC401";
+
 // Define a function to upload the JSON data
 async function uploadSessionPlans() {
   try {
@@ -57,7 +60,6 @@ async function uploadSessionPlans() {
   }
 }
 
-const subjetCode = "ECC401";
 
 const fetchJsonData = async () => {
         try {
