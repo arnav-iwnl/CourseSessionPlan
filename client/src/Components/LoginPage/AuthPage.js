@@ -12,20 +12,10 @@ const AuthPage = ({ onLogin }) => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isSignup, setIsSignup] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedSubjectCode, setSelectedSubjectCode] = useState('');
   const navigate = useNavigate();
   const { login } = useAuth();
-  // const { setSubjectCode } = useSubject();
 
-  // Nested subject options
 
-  // Handle category change and reset the subject dropdown
-  const handleCategoryChange = (e) => {
-    const category = e.target.value;
-    setSelectedCategory(category);
-    setSelectedSubjectCode(''); // Reset subject selection
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();

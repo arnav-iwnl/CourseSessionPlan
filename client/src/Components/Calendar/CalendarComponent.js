@@ -102,7 +102,7 @@ const CalendarTable = () => {
           id="startDate"
           value={startDate}
           // onChange={handleStartDateChange}
-          readOnly
+          
         />
         <label htmlFor="endDate">End Date:</label>
         <input
@@ -110,7 +110,7 @@ const CalendarTable = () => {
           id="endDate"
           value={endDate}
           // onChange={handleEndDateChange}
-          readOnly
+          
         />
       </div>
       <div id="pdf-content">
@@ -151,7 +151,7 @@ const CalendarTable = () => {
                 const dayOfWeek = currentDate.getDay();
                 let className = '';
 
-                if (dayOfWeek === 0 || dayOfWeek === 6) {
+                if (dayOfWeek === 0 || dayOfWeek === 7) {
                   className = 'weekend';
                 }
 
@@ -202,7 +202,7 @@ const CalendarTable = () => {
                         <tr>
                           {Array.from({ length: 7 }).map((_, i) => {
                             const weekdayName = getWeekdayName(i);
-                            const className = i === 0 || i === 6 ? 'weekend' : '';
+                            const className = i === 0 || i === 7 ? 'weekend' : '';
                             return (
                               <th key={`weekday-inner-${i}`} className={className}>
                                 {weekdayName}

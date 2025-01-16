@@ -9,7 +9,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import ParentCalendar from '../Calendar/ParentCalendar.js';
 import { createClient } from '@supabase/supabase-js';
-import { exportToExcel } from '../Export/exportToExcel.js';
+import { exportToExcel } from '../ExportExcel/exportToExcel.js';
 import MappingCO from '../MappingCO/MappingCO.js';
 
 
