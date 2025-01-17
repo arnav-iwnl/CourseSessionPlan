@@ -118,41 +118,7 @@ const AuthPage = ({ onLogin }) => {
                     required
                     autoComplete=""
                   />
-                </Form.Group>
-
-                {/* Category dropdown */}
-                {/* <Form.Group controlId="formCategory">
-                  <Form.Label>Category</Form.Label>
-                  <Form.Control as="select" value={selectedCategory} onChange={handleCategoryChange} required>
-                    <option value="">Select Category</option>
-                    {Object.keys(subjectsData).map((category) => (
-                      <option key={category} value={category}>
-                        {category}
-                      </option>
-                    ))}
-                  </Form.Control>
-                </Form.Group> */}
-
-                {/* Subject dropdown (conditional based on selected category) */}
-                {/* {selectedCategory && (
-                  <Form.Group controlId="formSubject">
-                    <Form.Label>Subject Code</Form.Label>
-                    <Form.Control
-                      as="select"
-                      value={selectedSubjectCode}
-                      onChange={(e) => setSelectedSubjectCode(e.target.value)}
-                      required
-                    >
-                      <option value="">Select Subject</option>
-                      {subjectsData[selectedCategory].map((subject) => (
-                        <option key={subject.code} value={subject.code}>
-                          {subject.name}
-                        </option>
-                      ))}
-                    </Form.Control>
-                  </Form.Group>
-                )} */}
-
+                </Form.Group>                
                 <Button variant="primary" type="submit" className="w-100 mt-3" disabled={isLoading}>
                   {isLoading ? 'Processing...' : isSignup ? 'Sign Up' : 'Login'}
                 </Button>

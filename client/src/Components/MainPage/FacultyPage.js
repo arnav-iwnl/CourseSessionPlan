@@ -33,7 +33,7 @@ const FacultyPage = () => {
 
 
 
-  const [courseCode,setcourseCode] = useState('');
+  const [courseCode,setcourseCode] = useState('Please enter Subject Code down below');
 
   useEffect(() => {
   //  const fetchJsonData =  fetchJsonData();
@@ -306,25 +306,19 @@ const FacultyPage = () => {
   return (
     
     <Container>
-      <div className='d-flex justify-content-between flex-row my-2'>
-        {name && <h1>Hello, Faculty {name}! </h1>}
+      <div className='d-flex justify-content-between flex-row py-4'>
+        {name && <h2>Hello, Faculty {name}! </h2>}
         <h2>Subject Code:{courseCode}</h2>
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
-      <div className='m-2'>
-        {/* <input type="textarea"  placeholder={"Enter course code"} onChange={(e) => setcourseCode(tempCourseSetter)}></input> */}
-        </div>
       <ParentCalendar />
-
+{/* 
       <div className="mt-2">
-
-        <h2>Session Date Information</h2>
-        <p>Start Date: {startDate}</p>
-        <p>End Date: {endDate}</p>
-      </div>
+      
+      </div> */}
 
 
-      <div>
+      <div className='py-3'>
         <ComboBox onSubjectCodeChange={handleSubjectCode}/>
       </div>
 

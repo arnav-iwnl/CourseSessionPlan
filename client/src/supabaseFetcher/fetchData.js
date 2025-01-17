@@ -62,7 +62,7 @@ export const fetchSessionDates = async () => {
         const { data: startDateData, error: startDateError } = await supabase
             .from('holidaytable')
             .select('date')
-            .eq('name', 'Start_Session_SE/TE/BE')
+            .eq('name', 'Start Session for SE/TE/BE')
             .single();
 
         if (startDateError) {
@@ -74,7 +74,7 @@ export const fetchSessionDates = async () => {
         const { data: endDateData, error: endDateError } = await supabase
             .from('holidaytable')
             .select('date')
-            .eq('name', 'End_Session_SE/TE/BE')
+            .eq('name', 'End Session for SE/TE/BE')
             .single();
 
         if (endDateError) {

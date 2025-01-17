@@ -16,9 +16,10 @@ const ParentCalendar = () => {
     setEvents(updatedEvents);
   };
 
+
   return (
     <div>
-      <CalendarTable events={events} />
+      <CalendarTable event={events} />
       {user?.role === 'hod' && <EventScheduler onEventCreate={handleEventCreate} />}
     </div>
   );

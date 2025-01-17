@@ -38,6 +38,7 @@ const handleSubjectCodeChange = (e) => {
 
 return (
   <div>
+    <h2>Select your Subject</h2>
     <Form.Group controlId="branchSelect">
       <Form.Label>Select Department</Form.Label>
       <Form.Select

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import { Modal, Button, Form } from 'react-bootstrap';
@@ -24,8 +25,8 @@ const EVENT_TYPES = {
 };
 
 const PREDEFINED_EVENTS = [
-  { value: 'Start_For_SE/TE/BE', label: 'Start For SE/TE/BE' },
-  { value: 'End_For_SE/TE/BE', label: 'End For SE/TE/BE' },
+  { value: 'Start Session for SE/TE/BE', label: 'Start Session for SE/TE/BE' },
+  { value: 'End Session for SE/TE/BE', label: 'End Session for SE/TE/BE' },
   { value: 'Start_For_FE', label: 'Start For FE' },
   { value: 'End_For_FE', label: 'End For FE' },
   { value: 'SE/TE/BE_IA1', label: 'SE/TE/BE IA 1' },
@@ -119,6 +120,18 @@ const EventScheduler = ({ onEventCreate }) => {
     }
 
     try {
+      if(formData.eventType=="End Session for SE/TE/BE" || formData.eventName == "End Session for SE/TE/BE"){
+        formData.eventName = "End Session for SE/TE/BE";
+        formData.eventType ="End Session for SE/TE/BE"
+        formData.instituteLevel=false;
+        formData.isHoliday=false;
+      }
+      if( formData.eventType=="Start Session for SE/TE/BE" || formData.eventName == "Start Session for SE/TE/BE" ){
+        formData.eventName = "Start Session for SE/TE/BE";
+        formData.eventType ="Start Session for SE/TE/BE"
+        formData.departmentLevel=false;
+        formData.isHoliday=false;
+      }
       const eventData = {
         date: selectedDate.toISOString().split('T')[0],
         name: formData.eventName || formData.customEventName,
@@ -127,13 +140,12 @@ const EventScheduler = ({ onEventCreate }) => {
         department_level: Number(formData.departmentLevel),
         holiday: Number(formData.isHoliday)
       };
-
       if (isUpdate && eventId) {
         // Update existing record
         const { error: updateError } = await supabase
           .from('holidaytable')
           .update(eventData)
-          .eq('id', eventId);
+          .eq('name', eventData.name);
 
         if (updateError) throw updateError;
       } else {

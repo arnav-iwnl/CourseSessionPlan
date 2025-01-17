@@ -15,17 +15,12 @@ const CalendarTable = () => {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const eventsData = await getEventData();
-        // console.log(eventsData);
-
-        const datesData = await fetchSessionDates(); 
-       
-
-        setStartDate(datesData.startDate);
-        setEndDate(datesData.endDate);
         setEvents(eventsData.events || []);
         setHolidays(eventsData.holidays || []);
         setInstituteLevelEvents(eventsData.instituteLevelEvents || []);
@@ -38,7 +33,7 @@ const CalendarTable = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [startDate || endDate]);
 
   const getWeekdayName = (weekdayIndex) => {
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -56,7 +51,7 @@ const CalendarTable = () => {
   };
 
   const getEventsForName = (date, eventType) => {
-    console.log(date)
+    // console.log(date)
     const matchingEvent = eventType.find(event => {
       const eventDate = new Date(event.date);
       eventDate.setDate(eventDate.getDate() + 1);
@@ -89,6 +84,15 @@ const CalendarTable = () => {
   if (error) {
     return <div>Error: {error}</div>;
   }
+
+  const handleStartDateChange = (e) => {
+    setStartDate(e.target.value);
+  };
+
+  // onChange handler for End Date
+  const handleEndDateChange = (e) => {
+    setEndDate(e.target.value);
+  };
   return (
     <div className="calendar-container">
       <div className="date-selector">
@@ -97,7 +101,7 @@ const CalendarTable = () => {
           type="date"
           id="startDate"
           value={startDate}
-          // onChange={handleStartDateChange}
+          onChange={handleStartDateChange}
           
         />
         <label htmlFor="endDate">End Date:</label>
@@ -105,7 +109,7 @@ const CalendarTable = () => {
           type="date"
           id="endDate"
           value={endDate}
-          // onChange={handleEndDateChange}
+          onChange={handleEndDateChange}
           
         />
       </div>
