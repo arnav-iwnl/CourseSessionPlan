@@ -28,7 +28,12 @@ const HodPage = () => {
   const location = useLocation();
   const { name } = location.state || {};
   const childRef = React.useRef();
-  const [courseCode,setcourseCode] = useState('');
+
+
+
+
+
+  const [courseCode,setcourseCode] = useState('Please choose subject first');
 
   useEffect(() => {
   //  const fetchJsonData =  fetchJsonData();
@@ -239,6 +244,10 @@ const HodPage = () => {
     }
   };
 
+
+
+
+
   const handleLogout = async () => {
     try {
 
@@ -248,6 +257,8 @@ const HodPage = () => {
       console.error('Error during logout:', error);
     };
   }
+
+
 
   const handleEXCEL = async () => {
     const tableData = assignments.map((assignment) => ({
@@ -297,20 +308,12 @@ const HodPage = () => {
     <Container>
       <div className='d-flex justify-content-between flex-row py-4'>
         {name && <h2>Hello, HOD {name}! </h2>}
-        <h2>Subject Code:{courseCode}</h2>
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
       <ParentCalendar />
 
-      <div className="mt-2">
 
-        <h2>Session Date Information</h2>
-        <p>Start Date: {startDate}</p>
-        <p>End Date: {endDate}</p>
-      </div>
-
-
-      <div>
+      <div className='py-3'>
         <ComboBox onSubjectCodeChange={handleSubjectCode}/>
       </div>
 
@@ -364,9 +367,7 @@ const HodPage = () => {
           </tbody>
         </Table>
 
-        {/* <Button variant="primary" className='m-2' onClick={handleDownloadPdf}>
-          Download PDF
-        </Button> */}
+
         <Button variant="success" onClick={handleExport}>
           Download EXCEL
         </Button>

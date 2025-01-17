@@ -33,7 +33,7 @@ const FacultyPage = () => {
 
 
 
-  const [courseCode,setcourseCode] = useState('Please enter Subject Code down below');
+  const [courseCode,setcourseCode] = useState('Please choose subject first');
 
   useEffect(() => {
   //  const fetchJsonData =  fetchJsonData();
@@ -308,14 +308,9 @@ const FacultyPage = () => {
     <Container>
       <div className='d-flex justify-content-between flex-row py-4'>
         {name && <h2>Hello, Faculty {name}! </h2>}
-        <h2>Subject Code:{courseCode}</h2>
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
       <ParentCalendar />
-{/* 
-      <div className="mt-2">
-      
-      </div> */}
 
 
       <div className='py-3'>

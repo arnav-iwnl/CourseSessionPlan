@@ -1,42 +1,39 @@
-import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
-import { Table, Modal, Form, Button, Card, Badge } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from "react";
+import { Table, Modal, Form, Button, Card, Badge } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
 
-
-
-  const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
-  const supabaseKey ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc"
-  const supabase = createClient(supabaseUrl, supabaseKey);
-
-
+const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
+const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc";
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const MappingCO = forwardRef(({ courseCode }, ref) => {
   const [showModal, setShowModal] = useState(false);
+  const [showCOForm, setShowCOForm] = useState(false);
   const [selectedCell, setSelectedCell] = useState(null);
-  const [marks, setMarks] = useState('');
-  const [reason, setReason] = useState('');
+  const [marks, setMarks] = useState("");
+  const [reason, setReason] = useState("");
   const [mappingData, setMappingData] = useState({});
-  
-  // PO descriptions
-const poDescriptions = {
-  PO1: "Engineering Knowledge: Apply knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to solve complex engineering problems.",
-  PO2: "Problem Analysis: Identify, formulate, research literature, and analyze complex engineering problems to reach substantiated conclusions using principles of mathematics, natural sciences, and engineering sciences.",
-  PO3: "Design and Development of Solutions: Design solutions for complex engineering problems and design system components or processes that meet specified needs, considering public health, safety, and cultural, societal, and environmental considerations.",
-  PO4: "Conduct Investigations of Complex Problems: Use research-based knowledge and research methods, including the design of experiments, analysis, and interpretation of data, and synthesis of information to provide valid conclusions.",
-  PO5: "Modern Tool Usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools, including prediction and modeling, to complex engineering activities, understanding their limitations.",
-  PO6: "The Engineer and Society: Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal, and cultural issues and the consequent responsibilities relevant to professional engineering practice.",
-  PO7: "Environment and Sustainability: Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate knowledge of and the need for sustainable development.",
-  PO8: "Ethics: Apply ethical principles and commit to professional ethics, responsibilities, and norms of engineering practice.",
-  PO9: "Individual and Teamwork: Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings.",
-  PO10: "Communication: Communicate effectively on complex engineering activities with the engineering community and society at large, such as writing effective reports and design documentation, making effective presentations, and giving and receiving clear instructions.",
-  PO11: "Project Management and Finance: Demonstrate knowledge and understanding of engineering and management principles and apply them to manage projects in multidisciplinary environments.",
-  PO12: "Life-long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
-};
+  const [cos, setCos] = useState([]);
+  const [newCODescription, setNewCODescription] = useState("");
+  const [newBloomTaxonomy, setNewBloomTaxonomy] = useState("");
+  const pos = Array.from({ length: 12 }, (_, i) => `PO${i + 1}`);
 
-  // Initial table structure
-  const cos = ['CO1', 'CO2', 'CO3', 'CO4', 'CO5', 'CO6'];
-  const pos = Array.from({length: 12}, (_, i) => `PO${i + 1}`);
+  const poDescriptions = {
+    PO1: "Engineering Knowledge: Apply knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to solve complex engineering problems.",
+    PO2: "Problem Analysis: Identify, formulate, research literature, and analyze complex engineering problems to reach substantiated conclusions using principles of mathematics, natural sciences, and engineering sciences.",
+    PO3: "Design and Development of Solutions: Design solutions for complex engineering problems and design system components or processes that meet specified needs, considering public health, safety, and cultural, societal, and environmental considerations.",
+    PO4: "Conduct Investigations of Complex Problems: Use research-based knowledge and research methods, including the design of experiments, analysis, and interpretation of data, and synthesis of information to provide valid conclusions.",
+    PO5: "Modern Tool Usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools, including prediction and modeling, to complex engineering activities, understanding their limitations.",
+    PO6: "The Engineer and Society: Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal, and cultural issues and the consequent responsibilities relevant to professional engineering practice.",
+    PO7: "Environment and Sustainability: Understand the impact of professional engineering solutions in societal and environmental contexts and demonstrate knowledge of and the need for sustainable development.",
+    PO8: "Ethics: Apply ethical principles and commit to professional ethics, responsibilities, and norms of engineering practice.",
+    PO9: "Individual and Teamwork: Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings.",
+    PO10: "Communication: Communicate effectively on complex engineering activities with the engineering community and society at large, such as writing effective reports and design documentation, making effective presentations, and giving and receiving clear instructions.",
+    PO11: "Project Management and Finance: Demonstrate knowledge and understanding of engineering and management principles and apply them to manage projects in multidisciplinary environments.",
+    PO12: "Life-long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+  };
 
   useEffect(() => {
     fetchMappingData();
@@ -45,44 +42,72 @@ const poDescriptions = {
   const fetchMappingData = async () => {
     try {
       const { data, error } = await supabase
-        .from('coursesessionplan')
-        .select('Updated_COPO')
-        .eq('Course Code', courseCode)
+        .from("coursesessionplan")
+        .select("Updated_COPO")
+        .eq("Course Code", courseCode)
         .single();
 
       if (error) throw error;
 
       if (data?.Updated_COPO) {
-        setMappingData(JSON.parse(data.Updated_COPO));
+        const parsedData = JSON.parse(data.Updated_COPO);
+        setMappingData(parsedData);
+        setCos(parsedData.cos || []);
       }
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error("Error fetching data:", error);
     }
   };
 
-  const handleCellClick = (co, po) => {
-    setSelectedCell({ co, po });
-    setMarks(mappingData[`${co}-${po}`]?.marks || '');
-    setReason(mappingData[`${co}-${po}`]?.reason || '');
-    setShowModal(true);
+  const addCO = () => {
+    const newCO = {
+      id: `CO${cos.length + 1}`,
+      description: newCODescription,
+      bloomTaxonomy: newBloomTaxonomy,
+    };
+    setCos([...cos, newCO]);
+    setMappingData({
+      ...mappingData,
+      cos: [...cos, newCO],
+    });
+    setNewCODescription("");
+    setNewBloomTaxonomy("");
+    setShowCOForm(false);
   };
 
+  const handleCellClick = (co, po) => {
+    console.log(co);
+    console.log(po);
+    setSelectedCell({ co, po });
+    console.log(selectedCell)
+    setMarks(mappingData[`${co}-${po}`]?.marks || "");
+    setReason(mappingData[`${co}-${po}`]?.reason || "");
+    setShowModal(true);
+  };
+ 
   const handleSave = async () => {
+    if (!selectedCell.co || !selectedCell.po) {
+      console.log(selectedCell.co);
+      console.log(selectedCell.po);
+      console.error("Invalid CO or PO selected:", selectedCell);
+      return; // Stop execution if CO or PO is undefined
+    }
+  
     const updatedMapping = {
       ...mappingData,
       [`${selectedCell.co}-${selectedCell.po}`]: {
         marks: marks,
-        reason: reason
+        justification: reason
       }
     };
-
+  
     try {
       const { data, error } = await supabase
         .from('coursesessionplan')
         .select('Course Code')
         .eq('Course Code', courseCode)
         .single();
-
+  
       if (error && error.code === 'PGRST116') {
         // Record doesn't exist, create new
         await supabase
@@ -90,7 +115,8 @@ const poDescriptions = {
           .insert([{
             'Course Code': courseCode,
             Original_COPO: JSON.stringify(updatedMapping),
-            Updated_COPO: JSON.stringify(updatedMapping)
+            Updated_COPO: JSON.stringify(updatedMapping),
+            index: new Date().getTime() // Unique index
           }]);
       } else {
         // Record exists, update
@@ -101,33 +127,18 @@ const poDescriptions = {
           })
           .eq('Course Code', courseCode);
       }
-
+  
       setMappingData(updatedMapping);
       setShowModal(false);
     } catch (error) {
       console.error('Error saving data:', error);
     }
   };
-
-  useImperativeHandle(ref, () => ({
-    getMappingData: () => {      
-      const tableData = [];
   
-      // First, create the header row with CO/PO and all POs
-      const headerRow = ["CO / PO", ...pos];
-      tableData.push(headerRow);
-    
-      // Then, populate rows for each CO
-      cos.forEach((co) => {
-        const row = [co]; // Start each row with the CO
-        pos.forEach((po) => {
-          const marks = mappingData[`${co}-${po}`]?.marks || ""; // Fetch marks or leave empty
-          row.push(marks);
-        });
-        tableData.push(row);
-      });
-    
-      return tableData;
+  
+  useImperativeHandle(ref, () => ({
+    getMappingData: () => {
+      return mappingData;
     },
   }));
 
@@ -141,12 +152,13 @@ const poDescriptions = {
           </Badge>
         </div>
       </Card.Header>
-      <Card.Body className="table-responsive">
+      <Card.Body>
+        <Button onClick={() => setShowCOForm(true)}>Add New CO</Button>
         <Table bordered hover>
           <thead className="bg-light">
             <tr>
               <th>CO / PO</th>
-              {pos.map(po => (
+              {pos.map((po) => (
                 <th key={po} className="text-center">
                   {po}
                 </th>
@@ -154,17 +166,17 @@ const poDescriptions = {
             </tr>
           </thead>
           <tbody>
-            {cos.map(co => (
-              <tr key={co}>
-                <td className="fw-medium bg-light">{co}</td>
-                {pos.map(po => (
-                  <td 
-                    key={`${co}-${po}`}
+            {cos.map((co) => (
+              <tr key={co.id}>
+                <td className="fw-medium bg-light">{co.id}</td>
+                {pos.map((po) => (
+                  <td
+                    key={`${co.id}-${po}`}
                     className="text-center"
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => handleCellClick(co, po)}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleCellClick(co.id, po)}
                   >
-                    {mappingData[`${co}-${po}`]?.marks || ''}
+                    {mappingData[`${co.id}-${po}`]?.marks || ""}
                   </td>
                 ))}
               </tr>
@@ -172,15 +184,39 @@ const poDescriptions = {
           </tbody>
         </Table>
 
+        {showCOForm && (
+          <div className="mb-4">
+            <Form.Group className="mb-3">
+              <Form.Label>CO Description</Form.Label>
+              <Form.Control
+                type="text"
+                value={newCODescription}
+                onChange={(e) => setNewCODescription(e.target.value)}
+                placeholder="Enter CO Description"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Bloom Taxonomy Level</Form.Label>
+              <Form.Control
+                type="text"
+                value={newBloomTaxonomy}
+                onChange={(e) => setNewBloomTaxonomy(e.target.value)}
+                placeholder="Enter Bloom Taxonomy Level"
+              />
+            </Form.Group>
+            <Button onClick={addCO}>Add CO</Button>
+          </div>
+        )}
+
         <Modal show={showModal} onHide={() => setShowModal(false)}>
           <Modal.Header closeButton>
             <Modal.Title>
-              {selectedCell ? `${selectedCell.co} - ${selectedCell.po}` : ''}
+              {selectedCell ? `${selectedCell.co} - ${selectedCell.po}` : ""}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form>
-              <Form.Group className="mb-3">
+            <Form.Group className="mb-3">
                 <Form.Label className="fw-medium">PO Description</Form.Label>
                 <p className="text-muted">
                   {selectedCell ? poDescriptions[selectedCell.po] : ''}
@@ -197,9 +233,8 @@ const poDescriptions = {
                   onChange={(e) => setMarks(e.target.value)}
                 />
               </Form.Group>
-
               <Form.Group className="mb-3">
-                <Form.Label>Reason</Form.Label>
+                <Form.Label>Justification</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={3}

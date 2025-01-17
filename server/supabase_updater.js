@@ -11,97 +11,98 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 const subjetCode = "ECC401";
 
 // Define a function to upload the JSON data
-async function uploadSessionPlans() {
-  try {
+  async function uploadSessionPlans() {
+    const sub ='ME';
+    try {
 
-    const { data : currentIndexArray, error:get_max_error } = await supabase.rpc('get_max_index');
+      const { data : currentIndexArray, error:get_max_error } = await supabase.rpc('get_max_index');
 
-    if (get_max_error) {
-      console.error('Error executing RPC:', error);
-      return;
+      if (get_max_error) {
+        console.error('Error executing RPC:', error);
+        return;
+      }
+      const currentIndex = currentIndexArray[0].current_index;
+
+      // Step 1: Retrieve the file from the bucket
+      const { data: fileData, error: fileError } = await supabase
+        .storage
+        .from('Course Session Bucket')
+        .download(`./${sub}/TE_${sub}.json`); // Corrected path
+
+      if (fileError) {
+        console.error('Error fetching file:', fileError);
+        return;
+      }
+
+      // Step 2: Parse the JSON data
+      const fileText = await fileData.text();
+      const jsonData = JSON.parse(fileText);
+
+      // Step 3: Prepare and push data into the `CourseSessionPlan` table
+      const rows = Object.entries(jsonData).map(([courseCode, courseData], idx) => ({
+        index: currentIndex + idx + 1, // Auto-incrementing index value
+        "Course Code": courseCode, // Matches database column
+        Original: courseData // Matches database column
+      }));
+
+  
+      // Step 4: Insert rows into the database
+      const { data: insertData, error: insertError } = await supabase
+        .from('coursesessionplan')
+        .insert(rows);
+
+      if (insertError) {
+        console.error('Error inserting data:', insertError);
+      } else {
+        console.log('Data inserted successfully:', insertData);
+      }
+    } catch (err) {
+      console.error('Unexpected error:', err);
     }
-    const currentIndex = currentIndexArray[0].current_index;
-
-    // Step 1: Retrieve the file from the bucket
-    const { data: fileData, error: fileError } = await supabase
-      .storage
-      .from('Course Session Bucket')
-      .download('CE/SEM8_CE.json'); // Corrected path
-
-    if (fileError) {
-      console.error('Error fetching file:', fileError);
-      return;
-    }
-
-    // Step 2: Parse the JSON data
-    const fileText = await fileData.text();
-    const jsonData = JSON.parse(fileText);
-
-    // Step 3: Prepare and push data into the `CourseSessionPlan` table
-    const rows = Object.entries(jsonData).map(([courseCode, courseData], idx) => ({
-      index: currentIndex + idx + 1, // Auto-incrementing index value
-      "Course Code": courseCode, // Matches database column
-      Original: courseData // Matches database column
-    }));
-
- 
-    // Step 4: Insert rows into the database
-    const { data: insertData, error: insertError } = await supabase
-      .from('coursesessionplan')
-      .insert(rows);
-
-    if (insertError) {
-      console.error('Error inserting data:', insertError);
-    } else {
-      console.log('Data inserted successfully:', insertData);
-    }
-  } catch (err) {
-    console.error('Unexpected error:', err);
   }
-}
 
-
-const fetchJsonData = async () => {
-        try {
-          // Fetch updated data from Supabase (assuming it's a column in your table)
-          const { data, error } = await supabase
-            .from('coursesessionplan') // Replace 'your_table' with your actual table name
-            .select('Updated') // Replace 'updated_data' with your actual column name
-            .eq("Course Code", subjetCode);
+uploadSessionPlans()
+// const fetchJsonData = async () => {
+//         try {
+//           // Fetch updated data from Supabase (assuming it's a column in your table)
+//           const { data, error } = await supabase
+//             .from('coursesessionplan') // Replace 'your_table' with your actual table name
+//             .select('Updated') // Replace 'updated_data' with your actual column name
+//             .eq("Course Code", subjetCode);
       
-          if (error || data[0].Updated==null) {
-            throw new Error('Failed to fetch updated_data from Supabase');
-          }
+//           if (error || data[0].Updated==null) {
+//             throw new Error('Failed to fetch updated_data from Supabase');
+//           }
       
-          const updatedData = data;
+//           const updatedData = data;
       
-          // Check if the updatedData is empty
-          const isEmpty = Object.values(updatedData).every(
-            value => Array.isArray(value) ? value.length === 0 : Object.keys(value).length === 0
-          );
+//           // Check if the updatedData is empty
+//           const isEmpty = Object.values(updatedData).every(
+//             value => Array.isArray(value) ? value.length === 0 : Object.keys(value).length === 0
+//           );
       
-          if (isEmpty) {
-            throw new Error('updated_data is empty');
-          }
+//           if (isEmpty) {
+//             throw new Error('updated_data is empty');
+//           }
       
-          return updatedData;
+//           return updatedData;
       
-        } catch (error) {
-          // If there's an error or no updated data, fetch alpha data
-          const { data: alphaData, error: alphaError } = await supabase
-          .from('coursesessionplan') // Replace 'your_table' with your actual table name
-          .select('Original') // Replace 'updated_data' with your actual column name
-          .eq("Course Code", subjetCode);
+//         } catch (error) {
+//           // If there's an error or no updated data, fetch alpha data
+//           const { data: alphaData, error: alphaError } = await supabase
+//           .from('coursesessionplan') // Replace 'your_table' with your actual table name
+//           .select('Original') // Replace 'updated_data' with your actual column name
+//           .eq("Course Code", subjetCode);
       
-          if (alphaError) {
-            throw new Error('Failed to fetch alpha_data from Supabase');
-          }
+//           if (alphaError) {
+//             throw new Error('Failed to fetch alpha_data from Supabase');
+//           }
       
-          return alphaData;
-        }
+//           return alphaData;
+//         }
         
-      };
+//       };
 // Call the function
 // uploadSessionPlans();
-const jsonData = await fetchJsonData();
-console.log(jsonData);
+// const jsonData = await fetchJsonData();
+// console.log(jsonData);

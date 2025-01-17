@@ -1,84 +1,92 @@
 import pandas as pd
 import json
+import os
 
-def excel_to_course_json(excel_file, sheet_name):
-    """
-    Convert Excel sheet with course data to hierarchical JSON format with hour distribution.
-    Includes Course Code as a key-value pair with Course Name.
-    Counts total hours per module and distributes detailed content across hours.
+def excel_to_json_all_sheets(file_path, output_dir=""):
+    # Create output directory if it doesn't exist
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-    Parameters:
-    excel_file (str): Path to Excel file
-    sheet_name (str): Name of the sheet to process
-    """
-    # Read Excel file
-    df = pd.read_excel(excel_file, sheet_name=sheet_name)
+    # Read all sheets from the Excel file
+    excel_file = pd.ExcelFile(file_path)
+    sheet_names = excel_file.sheet_names
 
-    # Initialize result dictionary
-    result = {}
+    for sheet_name in sheet_names:
+        # Read the current sheet
+        sheet_data = pd.read_excel(file_path, sheet_name=sheet_name)
 
-    # Group by Course Code and Course Name together
-    for (course_code, course_name), course_group in df.groupby(['Course Code', 'Course Name']):
-        course_modules = []
+        # Initialize result dictionary
+        result = {}
 
-        # Group by Module within each course
-        for module_id, (module_name, module_group) in enumerate(course_group.groupby('Module Name'), 1):
-            # Calculate total hours for the module
-            total_module_hours = module_group['Hours'].sum()
+        # Group by Course Code to process modules for each course
+        for course_code, course_group in sheet_data.groupby("Course Code"):
+            # Get the course name (assuming it's same for all rows of same course)
+            course_name = course_group["Course Name"].iloc[0]
 
-            module_data = {
-                "id": module_id,
-                "Module Name": module_name,
-                "Total Hours": int(total_module_hours),
-                "Hour Distribution": {}
-            }
+            # Initialize the course entry with empty modules list
+            if course_code not in result:
+                result[course_code] = {
+                    "Course Name": course_name,
+                    "Modules": []
+                }
 
-            # Track current hour
-            current_hour = 1
+            # Process each row as a module
+            module_id = 1  # Initialize module ID counter for each course
 
-            # Process each content entry and distribute across hours
-            for _, row in module_group.iterrows():
-                content = row['Divided Content']
-                hours = int(row['Hours'])
+            for _, row in course_group.iterrows():
+                module_name = row["Module Name"]
+                divided_content = row["Divided Content"]
 
-                # Distribute this content across its allocated hours
-                for hour_offset in range(hours):
-                    hour_key = f"Hour {current_hour}"
-                    module_data["Hour Distribution"][hour_key] = {
-                        "Content": content,
-                        "Hour Number": current_hour
+                # Ensure Hours column is properly converted to an integer
+                try:
+                    total_hours = int(row["Hours"])
+                except ValueError:
+                    print(f"Sheet: {sheet_name} - Invalid Hours value for Course Code {course_code}. Skipping row.")
+                    continue
+
+                if total_hours <= 0:
+                    print(f"Sheet: {sheet_name} - Invalid Total Hours ({total_hours}) for Course Code {course_code}. Skipping row.")
+                    continue
+
+                # Create hour distribution
+                hour_distribution = {}
+                for hour in range(1, total_hours + 1):
+                    hour_distribution[f"Hour {hour}"] = {
+                        "Content": divided_content if hour == 1 else "",
+                        "Hour Number": hour
                     }
-                    current_hour += 1
 
-            course_modules.append(module_data)
+                # Create module object
+                module = {
+                    "id": module_id,
+                    "Module Name": module_name,
+                    "Total Hours": total_hours,
+                    "Hour Distribution": hour_distribution
+                }
 
-        # Create course entry with both code and name
-        course_key = course_code  # Using course code as the key
-        result[course_key] = {
-            "Course Name": course_name,
-            "Modules": course_modules
-        }
+                # Add module to the course's modules list
+                result[course_code]["Modules"].append(module)
+                module_id += 1
 
-    return result
+        # Convert to JSON
+        json_result = json.dumps(result, indent=4)
 
-def save_json(data, output_file):
-    """Save the data to a JSON file with proper formatting"""
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        # Create output filename
+        output_file = os.path.join(output_dir, f"{sheet_name}.json")
 
-# Example usage
+        # Save JSON to a file
+        with open(output_file, "w") as json_file:
+            json_file.write(json_result)
+
+        print(f"Generated JSON file for sheet '{sheet_name}' - Saved as {output_file}")
+
+# Example usage:
 if __name__ == "__main__":
-    excel_file = "SEM4_CE.xlsx"
-    sheet_name = "Sheet1"
-    output_file = f"SEM4_CE.json"
+    # Specify the file path
+    file_path = "PREFINAL_SYLLABUS.xlsx"  # Replace with your actual file path
 
-    try:
-        # Convert Excel to JSON with hour distribution
-        json_data = excel_to_course_json(excel_file, sheet_name)
+    # Optionally specify an output directory (leave empty for current directory)
+    output_dir = "./output"  # You can set this to something like "output" or "json_files"
 
-        # Save to file
-        save_json(json_data, output_file)
-        print(f"Successfully converted sheet '{sheet_name}' from {excel_file} to {output_file}")
-
-    except Exception as e:
-        print(f"Error: {str(e)}")
+    # Convert all sheets to JSON
+    excel_to_json_all_sheets(file_path, output_dir)
