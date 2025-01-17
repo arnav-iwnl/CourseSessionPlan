@@ -1,0 +1,817 @@
+[
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 1: 1; 1 Exact differential Equations, Equations reducible to exact form by using\nintegratingfactors"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 2: 1; 2 Linear differential equations (Review), equation reducible to linear form,\nBernoulli\u2018sequation"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 3: # Self learning topics:Simple application of differential equation of first order\nand first degree to electrical and Mechanical Engineering problem"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Differential Equations of First Order and First Degree",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 1: 2; 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 2: Linear Differential Equation with constant coefficient\u2010 complementary function,particular integrals of differential equation of the type f(D)y = X where X is ( ) ( )"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 3: 2; 2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 4: Method of variation of parameters"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 5: # Self learning topics: Cauchy\u2018s homogeneous linear differential equation and Legendre\u2018s differential equation, Applications of Higher order differential equation"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Linear Differential Equations With Constant Coefficients and Variable\nCoefficientsOf Higher Order",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 1: Pre-requisite: Tracing of curves\n1; 1 Beta and Gamma functions and its properties"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 2: 1; 2 Differentiation under integral sign with constant limits of integration 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 3: 3 Rectification of plane curves"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 4: (Cartesian and polar)\n# Self learning topics: Rectification of curve in parametric co-ordinates"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Beta and Gamma Function, Differentiation under Integral sign and\nRectification",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 1: 4; 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 2: Double integration\u2010definition, Evaluation of Double Integrals; (Cartesian &\nPolar)\n4"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 3: 2; Evaluation of double integrals by changing the order of integration"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 4: 4; 3"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 5: Evaluation of integrals over the given region"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-1",
+    "Divided Content": "Hour 6: (Cartesian & Polar)\n# Self learning topics: Application of double integrals to compute Area, Mass"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 1: 5; 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 2: Evaluation of double integrals by changing to polar coordinates; 5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 3: 2; Application of double integrals to compute Area\n5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 4: 3; Triple integration definition and evaluation (Cartesian, cylindrical and\nspherical polarcoordinates)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 5: # Self learning topics:Application of triple integral to compute volume"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Multiple Integration-2",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 1: 6; 1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 2: Numerical solution of ordinary differential equation using (a) Euler\u2018s method\n (b) Modified Euler method, (c) Runge\u2010Kutta fourth order method\n6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 3: 2; Numerical integration\u2010 by (a) Trapezoidal (b) Simpson\u2018s 1/3rd (c) Simpson\u2018s\n3/8th rule(all with proof)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 4: # Self learning topics: Numerical solution of ordinary differential equation\nusing Taylorseries method"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-II",
+    "Module": "Numerical solution of ordinary differential equations of first order and first\ndegree, and , Numerical Integration ",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "DIFFRACTION",
+    "Divided Content": "Hour 1: (Prerequisites : Wave front and Huygen's principle, reflection and refraction,\ndiffraction, Fresnel diffraction and Fraunhoffer diffraction)  Diffraction: Fraunhoffer diffraction at single slit, Diffraction Grating, Resolving\npower of a grating"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "DIFFRACTION",
+    "Divided Content": "Hour 2: Applications of diffraction grating; Determination of\nwavelength of light using plane transmission grating"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "DIFFRACTION",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "DIFFRACTION",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 1: (Prerequisites: Absorption, recombination, energy bands of p-n junction,\nrefractive index of a material, Snell\u2018s law)\nLaser: spontaneous emission and stimulated emission"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 2: metastable state,\npopulation inversion, types of pumping, resonant cavity, Einsteins\u2018s equations; Helium Neon laser"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 3: Nd:YAG laser"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 4: Semiconductor laser,\nApplications of laser- Holography\nFibre optics: Numerical Aperture for step index fibre"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 5: critical angle; angle of\nacceptance"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "LASER AND FIBRE OPTICS",
+    "Divided Content": "Hour 6: V number; number of modes of p"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "ELECTRODYNAMICS",
+    "Divided Content": "Hour 1: (Prerequisites : Electric Charges, Coulomb's law-force between two point\ncharges, Electric field, electric field due to a point charge, electric field lines,\nelectric dipole, electric field due to a dipole, Gauss's law, Faraday\u2018s law)\nScalar and Vector field, Physical significance of gradient, curl and divergence in\nCartesian co-ordinate system, Gauss\u2018s law for electrostatics, Gauss\u2018s law for\nmagnetostatics, Faraday\u2018s Law and Ampere\u2018s circuital law"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "ELECTRODYNAMICS",
+    "Divided Content": "Hour 2: Maxwell\u2018s equations\n(Free space and time varying fields)"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "ELECTRODYNAMICS",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "ELECTRODYNAMICS",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "ELECTRODYNAMICS",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "RELATIVITY",
+    "Divided Content": "Hour 1: (Prerequisites: Cartesian co-ordinate system)\nSpecial theory of Relativity: Inertial and Non-inertial Frames of reference,\nGalilean transformations, Lorentz transformations (space \u2013 time coordinates),\nTime Dilation, Length Contraction and Mass-Energy relation"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "RELATIVITY",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "NANOTECHNOLOGY",
+    "Divided Content": "Hour 1: (Prerequisites : Scattering of electrons, Tunneling effect, Electrostatic focusing,\nmagneto static focusing)\nNanomaterials : Properties (Optical, electrical, magnetic, structural, mechanical)\nand applications, Surface to volume ratio"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "NANOTECHNOLOGY",
+    "Divided Content": "Hour 2: Two main approaches in\nnanotechnology -Bottom up technique and Top down technique"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "NANOTECHNOLOGY",
+    "Divided Content": "Hour 3: Tools for characterization of Nanoparticles: Scanning Electron Microscope\n(SEM), Transmission Electron Microscope (TEM), Atomic Force Microscope\n(AFM)"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "NANOTECHNOLOGY",
+    "Divided Content": "Hour 4: Methods to synthesize Nanomaterials: Ball milling, Sputtering, Vapour\ndeposition, Solgel"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "PHYSICS OF SENSORS",
+    "Divided Content": "Hour 1: (Prerequisites : Transducer concept, meaning of calibration, piezoelectric\neffect)\nResistive sensors:\na) Temperature measurement: PT100 construction, calibration,\nb) Humidity measurement using resistive sensors,\nPressure sensor: Concept of pressure sensing by capacitive, flex and inductive\nmethod, Analog pressure sensor: construction working and calibration and\napplications"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "PHYSICS OF SENSORS",
+    "Divided Content": "Hour 2: Piezoelectric transducers: Concept of piezoelectricity, use of piezoelectric\ntransducer as ultrasonic generator and application of ultrasonic transducer for\ndistance measurement, liquid and air velocity measurement"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "PHYSICS OF SENSORS",
+    "Divided Content": "Hour 3: Optical sensor: Photodiode, construction and use of photodiode as ambient light\nmeasurement and flux measurement"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "PHYSICS OF SENSORS",
+    "Divided Content": "Hour 4: Pyroelectric sensors: Construction and working principle, application of\npyroelectric sensor as bolometer"
+  },
+  {
+    "Course Name": "Engineering Physics-II",
+    "Module": "PHYSICS OF SENSORS",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Principles of Spectroscopy:",
+    "Divided Content": "Hour 1: Introduction: Principle of spectroscopy, Definition,Origin of spectrum,\nClassification of spectroscopy \u2013 atomic and molecular, selection rules"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Principles of Spectroscopy:",
+    "Divided Content": "Hour 2: Table of relation between electromagnetic spectrum, types of spectroscopy and\nenergy changes"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Applications of Spectroscopy",
+    "Divided Content": "Hour 1: Emission spectroscopy- Principle, Instrumentation and applications ( Flame\nPhotometry)\nIntroduction to florescence and phosphorescence, Jablonski diagram, application\nof fluorescence in medicine only"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Applications of Spectroscopy",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Applications of Spectroscopy",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Applications of Spectroscopy",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Concept of Electrochemistry",
+    "Divided Content": "Hour 1: Introduction, concept of electrode potential, Nernst equation, types of electrochemical cells, concept of standard electrode with examples, electrochemical series, simplenumericals"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Concept of Electrochemistry",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 1: Definition, Mechanism of Corrosion- (I) Dry or Chemical Corrosion-i) Due to\noxygen ii)Due to other gases"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 2: (II)Wet or Electrochemical corrosion- Mechanism\n i) Evolution of hydrogen type ii) Absorption of oxygen"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 3: Types of Corrosion- Galvanic cell corrosion, Concentration cell corrosion\n(differential aeration principle), Pitting corrosion, Intergranular corrosion, Stress\ncorrosion"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 4: Factors affecting the rate of corrosion- (i)Nature of metal, (ii)Nature of corroding\nenvironment"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 5: Methods of corrosion control- (I)Material selection and proper designing,(II)\nCathodic protection- i) Sacrificial anodic protection ii) Impressed current\nmethod,(III) Metallic coatings- only Cathodic coating (tinning) and anodic\ncoatings (Galvanising)"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Corrosion:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Green Chemistry and Synthesis of drugs",
+    "Divided Content": "Hour 1: Introduction \u2013 Definition, significance\nTwelve Principles of Green chemistry, numerical on atom economy,\nConventional and green synthesis of Adipic acid, Indigo, Carbaryl, Ibuprofen,\nBenzimidazole, Benzyl alcohol, % atom economy and their numericals"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Green Chemistry and Synthesis of drugs",
+    "Divided Content": "Hour 2: Green fuel- Biodiesel"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Green Chemistry and Synthesis of drugs",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Green Chemistry and Synthesis of drugs",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 1: Definition, classification, characteristics of a good fuel, units of heat (no\nconversions)"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 2: Calorific value- Definition, Gross or Higher calorific value & Net or lower\ncalorific value, Dulong\u2018s formula & numerical for calculations of Gross and Net\ncalorific values"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 3: Solid fuels- Analysis of coal- Proximate and Ultimate Analysis- numerical\nproblems and significance"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 4: Liquid fuels- Petrol- Knocking, Octane number, Cetane number, Antiknocking\nagents, unleaded petrol, oxygenates (MTBE), catalytic converter"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 5: Combustion- Calculations for requirement of only oxygen and air (by weight and\nby volume only) for given solid & gaseous fuels"
+  },
+  {
+    "Course Name": "Engineering Chemistry-II",
+    "Module": "Fuels and Combustion",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Introduction to Engineering Graphics",
+    "Divided Content": "Hour 1: Principles of Engineering Graphics and their significance, usage of Drawing\ninstruments, Types of Lines, Dimensioning Systems as per IS conventions"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Introduction to Engineering Graphics",
+    "Divided Content": "Hour 2: Introduction to plain and diagonal scales"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Points and Lines",
+    "Divided Content": "Hour 1: Lines inclined to both the Reference Planes (Excluding Traces of lines) and\nsimple application based problems on Projection of lines"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Points and Lines",
+    "Divided Content": "Hour 2: @ Projection of Planes\nTriangular, Square, Rectangular, Pentagonal, Hexagonal andCircular planes\ninclined to either HP or VP only"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Points and Lines",
+    "Divided Content": "Hour 3: (Exclude composite planes)"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Points and Lines",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Points and Lines",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Solids",
+    "Divided Content": "Hour 1: (Prism, Pyramid, Cylinder, Cone only) Solid projection with the axis inclined to HP and VP"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Solids",
+    "Divided Content": "Hour 2: (Exclude Spheres, Composite, Hollow solids and frustum of solids)"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Solids",
+    "Divided Content": "Hour 3: Use change of position or Auxiliary plane method"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Solids",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Projection of Solids",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Section of Solids",
+    "Divided Content": "Hour 1: Section of Prism, Pyramid, Cylinder, & Cone cut by plane perpendicular to at\nleast one reference plane (Exclude Curved Section Plane)"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Section of Solids",
+    "Divided Content": "Hour 2: Use change of\nposition or Auxiliary plane method"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Section of Solids",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Section of Solids",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Section of Solids",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Orthographic and Sectional Orthographic Projections",
+    "Divided Content": "Hour 1: Fundamentals of\northographic projections"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Orthographic and Sectional Orthographic Projections",
+    "Divided Content": "Hour 2: Different views of a simple machine part as per the\nfirst angle projection methodrecommended by I"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Orthographic and Sectional Orthographic Projections",
+    "Divided Content": "Hour 3: S; Full or Half Sectional views\nof the Simple Machine parts"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": " Missing Views",
+    "Divided Content": "Hour 1: The identification of missing views from the given views"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Isometric View",
+    "Divided Content": "Hour 1: Principles of Isometric projection \u2013 Isometric Scale,\nIsometric Views, Conversion of Orthographic Views to Isometric\nViews(Excluding Sphere )"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Isometric View",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Graphics",
+    "Module": "Isometric View",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Introduction and Fundamental of C Programming",
+    "Divided Content": "Hour 1: Keywords, Identifiers, Constants and Variables\n- Data types in C\n- Operators in C\n- Basic Input and Output Operations\n- Expressions and Precedence of Operators\n- In-built Functions"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Introduction and Fundamental of C Programming",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Introduction and Fundamental of C Programming",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Introduction and Fundamental of C Programming",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Introduction and Fundamental of C Programming",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 1: Introduction to Control Structures\nBranching and looping structures\n- If statement, If-else statement, Nested if-else, else-if Ladder\n- Switch statement\n- For loop, While loop, Do while loop\n- break and continue"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Control Structures",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Functions",
+    "Divided Content": "Hour 1: - Introduction to functions\n- Function prototype, Function definition, Accessing a function and\nparameter passing"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Functions",
+    "Divided Content": "Hour 2: - Recursion"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Functions",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Functions",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Arrays and Strings ",
+    "Divided Content": "Hour 1: ntroduction to Arrays\n- Declaration and initialization of one dimensional and two-dimensional\narrays"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Arrays and Strings ",
+    "Divided Content": "Hour 2: - Definition and initialization of String\n- String functions"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Arrays and Strings ",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Arrays and Strings ",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Structure and Union",
+    "Divided Content": "Hour 1: - Concept of Structure and Union\n- Declaration and Initialization of structure and union\n- Nested structures\n- Array of Structures\n- Passing structure to functions"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Structure and Union",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Structure and Union",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Structure and Union",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Pointers ",
+    "Divided Content": "Hour 1: - Fundamentals of pointers\n- Declaration, initialization and dereferencing of pointers\n- Operations on Pointers\n- Concept of dynamic memory allocation"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Pointers ",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Pointers ",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "C programming",
+    "Module": "Pointers ",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 1: 1; 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 2: Introduction to Theory of Communication\n- Definition\n- Objectives\n- Postulates/Hallmarks\n- The Process of Communication\n- Organizational Communication\n-Formal (Upward, Downward and Horizontal)\n-Informal (Grapevine)\n1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 3: 2"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 4: Methods of Communication\n- Verbal (Written & Spoken)\n- Non-verbal\n-Non-verbal cues perceived through the five senses: (Visual,\nAuditory, Tactile, Olfactory and Gustatory cues)\n-Non-verbal cues transmitted through the use of: (The Body, Voice,\nSpace, Time and Silence) 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 5: 3"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 6: Barriers to Communication  - Mechanical/External\n- Physical/Internal\n- Semantic & Linguistic\n- Psychological\n- Socio-Cultural\n1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 7: 4"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 8: Communication at the Workplace\n- Corporate Communication - Case Studies\n- Listening Tasks with Recordings and Activity Sheets\n- Short Speeches as Monologues\n-Informative Speeches that Center on People, Events, Processes,\nPlaces, or Things\n-Persuasive Speeches to Persuade, Motivate or Take Action\n-Special Occasion Speeches for Ceremonial, Commemorative, or\nEpideictic purposes\n- Pair-work Conversational Activities (Dialogues)\n- Short Group Presentations on Business Plans"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 10: Review and practice"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 11: Review and practice"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "FUNDAMENTALS OF COMMUNICATION",
+    "Divided Content": "Hour 12: Review and practice"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "VERBAL APTITUDE FOR EMPLOYMENT",
+    "Divided Content": "Hour 1: 2; 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "VERBAL APTITUDE FOR EMPLOYMENT",
+    "Divided Content": "Hour 2: Vocabulary Building\n- Root words (Etymology)\n- Meaning of Words in Context\n- Synonyms & Antonyms\n- Collocations\n- Word Form Charts\n- Prefixes & Suffixes\n- Standard Abbreviations\n2"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "DEVELOPING READING AND WRITING SKILLS",
+    "Divided Content": "Hour 1: 3; 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "DEVELOPING READING AND WRITING SKILLS",
+    "Divided Content": "Hour 2: Reading Comprehension\n- Long Passages\n- Short Passages\n- MCQs on Inferential Questions with 4 Options\n3"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 1: 4; 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 2: Seven Cs of Business Correspondence\n- Completeness\n- Conciseness\n- Consideration\n- Concreteness\n- Clarity\n- Courtesy\n- Correctness\n4"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 3: 2"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 4: Parts of a Formal Letter and Formats\n- Parts/Elements of a Formal Letter\n-Letterheads and/or Sender\u2019s Address\n-Dateline\n-Inside Address\n-Reference Line (Optional)\n-Attention Line (Optional)\n-Salutation\n-Subject Line\n-Body\n-Complimentary Close\n-Signature Block\n-Enclosures/Attachments\n- Complete/Full Block Format\n4"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 5: 3"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BUSINESS CORRESPONDENCE",
+    "Divided Content": "Hour 6: Emails\n- Format of Emails\n- Features of Effective Emails\n- Language and style of Emails\n4"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BASIC TECHNICAL WRITING",
+    "Divided Content": "Hour 1: 5; 1"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "BASIC TECHNICAL WRITING",
+    "Divided Content": "Hour 2: Introduction\n- What is Technical Writing?\n- Importance and Principles of Technical Writing\n- Difference between Technical Writing & Literary Writing\n- Framing Definitions\n- Difference between Technical Description & Instructions\n5"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "PERSONALITY DEVELOPMENT AND SOCIAL ETIQUETTES",
+    "Divided Content": "Hour 1: Personality Development\n- Introducing Self and/or a Classmate\n- Formal Dress Code\n6; 2"
+  },
+  {
+    "Course Name": "Professional Communication\nand Ethics- I",
+    "Module": "PERSONALITY DEVELOPMENT AND SOCIAL ETIQUETTES",
+    "Divided Content": "Hour 2: Social Etiquettes\n- Formal Dining Etiquettes\n- Cubicle Etiquettes\n- Responsibility in Using Social Media\n- Showing Empathy and Respect\n- Learning Accountability and Accepting Criticism\n- Demonstrating Flexibility and Cooperation\n- Selecting Effective Communication Channels"
+  }
+]

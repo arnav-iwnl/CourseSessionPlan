@@ -1,0 +1,1058 @@
+{
+  "Analysis of Algorithms": [
+    {
+      "id": 1,
+      "Module Name": "Backtracking and Branch and bound",
+      "Detailed Content": [
+        {
+          "5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring": [
+            "Hour 1 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring",
+            "Hour 2 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring",
+            "Hour 3 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring",
+            "Hour 4 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring",
+            "Hour 5 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring",
+            "Hour 6 : 5.1 General Method, Backtracking: N-queen problem, Sum of subsets, Graph coloring"
+          ]
+        },
+        {
+          "5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem": [
+            "Hour 1 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem",
+            "Hour 2 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem",
+            "Hour 3 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem",
+            "Hour 4 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem",
+            "Hour 5 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem",
+            "Hour 6 : 5.2 Branch and Bound: Travelling Salesperson Problem, 15 Puzzle problem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Divide and Conquer Approach",
+      "Detailed Content": [
+        {
+          "2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.": [
+            "Hour 1 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.",
+            "Hour 2 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.",
+            "Hour 3 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.",
+            "Hour 4 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.",
+            "Hour 5 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search.",
+            "Hour 6 : 2.1 General method, Merge sort, Quick sort, Finding minimum and maximum algorithms and their Analysis, Analysis of Binary search."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Dynamic Programming Approach",
+      "Detailed Content": [
+        {
+          "4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence": [
+            "Hour 1 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 2 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 3 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 4 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 5 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 6 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 7 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 8 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence",
+            "Hour 9 : 4.1 General Method, Multistage graphs, Single source shortest path: Bellman Ford Algorithm All pair shortest path: Floyd Warshall Algorithm, Assembly-line scheduling Problem0/1 knapsack Problem, Travelling Salesperson problem, Longest common subsequence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Greedy Method Approach",
+      "Detailed Content": [
+        {
+          "3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms": [
+            "Hour 1 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms",
+            "Hour 2 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms",
+            "Hour 3 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms",
+            "Hour 4 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms",
+            "Hour 5 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms",
+            "Hour 6 : 3.1 General Method, Single source shortest path: Dijkstra Algorithm Fractional Knapsack problem, Job sequencing with deadlines, Minimum cost spanning trees: Kruskal and Prim‟s algorithms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Introduction",
+      "Detailed Content": [
+        {
+          "1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.": [
+            "Hour 1 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 2 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 3 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 4 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 5 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 6 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 7 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort.",
+            "Hour 8 : 1.1 Performance analysis, space, and time complexity Growth of function, Big-Oh, Omega Theta notation Mathematical background for algorithm analysis. Complexity class: Definition of P, NP, NP-Hard, NP-Complete Analysis of selection sort, insertion sort."
+          ]
+        },
+        {
+          "1.2 Recurrences: The substitution method, Recursion tree method, Master method": [
+            "Hour 1 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 2 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 3 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 4 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 5 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 6 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 7 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method",
+            "Hour 8 : 1.2 Recurrences: The substitution method, Recursion tree method, Master method"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "String Matching Algorithms",
+      "Detailed Content": [
+        {
+          "6.1 The Naïve string-matching algorithm, The Rabin Karp algorithm, The Knuth-Morris-Pratt algorithm": [
+            "Hour 1 : 6.1 The Naïve string-matching algorithm, The Rabin Karp algorithm, The Knuth-Morris-Pratt algorithm",
+            "Hour 2 : 6.1 The Naïve string-matching algorithm, The Rabin Karp algorithm, The Knuth-Morris-Pratt algorithm",
+            "Hour 3 : 6.1 The Naïve string-matching algorithm, The Rabin Karp algorithm, The Knuth-Morris-Pratt algorithm",
+            "Hour 4 : 6.1 The Naïve string-matching algorithm, The Rabin Karp algorithm, The Knuth-Morris-Pratt algorithm"
+          ]
+        }
+      ]
+    }
+  ],
+  "Database Management System": [
+    {
+      "id": 1,
+      "Module Name": "Entity–Relationship Data Model",
+      "Detailed Content": [
+        {
+          "2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation": [
+            "Hour 1 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation",
+            "Hour 2 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation",
+            "Hour 3 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation",
+            "Hour 4 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation",
+            "Hour 5 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation",
+            "Hour 6 : 2.1 The Entity-Relationship (ER) Model: Entity types: Weak and strong entity sets, Entity sets, Types of Attributes, Keys, Relationship constraints: Cardinality and Participation, Extended Entity-Relationship (EER) Model: Generalization, Specialization and Aggregation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Introduction Database Concepts",
+      "Detailed Content": [
+        {
+          "1.1 Introduction, Characteristics of databases, File system v/s Database system, Data abstraction and data Independence, DBMS system architecture, Database Administrator": [
+            "Hour 1 : 1.1 Introduction, Characteristics of databases, File system v/s Database system, Data abstraction and data Independence, DBMS system architecture, Database Administrator",
+            "Hour 2 : 1.1 Introduction, Characteristics of databases, File system v/s Database system, Data abstraction and data Independence, DBMS system architecture, Database Administrator",
+            "Hour 3 : 1.1 Introduction, Characteristics of databases, File system v/s Database system, Data abstraction and data Independence, DBMS system architecture, Database Administrator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Relational Model and relational Algebra",
+      "Detailed Content": [
+        {
+          "3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.": [
+            "Hour 1 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 2 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 3 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 4 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 5 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 6 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 7 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries.",
+            "Hour 8 : 3.1 Introduction to the Relational Model, relational schema and concept of keys. Mapping the ER and EER Model to the Relational Model, Relational Algebra-operators, Relational Algebra Queries."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Relational-Database Design",
+      "Detailed Content": [
+        {
+          "5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.": [
+            "Hour 1 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.",
+            "Hour 2 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.",
+            "Hour 3 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.",
+            "Hour 4 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.",
+            "Hour 5 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF.",
+            "Hour 6 : 5.1 Pitfalls in Relational-Database designs, Concept of normalization, Function Dependencies, First Normal Form, 2NF, 3NF, BCNF."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Structured Query Language (SQL)",
+      "Detailed Content": [
+        {
+          "4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers": [
+            "Hour 1 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers",
+            "Hour 2 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers",
+            "Hour 3 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers",
+            "Hour 4 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers",
+            "Hour 5 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers",
+            "Hour 6 : 4.1 Overview of SQL, Data Definition Commands, Integrity constraints: key constraints, Domain Constraints, Referential integrity , check constraints, Data Manipulation commands, Data Control commands, Set and string operations, aggregate function-group by, having, Views in SQL, joins, Nested and complex queries, Triggers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Transactions Management and Concurrency and Recovery",
+      "Detailed Content": [
+        {
+          "6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling": [
+            "Hour 1 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 2 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 3 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 4 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 5 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 6 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 7 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 8 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 9 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling",
+            "Hour 10 : 6.1 Transaction concept, Transaction states, ACID properties, Transaction Control Commands, Concurrent Executions, Serializability-Conflict and View, Concurrency Control: Lock-based, Timestamp-based protocols, Recovery System: Log based recovery, Deadlock handling"
+          ]
+        }
+      ]
+    }
+  ],
+  "Engineering Mathematics-IV": [
+    {
+      "id": 1,
+      "Module Name": "Complex Integration",
+      "Detailed Content": [
+        {
+          "2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).": [
+            "Hour 1 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 2 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 3 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 4 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 5 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 6 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof).",
+            "Hour 7 : 2.1 Line Integral, Cauchy‟s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy‟s Integral formula (without proof)."
+          ]
+        },
+        {
+          "2.2 Taylor‟s and Laurent‟s series (without proof).": [
+            "Hour 1 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 2 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 3 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 4 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 5 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 6 : 2.2 Taylor‟s and Laurent‟s series (without proof).",
+            "Hour 7 : 2.2 Taylor‟s and Laurent‟s series (without proof)."
+          ]
+        },
+        {
+          "2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)": [
+            "Hour 1 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 2 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 3 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 4 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 5 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 6 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)",
+            "Hour 7 : 2.3 Definition of Singularity, Zeroes, poles off(z), Residues, Cauchy‟s Residue Theorem (without proof)"
+          ]
+        },
+        {
+          "2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.": [
+            "Hour 1 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 2 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 3 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 4 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 5 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 6 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations.",
+            "Hour 7 : 2.4 Self-learning Topics: Application of Residue Theorem to evaluate real integrations."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Linear Algebra (Theory of Matrices)",
+      "Detailed Content": [
+        {
+          "1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)": [
+            "Hour 1 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 2 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 3 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 4 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 5 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 6 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)",
+            "Hour 7 : 1.1 Characteristic Equation, Eigenvalues and Eigenvectors, and properties \n(without proof)"
+          ]
+        },
+        {
+          "1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials": [
+            "Hour 1 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 2 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 3 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 4 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 5 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 6 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials",
+            "Hour 7 : 1.2 Cayley-Hamilton Theorem (without proof), verification and reduction of higher degree polynomials"
+          ]
+        },
+        {
+          "1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices": [
+            "Hour 1 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 2 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 3 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 4 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 5 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 6 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices",
+            "Hour 7 : 1.3 Similarity of matrices, diagonalizable and non-diagonalizable matrices"
+          ]
+        },
+        {
+          "1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.": [
+            "Hour 1 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 2 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 3 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 4 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 5 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 6 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms.",
+            "Hour 7 : 1.4 Self-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Linear Programming Problems",
+      "Detailed Content": [
+        {
+          "5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.": [
+            "Hour 1 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.",
+            "Hour 2 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.",
+            "Hour 3 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.",
+            "Hour 4 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.",
+            "Hour 5 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method.",
+            "Hour 6 : 5.1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method."
+          ]
+        },
+        {
+          "5.2 Artificial variables, Big-M method (Method of penalty)": [
+            "Hour 1 : 5.2 Artificial variables, Big-M method (Method of penalty)",
+            "Hour 2 : 5.2 Artificial variables, Big-M method (Method of penalty)",
+            "Hour 3 : 5.2 Artificial variables, Big-M method (Method of penalty)",
+            "Hour 4 : 5.2 Artificial variables, Big-M method (Method of penalty)",
+            "Hour 5 : 5.2 Artificial variables, Big-M method (Method of penalty)",
+            "Hour 6 : 5.2 Artificial variables, Big-M method (Method of penalty)"
+          ]
+        },
+        {
+          "5.3 Duality, Dual of LPP and Dual Simplex Method": [
+            "Hour 1 : 5.3 Duality, Dual of LPP and Dual Simplex Method",
+            "Hour 2 : 5.3 Duality, Dual of LPP and Dual Simplex Method",
+            "Hour 3 : 5.3 Duality, Dual of LPP and Dual Simplex Method",
+            "Hour 4 : 5.3 Duality, Dual of LPP and Dual Simplex Method",
+            "Hour 5 : 5.3 Duality, Dual of LPP and Dual Simplex Method",
+            "Hour 6 : 5.3 Duality, Dual of LPP and Dual Simplex Method"
+          ]
+        },
+        {
+          "5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.": [
+            "Hour 1 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.",
+            "Hour 2 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.",
+            "Hour 3 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.",
+            "Hour 4 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.",
+            "Hour 5 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method.",
+            "Hour 6 : 5.4 Self-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Nonlinear Programming Problems",
+      "Detailed Content": [
+        {
+          "6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers": [
+            "Hour 1 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 2 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 3 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 4 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 5 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 6 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers",
+            "Hour 7 : 6.1 NLPP with one equality constraint (two or three variables) using the method of Lagrange‟s multipliers"
+          ]
+        },
+        {
+          "6.2 NLPP with two equality constraints": [
+            "Hour 1 : 6.2 NLPP with two equality constraints",
+            "Hour 2 : 6.2 NLPP with two equality constraints",
+            "Hour 3 : 6.2 NLPP with two equality constraints",
+            "Hour 4 : 6.2 NLPP with two equality constraints",
+            "Hour 5 : 6.2 NLPP with two equality constraints",
+            "Hour 6 : 6.2 NLPP with two equality constraints",
+            "Hour 7 : 6.2 NLPP with two equality constraints"
+          ]
+        },
+        {
+          "6.3 NLPP with inequality constraint: Kuhn-Tucker conditions": [
+            "Hour 1 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 2 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 3 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 4 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 5 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 6 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions",
+            "Hour 7 : 6.3 NLPP with inequality constraint: Kuhn-Tucker conditions"
+          ]
+        },
+        {
+          "6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method": [
+            "Hour 1 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 2 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 3 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 4 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 5 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 6 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method",
+            "Hour 7 : 6.4 Self-learning Topics: Problems with two inequality constraints, Unconstrained optimization: One-dimensional search method (Golden Search method, Newton‟s method). Gradient Search method"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Probability Distribution and Sampling Theory",
+      "Detailed Content": [
+        {
+          "4.1 Probability Distribution: Poisson and Normal distribution": [
+            "Hour 1 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 2 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 3 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 4 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 5 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 6 : 4.1 Probability Distribution: Poisson and Normal distribution",
+            "Hour 7 : 4.1 Probability Distribution: Poisson and Normal distribution"
+          ]
+        },
+        {
+          "4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.": [
+            "Hour 1 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 2 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 3 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 4 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 5 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 6 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom.",
+            "Hour 7 : 4.2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom."
+          ]
+        },
+        {
+          "4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.": [
+            "Hour 1 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 2 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 3 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 4 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 5 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 6 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table.",
+            "Hour 7 : 4.3 Students‟ t-distribution (Small sample). Test the significance of mean and Difference between the means of two samples. Chi-Square Test: Test of goodness of fit and independence of attributes, Contingency table."
+          ]
+        },
+        {
+          "4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.": [
+            "Hour 1 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 2 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 3 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 4 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 5 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 6 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction.",
+            "Hour 7 : 4.4 Self-learning Topics: Test significance for Large samples, Estimate parameters of a population, Yate‟s Correction."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Z Transform",
+      "Detailed Content": [
+        {
+          "3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}": [
+            "Hour 1 : 3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}",
+            "Hour 2 : 3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}",
+            "Hour 3 : 3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}",
+            "Hour 4 : 3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}",
+            "Hour 5 : 3.1Definition and Region of Convergence, Transform of Standard Functions: {e^(at)}, {|t|}, {t + a * cos(bt)}, {t^n sin(at + b)}, {t^n sinh(at)}, {t^n cosh(at)}"
+          ]
+        },
+        {
+          "3.2 Properties of Z Transform: Change of Scale, Shifting Property,": [
+            "Hour 1 : 3.2 Properties of Z Transform: Change of Scale, Shifting Property,",
+            "Hour 2 : 3.2 Properties of Z Transform: Change of Scale, Shifting Property,",
+            "Hour 3 : 3.2 Properties of Z Transform: Change of Scale, Shifting Property,",
+            "Hour 4 : 3.2 Properties of Z Transform: Change of Scale, Shifting Property,",
+            "Hour 5 : 3.2 Properties of Z Transform: Change of Scale, Shifting Property,"
+          ]
+        },
+        {
+          "3.3 Inverse Z transform: Partial Fraction Method, Convolution Method.": [
+            "Hour 1 : 3.3 Inverse Z transform: Partial Fraction Method, Convolution Method.",
+            "Hour 2 : 3.3 Inverse Z transform: Partial Fraction Method, Convolution Method.",
+            "Hour 3 : 3.3 Inverse Z transform: Partial Fraction Method, Convolution Method.",
+            "Hour 4 : 3.3 Inverse Z transform: Partial Fraction Method, Convolution Method.",
+            "Hour 5 : 3.3 Inverse Z transform: Partial Fraction Method, Convolution Method."
+          ]
+        },
+        {
+          "3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion": [
+            "Hour 1 : 3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion",
+            "Hour 2 : 3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion",
+            "Hour 3 : 3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion",
+            "Hour 4 : 3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion",
+            "Hour 5 : 3.4 Self-learning Topics: Initial value theorem, Final value theorem, Inverse of Z Transform by Binomial Expansion"
+          ]
+        }
+      ]
+    }
+  ],
+  "Microprocessor": [
+    {
+      "id": 1,
+      "Module Name": "Instruction Set and Programming",
+      "Detailed Content": [
+        {
+          "2.1 Addressing Modes": [
+            "Hour 1 : 2.1 Addressing Modes",
+            "Hour 2 : 2.1 Addressing Modes",
+            "Hour 3 : 2.1 Addressing Modes",
+            "Hour 4 : 2.1 Addressing Modes",
+            "Hour 5 : 2.1 Addressing Modes",
+            "Hour 6 : 2.1 Addressing Modes"
+          ]
+        },
+        {
+          "2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions": [
+            "Hour 1 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions",
+            "Hour 2 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions",
+            "Hour 3 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions",
+            "Hour 4 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions",
+            "Hour 5 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions",
+            "Hour 6 : 2.2 Instruction set-Data Transfer Instructions, String Instructions, Logical Instructions, Arithmetic Instructions, Transfer of Control Instructions, Processor Control Instructions"
+          ]
+        },
+        {
+          "2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures": [
+            "Hour 1 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures",
+            "Hour 2 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures",
+            "Hour 3 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures",
+            "Hour 4 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures",
+            "Hour 5 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures",
+            "Hour 6 : 2.3 Assembler Directives and Assembly Language Programming, Macros, Procedures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "Intel 80386DX Processor",
+      "Detailed Content": [
+        {
+          "4.1 Architecture of 80386 microprocessor": [
+            "Hour 1 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 2 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 3 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 4 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 5 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 6 : 4.1 Architecture of 80386 microprocessor",
+            "Hour 7 : 4.1 Architecture of 80386 microprocessor"
+          ]
+        },
+        {
+          "4.2 80386 registers–General purpose Registers, EFLAGS and Control registers": [
+            "Hour 1 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 2 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 3 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 4 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 5 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 6 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers",
+            "Hour 7 : 4.2 80386 registers–General purpose Registers, EFLAGS and Control registers"
+          ]
+        },
+        {
+          "4.3 Real mode, Protected mode, virtual 8086 mode": [
+            "Hour 1 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 2 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 3 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 4 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 5 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 6 : 4.3 Real mode, Protected mode, virtual 8086 mode",
+            "Hour 7 : 4.3 Real mode, Protected mode, virtual 8086 mode"
+          ]
+        },
+        {
+          "4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism": [
+            "Hour 1 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 2 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 3 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 4 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 5 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 6 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism",
+            "Hour 7 : 4.4 80386 memory management in Protected Mode – Descriptors and selectors, descriptor tables, the memory paging mechanism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Memory and Peripherals interfacing",
+      "Detailed Content": [
+        {
+          "3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute": [
+            "Hour 1 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 2 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 3 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 4 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 5 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 6 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 7 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute",
+            "Hour 8 : 3.1 Memory Interfacing - RAM and ROM Decoding Techniques – Partial and Absolute"
+          ]
+        },
+        {
+          "3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.": [
+            "Hour 1 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 2 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 3 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 4 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 5 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 6 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 7 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086.",
+            "Hour 8 : 3.2 8255-PPI-Block diagram, CWR, operating modes, interfacing with 8086."
+          ]
+        },
+        {
+          "3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.": [
+            "Hour 1 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 2 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 3 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 4 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 5 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 6 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 7 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes.",
+            "Hour 8 : 3.3 8257-DMAC-Block diagram, DMA operations and transfer modes."
+          ]
+        },
+        {
+          "3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.": [
+            "Hour 1 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 2 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 3 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 4 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 5 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 6 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 7 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode.",
+            "Hour 8 : 3.4 Programmable Interrupt Controller 8259-Block Diagram, Interfacing the 8259 in single and cascaded mode."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Pentium 4",
+      "Detailed Content": [
+        {
+          "6.1 Comparative study of 8086, 80386, Pentium I, Pentium II and Pentium III": [
+            "Hour 1 : 6.1 Comparative study of 8086, 80386, Pentium I, Pentium II and Pentium III",
+            "Hour 2 : 6.1 Comparative study of 8086, 80386, Pentium I, Pentium II and Pentium III",
+            "Hour 3 : 6.1 Comparative study of 8086, 80386, Pentium I, Pentium II and Pentium III",
+            "Hour 4 : 6.1 Comparative study of 8086, 80386, Pentium I, Pentium II and Pentium III"
+          ]
+        },
+        {
+          "6.2 Pentium 4: Net burst micro architecture.": [
+            "Hour 1 : 6.2 Pentium 4: Net burst micro architecture.",
+            "Hour 2 : 6.2 Pentium 4: Net burst micro architecture.",
+            "Hour 3 : 6.2 Pentium 4: Net burst micro architecture.",
+            "Hour 4 : 6.2 Pentium 4: Net burst micro architecture."
+          ]
+        },
+        {
+          "6.3 Instruction translation look aside buffer and branch prediction": [
+            "Hour 1 : 6.3 Instruction translation look aside buffer and branch prediction",
+            "Hour 2 : 6.3 Instruction translation look aside buffer and branch prediction",
+            "Hour 3 : 6.3 Instruction translation look aside buffer and branch prediction",
+            "Hour 4 : 6.3 Instruction translation look aside buffer and branch prediction"
+          ]
+        },
+        {
+          "6.4 Hyper threading technology and its use in Pentium 4": [
+            "Hour 1 : 6.4 Hyper threading technology and its use in Pentium 4",
+            "Hour 2 : 6.4 Hyper threading technology and its use in Pentium 4",
+            "Hour 3 : 6.4 Hyper threading technology and its use in Pentium 4",
+            "Hour 4 : 6.4 Hyper threading technology and its use in Pentium 4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Pentium Processor",
+      "Detailed Content": [
+        {
+          "5.1 Pentium Architecture": [
+            "Hour 1 : 5.1 Pentium Architecture",
+            "Hour 2 : 5.1 Pentium Architecture",
+            "Hour 3 : 5.1 Pentium Architecture",
+            "Hour 4 : 5.1 Pentium Architecture",
+            "Hour 5 : 5.1 Pentium Architecture",
+            "Hour 6 : 5.1 Pentium Architecture"
+          ]
+        },
+        {
+          "5.2 Superscalar Operation,": [
+            "Hour 1 : 5.2 Superscalar Operation,",
+            "Hour 2 : 5.2 Superscalar Operation,",
+            "Hour 3 : 5.2 Superscalar Operation,",
+            "Hour 4 : 5.2 Superscalar Operation,",
+            "Hour 5 : 5.2 Superscalar Operation,",
+            "Hour 6 : 5.2 Superscalar Operation,"
+          ]
+        },
+        {
+          "5.3 Integer &Floating-Point Pipeline Stages": [
+            "Hour 1 : 5.3 Integer &Floating-Point Pipeline Stages",
+            "Hour 2 : 5.3 Integer &Floating-Point Pipeline Stages",
+            "Hour 3 : 5.3 Integer &Floating-Point Pipeline Stages",
+            "Hour 4 : 5.3 Integer &Floating-Point Pipeline Stages",
+            "Hour 5 : 5.3 Integer &Floating-Point Pipeline Stages",
+            "Hour 6 : 5.3 Integer &Floating-Point Pipeline Stages"
+          ]
+        },
+        {
+          "5.4 Branch Prediction Logic": [
+            "Hour 1 : 5.4 Branch Prediction Logic",
+            "Hour 2 : 5.4 Branch Prediction Logic",
+            "Hour 3 : 5.4 Branch Prediction Logic",
+            "Hour 4 : 5.4 Branch Prediction Logic",
+            "Hour 5 : 5.4 Branch Prediction Logic",
+            "Hour 6 : 5.4 Branch Prediction Logic"
+          ]
+        },
+        {
+          "5.5 Cache Organization and": [
+            "Hour 1 : 5.5 Cache Organization and",
+            "Hour 2 : 5.5 Cache Organization and",
+            "Hour 3 : 5.5 Cache Organization and",
+            "Hour 4 : 5.5 Cache Organization and",
+            "Hour 5 : 5.5 Cache Organization and",
+            "Hour 6 : 5.5 Cache Organization and"
+          ]
+        },
+        {
+          "5.6 MESI protocol": [
+            "Hour 1 : 5.6 MESI protocol",
+            "Hour 2 : 5.6 MESI protocol",
+            "Hour 3 : 5.6 MESI protocol",
+            "Hour 4 : 5.6 MESI protocol",
+            "Hour 5 : 5.6 MESI protocol",
+            "Hour 6 : 5.6 MESI protocol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "The Intel Microprocessors 8086 Architecture",
+      "Detailed Content": [
+        {
+          "1.1 8086CPU Architecture": [
+            "Hour 1 : 1.1 8086CPU Architecture",
+            "Hour 2 : 1.1 8086CPU Architecture",
+            "Hour 3 : 1.1 8086CPU Architecture",
+            "Hour 4 : 1.1 8086CPU Architecture",
+            "Hour 5 : 1.1 8086CPU Architecture",
+            "Hour 6 : 1.1 8086CPU Architecture",
+            "Hour 7 : 1.1 8086CPU Architecture",
+            "Hour 8 : 1.1 8086CPU Architecture"
+          ]
+        },
+        {
+          "1.2 Programmer‟s Model": [
+            "Hour 1 : 1.2 Programmer‟s Model",
+            "Hour 2 : 1.2 Programmer‟s Model",
+            "Hour 3 : 1.2 Programmer‟s Model",
+            "Hour 4 : 1.2 Programmer‟s Model",
+            "Hour 5 : 1.2 Programmer‟s Model",
+            "Hour 6 : 1.2 Programmer‟s Model",
+            "Hour 7 : 1.2 Programmer‟s Model",
+            "Hour 8 : 1.2 Programmer‟s Model"
+          ]
+        },
+        {
+          "1.3 Functional Pin Diagram": [
+            "Hour 1 : 1.3 Functional Pin Diagram",
+            "Hour 2 : 1.3 Functional Pin Diagram",
+            "Hour 3 : 1.3 Functional Pin Diagram",
+            "Hour 4 : 1.3 Functional Pin Diagram",
+            "Hour 5 : 1.3 Functional Pin Diagram",
+            "Hour 6 : 1.3 Functional Pin Diagram",
+            "Hour 7 : 1.3 Functional Pin Diagram",
+            "Hour 8 : 1.3 Functional Pin Diagram"
+          ]
+        },
+        {
+          "1.4 Memory Segmentation": [
+            "Hour 1 : 1.4 Memory Segmentation",
+            "Hour 2 : 1.4 Memory Segmentation",
+            "Hour 3 : 1.4 Memory Segmentation",
+            "Hour 4 : 1.4 Memory Segmentation",
+            "Hour 5 : 1.4 Memory Segmentation",
+            "Hour 6 : 1.4 Memory Segmentation",
+            "Hour 7 : 1.4 Memory Segmentation",
+            "Hour 8 : 1.4 Memory Segmentation"
+          ]
+        },
+        {
+          "1.5 Banking in 8086": [
+            "Hour 1 : 1.5 Banking in 8086",
+            "Hour 2 : 1.5 Banking in 8086",
+            "Hour 3 : 1.5 Banking in 8086",
+            "Hour 4 : 1.5 Banking in 8086",
+            "Hour 5 : 1.5 Banking in 8086",
+            "Hour 6 : 1.5 Banking in 8086",
+            "Hour 7 : 1.5 Banking in 8086",
+            "Hour 8 : 1.5 Banking in 8086"
+          ]
+        },
+        {
+          "1.6 Demultiplexing of Address/Data bus": [
+            "Hour 1 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 2 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 3 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 4 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 5 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 6 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 7 : 1.6 Demultiplexing of Address/Data bus",
+            "Hour 8 : 1.6 Demultiplexing of Address/Data bus"
+          ]
+        },
+        {
+          "1.7 Functioning of 8086 in Minimum mode and Maximum mode": [
+            "Hour 1 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 2 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 3 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 4 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 5 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 6 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 7 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode",
+            "Hour 8 : 1.7 Functioning of 8086 in Minimum mode and Maximum mode"
+          ]
+        },
+        {
+          "1.8 Timing diagrams for Read and Write operations in minimum and maximum mode": [
+            "Hour 1 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 2 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 3 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 4 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 5 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 6 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 7 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode",
+            "Hour 8 : 1.8 Timing diagrams for Read and Write operations in minimum and maximum mode"
+          ]
+        },
+        {
+          "1.9 Interrupt structure and its servicing": [
+            "Hour 1 : 1.9 Interrupt structure and its servicing",
+            "Hour 2 : 1.9 Interrupt structure and its servicing",
+            "Hour 3 : 1.9 Interrupt structure and its servicing",
+            "Hour 4 : 1.9 Interrupt structure and its servicing",
+            "Hour 5 : 1.9 Interrupt structure and its servicing",
+            "Hour 6 : 1.9 Interrupt structure and its servicing",
+            "Hour 7 : 1.9 Interrupt structure and its servicing",
+            "Hour 8 : 1.9 Interrupt structure and its servicing"
+          ]
+        }
+      ]
+    }
+  ],
+  "Operating System": [
+    {
+      "id": 1,
+      "Module Name": "File Management",
+      "Detailed Content": [
+        {
+          "5.1 Overview, File Organization and Access, File Directories, File Sharing": [
+            "Hour 1 : 5.1 Overview, File Organization and Access, File Directories, File Sharing",
+            "Hour 2 : 5.1 Overview, File Organization and Access, File Directories, File Sharing",
+            "Hour 3 : 5.1 Overview, File Organization and Access, File Directories, File Sharing",
+            "Hour 4 : 5.1 Overview, File Organization and Access, File Directories, File Sharing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Module Name": "I/O management",
+      "Detailed Content": [
+        {
+          "6.1 I/O devices, Organization of the I/O Function, Disk Organization, I/O Management and Disk Scheduling: FCFS, SSTF, SCAN, CSCAN, LOOK, C-LOOK.": [
+            "Hour 1 : 6.1 I/O devices, Organization of the I/O Function, Disk Organization, I/O Management and Disk Scheduling: FCFS, SSTF, SCAN, CSCAN, LOOK, C-LOOK.",
+            "Hour 2 : 6.1 I/O devices, Organization of the I/O Function, Disk Organization, I/O Management and Disk Scheduling: FCFS, SSTF, SCAN, CSCAN, LOOK, C-LOOK.",
+            "Hour 3 : 6.1 I/O devices, Organization of the I/O Function, Disk Organization, I/O Management and Disk Scheduling: FCFS, SSTF, SCAN, CSCAN, LOOK, C-LOOK.",
+            "Hour 4 : 6.1 I/O devices, Organization of the I/O Function, Disk Organization, I/O Management and Disk Scheduling: FCFS, SSTF, SCAN, CSCAN, LOOK, C-LOOK."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Module Name": "Memory Management",
+      "Detailed Content": [
+        {
+          "4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB": [
+            "Hour 1 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 2 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 3 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 4 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 5 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 6 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 7 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 8 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB",
+            "Hour 9 : 4.1 Memory Management Requirements, Memory Partitioning: Fixed, Partitioning, Dynamic Partitioning, Memory Allocation Strategies: Best-Fit, First Fit, Worst Fit, Paging and Segmentation, TLB"
+          ]
+        },
+        {
+          "4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing": [
+            "Hour 1 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 2 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 3 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 4 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 5 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 6 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 7 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 8 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing",
+            "Hour 9 : 4.2 Virtual Memory: Demand Paging, Page Replacement Strategies: FIFO, Optimal, LRU, Thrashing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Module Name": "Operating system Overview",
+      "Detailed Content": [
+        {
+          "1.1 Introduction, Objectives, Functions and Evolution of Operating System": [
+            "Hour 1 : 1.1 Introduction, Objectives, Functions and Evolution of Operating System",
+            "Hour 2 : 1.1 Introduction, Objectives, Functions and Evolution of Operating System",
+            "Hour 3 : 1.1 Introduction, Objectives, Functions and Evolution of Operating System",
+            "Hour 4 : 1.1 Introduction, Objectives, Functions and Evolution of Operating System"
+          ]
+        },
+        {
+          "1.2 Operating system structures: Layered, Monolithic and Microkernel": [
+            "Hour 1 : 1.2 Operating system structures: Layered, Monolithic and Microkernel",
+            "Hour 2 : 1.2 Operating system structures: Layered, Monolithic and Microkernel",
+            "Hour 3 : 1.2 Operating system structures: Layered, Monolithic and Microkernel",
+            "Hour 4 : 1.2 Operating system structures: Layered, Monolithic and Microkernel"
+          ]
+        },
+        {
+          "1.3 Linux Kernel, Shell and System Calls": [
+            "Hour 1 : 1.3 Linux Kernel, Shell and System Calls",
+            "Hour 2 : 1.3 Linux Kernel, Shell and System Calls",
+            "Hour 3 : 1.3 Linux Kernel, Shell and System Calls",
+            "Hour 4 : 1.3 Linux Kernel, Shell and System Calls"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "Module Name": "Process Synchronization and Deadlocks",
+      "Detailed Content": [
+        {
+          "3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.": [
+            "Hour 1 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 2 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 3 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 4 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 5 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 6 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 7 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 8 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization.",
+            "Hour 9 : 3.1 Concurrency: Principles of Concurrency, Inter-Process Communication, Process Synchronization."
+          ]
+        },
+        {
+          "3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.": [
+            "Hour 1 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 2 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 3 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 4 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 5 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 6 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 7 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 8 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem.",
+            "Hour 9 : 3.2 Mutual Exclusion: Requirements, Hardware Support (TSL), Operating System Support (Semaphores), Producer and Consumer problem."
+          ]
+        },
+        {
+          "3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.": [
+            "Hour 1 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 2 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 3 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 4 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 5 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 6 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 7 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 8 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem.",
+            "Hour 9 : 3.3 Principles of Deadlock: Conditions and Resource, Allocation Graphs, Deadlock Prevention, Deadlock Avoidance: Banker‟s Algorithm, Deadlock Detection and Recovery, Dining Philosophers Problem."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "Module Name": "Process and Process Scheduling",
+      "Detailed Content": [
+        {
+          "2.1 Concept of a Process, Process States, Process Description, Process Control Block.": [
+            "Hour 1 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 2 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 3 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 4 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 5 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 6 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 7 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 8 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block.",
+            "Hour 9 : 2.1 Concept of a Process, Process States, Process Description, Process Control Block."
+          ]
+        },
+        {
+          "2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)": [
+            "Hour 1 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 2 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 3 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 4 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 5 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 6 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 7 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 8 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)",
+            "Hour 9 : 2.2 Uniprocessor Scheduling-Types: Preemptive and Non-preemptive scheduling algorithms (FCFS, SJF, SRTN, Priority, RR)"
+          ]
+        },
+        {
+          "2.3 Threads: Definition and Types, Concept of Multithreading": [
+            "Hour 1 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 2 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 3 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 4 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 5 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 6 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 7 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 8 : 2.3 Threads: Definition and Types, Concept of Multithreading",
+            "Hour 9 : 2.3 Threads: Definition and Types, Concept of Multithreading"
+          ]
+        }
+      ]
+    }
+  ]
+}

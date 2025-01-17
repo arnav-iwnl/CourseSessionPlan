@@ -44,9 +44,9 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (3, 'Alice Johnson', 'alice.johnson@sies.edu.in', 'alicepass789'),
 (4, 'Bob Williams', 'bob.williams@sies.edu.in', 'bobsecret321'),
 (5, 'Charlie Brown', 'charlie.brown@sies.edu.in', 'snoopy567'),
-(6, 'Diana Prince', 'hod.cs@sies.edu.in', 'wonder890'),
+(6, 'Diana Prince', 'hod.cs@sies.edu.in', 'hodcs'),
 (7, 'Ethan Hunt', 'ethan.hunt@sies.edu.in', 'mission234'),
-(8, 'Fiona Gallagher', 'hod.it@sies.edu.in', 'shameless567'),
+(8, 'Fiona Gallagher', 'hod.it@sies.edu.in', 'hodit'),
 (9, 'George Banks', 'george.banks@sies.edu.in', 'marypoppins789'),
 (10, 'Hannah Abbott', 'hod.mech@sies.edu.in', 'hufflepuff123'),
 (13, 'test', 'test@sies.edu.in', 'test123');

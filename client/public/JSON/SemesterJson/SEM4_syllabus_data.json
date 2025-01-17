@@ -1,0 +1,977 @@
+[
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 1: 1; 1 Characteristic Equation, Eigenvalues and Eigenvectors and properties (without proof)\n1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 2: 2 Cayley-Hamilton Theorem (without proof), verification and reduction of  higher degree polynomials\n1"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 3: 3 Similarity of matrices, diagonalizable and non-diagonalizable matrices\nSelf-learning Topics: Derogatory and non-derogatory matrices, Functions of Square Matrix, Linear Transformations, Quadratic forms"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Linear Algebra (Theory of Matrices)",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 1: 2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 2: 1 Line Integral, Cauchy\u2019s Integral theorem for simple connected and multiply connected regions (without proof), Cauchy\u2019s Integral formula (without proof)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 3: 2; 2 Taylor\u2019s and Laurent\u2019s series (without proof)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 4: 2"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 5: 3  Definition  of  Singularity,  Zeroes,  poles  of  f(z),  Residues,  Cauchy\u2019s Residue Theorem (without proof)\nSelf-learning Topics: Application of Residue Theorem to evaluate   real integrations"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Complex Integration",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Z Transform",
+    "Divided Content": "Hour 1: 3"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Z Transform",
+    "Divided Content": "Hour 2: 1 Definition and Region of Convergence, Transform of Standard\nFunctions:\n {\ud835\udc58\n\ud835\udc5b\ud835\udc4e\n\ud835\udc58\n}, {\ud835\udc4e\n|\ud835\udc58|\n}, { \ud835\udc36"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Z Transform",
+    "Divided Content": "Hour 3: \ud835\udc4e\n\ud835\udc58\n\ud835\udc5b\n\ud835\udc58+\ud835\udc5b }, {\ud835\udc50\n\ud835\udc58\nsin(\ud835\udefc\ud835\udc58 + \ud835\udefd)}, {\ud835\udc50\n\ud835\udc58\nsinh \ud835\udefc\ud835\udc58},\n{\ud835\udc50\n\ud835\udc58\ncosh \ud835\udefc\ud835\udc58}"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Z Transform",
+    "Divided Content": "Hour 4: 3"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Z Transform",
+    "Divided Content": "Hour 5: 2 Properties of Z Transform: Change of Scale, Shifting Property,\n Multiplication, and Division by k, Convolution theorem"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 1: 4; 1 Probability Distribution: Poisson and Normal distribution\n4"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 2: 2 Sampling distribution, Test of Hypothesis, Level of Significance, Critical region, One-tailed, and two-tailed test, Degree of freedom"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 3: 4; 3 Students\u2019 t-distribution (Small sample)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 4: Test the significance of mean and Difference between the means of two samples"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 5: Chi-Square Test: Test of\ngoodness of fit and independence of attributes, Contingency table"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 6: Self-learning Topics:  Test significance for Large samples, Estimate parameters of a population; , Yate\u2019s Correction"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module: Probability Distribution and Sampling Theory",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 1: 5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 2: 1 Types of solutions, Standard and Canonical of LPP, Basic and Feasible solutions, slack variables, surplus variables, Simplex method"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 3: 5; 2 Artificial variables, Big-M method (Method of penalty)\n5"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 4: 3 Duality, Dual of LPP and Dual Simplex Method\nSelf-learning Topics: Sensitivity Analysis, Two-Phase Simplex Method, Revised Simplex Method"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Linear Programming Problems",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 1: 6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 2: 1 NLPP with one equality constraint (two or three variables) using the method of Lagrange\u2019s multipliers\n6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 3: 2 NLPP with two equality constraints\n6"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 4: 3 NLPP with inequality constraint: Kuhn-Tucker conditions\nSelf-learning Topics: Problems with two inequality constraints,\nUnconstrained optimization: One dimensional search method (Golden Search method, Newton\u2019s method)"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 5: Gradient Search method"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Engineering Mathematics-IV",
+    "Module": "Module:  Nonlinear Programming Problems",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Terminologies of communication"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Introduction to Computer Networks",
+    "Divided Content": "Hour 1: Uses    Of    Computer    Networks,    Network    Hardware, Network Software, Protocol Layering, Reference Models: OSI,  TCP/IP,  Comparison  of  OSI  &  TCP/IP,  Network Devices"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Introduction to Computer Networks",
+    "Divided Content": "Hour 2: Self-learning Topics: Identify the different devices used in Network connection; College campus"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Introduction to Computer Networks",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 1: Physical layer: Guided Media, Unguided Media, Wireless Transmission:    Electromagnetic    Spectrum"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 2: Switching: Circuit-Switched  Networks,  Packet  Switching,  Structure Of A Switch\nDLL  Design  Issues  (Services,  Framing,  Error  Control, Flow Control), Error Detection and Correction(Hamming Code,Parity,  CRC,  Checksum)  ,  Elementary  Data  Link protocols  :  Stop  and Wait,  Sliding Window(Go  Back  N, Selective Repeat), Piggybacking, HDLC\nMedium Access  Protocols:  Random  Access,  Controlled Access, Channelization"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 3: Ethernet Protocol:  Standard Ethernet, Fast Ethernet (100 Mbps), Gigabit Ethernet, 10-Gigabit Ethernet"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 4: Self-learning Topics: Differentiate link layer in IOT network and Normal Network"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Physical Layer & Data Link Layer",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 1: Network Layer Services, Packet Switching, Network Layer Performance,  IPv4  Addressing  (classful  and  classless), Subnetting, Supernetting ,IPv4 Protocol, DHCP, Network Address Translation (NAT)"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 2: Routing algorithms: Distance Vector Routing, Link state routing,Path Vector Routing; Protocols \u2013RIP,OSPF,BGP"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 3: Next  Generation  IP:  IPv6  Addressing,IPv6  Protocol, Transition fromIPV4 to IPV6\nSelf-learning Topics: Study difference between IPV4 and IPV6"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 4: Network Class A, B, C, D, E and subnet mask"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Layer",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 1: Transport      Layer:      Transport      Layer      Services, Connectionless      &      Connection-oriented      Protocols, Transport Layer protocols: User Datagram Protocol:  UDP Services,    UDP    Applications,    Transmission    Control Protocol: TCP Services, TCP Features, Segment,   A TCP Connection,   Windows   in   TCP,   Flow   Control,   Error Control, TCP Congestion Control, TCP Timers"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 2: Session Layer: Session layer design issues, Session Layer protocol - Remote Procedure Call (RPC),\nSelf-learning Topics: List real time example of UDP and TCP"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Transport Layer & Session Layer",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Presentation Layer & Application Layer",
+    "Divided Content": "Hour 1: Presentation  layer  :Compression:  Comparison  between Lossy Compression and Lossless Compression,  Huffman Coding,    Speech    Compression,    LZW,    RLE,    Image Compression \u2013 GIF,JPEG"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Presentation Layer & Application Layer",
+    "Divided Content": "Hour 2: Application layer: Standard Client-Server Protocols: World Wide Web, HTTP, FTP, Electronic Mail,  Domain Name System (DNS), SNMP\nSelf-learning Topics: Difference between HTTP and FTP Protocol"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Presentation Layer & Application Layer",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Presentation Layer & Application Layer",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Presentation Layer & Application Layer",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 1: Introduction to VLAN ,VPN\nA  case  study  to  design  a  network    for  an  organization meeting the following guidelines:\nNetworking Devices,\nIP addressing: Subnetting, Supernetting, Routing Protocols to  be  used,  Services  to  be  used:  TELNET,  SSH,  FTP server,  Web  server,  File  server,  DHCP  server  and  DNS server"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 2: Self-learning Topics:  Study the Network Design of your college campus"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Network and Network\nDesign",
+    "Module": "Network Design Concepts",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Programming Language C; Basic of Hardware\ni"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: e; ALU, RAM, ROM, HDD, etc"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Fundamentals of Operating System",
+    "Divided Content": "Hour 1: Introduction to Operating Systems; Operating System Structure and Operations"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Fundamentals of Operating System",
+    "Divided Content": "Hour 2: Functions of Operating     Systems; Operating     System Services  and  Interface"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Fundamentals of Operating System",
+    "Divided Content": "Hour 3: System  Calls  and  its Types; System  Programs"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 1: Basic   Concepts   of   Process; Operation   on Process"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 2: Process State Model and Transition; Process  Control  Block"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 3: Context  Switching; Introduction  to  Threads"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 4: Types  of  Threads, Thread      Models; Basic      Concepts      of Scheduling"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 5: Types of Schedulers; Scheduling Criteria"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Process Management",
+    "Divided Content": "Hour 6: Scheduling Algorithms"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 1: Basic  Concepts         of         Inter-process Communication  and  Synchronization; Race Condition"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 2: Critical   Region   and   Problem; Peterson\u2019s        Solution"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 3: Synchronization Hardware and Semaphores; Classic Problems of     Synchronization"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 4: Message     Passing; Introduction   to   Deadlocks"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 5: System   Model, Deadlock        Characterization; Deadlock Detection       and       Recovery"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 6: Deadlock Prevention; Deadlock Avoidance"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 7: Self-learning Topics: Study a real time case study for Deadlock detection and recovery"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "ProcessCoordinati on",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 1: Basic   Concepts   of   Memory   Management; Swapping"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 2: Contiguous  Memory  Allocation; Paging"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 3: Structure       of       Page       Table; Segmentation"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 4: Basic   Concepts   of   Virtual Memory; Demand  Paging,  Copy-on  Write"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 5: Page Replacement Algorithms; Thrashing"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 6: Self-learning  Topics:  Memory  Management for any one Operating System, Implementation of Page Replacement Algorithms"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Memory Management",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 1: Basic  Concepts  of  File  System; File  Access Methods"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 2: Directory   Structure; File-System Implementation"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 3: Allocation   Methods; Free Space   Management"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 4: Overview    of   Mass- Storage    Structure; Disk    Structure"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 5: Disk Scheduling; RAID  Structure"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Storage Management",
+    "Divided Content": "Hour 6: Introduction  to I/O Systems"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Special-purpose Operating Systems",
+    "Divided Content": "Hour 1: Open-source     and     Proprietary     Operating System; Fundamentals      of      Distributed Operating     System"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Special-purpose Operating Systems",
+    "Divided Content": "Hour 2: Network     Operating System; Embedded  Operating  Systems"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Special-purpose Operating Systems",
+    "Divided Content": "Hour 3: Cloud and    IoT    Operating    Systems; Real-Time Operating  System"
+  },
+  {
+    "Course Name": "Operating System",
+    "Module": "Special-purpose Operating Systems",
+    "Divided Content": "Hour 4: Mobile  Operating  System; Multimedia    Operating    System"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Basic Mathematical Fundamentals: Sets, Logic,\nRelations, Functions"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Introduction and Regular Languages",
+    "Divided Content": "Hour 1: Languages: Alphabets and Strings"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Introduction and Regular Languages",
+    "Divided Content": "Hour 2: Regular Languages: Regular Expressions, Regular Languages, Regular Grammars, RL and LL grammars, Closure properties\nSelf-learning Topics: Practice exercise on Regular Expressions"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Introduction and Regular Languages",
+    "Divided Content": "Hour 3: Identify the tools also"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Introduction and Regular Languages",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Introduction and Regular Languages",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 1: Finite Automata: FA as language acceptor or verifier, NFA ( with and\nwithout \u03b5) , DFA, RE to NFA, NFA to DFA,\nReduced DFA , NFA-DFA equivalence, FA to RE"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 2: Finite State Machines with output : Moore and Mealy machines; Moore and Mealy M/C conversion"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 3: Limitations of FA; Self-learning Topics: Practice exercise on FA and NFA"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Finite Automata",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 1: Context Free Languages: CFG,\nLeftmost and Rightmost derivations, Ambiguity, Simplification and Normalization (CNF & GNF) and Chomsky Hierarchy ( Types 0 to 3)\nSelf-learning Topics: Practice numerical or exercise on CFG"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Context Free Grammars",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Push Down Automata",
+    "Divided Content": "Hour 1: Push Down Automata: Deterministic (single stack) PDA, Equivalence between PDA and CFG"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Push Down Automata",
+    "Divided Content": "Hour 2: Power and Limitations of PDA; Self-learning Topics: List the examples of PDA"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Push Down Automata",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Push Down Automata",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Push Down Automata",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 1: Turing Machine: Deterministic TM, Variants of TM, Halting problem, Power of TM"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 2: Self-learning Topics: Practice numerical of TM"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Turing Machine",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Applications of Automata",
+    "Divided Content": "Hour 1: Applications of FA, CFG, PDA & TM; Introduction to Compiler & Its phases"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Applications of Automata",
+    "Divided Content": "Hour 2: Self-learning Topics: Case study on any one compiler"
+  },
+  {
+    "Course Name": "Automata Theory",
+    "Module": "Applications of Automata",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Basics of Electrical Engineering, Fundamentals of\nComputer"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 1: Number systems: Introduction to Number systems, Binary Number systems, Signed Binary Numbers, Binary, Octal, Decimal and Hexadecimal number and their conversions, 1\u2019s and 2\u2019s complement Combinational Circuits: NOT,AND,OR,NAND,NOR,EX-OR,EX-NOR Gates"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 2: Half & Full Adder and subtractor, Reduction of Boolean functions using K-map method (2,3,4 Variable), introduction to  Multiplexers and Demultiplexers, Encoders & Decoders"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 3: Sequential Circuits: Introduction to Flip Flops: SR, JK, D, T, master slave flip flop, Truth Table"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 4: Self-learning Topics: Number System, Quine- McCluskey,Flip-Flop conversion, Counter Design"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Fundamentals of Logic Design",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 1: Introduction of Computer Organization and Architecture"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 2: Basic organization of computer and block level description of the functional units"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 3: Evolution of Computers, Von Neumann model"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 4: Performance measure of Computer Architecture, Amdahl\u2019s Law Architecture of 8086 Family, Instruction Set, Addressing Modes, Assembler Directives, Mixed- Language Programming, Stack, Procedure, Macro"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 5: Self-learning Topics: Interfacing of I/O devices with 8086(8255,ADC,DAC)"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Overview of Computer Architecture & Organization",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 1: CPU Architecture, Instruction formats, basic instruction cycle with Interrupt processing; Instruction interpretation and sequencing"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 2: Control Unit: Soft wired (Microprogrammed) and hardwired control unit design methods; Microinstruction sequencing and execution"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 3: Micro operations, concepts of nano programming"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 4: Introduction to parallel processing concepts, Flynn\u2019s classifications, instruction pipelining, pipeline hazards"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 5: Self-learning Topics: Study the examples on instruction pipelining for practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Processor Organization and Architecture",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Data Representation and Arithmetic Algorithms",
+    "Divided Content": "Hour 1: Booth\u2019s algorithm"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Data Representation and Arithmetic Algorithms",
+    "Divided Content": "Hour 2: Division of integers: Restoring and non-restoring division, signed division, basics of floating-point representation IEEE 754 floating point (Single & double precision) number representation"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Data Representation and Arithmetic Algorithms",
+    "Divided Content": "Hour 3: Self-learning Topics: Implement Booth\u2019s Algorithm and Division methods"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Data Representation and Arithmetic Algorithms",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 1: Introduction to Memory and Memory parameters; Classifications of primary and secondary memories"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 2: Types of RAM and ROM, Allocation policies, Memory hierarchy and characteristics"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 3: Cache memory: Concept, architecture (L1, L2, L3), mapping techniques"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 4: Cache Coherency, Interleaved and Associative memory Self-learning Topics: Case study on Memory\nOrganization, Numerical on finding EAT, Address mapping"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "Memory Organization",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "I/O Organization",
+    "Divided Content": "Hour 1: Input/output systems, I/O module-need & functions and Types of data transfer techniques: Programmed I/O, Interrupt driven I/O and DMA\nSelf-learning Topics: Comparison of all I/O methods"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "I/O Organization",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "I/O Organization",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Computer Organization and Architecture",
+    "Module": "I/O Organization",
+    "Divided Content": "Hour 4: Review and practice"
+  }
+]

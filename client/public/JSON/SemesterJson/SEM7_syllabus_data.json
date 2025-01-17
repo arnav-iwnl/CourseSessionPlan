@@ -1,0 +1,1947 @@
+[
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Intelligent Agents, Search Techniques, Knowledge and Reasoning, Data Science, Machine Learning"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Uncertainty",
+    "Divided Content": "Hour 1: Uncertainty in AI, Inference using full joint distributions,\nBayes Theorem, the semantics of Bayesian Networks,\nInference in Bayesian networks, Decision Theory, Markov\nDecision Processes"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Uncertainty",
+    "Divided Content": "Hour 2: Self-learning Topics: Hidden Markov Model (HMM),\nGaussian Mixture Model (GMM)"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Uncertainty",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Uncertainty",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 1: Foundation of Cognitive Computing, Design Principles for\nCognitive Systems, Natural Language Processing in Support of\na Cognitive System, Representing Knowledge in Taxonomies\nand Ontologies, Applying Advanced Analytics to Cognitive\nComputing, The Process of Building a Cognitive Application"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 2: Self-learning Topics: Cognitive Systems such as IBM\u2018s\nWatson"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Cognitive Computing",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 1: Introduction to Fuzzy Sets, Properties of Fuzzy Sets,\nOperations on Fuzzy Sets, Fuzzy Membership Functions,\nFuzzy Relations with Operations and its Properties, Fuzzy\nComposition: Max-Min Composition, Max-Product\nComposition, Defuzzification Methods, Architecture of\nMamdani Type Fuzzy Control System, Design of Fuzzy\nControllers like Domestic Shower Controller, Washing\nMachine Controller, Water Purifier Controller, etc"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 2: Self-learning Topics: Other Fuzzy Composition\nOperations, Fuzzy Inference System (FIS) & ANFIS"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Fuzzy Logic & Its Applications",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 1: Introduction to Deep Learning, ANN, Machine Learning Vs\nDeep Learning, Working of Deep Learning"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 2: Convolutional\nNeural Network: Introduction, Components of CNN\nArchitecture, Properties of CNN, Architectures of CNN,\nApplications of CNN, Recurrent Neural Network: Introduction,\nSimple RNN, LSTM Implementation, Deep RNN,\nAutoencoder: Introduction, Features, Types, Applications of\nDeep Learning"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 3: Self-learning Topics: Restricted Boltzmann Machine\n(RBM)"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Introduction to Deep Learning",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 1: Ensemble Classifiers: Introduction to Ensemble Methods,\nBagging, Boosting, Random forests, Improving classification\naccuracy of Class-Imbalanced Data"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 2: Metrics for Evaluating Classifier Performance, Holdout\nMethod and Random Subsampling, Cross-Validation,\nBootstrap, Model Selection Using Statistical Tests of\nSignificance, Comparing Classifiers Based on Cost-Benefit\nand ROC Curves"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 3: Self-learning Topics: Introduction to ML (Revision), Introduction to Reinforcement Learning"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Advanced ML Classification Techniques",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 1: Data Science: applications and case studies, Data science for text, image, video, audio"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 2: Data science for Multimodal applications; Self-learning Topics: ImageNet Large Scale Visual Recognition Challenge (ILSVRC)"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "AI and DS - II",
+    "Module": "Trends and applications in Data Science",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Ports, Timers ,Programming of controller , How to\nuse IDE to write code of microcontroller, TCP-IP protocol stack"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Introduction to IoT",
+    "Divided Content": "Hour 1: Introduction  to  IoT-   Defining  IoT,  Characteristics of  IoT,  Conceptual  Framework  of  IoT,  Physical design  of  IoT,  Logical  design  of  IoT,  Functional blocks  of  IoT,Brief  review  of  applications  of  IoT"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Introduction to IoT",
+    "Divided Content": "Hour 2: Smart   Object   -  Definition,   Characteristics   and Trends\nSelf-learning    Topics:    Hardware   and   software development   tools   for   -   Arduino,   NodeMCU, ESP32, Raspberry Pi, for implementing internet  of\nthings,  Simulators-Circuit"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Introduction to IoT",
+    "Divided Content": "Hour 3: io,Eagle,Tinkercad"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Introduction to IoT",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 1: Drivers  Behind  New  Network  Architectures  : Scale,Security,Constrained  Devices  and  Networks\n,Data,Legacy Device Support\nArchitecture  :  The  IoT  World  Forum  (IoTWF) Standardized  Architecture  :Layer  1-7,  IT  and  OT Responsibilities       in       the       IoT       Reference Model,Additional IoT Reference Models\nA Simplified IoT Architecture\nThe   Core   IoT   Functional   Stack   ::Layer   1-3   , Analytics   Versus   Control   Applications   ,   Data Versus  Network  Analytics  Data  Analytics  Versus Business Benefits , Smart Services,\nIoT Data Management and Compute Stack :Fog Computing  ,  Edge  Computing  ,The  Hierarchy  of Edge, Fog, and Cloud\nSelf-learning  Topics:  Brief  review  of  applications\nof IoT: Connected Roadways , Connected Factory, Smart Connected Buildings , Smart Creatures etc,"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Architecture",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 1: RFID    and    NFC    (Near-Field    Communication), Bluetooth  Low  Energy (BLE)  roles,  LiFi  , WPAN std  :  802"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 2: 15  standards:  Bluetooth,  IEEE  802; 15"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 3: 4, Zigbee,    Z-wave,    Narrow    Band    IoT,    Internet Protocol    and    Transmission    Control    Protocol, 6LoWPAN,   WLAN   and   WAN   ,   IEEE   802"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 4: 11,\nLong-range Communication Systems and Protocols: Cellular   Connectivity-LTE,   LTE-A,   LoRa   and LoRaWAN"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Principles of Connected Devices and Protocols in IoT",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 1: HTTP,  WebSocket,  Platforms; HTTP  -  MQTT  -"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 2: Complex  Flows:  IoT  Patterns:  Real-time  Clients, MQTT,     MQTT-SN,     Constrained     Application Protocol (CoAP), Streaming Text Oriented Message Protocol  (STOMP),  Advanced  Message  Queuing Protocol (AMQP), Comparison of Protocols"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "Edge to Cloud Protocol",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 1: Defining  IoT  Analytics,  IoT  Analytics  challenges, IoT  analytics  for  the  cloud,  Strategies  to  organize Data for IoT Analytics, Linked Analytics Data Sets, Managing  Data  lakes,  The  data  retention  strategy, visualization   and   Dashboarding-Designing   visual analysis for IoT data, creating a dashboard ,creating and visualizing alerts"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 2: Self-learning     Topics:     AWS     and     Hadoop Technology"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT and Data Analytics",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Application Design",
+    "Divided Content": "Hour 1: Prototyping for IoT and M2M, Case study related to\n:    Home    Automation    (Smart    lighting,    Home intrusion    detection),    Cities    (Smart    Parking), Environment      (Weather      monitoring,      weather reporting Bot, Air pollution monitoring, Forest fire detection,   Agriculture   (Smart   irrigation),   Smart Library"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Application Design",
+    "Divided Content": "Hour 2: Introduction  to  I-IoT,  Use  cases  of  the  I- IoT,IoT  and  I-IoT  - similarities  and  differences, Introduction to Internet of Behavior  (IoB)"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Application Design",
+    "Divided Content": "Hour 3: Self-learning  Topics:  Internet  of  Behaviors  (IoB) and its role in customer services"
+  },
+  {
+    "Course Name": "Internet of Everything",
+    "Module": "IoT Application Design",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Components of a Storage System\nEnvironment, Disk drive components, RAID levels, Cloud Computing"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Introduction to Storage Area Network",
+    "Divided Content": "Hour 1: Intelligent Storage Systems (ISS), Storage Provisioning, Types of Intelligent Storage Systems\nEvolution of Storage System: Server- Centric IT Architecture and its Limitations, Storage-Centric IT Architecture and its Advantages, SAN & its advantages"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Introduction to Storage Area Network",
+    "Divided Content": "Hour 2: Self-learning Topics:\nCase Study on Replacing a server with Storage networks"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Introduction to Storage Area Network",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Introduction to Storage Area Network",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 1: Local File Systems: File systems and databases,Journaling, Snapshots,Volume manager Network File Systems, and File Servers: Network Attached Storage (NAS), Performance bottlenecks in file servers, Acceleration of network file systems, Case study: The Direct Access File System (DAFS), Shared Disk File Systems: A case study The General Parallel File System (GPFS),\nApplying NAS solution: NAS workload characterization, applying NAS to departmental workloads, enterprise web workloads, and specialized workloads"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 2: Considerations when integrating SN and NAS: Differences and similarities, the need to integrate, future storage connectivity and integration"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 3: Self-learning Topics: Case study on Successful SAN Deployment steps"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Networked Attached Storage & its Application",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 1: The Physical I/O Path from the CPU to the Storage System, SCSI, The Fibre Channel Protocol Stack, Fibre Channel SAN, IP Storage, Infiniband-based Storage Networks, Fibre Channel over Ethernet (FCoE)"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 2: Self-learning Topics: Case Study on FCoE SAN"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage I/O Techniques",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 1: Introduction to Business Continuity: Information Availability, BC Terminology, BC Planning Lifecycle, Failure Analysis, Business Impact Analysis\nBackup and Archive:  Backup Purpose, Backup Considerations, Backup Granularity,Recovery Considerations, Backup Methods\n,Backup Architecture, Backup and Restore Operations, Backup Topologies\nSelf-learning Topics: Case Study on Replication strategy"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Backup and Data Archive",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 1: Virtualization and the cloud:  Cloud infrastructure virtualization, Cloud platforms, Storage virtualization, SAN virtualization Virtualization Appliances:\nBlack Box Virtualization, In-Band Virtualization Appliances, Out-of-Band Virtualization Appliances High Availability for Virtualization Appliances, Appliances for Mass Consumption"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 2: Storage Automation and Virtualization: Policy-Based Storage Management, Application-Aware Storage Virtualization, Virtualization-Aware Applications"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 3: Self-learning Topics: Case study on\nsymmetric and asymmetric virtualization in networks"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Storage Area Network as a Service for Cloud Computing & Virtualization",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 1: Securing and Storage Infrastructure: Information Security Framework, Risk Triad, Storage Security Domains, Security Implementations in Storage Networking, Securing Storage Infrastructure in Virtualized and Cloud Environments"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 2: Managing the Storage Infrastructure:  Monitoring the Storage Infrastructure, Storage Infrastructure Management activities, Storage Infrastructure Management Challenges, Information Lifecycle Management, Storage Tiering\nSelf-learning Topics: Case study on SAN\nManagement and Standards"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional  Course - 3 ) Storage Area Network",
+    "Module": "Securing and Managing storage infrastructure",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Computer Organization, C Programming, Data structures and Algorithm Analysis"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Introduction",
+    "Divided Content": "Hour 1: Introduction to Parallel Computing: Motivating Parallelism, Scope of Parallel Computing, Levels of parallelism (instruction, transaction, task, thread, memory, function), Models (SIMD, MIMD, SIMT, SPMD, Dataflow Models, Demand-driven Computation)"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Introduction",
+    "Divided Content": "Hour 2: Self-learning Topics: Parallel Architectures: Interconnection network, Processor Array, Multiprocessor"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Introduction",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Introduction",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Introduction",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Programming Platforms",
+    "Divided Content": "Hour 1: Parallel Programming Platforms: Implicit Parallelism: Dichotomy of Parallel Computing Platforms, Physical Organization of Parallel Platforms, Communication Costs in Parallel Machines"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Programming Platforms",
+    "Divided Content": "Hour 2: Self-learning Topics: Trends in Microprocessor & Architectures, Limitations of Memory System Performance"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Programming Platforms",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Programming Platforms",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 1: Principles of Parallel Algorithm Design: Preliminaries, Decomposition Techniques, Characteristics of Tasks and Interactions, Mapping Techniques for Load Balancing, Basic Communication operations: Broadcast and Reduction Communication types"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 2: Self-learning Topics: Parallel Algorithm Models"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Parallel Algorithm And Concurrency",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Performance Measures for HPC",
+    "Divided Content": "Hour 1: Performance Measures: Speedup, execution time, efficiency, cost, scalability, Effect of granularity on performance, Scalability of Parallel Systems, Amdahl\u2018s Law, Gustavson\u2018s Law"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Performance Measures for HPC",
+    "Divided Content": "Hour 2: Self-learning Topics:  Performance Bottlenecks"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Performance Measures for HPC",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Performance Measures for HPC",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Performance Measures for HPC",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 1: Programming Using the Message-Passing Paradigm : Principles of Message Passing Programming, The Building Blocks: Send and Receive Operations, MPI: the Message Passing Interface, Topology and Embedding"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 2: Parallel Algorithms and Applications :\nOne-Dimensional Matrix-Vector Multiplication, Graph Algorithms, Sample Sort, Two-Dimensional Matrix Vector Multiplication"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 3: Self-learning Topics: Introduction to OpenMP"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "Programming Paradigms for HPC",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "General Purpose Graphics Processing Unit(GPGPU)  Architecture and Programming",
+    "Divided Content": "Hour 1: OpenCL Device Architectures, Introduction to OpenCL Programming"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "General Purpose Graphics Processing Unit(GPGPU)  Architecture and Programming",
+    "Divided Content": "Hour 2: Self-learning Topics: Introduction to CUDA architecture, and Introduction to CUDA Programming"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "General Purpose Graphics Processing Unit(GPGPU)  Architecture and Programming",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "General Purpose Graphics Processing Unit(GPGPU)  Architecture and Programming",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) High Performance computing",
+    "Module": "General Purpose Graphics Processing Unit(GPGPU)  Architecture and Programming",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Basic    of    OSI    Model,    Topology\u2018s    and    Computer Networks, Cryptography and Network Security"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Introduction",
+    "Divided Content": "Hour 1: Cyber-attacks,   Vulnerabilities,   Defense   Strategies   and Techniques,  Authentication  Methods-  Password,  Token and   Biometric,   Access   Control   Policies   and   Models (DAC,MAC, RBAC, ABAC, BIBA, Bell La\nPadula),\nSelf-Learning    Topics:    Authentication    and    Access Control Services- RADIUS, TACACS, and TACACS+"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Introduction",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Introduction",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Introduction",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 1: Software Vulnerabilities: Buffer   overflow,   Format   String,   Cross-Site   Scripting, SQL Injection, Malware: Viruses, Worms, Trojans, Logic Bomb, Bots, Rootkits Operating System Security:Memory      and     Address     Protection,      File Protection Mechanism, UserAuthentication"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 2: Database Security:Database     Security     Requirements,     Reliability     and Integrity,  Sensitive  Data,  Inference  Attacks,  Multilevel Database Security\nSelf-Learning   Topics:   Format   String,   File   System Security (Windows and Linux OS)"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Software Security",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 1: Mobile Device Security- Security Threats,\nDevice  Security,  IEEE  802"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 2: 11xWireless  LAN  Security, VPN   Security,   Wireless   Intrusion   Detection   System (WIDS)\nSelf-Learning   Topics:   Wireshark,   Cain   and   Abel, Aircrack"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Wireless Security",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 1: Cloud Security Risks and Countermeasures,\nData  Protection  in  Cloud,  Cloud  Application  Security, Cloud Identity and Access Management, Cloud Security as a Service"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 2: Self-Learning Topics: Metasploit, Ettercap"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Cloud Security",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 1: Web Security Considerations, User\nAuthentication and  Session  Management,  Cookies, SSL, HTTPS,  SSH,  Privacy  on  Web,  Web  Browser  Attacks, Account Harvesting, Web Bugs, Clickjacking, Cross- Site Request  Forgery,  Session  Hijacking  and  Management, Phishing  and  Pharming  Techniques,  DNS  Attacks,  Web Service  Security,  Secure  Electronic  Transaction,  Email Attacks, Web Server Security as per OWASP, Firewalls"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 2: Self-Learning  Topics:  Penetration  Testing  tools:  SQL Map, Wapiti"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Web Security",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Information Security and Risk Management",
+    "Divided Content": "Hour 1: Security Policies, Business Continuity Plan, Risk Analysis, Incident Management, Legal\nSystem  and  Cybercrime,  Ethical  Issues in Security Management"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Information Security and Risk Management",
+    "Divided Content": "Hour 2: Self-Learning Topics: The Indian IT Act, Indian Cyber Law"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Information Security and Risk Management",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Information Security and Risk Management",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Infrastructure Security",
+    "Module": "Information Security and Risk Management",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Software Engineering Concepts, Basics of  programming\nLanguage"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 1: Introduction, Goals of Software Testing, Software Testing Definitions, Model for Software Testing, Effective Software Testing vs Exhaustive Software Testing, Software Failure Case Studies, Software Testing Terminology, Software Testing Life Cycle (STLC), Software Testing methodology, Verification and Validation, Verification requirements, Verification of high level design, Verification of low level design, validation"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 2: Self-learning Topics:  Study any system/application, find requirement specifications and design the system"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 3: Select software testing methodology suitable to the application"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Methodology",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 1: Dynamic Testing: Black Box Testing: Boundary Value Analysis, Equivalence\nClass Testing, State Table Based testing, Cause-Effect Graphing Based Testing, Error Guessing"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 2: White Box Testing Techniques: need, Logic Coverage Criteria, Basis Path Testing, Graph Matrices, Loop Testing, Data Flow testing, Mutation testing"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 3: Static Testing; Validation Activities: Unit validation, Integration, Function, System, Acceptance Testing"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 4: Regression Testing: Progressive vs"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 5: Regressive, Regression Testing, Regression Testability, Objectives of Regression Testing,\nRegression Testing Types, Define Problem, Regression Testing Techniques"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 6: Self-learning Topics: Select the test cases (positive and negative scenarios) for the selected system and Design Test cases for the system using any two studied testing\ntechniques"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing Techniques",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 1: Test Management: test organization, structure and of testing group, test planning, detailed test design and test Specification"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 2: Self-learning Topics: Design quality matrix for your selected system\nSoftware Metrics: need, definition and Classification of software matrices"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 3: Testing Metrics for Monitoring and Controlling the Testing Process: attributes and corresponding metrics, estimation model for testing effort, architectural design, information flow matrix used for testing, function point and test point analysis"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 4: Efficient Test Suite Management: minimizing the test suite and its benefits, test suite minimization problem, test suite prioritization its type , techniques and measuring effectiveness"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Managing the Test Process",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Test Automation",
+    "Divided Content": "Hour 1: Automation and Testing Tools: need, categorization, selection and cost in testing tool, guidelines for testing tools"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Test Automation",
+    "Divided Content": "Hour 2: Study of testing tools: JIRA, Bugzilla, TestDirector and IBM Rational Functional Tester, Selenium etc"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Test Automation",
+    "Divided Content": "Hour 3: Self-learning Topics: Write down test cases, execute and manage using studied tools"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Test Automation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Test Automation",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing for specialized environment",
+    "Divided Content": "Hour 1: Agile Testing, Agile Testing Life Cycle, Testing in Scrum phases, Challenges in Agile Testing Testing Web based Systems: Web based system, web technology evaluation, traditional software and web based software, challenges in\ntesting for web based software, testing web based testing\nSelf-learning Topics: Study the recent technical papers\non software testing for upcoming technologies (Mobile, Cloud, Blockchain, IoT)"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing for specialized environment",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing for specialized environment",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Testing for specialized environment",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Quality Management",
+    "Divided Content": "Hour 1: Software Quality Management,\nMcCall\u2018s quality factors and Criteria, ISO9000:2000, SIX sigma, Software quality management\nSelf-learning Topics:  Case Studies to Identify Quality Attributes Relationships for different types of\nApplications (Web based, Mobile based etc"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Quality Management",
+    "Divided Content": "Hour 2: )"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Quality Management",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 3 ) Software Testing and QA",
+    "Module": "Quality Management",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Fundamentals of Wireless Communication, Wireless Metropolitan and Local Area Networks: IEEE 802"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: 16 (WiMax) -Mesh mode, IEEE 802"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Introduction to Ad- hoc Wireless Networks",
+    "Divided Content": "Hour 1: Introduction: Cellular and Ad Hoc Wireless Networks, Applications of Ad Hoc Wireless Networks,\nIssues In Ad Hoc Wireless Networks: Medium Access Scheme, Routing, Multicasting, Transport Layer Protocols, Pricing, Quality of Service Provisioning, Addressing and Service Discovery, Energy Management, Scalability, Deployment Considerations,\nAd Hoc Wireless Internet\nSelf-learning Topics: Global Mobile Ad Hoc Network Market"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Introduction to Ad- hoc Wireless Networks",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Introduction to Ad- hoc Wireless Networks",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Introduction to Ad- hoc Wireless Networks",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Introduction to Ad- hoc Wireless Networks",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 1: Issues in Designing a MAC Protocol, Design Goals of MAC Protocols, Classification of MAC protocols, Contention-Based Protocols with Reservation Mechanisms and Scheduling Mechanisms, IEEE 802"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 2: 11a and HiperLan standard\nSelf-learning Topics:\nMAC Protocols that use Directional Antennas and Other MAC Protocols"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Medium Access Control Protocols",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 1: Routing Protocols inAd-hoc Wireless Networks: Introduction, Design issues, Classification of Routing Protocols: Routing information update mechanism, Use of temporal information for routing, Routing topology, Utilization of specific resources, Multicast Routing in Ad-hoc Wireless Networks: Introduction, Design Issues, Operation of Multicast Routing Protocols, An Architecture Reference Model for Multicast Routing Protocols\nSelf-learning Topics: Table Driven Routing Protocols, Classifications of Multicast Routing Protocols"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Routing Protocols",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 1: Transport Layer in Ad-hoc Wireless Networks: Introduction, Design Issues and Goals of a Transport Layer Protocol"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 2: Classification of\nTransport Layer Solutions"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 3: Security in Ad-hoc Wireless Networks: Issues and Challenges\nin Security Provisioning, Network Security Attacks classification"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 4: Self-learning Topics:\nTCP over Transport Layer Solutions, Key Management\nand Secure Touting"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Transport Layer and Security Protocols",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 1: Quality of Servicein Ad-hoc Wireless Networks: Introduction, Issues and Challenges in Providing QoS in Ad-hoc Wireless Networks, Classification of QoS Solutions\nEnergy ManagementinAd-hoc Wireless Networks: Introduction, Need for Energy Management in Ad-hoc Wireless Networks,\nClassification of Energy Management Schemes\nSelf-learning Topics:\nMAC Layer Solutions\nBattery Management Schemes"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Quality of Service and Energy Management",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Wireless Sensor Networks",
+    "Divided Content": "Hour 1: Introduction, Sensor Network Architecture, Data Dissemination, Data Gathering\nSelf-learning Topics:\nLocation Discovery and Quality of a Sensor Network"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Wireless Sensor Networks",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Wireless Sensor Networks",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4) MANET",
+    "Module": "Wireless Sensor Networks",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Pre-requisite",
+    "Divided Content": "Hour 1: Basics  of  Computer  Graphics, Coordinate Systems,  VR  Introduction,\nTracking in VR"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Pre-requisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to Augmented Reality       and Mixed Reality",
+    "Divided Content": "Hour 1: Definition  and  Scope,  A  Brief  History  of  Augmented  Reality,  AR Architecture,   Related   Fields   of   AR   (like   Mixed   Reality,   Virtual Reality, Immersive Reality, Extended Reality) and Their comparison, General  Architecture  of  Mixed  Reality  System,  Algorithm  Steps  in Mixed Reality\nSelf-Learning   Topics:   How   AR/MR   are   related   to   Ubiquitous Computing, Multidimensional Systems"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to Augmented Reality       and Mixed Reality",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to Augmented Reality       and Mixed Reality",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to Augmented Reality       and Mixed Reality",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 1: Multimodal   Displays; Visual   Perception"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 2: Spatial   Display   Model; Visual  Displays"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 3: Tracking,  Calibration  and  Registration; Coordinate Systems"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 4: Characteristics of Tracking Technology; Stationary Tracking Systems"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 5: Mobile  Sensors; Optical  Tracking"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Tracking    and Computer Vision  for  AR and MR",
+    "Divided Content": "Hour 6: Sensor  Fusion; Marker Tracking"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 1: Output Modalities, Input Modalities, Tangible Interfaces, Virtual User Interfaces on Real Surfaces, Multi-view Interfaces, Haptic Interaction, Multimodal Interaction, Specifying Geometry, Specifying Appearance, Semi-automatic   Reconstruction,   Free-form   Modeling,   Annotation, Requirement  of  AR  Authoring,  Elements  of  Authoring,  Stand-alone Authoring Solutions, Plug-in Approaches, Web Technology\nSelf-Learning  Topics:  Case  Study  on  Object  Annotation  in  Real Time, Avatar Modeling"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Interaction, Modeling   and Annotation and Authoring",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 1: Geometric Modeling, 2D transformations, Homogenous coordinate system, 3D rotation and 6 degree of freedom, Viewport Transformation\nSelf: Eye Transformation, demo of 2D transformation"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Geometry of Virtual World",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 1: Introduction to VR and definitions and its components"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 2: , Hardware components: Display devices: LCD, OLED Audio: Speakers, Earphones, Bone conduction\nTouch: Haptic Device\nGPU and CPU, Input devices like game controller, data glows, Joysticks\nTracking Hardware: Industrial measurement Unit-IMU, Gyroscope, accelerometer\nSoftware component: Java3D, VRML\nSelf:  Feedback mechanisms in VR environment"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Introduction to VR",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 1: Functioning of Eye with photoreceptors, Resolution for VR, Eye movements and issues with it in VR, Neuroscience of vision, Depth and motion perception, Frame rates and display, Orientation tracking, tilt and yaw drift correction, Tracking with camera\nSelf: Light House approach"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) AR -VR",
+    "Module": "Visual Physiology, perception and tracking",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 1: Fundamental Concepts: Introduction and Overview -Global Perspectives -Quantum Bits -Quantum Computation -Processing -Quantum Information"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 2: Problems on Qubits\nSelf-learning Topics: Detail ofQuantum computing and its applicationshttps://www; ibm"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 3: com/quantum-computing/what-is-\nquantum-computing/\nQuantum Algorithms -Experimental Quantum Information"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "FUNDAMENTA LS OF \nQUANTUM COMPUTING",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 1: Quantum Circuits -Quantum algorithms, Single Orbit operations, Control Operations, Measurement, Universal Quantum Gates, Simulation of Quantum Systems, Quantum Fourier transform, Phase estimation, Applications, Quantum search algorithms -Quantum counting -Speeding up the solution of NP -complete problems -Quantum Search for an unstructured database"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 2: Problems on Boolean functions and Quantum gates, Quantum gates and circuits"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 3: Self-learning Topics: Application of Quantum Computing"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTATIO N",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 1: Guiding Principles, Conditions for Quantum Computation, Harmonic Oscillator Quantum Computer, Optical Photon Quantum Computer -Optical cavity Quantum electrodynamics, Ion traps, Nuclear Magnetic resonance"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 2: Self-learning Topics: Qiskit"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM COMPUTERS",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 1: Quantum noise and Quantum Operations -Classical Noise and Markov Processes, Quantum Operations, Examples of Quantum noise and Quantum Operations -Applications of Quantum operations, Limitations of the Quantum operations formalism, Distance Measures for Quantum information"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 2: Problems on Measurement\nSelf-learning Topics:Case study on Quantum noise and operations"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM INFORMATION S",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM ERROR CORRECTION",
+    "Divided Content": "Hour 1: Introduction, Shor code, Theory of Quantum Error -Correction, Constructing Quantum Codes, Stabilizer codes, Fault -Tolerant Quantum Computation"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM ERROR CORRECTION",
+    "Divided Content": "Hour 2: Self-learning Topics:Case study on Quantum error correction"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM ERROR CORRECTION",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM ERROR CORRECTION",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM ERROR CORRECTION",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 1: Quantum Cryptography-Private Key Cryptography, Privacy Amplification and Information Reconciliation, Quantum Key Distribution, Privacy and Coherent Information, The Security of Quantum Key Distribution"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 2: Problems on Quantum error correction and cryptography; Self-learning Topics:\nAttacks on Quantum Cryptography"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Quantum Computing",
+    "Module": "QUANTUM CRYPTOGRAP HY",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Indexing and searching Algorithms"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 1: Motivation, Basic Concepts, The Retrieval Process, Information System: Components, parts and types on information system"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 2: Definition and objectives on information retrieval system, Information versus Data Retrieval"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 3: Search Engines  and browsers\nSelf-learning Topics: Search Engines , Search API"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Introduction",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 1: Modeling: Taxonomy of Information Retrieval Models, Retrieval: Formal Characteristics of IR models, Classic Information Retrieval, Alternative Set Theoretic models, Probabilistic Models, Structured text retrieval Models, models for Browsing"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 2: Self-learning Topics: Terrier"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "IR Models",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 1: Query Languages: Keyword based Querying, Pattern Matching, Structural Queries, Query Protocols"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 2: Query Operations: User relevance feedback, Multimedia IR models: Data Modeling\nSelf-learning Topics:   Proximity Queries and Wildcard Queries"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Query Processing and Operations",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 1: Text and Multimedia languages and properties: Metadata, Markup Languages, Multimedia"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 2: Text Operations: Document Preprocessing, Document Clustering; Self-learning Topics:  Digital Library : Greenstone"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Text Processing",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 1: Inverted files, Other indices for text, Boolean Queries, Sequential Searching, Pattern Matching, Structural Queries, Compression"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 2: Multimedia IR: Indexing and Searching:- A Generic Multimedia indexing approach, , Automatic Feature extraction"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 3: Searching Web: Challenges, Characterizing the web, Search Engines; Browsing, Meta searches, Searching using Hyperlinks"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 4: Self-learning Topics: Koha"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "Indexing and Searching",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 1: Human Computer interaction, the information access process, starting points, query specifications, context, using relevance judgments, interface support for the search process"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 2: Self-learning Topics: SeeSoft"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "(Optional  Course - 4 ) Information Retrieval System",
+    "Module": "User interface and visualization",
+    "Divided Content": "Hour 6: Review and practice"
+  }
+]

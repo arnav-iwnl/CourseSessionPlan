@@ -1,0 +1,1757 @@
+[
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Cryptography and Distributed Systems (prerequisite)",
+    "Divided Content": "Hour 1: Hash functions, Public -Private keys, SHA, ECC, Digital signatures, Fundamental concepts of Distributed systems"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Cryptography and Distributed Systems (prerequisite)",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Introduction to DLT and Blockchain",
+    "Divided Content": "Hour 1: Introduction to Blockchain: Technical definition of Blockchain"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Introduction to DLT and Blockchain",
+    "Divided Content": "Hour 2: Elements of a blockchain Features of Blockchain Type of Blockchain, What is DLT"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Introduction to DLT and Blockchain",
+    "Divided Content": "Hour 3: DLT V/S BlockchainCAP theorem Byzantine Generals Problem Consensus Mechanism and its TypeCryptographic primitives and data structure used in blockchain\nBlock in a Blockchain: Structure of a Block, Block Header Hash and Block Height, The Genesis Block, Linking Blocks in the Blockchain, Merkle Tree"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Introduction to DLT and Blockchain",
+    "Divided Content": "Hour 4: Self-learning Topics: Blockchain Demo"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 1: What   is   Bitcoin   and   the   history   of   Bitcoin,   Bitcoin Transactions,   Bitcoin   Concepts:   keys,   addresses   and wallets,   Bitcoin   Transactions,   UTXO"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 2: validation   of transactions,  Bitcoin  Keys  ,  Addresses,  ECC  ,  Base58  , BIP-38  ,  Pay-to  Script  and  Multisig  Addresses,  Vanity Addresses  ,  Concept  of  Wallet,  Wallet  Technologies  in Bitcoin  HD  wallet  from  Seed"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 3: Transaction  Scripts  and Scripts   address,Bitcoin   Mining   and   Difficulty   levels Structure of Blocks and Blockheader and Genesis Block , linking of Block"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 4: Bitcoin  Network:  Bitcoin  Core  node  and  API,  Peer-to- Peer   Network   Architecture,   Node   Types   and   Roles, Incentive   based   Engineering,   The   Extended   Bitcoin Network,  Bitcoin  Relay  Networks,  Network  Discovery, Full Nodes, Exchanging \u2015Inventory\u2016, Simplified Payment Verification   (SPV)   Nodes,   SPV   Nodes   and   Privacy, Transaction      Pools,      Blockchain      Forks      Bitcoin TestnetBasics  of  Bitcoin  Forensics:  Analysis  of  Address and Wallet , Clustering of Addresses following Money\nSelf-learning   Topics:   Study   and   compare   different consensus algorithms like PoA, PoS, pBFT"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Bitcoin",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 1: Introduction to Ethereum, Ethereum 1; 0 and 2"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 2: 0 , Turing completeness  EVM  and  compare  with  bitcoinBasics  of Ether  Units,  Ethereum  Wallets  Working  with  Metamask EOA        and    Contracts    Transaction::    Structure    of Transaction,    Transaction    Nonce,    Transaction    GAS, Recipient, Values and Data, Transmitting Values to EOA and Contracts\nSmart Contracts and Solidity\nDevelopment  environment  and  client  ,  Basic  of  Solidity and  Web  3Life  cycle  of  Smart  contract,  Smart  Contract programming    using    solidity,    Metamask    (Ethereum Wallet), Setting up development  environment, Use casesof  Smart  Contract,  Smart  Contracts:  Opportunities  and Risk"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 3: Smart  Contract  Deployment:  Introduction  to  Truffle, Use of Remix and test networks for deployment\nSelf-learning Topics: Smart contract development using Java or Python"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissionless Blockchain: Ethereum",
+    "Divided Content": "Hour 10: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 1: Introduction  to  Framework,  Tools  and  Architecture  of Hyperledger Fabric Blockchain"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 2: Components: Certificate Authority, Nodes, Chain codes, Channels,   Consensus:   Solo,   Kafka,   RAFTDesigning Hyperledger         BlockchainOther         Challenges         : Interoperability and Scalability  of blockchain\nSelf-learning Topics: Fundamentals of Hyperledger Composer"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Permissioned Blockchain: Hyperledger Fabric",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Crypto assets and Cryptocurrencies",
+    "Divided Content": "Hour 1: ERC20 and ERC721 Tokens, comparison between ERC20 & ERC721, NFT, ICO, STO, Different Crypto currencies\nSelf-learning Topics: Defi, Metaverse, Types of cryptocurrencies"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Crypto assets and Cryptocurrencies",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Crypto assets and Cryptocurrencies",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Crypto assets and Cryptocurrencies",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Blockchain Applications & case studies",
+    "Divided Content": "Hour 1: Blockchain in IoT, AI, Cyber Security\nSelf-learning   Topics:   Applications   of   Blockchain   in various   domains   Education,   Energy,   Healthcare,   real- estate, logistics, supply chain"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Blockchain Applications & case studies",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Blockchain Applications & case studies",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "Blockchain and DLT",
+    "Module": "Blockchain Applications & case studies",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Data Mining, Data Science"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data",
+    "Divided Content": "Hour 1: Introduction to Big Data, Big Data characteristics, types of Big Data, Traditional vs"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data",
+    "Divided Content": "Hour 2: Big Data business approach, Big Data Challenges, Examples of Big Data in Real Life, Big Data Applications\nSelf-learning Topics: Identification of Big Data applications and its solutions"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 1: What is Hadoop? Core Hadoop Components; Hadoop Ecosystem"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 2: Working with Apache Spark\nWhat is NoSQL? NoSQL data architecture patterns: Key- value stores, Graph stores, Column family (Bigtable) stores, Document stores, MongoDB\nSelf-learning Topics:HDFS vs GFS, MongoDB vs other NoSQL system, Implementation of Apache Spark"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Introduction to Big Data Frameworks",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 1: MapReduce: The Map Tasks, Grouping by Key, The Reduce Tasks, Combiners, Details of MapReduce Execution, Coping With Node Failures"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 2: Algorithms Using MapReduce: Matrix- Vector Multiplication by MapReduce , Relational-Algebra Operations, Computing Selections by MapReduce, Computing Projections by MapReduce, Union, Intersection, and Difference by MapReduce, Computing Natural Join by MapReduce, Grouping and Aggregation by MapReduce, Matrix Multiplication, Matrix Multiplication with One MapReduce Step"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 3: Illustrating use of MapReduce with use of real life databases and applications"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 4: Self-learning Topics:Implementation of MapReduce algorithms like Word count, Matrix-Vector and Matrix-\nMatrix algorithm"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "MapReduce Paradigm",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 1: The Stream Data Model: A DataStream-Management System, Examples of Stream Sources, Stream Queries, Issues in Stream Processing"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 2: Sampling Data in a Stream : Sampling Techniques"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 3: Filtering Streams: The Bloom Filter Counting Distinct Elements in a Stream : The Count-Distinct Problem, The Flajolet-Martin Algorithm, Combining Estimates, Space Requirements"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 4: Counting Ones in a Window: The Cost of Exact Counts, The Datar-Gionis-Indyk, Motwani Algorithm, Query Answering in the DGIM Algorithm"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 5: Self-learning Topics: Streaming services like Apache Kafka/Amazon Kinesis/Google Cloud DataFlow; Standard spark streaming library"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 6: Integration with IOT devices to capture real time stream data"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Mining Big Data Streams",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 1: Frequent Pattern Mining : Handling Larger Datasets in Main Memory Basic Algorithm of Park, Chen, and Yu"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 2: The SON Algorithm and MapReduce; Clustering Algorithms: CURE Algorithm"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 3: Canopy Clustering, Clustering with MapReduce Classification Algorithms: Overview SVM classifiers, Parallel SVM, KNearest Neighbor classifications for Big Data, One Nearest Neighbour"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 4: Self-learning Topics: Standard libraries included with spark like graphX, MLlib"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Mining Algorithms",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 1: Link Analysis : PageRank Definition, Structure of the web, dead ends, Using Page rank in a search engine, Efficient computation of Page Rank: PageRank Iteration Using MapReduce, Topic sensitive Page Rank, link Spam, Hubs and Authorities, HITS Algorithm"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 2: Mining Social- Network Graphs : Social Networks as Graphs, Types , Clustering of Social Network Graphs, Direct Discovery of Communities, Counting triangles using Map- Reduce"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 3: Recommendation Engines: A Model for Recommendation Systems, Content-Based Recommendations, Collaborative Filtering\nSelf-learning Topics: Sample  applications like social media feeds, multiplayer game interactions, retail industry, financial\ndata analysis"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 4: Use case like location data, real-time stock trades, log monitoring etc"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Big Data Analytics",
+    "Module": "Big Data Analytics Applications",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Probability distributions and expected values, and basic linear\nalgebra (e; g"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: , inner products)"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Introduction                  to Reinforcement Learning:",
+    "Divided Content": "Hour 1: Reinforcement Learning:\nKey features and Elements of RL, Types of RL, rewards"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Introduction                  to Reinforcement Learning:",
+    "Divided Content": "Hour 2: Reinforcement    Learning   Algorithms:    Q-Learning,   State Action Reward State Action (SARSA),\nSelf-learning Topics:\nDeep Q Neural Network (DQN), Applications of RL"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Introduction                  to Reinforcement Learning:",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Introduction                  to Reinforcement Learning:",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 1: An n-Armed Bandit Problem, Action-Value Methods Tracking a Nonstationary Problem,\nOptimistic Initial Values\nUpper-Confidence-Bound Action Selection Gradient Bandits\nSelf-learning Topics:\nAssociative Search (Contextual Bandits)"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Bandit     problems     and online learning:",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 1: The Agent-Environment Interface,\nGoals and Rewards, Returns, Markov properties, Markov Decision Process, Value Functions and Optimal Value Functions,\nSelf-learning Topics:\nOptimality and Approximation"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Markov Decision Processes:",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 1: Policy Evaluation (Prediction), Policy Improvement, Policy Iteration, Value Iteration, Asynchronous Dynamic Programming, Generalized Policy Iteration\nSelf-learning Topics:"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Dynamic Programming:",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 1: Monte Carlo Prediction, Monte Carlo Estimation of Action Values, Monte Carlo Control,\nTD Prediction, TD control using Q-Learning\nSelf-learning Topics:\nOff -policy Prediction via Importance Sampling"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Monte Carlo Methods and Temporal-Difference Learning",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Applications and Case Studies",
+    "Divided Content": "Hour 1: Elevator Dispatching, Dynamic Channel Allocation, Job-Shop Scheduling\nSelf-learning Topics: Study of applications"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Applications and Case Studies",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Applications and Case Studies",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Applications and Case Studies",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Reinforcement learning",
+    "Module": "Applications and Case Studies",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Concepts    of    Probability:    Probability    mass\nfunction,   Probability   density   function,   Mean, Variance, Median, Mode"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Introduction to Simulation",
+    "Divided Content": "Hour 1: SimulationDefinition,   When   Simulation   is   an appropriate tool and when it is not, Advantages and   disadvantages   of   simulation,   Areas   of application  of  simulation,  System  and  its  types, Models and its types, Steps in simulation study\nSelf-learning Topics: Monte Carlo simulation"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Introduction to Simulation",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Introduction to Simulation",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Introduction to Simulation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 1: Simulation  Process,  Simulation  of  Single-server and  multi-server  queueing  systems,  Simulation of   (M,   N)   Inventory   and   Newspaper   Seller Problem, Simulation of Lead-time Demand Concepts  in  Discrete  Event  Simulation,  Event Scheduling   Algorithm,   Manual   Simulation   of Single  Server  and  Dump  Truck  Problem  using Event Scheduling Algorithm\nSelf-learning  Topics:  Simulation  of  Reliability Problem,    Process    Interaction    Approach    in Simulation"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Simulation Examples and General Principles",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 1: Statistical  Models:  Terminology  and  concepts, Useful  statistical  models,  Discrete  Distributions (Bernoulli\u2018s    trial,    Binomial    and    Negative Binomial,   Poisson   Distributions),   Continuous Distributions   (Exponential,   Uniform,   Erlang, Triangular  and  Normal  Distributions),  Poisson Process,\nQueueing Models: Queuing Notations, Long Run Performance    Measures,    M/M/1    and    M/G/1 Queueing Systems\nSelf-learning Topics:"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Mathematical\n,Statistical and Queueing Models in Simulation",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 1: Random  Number  Generation:  Why  are  random numbers  required  in  simulation?  Properties  of random numbers, Linear Congruential Method to generate Random Numbers, Test for Uniformity: Kolmogorov-Smirnov,    Chi-Square,    Test    for Independence:  Runs  up  and  runs  down,  Runs above  and  below  mean,  Poker  test),  Random Variate       Generation:       Inverse       Transform Technique,  Direct  Transformation  for  Normal and      Lognormal      distribution,      Acceptance Rejection Technique\nSelf-learning Topics: Tests for Autocorrelation"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Random Numbers and Variates",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 1: Steps  in  Input  Modeling,  Goodness-of-fit  tests, Selecting Input Model without data, Multivariate and    Time    Series    Models,Model    Building verification     and     validation,Verification     of simulation models, Naylor and Finger Approach for   calibration   and   Validation   of   simulation models\nSelf-learning  Topics:  Input-Output  Validation: Using Historical Input Data"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Analysis of Simulation Data",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Applications of Simulation",
+    "Divided Content": "Hour 1: High-Level    Computer-System  Simulation  and Memory         Simulation,         Simulation         of Manufacturing and Material Handling Systems\nSelf-learning  Topics:   Simulation  of  Computer Networks"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Applications of Simulation",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Simulation and Modeling",
+    "Module": "Applications of Simulation",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Meaning of data, information, knowledge and expertise Meaning of epistemology, Types of Knowledge -Subjective & Objective views of\nknowledge, procedural Vs"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: declarative, tacit Vs; explicit, general Vs"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 1: What is Knowledge? Data, information and knowledge, Knowledge management process, Types of expertise -associational, motor skill, theoretical Characteristics of knowledge -explicitness, codifiability, teachability, specificity, Reservoirs of knowledge, Meaning of Knowledge Management, Forces Driving Organizational issues in KM, KM\nSystems & their role, Relevance of KM in today\u2018s dynamic & complex environment, Future of Knowledge Management\nSelf-Learning Topics: Study the various KM process"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Introduction to Knowledge Management",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 1: Challenges in Building KM Systems -Conventional versus KM System Life Cycle (KMSLS) -Knowledge Creation and Knowledge Architecture -Nonaka\u2018s Model of Knowledge Creation and Transformation, Knowledge Architecture"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 2: Self-Learning Topics: Case study for KMSLS"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge management system life cycle",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 1: KM Processes, KM Systems, Mechanisms & Technologies, Knowledge Capturing Techniques: Brain Storming -Protocol Analysis -Consensus Decision Making -Repertory Grid- Concept Mapping -Blackboarding, Nominal Group Technique, Delphi method"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 2: Self-Learning Topics: Study various technologies used in KM in industry"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Solutions for capture, sharing & applications",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 1: Modes of Knowledge Conversion -Codification Tools and Procedures -Knowledge Developer\u2018s Skill Sets -System Testing and Deployment -Knowledge Testing -Approaches to Logical Testing, User Acceptance Testing -KM System Deployment Issues -User Training -Post implementation"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 2: Self-Learning Topics: Study different tools for testing for KM"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge codification",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 1: Transfer Methods -Role of the Internet -Knowledge Transfer in e-world -KM System Tools -Neural Network -Association Rules -Classification Trees -Data Mining and Business Intelligence -Decision Making Architecture -Data Management -Knowledge Management Protocols -Managing Knowledge Workers"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 2: Self-Learning Topics: Case study for transfer methods in KM"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "Knowledge transfer and sharing",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 1: Dimensions of KM Impact -People, Processes, Products & Organizational Performance Factors influencing impact -universalistic & contingency\nviews Assessment of KM Impact -Qualitative & quantitative measures, Identification of appropriate KM solutions, Competing with Business Analytics, Caveats for managing Knowledge and Business Intelligence, Corporate social Responsibility, Ethical Legal and Managerial Issues: PAPA, Security and controls"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 2: Self-Learning Topics: Case study on KM impact"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 5) Knowledge management",
+    "Module": "KM Impact",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Software     Engineering     concepts     and     any programming                                           Language\nSelf-learning Topics: Web design languages"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Introduction to Interaction Design",
+    "Divided Content": "Hour 1: Good   and   Poor   Design,   What   is   Interaction Design,  The  User  Experience,  The  Process  Of Interaction  Design,  Interaction  Design  and  the User Experience, Necessity of UI/UX\nSelf-learning      Topics: Study      of      Various interactive day to day application"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Introduction to Interaction Design",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Introduction to Interaction Design",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Introduction to Interaction Design",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Introduction to Interaction Design",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Understanding and Conceptualizin g Interaction Cognitive aspects and Social, Emotional Interaction",
+    "Divided Content": "Hour 1: Understanding      the      Problem      Space      and Conceptualizing    Design,    Conceptual    Model, Interface    Types,    Cognitive    aspects,    Social Interaction and the Emerging Social Phenomena, Emotions  and  the  User  Experience,  Expressive and        Frustrating        Interfaces,        Persuasive Technologies\nSelf-learning      Topics: Study      of      Various interactive  Interface Types"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Understanding and Conceptualizin g Interaction Cognitive aspects and Social, Emotional Interaction",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Understanding and Conceptualizin g Interaction Cognitive aspects and Social, Emotional Interaction",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Understanding and Conceptualizin g Interaction Cognitive aspects and Social, Emotional Interaction",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Understanding and Conceptualizin g Interaction Cognitive aspects and Social, Emotional Interaction",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 1: Establishing   Requirements,   Five   Key   Issues, Techniques  for  Data  Gathering,  Data  Analysis Interpretation and Presentation, Task Description and Task Analysis\nSelf-learning Topics: Any case study of how to gather requirements"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 2: ( eq; BE Project )"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Data Gathering, Establishing Requirements, Analysis, Interpretation and\nPresentation",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 1: Interaction   Design   Process,   Prototyping   and Conceptual   Design,   Interface   Metaphors   and Analogies\nSelf-learning Topics: Study of two websites with usability concepts"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Process of Interaction Design, Prototyping,\nConstruction.",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 1: Design principles, Principles to support Usability, Standards   and   Guidelines,   Golden   rules   and Heuristics,   ISO/IEC   standards"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 2: The   15   Rules Every UI/UX Designer Should Know"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 3: Self-learning Topics:\nStudy   experiments   on   industry   standards   and design                                                     principles; principles"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 4: https://xd; adobe"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 5: com/ideas/career- tips/15-rules-every-ux-designer-know/"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Design rules and Industry standards",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Evaluation Techniques and Framework",
+    "Divided Content": "Hour 1: The Why, What, Where and When of Evaluation, Types   of   Evaluation,   case   studies,   DECIDE Framework,     Usability     Testing,     conducting experiments,  Field  studies,  Heuristic  Evaluation and walkthroughs, Predictive models"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Evaluation Techniques and Framework",
+    "Divided Content": "Hour 2: Self-learning Topics: Evaluation of any GUI with usability principles"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Evaluation Techniques and Framework",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Evaluation Techniques and Framework",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) User Interface Design",
+    "Module": "Evaluation Techniques and Framework",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Homogenous      Coordinate      System,      Matrix\nRepresentation    and    its    Operations,    Vector Algebra: Dot and Cross Products, Orthogonal and\nOrthonormal Vectors"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction and Fundamentals of Robotics",
+    "Divided Content": "Hour 1: Automation  and  its  types,  definition  of  Robotics and a Robot, History of Robotics, Advantages and Disadvantages  of  Robot,  Robotic  Manipulators, Robot   Motions,   Robot   Anatomy,   Links   and Joints,  Classification  of  Robots,  Specification  of Robot, Applications of Robots\nSelf-learning Topics: Robot Coordinate System, Economic and Social Aspects of Robotics"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction and Fundamentals of Robotics",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction and Fundamentals of Robotics",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction and Fundamentals of Robotics",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 1: Homogeneous   transformation   matrices,   Inverse transformation   matrices,   Forward   and   inverse kinematic  equations  for  position  and  orientation, Denavit-Hartenberg   Representation   of   Forward Kinematic   Equations   of   Robots,   The   Inverse Kinematic   Solution   of   Robots,   Case   Studies: Three Axes Planar Articulated Robot Arm (Mini- Drafter) and Four Axes Adept-1 SCARA robot Self-learning Topics: Study of Five Axes Rhino XR-   Robot   Arm   and   Six   Axes   Articulated\nIntelledex 660 Robot Arm"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Direct and Inverse Kinematics",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 1: Characteristics of Actuating Systems, Comparison of    Actuating    Systems,    Hydraulic    Devices, Pneumatic        Devices,        Electric        Motors, Magnetostrictive             Actuators,             Sensor Characteristics,     Position     Sensors,     Velocity Sensors,     Acceleration     Sensors,     Force     and Pressure   Sensors,   Torque   Sensors,   Light   and Infrared   Sensors,   Touch   and   Tactile   Sensors, Proximity     Sensors,     Sniff     Sensors,     Vision Systems, Voice Synthesizer\nSelf-learning Topics: Microprocessor Control of\nElectric  Motors,  Microswitches,  Range  Finders, Voice Recognition Devices"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Actuators and Sensors",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 1: Differential   relationship,   Jacobian,   Differential motions  of  a  frame  and  robot,  Inverse  Jacobian, Lagrangian    mechanics,    Moments    of    Inertia, Dynamic  equations  of  robots,  Transformation  of forces and moment between coordinate frames Self-learning Topics: Static Force Analysis of\nRobots"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Motions, velocities and dynamic analysis of force",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Trajectory and Motion Planning",
+    "Divided Content": "Hour 1: Trajectory     planning,     Joint-space     trajectory planning, Cartesian-space trajectories, Concept of motion planning, Bug Algorithms -Bug1, Bug2, Tangent Bug\nSelf-learning  Topics:  Case  Study  based  on  real\nlife  application  of  motion  planning  (eg"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Trajectory and Motion Planning",
+    "Divided Content": "Hour 2: Chess Game, Robotic Race, etc; )"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Trajectory and Motion Planning",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Trajectory and Motion Planning",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Trajectory and Motion Planning",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 1: Definition       of       Robot       Program,       Robot Programming        Techniques        like        Online programming, Lead-through programming, Walk- through    programming,    Offline    programming, Task     programming,     Motion     Programming, Robotic    Programming    Language:    Overview, Requirements   for   Standard   Robot   Language,\nIntroduction to Robot Languages like AL, AML, RAIL, RPL, VAL, etc"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 2: Self-learning Topics: Example of Robot Program using VAL"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Robotics",
+    "Module": "Introduction to Robot Programming",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Basics of software"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Introduction to ERP",
+    "Divided Content": "Hour 1: Enterprise -An OverviewIntegrated Management Information,  Business  Modeling,Integrated  Data Model\nSelf-Learning  Topics:  Study  of  advantages  of ERP"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Introduction to ERP",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Introduction to ERP",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Introduction to ERP",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 1: Business ProcessingReengineering(BPR), Data Warehousing,   Data   Mining,   On-lineAnalytical Processing(OLAP),Supply    Chain    Management (SCM),Customer RelationshipManagement(CRM),         MIS         - Management Information System,DSS - Decision Support           System,EIS           -           Executive InformationSystem\nSelf-Learning    Topics:    Study   different    ERP technologies"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Technologies",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 1: MRP  -  Material  Requirement  Planning,  BOM  - Bill Of Material, MRP - Manufacturing Resource Planning,    DRP    -   Distributed    Requirement Planning, PDM - Product Data Management"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 2: Finance,        Plant        Maintenance,        Quality Management, Materials Management; Self-Learning    Topics:    Study   different    ERP modules"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP\nManufacturing Perspective and ERP Modules",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 1: Reduction of Lead-Time, On-timeShipment, Reduction in CycleTime, Improved Resource Utilization, Better CustomerSatisfaction, Improved SupplierPerformance, Increased Flexibility,Reduced Quality, Costs, Improved Information Accuracy and Design-making Capability"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 2: Self-Learning Topics: Study of benefits of ERP for real time application"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 7: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "Benefits of ERP",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Life cycle",
+    "Divided Content": "Hour 1: Pre-evaluation    Screening,    PackageEvaluation, Project        Planning        Phase,Gap        Analysis, Reengineering,Configuration, Implementation Team   Training,   Testing,   GoingLive,   End-user Training, Post-implementation (Maintenance mode)"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Life cycle",
+    "Divided Content": "Hour 2: Self-Learning Topics: ERP testing tools"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Life cycle",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Life cycle",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "ERP Life cycle",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 1: E-Business   structural   transformation,   Flexible Business  Design,  Customer  Experience,  Create the   new   techo   enterprise,   New   generation   e- business  leaders,  memo  to  CEO,  Empower  your customer, Integrate Sales and Service, Integrated Enterprise\napplications"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 2: Enterprise  resource  planning  the  E- business     Backbone     Enterprise     architecture, planning,    ERP    usage    in    Real    world,   ERP Implementation"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 3: Self-Learning Topics: ERP Applications"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) ERP",
+    "Module": "E-Commerce to E- business",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 1: Concepts    of    Computer    Network,    Network\nSecurity and Operating System"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Prerequisite",
+    "Divided Content": "Hour 2: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 1: Introduction to cloud computing, need for cloud computing  and  its  components,  cloud  &  other similar  configurations,  cloud  types:  NIST  and Cloud   Cube   Model,   characteristics   of   cloud computing, deployment  models, service models, advantages     and     disadvantages     of     Cloud Computing"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 2: Self-learning Topics:\nStudy   the   recent   trends   in   cloud   computing\narchitectures and related technologies"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Introduction to cloud computing",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 1: Characteristics     of     virtualized     environment, structures    of    virtualization,    implementation levels     of     virtualization,     mechanisms     of virtualization,  pros  and  cons  of  virtualization, virtualization   vs   cloud   computing,   Xen   and KVM architecture"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 2: Self-learning Topics:\nComparison    between    different    virtualization platforms"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Virtualization",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Computing Services",
+    "Divided Content": "Hour 1: SPI Model of Cloud computing, Everything as a Service  (XaaS):  Database  as  a  Service,  Storage as a Service, Security as a Service, Collaboration as  a  Service,  Monitoring  as  a  Service,  Network as  a  Service,  Disaster  Recovery  as  a  service, Identity management as a Service, Analytics as a Service and Backup as a Service"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Computing Services",
+    "Divided Content": "Hour 2: Self-learning Topics:\nStudy  of  different  cloud  computing  platforms\nproviding XaaS services"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Computing Services",
+    "Divided Content": "Hour 3: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Computing Services",
+    "Divided Content": "Hour 4: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 1: Introduction   to   the   AWS   Cloud,   AWS   core services by categories"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 2: Compute   Service:   Introduction   to   EC2,   EC2 Instances,    EC2    Amazon    Machine    Images, Instance Types, Instance Lifecycle"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 3: Storage  Service:  Introducing  S3,  working  with Buckets,  setting  bucket  security,  S3  event  and notification,   bucket   properties,   working   with Elastic Block Store Volumes, Object Storage Vs Block    Storage,    Archives    versus    backups, Introduction to Glacier"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 4: Virtual   Private   Cloud:   Introduction,   Subnet, Elastic  Network  Interfaces,  Internet  Gateways, Route Tables, Security Groups"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 5: CloudWatch:Introduction,  CloudWatch  Metrics, CloudWatch Alarms"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 6: Database  as  a  Service:  Introduction  to  Amazon Relational   Database   Service   (RDS),   Database Engines, Database Instance Classes, Backup and Recovery,  Non-relational  (No-SQL)  Databases, Types of Non relational Databases, Introduction\nto   DynamoDB,   Features,   Partition   and   Hash Keys"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 7: Self-learning Topics:\nComparison  of  AWS  services  with  other  cloud service platforms like Azure and GCP"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 8: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Amazon Web Service Cloud Platform",
+    "Divided Content": "Hour 9: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Openstack Cloud platform & Severless Computing",
+    "Divided Content": "Hour 1: Open  source   Cloud  Platform:   Introduction  to Openstack   cloud   platform,   Components   and modes of Operations, Architecture of Openstack cloud platform"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Openstack Cloud platform & Severless Computing",
+    "Divided Content": "Hour 2: Mobile       Cloud       Computing:       Definition, architecture,  benefits  and  challenges  of  mobile cloud computing"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Openstack Cloud platform & Severless Computing",
+    "Divided Content": "Hour 3: Serverless   Computing:   Introduction,   Working with  Serverless  environment,Basics  of  severless events and functions, AWS Lambda"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Openstack Cloud platform & Severless Computing",
+    "Divided Content": "Hour 4: Self-learning Topics:\nTo study different open source cloud computing\nplatforms  and  compare  them  based  on  different XaaS services provided by them"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Openstack Cloud platform & Severless Computing",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 1: What  is  security,  why  is  it  required  in  cloud computing,  Different types of  security in  cloud, attacks,  and  vulnerabilities,IaaS  security,  PaaS security,  SaaS  security,  trust  boundary,  Audit and reporting"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 2: Introduction to Identity and access Management (IAM),   IAM Challenges, IAM Definition, IAM Architecture    and    Practice,    Relevant    IAM Standards and Protocols for Cloud Services"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 3: Privacy:  What  Is  Privacy?  What  Are  the  Key Privacy   Concerns   in   the   Cloud?,   Legal   and Regulatory Implications: Laws and Regulations, Governance, Risk, and Compliance (GRC)"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 4: Self-learning Topics:\nTo  assess  and  analyze  how  the  security  and privacy    is    maintained    in    different    cloud\ncomputing platforms"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 5: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 6: Review and practice"
+  },
+  {
+    "Course Name": "( Optional Course - 6) Cloud computing and Services",
+    "Module": "Cloud Security & Privacy",
+    "Divided Content": "Hour 7: Review and practice"
+  }
+]
