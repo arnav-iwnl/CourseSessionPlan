@@ -35,7 +35,7 @@ const getEventController = (req, res) => {
                 departmentEvents.push(date.toISOString().split('T')[0]);
             }
         });
-        
+        // console.log(res);
         res.json({
             events,
             holidays,

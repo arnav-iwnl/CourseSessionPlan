@@ -1,0 +1,374 @@
+{
+    "Branch": [
+      {
+        "FE": [
+          {
+            "Semester 2": {
+              "courseCode": [
+                {
+                  "FEC201": "Applied Mathematics-II"
+                },
+                {
+                  "FEC202": "Applied Physics"
+                },
+                {
+                  "FEC203": "Engineering Graphics"
+                },
+                {
+                  "FEC204": "Digital System Design"
+                },
+                {
+                  "FEC205": "Professional Communication Techniques"
+                },
+                {
+                  "FEC2022": "Applied Chemistry"
+                }
+              ]
+            }
+          }
+        ],
+        "IOT": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "CSC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "CSC402": "Analysis of Algorithms"
+                },
+                {
+                  "CSC403": "Database Management System"
+                },
+                {
+                  "CSC404": "Operating System"
+                },
+                {
+                  "CSC405": "Microprocessor"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "IoTCSBCC601": "Cryptography & Network Security"
+                },
+                {
+                  "IoTCSBCC602": "IoT Architecture and Protocols"
+                },
+                {
+                  "IoTCSBCDLO603": "Blockchain Technology"
+                },
+                {
+                  "IoTCSBCC604": "WEB X.0"
+                },
+                {
+                  "IoTCSBCDLO6011": "Enterprise Network Design"
+                },
+                {
+                  "IoTCSBCDLO6012": "Application Security and Secure Coding Principles"
+                },
+                {
+                  "IoTCSBCDLO6013": "Ethical hacking and digital forensics"
+                },
+                {
+                  "IoTCSBCDLO6014": "Virtualization and Cloud Security"
+                }
+              ]
+            }
+          }
+        ],
+        "IT": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "ITC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "ITC402": "Computer Network and Network Design"
+                },
+                {
+                  "ITC403": "Operating System"
+                },
+                {
+                  "ITC404": "Automata Theory"
+                },
+                {
+                  "ITC405": "Computer Organization and Architecture"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "ITC601": "Data Mining & Business Intelligence"
+                },
+                {
+                  "ITC602": "Web X.0"
+                },
+                {
+                  "ITC603": "Wireless Technology"
+                },
+                {
+                  "ITC604": "AI and DS - 1"
+                },
+                {
+                  "ITDO6011": "Software Architecture"
+                },
+                {
+                  "ITDO6012": "Image Processing"
+                },
+                {
+                  "ITDO6013": "Green IT"
+                },
+                {
+                  "ITDO6014": "Ethical Hacking and Forensics"
+                }
+              ]
+            }
+          }
+        ],
+        "AIDS": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "CSC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "CSC402": "Analysis of Algorithms"
+                },
+                {
+                  "CSC403": "Database Management System"
+                },
+                {
+                  "CSC404": "Operating System"
+                },
+                {
+                  "CSC405": "Microprocessor"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "CSC601": "Data Analytics and Visualization"
+                },
+                {
+                  "CSC602": "Cryptographyand System Security"
+                },
+                {
+                  "CSC603": "Software Engineering and Project Management"
+                },
+                {
+                  "CSC604": "Machine Learning"
+                },
+                {
+                  "CSDLO6011": "High PerformanceComputing"
+                },
+                {
+                  "CSDLO6012": "Distributed Computing"
+                },
+                {
+                  "CSDLO6013": "Image and Video Processing"
+                }
+              ]
+            }
+          }
+        ],
+        "AIML": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "CSC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "CSC402": "Analysis of Algorithms"
+                },
+                {
+                  "CSC403": "Database Management System"
+                },
+                {
+                  "CSC404": "Operating System"
+                },
+                {
+                  "CSC405": "Microprocessor"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "CSC601": "Data Analytics and Visualization"
+                },
+                {
+                  "CSC602": "Cryptographyand System Security"
+                },
+                {
+                  "CSC603": "Software Engineering and Project Management"
+                },
+                {
+                  "CSC604": "Machine Learning"
+                },
+                {
+                  "CSDLO6011": "High PerformanceComputing"
+                },
+                {
+                  "CSDLO6012": "Distributed Computing"
+                },
+                {
+                  "CSDLO6013": "Image and Video Processing"
+                }
+              ]
+            }
+          }
+        ],
+        "EXTC": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "ECC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "ECC402": "Microcontrollers"
+                },
+                {
+                  "ECC403": "Linear Integrated Circuits"
+                },
+                {
+                  "ECC404": "Signals and Systems"
+                },
+                {
+                  "ECC405": "Principles of Communicatio n Engineering"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "ECC601": "Electromagnetics and Antenna"
+                },
+                {
+                  "ECC602": "Computer Communication Networks"
+                },
+                {
+                  "ECC603": "Digital Image Processing and Machine Vision"
+                },
+                {
+                  "ECC604": "Artificial Neural Networks and Fuzzy Logic"
+                },
+                {
+                  "ECCDLO 6011": "Mixed Signal Design"
+                },
+                {
+                  "ECCDLO 6012": "Computer Organisation and Architecture"
+                },
+                {
+                  "ECCDLO 6013": "Digital Forensic"
+                },
+                {
+                  "ECCDLO 6014": "Database Management System"
+                },
+                {
+                  "ECCDLO 6015": "IoT and Industry 4.0"
+                },
+                {
+                  "ECCDLO 6016": "Radar Engineering"
+                }
+              ]
+            }
+          }
+        ],
+        "ECS": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "ECC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "ECC402": "Electronic Circuits"
+                },
+                {
+                  "ECC403": "Controls and Instrumentation"
+                },
+                {
+                  "ECC404": "Microprocessors and Microcontrollers"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "ECC 601": "Embedded Systems and RTOS"
+                },
+                {
+                  "ECC 602": "Artificial Intelligence"
+                },
+                {
+                  "ECC 603": "Computer Networks"
+                },
+                {
+                  "ECC 604": "Data Warehousing and Mining"
+                },
+                {
+                  "ECCDO601": "Machine Learning"
+                },
+                {
+                  "ECC DO601": "Industrial Automation"
+                }
+              ]
+            }
+          }
+        ],
+        "MECH": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {
+                  "MEC401": "Engineering Mathematics-IV"
+                },
+                {
+                  "MEC402": "Fluid Mechanics"
+                },
+                {
+                  "MEC403": "Kinematics of Machinery"
+                },
+                {
+                  "MEC404": "CAD/CAM"
+                }
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {
+                  "MEC601": "Machine Design"
+                },
+                {
+                  "MEC602": "Turbo Machinery"
+                },
+                {
+                  "MEC603": "Heating,Ventilation, Air Conditioning and Refrigeration"
+                },
+                {
+                  "MEC604": "Automation and Artificial Intelligence"
+                },
+                {
+                  "MEDLO6021": "Press Tool Design"
+                },
+                {
+                  "MEDLO6022": "Tool Engineering"
+                },
+                {
+                  "MEDLO6023": "Metal Forming Technology"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }

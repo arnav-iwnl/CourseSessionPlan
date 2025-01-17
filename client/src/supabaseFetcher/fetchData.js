@@ -170,3 +170,55 @@ export const filterWorkingDays = async (dates) => {
         throw new Error(`Error filtering working days: ${err.message}`);
     }
 };
+
+
+
+export const getEventData = async () => {
+  try {
+    // Fetch data from the holidaytable
+    const { data: events, error } = await supabase
+      .from('holidaytable')
+      .select('name, date, holiday, institute_level, department_level');
+
+    if (error) {
+      return { error: 'Query failed: ' + error.message };
+    }
+
+    if (!events || events.length === 0) {
+      return { error: 'No events found' };
+    }
+
+    // Process data into categorized lists
+    const holidays = [];
+    const instituteLevelEvents = [];
+    const departmentEvents = [];
+
+    events.forEach(event => {
+      if (event.holiday) {
+        holidays.push(event.date);
+      }
+      if (event.institute_level) {
+        const currentDate = new Date(event.date);
+        currentDate.setDate(currentDate.getDate() + 1);
+        const date = currentDate.toISOString().split('T')[0];
+        instituteLevelEvents.push(date);
+      }
+      if (event.department_level) {
+        const currentDate = new Date(event.date);
+        currentDate.setDate(currentDate.getDate() + 1);
+        const date = currentDate.toISOString().split('T')[0];
+        departmentEvents.push(date);
+      }
+    });
+
+    // Return the processed data as a JSON object
+    return {
+      events,
+      holidays,
+      instituteLevelEvents,
+      departmentEvents
+    };
+  } catch (error) {
+    return { error: error.message };
+  }
+};

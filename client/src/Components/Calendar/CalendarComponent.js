@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PdfDownloader from './pdf.js'; // Adjust the path as needed
 import './styles/CalendarTable.css';
+import { fetchSessionDates, getEventData } from '../../supabaseFetcher/fetchData.js';
+
 
 
 const CalendarTable = () => {
@@ -16,17 +18,11 @@ const CalendarTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const eventsResponse = await fetch('http://localhost:5000/getEvents');
-        if (!eventsResponse.ok) {
-          throw new Error(`Failed to fetch events: ${eventsResponse.statusText}`);
-        }
-        const eventsData = await eventsResponse.json();
+        const eventsData = await getEventData();
+        // console.log(eventsData);
 
-        const datesResponse = await fetch('http://localhost:5000/getDate');
-        if (!datesResponse.ok) {
-          throw new Error(`Failed to fetch dates: ${datesResponse.statusText}`);
-        }
-        const datesData = await datesResponse.json();
+        const datesData = await fetchSessionDates(); 
+       
 
         setStartDate(datesData.startDate);
         setEndDate(datesData.endDate);
