@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PdfDownloader from './pdf.js'; // Adjust the path as needed
 import './styles/CalendarTable.css';
 import { getEventData } from '../../supabaseFetcher/fetchData.js';
+import { Col, Form, Row } from 'react-bootstrap';
+
+
 
 
 
@@ -95,24 +98,32 @@ const CalendarTable = () => {
   };
   return (
     <div className="calendar-container">
-      <div className="date-selector">
-        <label htmlFor="startDate">Start Date:</label>
-        <input
-          type="date"
-          id="startDate"
-          value={startDate}
-          onChange={handleStartDateChange}
-          
-        />
-        <label htmlFor="endDate">End Date:</label>
-        <input
-          type="date"
-          id="endDate"
-          value={endDate}
-          onChange={handleEndDateChange}
-          
-        />
-      </div>
+       <div>
+      <Form>
+        <Row className="mb-3">
+          <Col>
+            <Form.Group controlId="startDate">
+              <Form.Label className=''>Start Date for Calendar:</Form.Label>
+              <Form.Control
+                type="date"
+                value={startDate}
+                onChange={handleStartDateChange}
+              />
+            </Form.Group>
+          </Col>
+          <Col>
+            <Form.Group controlId="endDate">
+              <Form.Label>End Date for Calendar:</Form.Label>
+              <Form.Control
+                type="date"
+                value={endDate}
+                onChange={handleEndDateChange}
+              />
+            </Form.Group>
+          </Col>
+        </Row>
+      </Form>
+    </div>
       <div id="pdf-content">
         <table>
           <thead>

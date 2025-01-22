@@ -6,7 +6,6 @@ import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import toast from 'react-hot-toast';
-import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import ComboBox from '../ComboBox/ComboBox.js';
 import { fetchJsonData, fetchSessionDates, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';

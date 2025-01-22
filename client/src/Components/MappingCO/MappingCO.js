@@ -1,7 +1,9 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from "react";
+
 import { Table, Modal, Form, Button, Card, Badge } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
+import toast from "react-hot-toast";
 
 const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
 const supabaseKey =
@@ -84,7 +86,7 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
     setReason(mappingData[`${co}-${po}`]?.reason || "");
     setShowModal(true);
   };
- 
+
   const handleSave = async () => {
     if (!selectedCell.co || !selectedCell.po) {
       console.log(selectedCell.co);
@@ -92,7 +94,7 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
       console.error("Invalid CO or PO selected:", selectedCell);
       return; // Stop execution if CO or PO is undefined
     }
-  
+
     const updatedMapping = {
       ...mappingData,
       [`${selectedCell.co}-${selectedCell.po}`]: {
@@ -100,14 +102,14 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
         justification: reason
       }
     };
-  
+
     try {
       const { data, error } = await supabase
         .from('coursesessionplan')
         .select('Course Code')
         .eq('Course Code', courseCode)
         .single();
-  
+
       if (error && error.code === 'PGRST116') {
         // Record doesn't exist, create new
         await supabase
@@ -127,15 +129,15 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
           })
           .eq('Course Code', courseCode);
       }
-  
+
       setMappingData(updatedMapping);
       setShowModal(false);
     } catch (error) {
       console.error('Error saving data:', error);
     }
   };
-  
-  
+
+
   useImperativeHandle(ref, () => ({
     getMappingData: () => {
       return mappingData;
@@ -216,12 +218,23 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
           </Modal.Header>
           <Modal.Body>
             <Form>
-            <Form.Group className="mb-3">
+              <Form.Group className="mb-3">
                 <Form.Label className="fw-medium">PO Description</Form.Label>
                 <p className="text-muted">
                   {selectedCell ? poDescriptions[selectedCell.po] : ''}
                 </p>
               </Form.Group>
+
+              {/* <Form.Group className="mb-3">
+                <Form.Label>Marks (out of 4)</Form.Label>
+                <Form.Control
+                  type="number"
+                  min="0"
+                  max="4"
+                  value={marks}
+                  onChange={(e) => setMarks(e.target.value)}
+                />
+              </Form.Group> */}
 
               <Form.Group className="mb-3">
                 <Form.Label>Marks (out of 4)</Form.Label>
@@ -230,7 +243,13 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
                   min="0"
                   max="4"
                   value={marks}
-                  onChange={(e) => setMarks(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (value > 4) {
+                      toast.error(`The marks cannot exceed 4, Please add marks out`)
+                    }
+                    setMarks(Math.min(4, Math.max(0, value))); // Enforce the range
+                  }}
                 />
               </Form.Group>
               <Form.Group className="mb-3">
