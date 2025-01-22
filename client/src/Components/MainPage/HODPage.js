@@ -14,7 +14,7 @@ import MappingCO from '../MappingCO/MappingCO.js';
 import { exportToExcel } from '../ExportExcel/exportToExcel.js';
 
 
-const HodPage = () => {
+const HODPage = () => {
   // const [data, setData] = useState([]);
   const [courses, setCourses] = useState([]);
   const [supaBaseData, setSupaBaseData] = useState([]);
@@ -273,7 +273,8 @@ const HodPage = () => {
   };
 
   const handleExport = async() => {
-    const childData = childRef.current?.getMappingData();
+    const childDatainJSON = childRef.current?.getMappingData();
+    const childData = Object.values(childDatainJSON);
     const parentData = await handleEXCEL();
 
     if (!Array.isArray(parentData)) {
@@ -385,4 +386,4 @@ const HodPage = () => {
   );
 };
 
-export default HodPage;
+export default HODPage;

@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import HodPage from './Components/MainPage/HODPage.js';
+import HODPage from './Components/MainPage/HODPage.js';
 import FacultyPage from './Components/MainPage/FacultyPage.js';
 import AuthPage from './Components/LoginPage/AuthPage.js';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute.js';
@@ -34,7 +34,7 @@ function App() {
               path="/hod"
               element={
                 <ProtectedRoute isAllowed={user && user.email.startsWith('hod')}>
-                  <HodPage />
+                  <HODPage />
                 </ProtectedRoute>
               }
             />
@@ -44,9 +44,6 @@ function App() {
       </div>
     </AuthProvider>
     
-    // <> 
-    //  <MappingCO />
-    // </>
   );
 }
 
