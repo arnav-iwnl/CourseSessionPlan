@@ -145,7 +145,7 @@ const EventScheduler = ({ onEventCreate }) => {
         const { error: updateError } = await supabase
           .from('holidaytable')
           .update(eventData)
-          .eq('name', eventID);
+          .eq('name', eventId);
 
         if (updateError) throw updateError;
       } else {
