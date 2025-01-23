@@ -1,9 +1,13 @@
-import React, { useState, useEffect, forwardRef, useImperativeHandle } from "react";
+import React, { useState, useEffect, forwardRef, useImperativeHandle ,useRef} from "react";
 
 import { Table, Modal, Form, Button, Card, Badge } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
+import { jsPDF } from "jspdf";
+import PdfDownloader from "../Calendar/pdf.js";
+
+
 
 const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
 const supabaseKey =
@@ -17,10 +21,11 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   const [marks, setMarks] = useState("");
   const [reason, setReason] = useState("");
   const [mappingData, setMappingData] = useState({});
-  const [cos, setCos] = useState([]);
+  const [cos, setCos] = useState([]); // Defaulting to an empty array
   const [newCODescription, setNewCODescription] = useState("");
   const [newBloomTaxonomy, setNewBloomTaxonomy] = useState("");
   const pos = Array.from({ length: 12 }, (_, i) => `PO${i + 1}`);
+  const cardRef = useRef();
 
   const poDescriptions = {
     PO1: "Engineering Knowledge: Apply knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to solve complex engineering problems.",
@@ -38,6 +43,7 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   };
 
   useEffect(() => {
+    setCos([])
     fetchMappingData();
   }, [courseCode]);
 
@@ -54,7 +60,7 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
       if (data?.Updated_COPO) {
         const parsedData = JSON.parse(data.Updated_COPO);
         setMappingData(parsedData);
-        setCos(parsedData.cos || []);
+        setCos(parsedData.cos || []); // Default to empty array if not present
       }
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -72,6 +78,7 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
       ...mappingData,
       cos: [...cos, newCO],
     });
+    console.log(mappingData);
     setNewCODescription("");
     setNewBloomTaxonomy("");
     setShowCOForm(false);
@@ -80,10 +87,11 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   const handleCellClick = (co, po) => {
     console.log(co);
     console.log(po);
+    const cellData = mappingData[`${co}-${po}`] || {};
     setSelectedCell({ co, po });
     console.log(selectedCell)
-    setMarks(mappingData[`${co}-${po}`]?.marks || "");
-    setReason(mappingData[`${co}-${po}`]?.reason || "");
+    setMarks(cellData.marks || "");
+    setReason(cellData.justification || "");
     setShowModal(true);
   };
 
@@ -137,6 +145,18 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
     }
   };
 
+  const downloadPDF = () => {
+    const doc = new jsPDF();
+
+    // Capture the Card content as HTML
+    doc.html(cardRef.current, {
+      callback: (doc) => {
+        doc.save("course_objectives.pdf"); // Save the PDF with the desired name
+      },
+      margin: [10, 10, 10, 10], // Add some margin
+      autoPaging: true, // Automatically add pages if content overflows
+    });
+  };
 
   useImperativeHandle(ref, () => ({
     getMappingData: () => {
@@ -145,136 +165,163 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   }));
 
   return (
-    <Card>
-      <Card.Header>
-        <div className="d-flex justify-content-between align-items-center">
-          <h4 className="mb-0">CO-PO Mapping</h4>
-          <Badge bg="primary" className="fs-6">
-            Course Code: {courseCode}
-          </Badge>
-        </div>
-      </Card.Header>
-      <Card.Body>
-        <Button onClick={() => setShowCOForm(true)}>Add New CO</Button>
-        <Table bordered hover>
-          <thead className="bg-light">
-            <tr>
-              <th>CO / PO</th>
-              {pos.map((po) => (
-                <th key={po} className="text-center">
-                  {po}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {cos.map((co) => (
-              <tr key={co.id}>
-                <td className="fw-medium bg-light">{co.id}</td>
+    <>
+      <Card>
+
+        <Card.Header>
+          <div className="d-flex justify-content-between align-items-center">
+            <h4 className="mb-0">CO-PO Mapping</h4>
+            <Badge bg="primary" className="fs-6">
+              Course Code: {courseCode}
+            </Badge>
+          </div>
+        </Card.Header>
+        <Card.Body id="co-content">
+          <div className="container mt-4">
+            <h2>Course Objectives (COs)</h2>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Description</th>
+                  <th>Bloom Taxonomy</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cos && cos.length === 0 ? (
+                  <tr>
+                    <td colSpan="3">No course objectives available</td>
+                  </tr>
+                ) : (
+                  cos.map((course, index) => (
+                    <tr key={index}>
+                      <td>{course.id}</td>
+                      <td>{course.description}</td>
+                      <td>{course.bloomTaxonomy}</td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </Table>
+          </div>
+
+
+          <Table bordered hover>
+            <thead className="bg-light">
+              <tr>
+                <th>CO / PO</th>
                 {pos.map((po) => (
-                  <td
-                    key={`${co.id}-${po}`}
-                    className="text-center"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleCellClick(co.id, po)}
-                  >
-                    {mappingData[`${co.id}-${po}`]?.marks || ""}
-                  </td>
+                  <th key={po} className="text-center">
+                    {po}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </Table>
+            </thead>
+            <tbody>
+              {cos.map((co) => (
+                <tr key={co.id}>
+                  <td className="fw-medium bg-light">{co.id}</td>
+                  {pos.map((po) => (
+                    <td
+                      key={`${co.id}-${po}`}
+                      className="text-center"
+                      style={{ cursor: "pointer" }}
+                      onClick={() => handleCellClick(co.id, po)}
+                    >
+                      {mappingData[`${co.id}-${po}`]?.marks || ""}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </Table>
 
-        {showCOForm && (
-          <div className="mb-4">
-            <Form.Group className="mb-3">
-              <Form.Label>CO Description</Form.Label>
-              <Form.Control
-                type="text"
-                value={newCODescription}
-                onChange={(e) => setNewCODescription(e.target.value)}
-                placeholder="Enter CO Description"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Bloom Taxonomy Level</Form.Label>
-              <Form.Control
-                type="text"
-                value={newBloomTaxonomy}
-                onChange={(e) => setNewBloomTaxonomy(e.target.value)}
-                placeholder="Enter Bloom Taxonomy Level"
-              />
-            </Form.Group>
-            <Button onClick={addCO}>Add CO</Button>
-          </div>
-        )}
-
-        <Modal show={showModal} onHide={() => setShowModal(false)}>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              {selectedCell ? `${selectedCell.co} - ${selectedCell.po}` : ""}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form>
+          {showCOForm && (
+            <div className="mb-4 border p-3">
               <Form.Group className="mb-3">
-                <Form.Label className="fw-medium">PO Description</Form.Label>
-                <p className="text-muted">
-                  {selectedCell ? poDescriptions[selectedCell.po] : ''}
-                </p>
-              </Form.Group>
-
-              {/* <Form.Group className="mb-3">
-                <Form.Label>Marks (out of 4)</Form.Label>
+                <Form.Label>CO Description</Form.Label>
                 <Form.Control
-                  type="number"
-                  min="0"
-                  max="4"
-                  value={marks}
-                  onChange={(e) => setMarks(e.target.value)}
-                />
-              </Form.Group> */}
-
-              <Form.Group className="mb-3">
-                <Form.Label>Marks (out of 4)</Form.Label>
-                <Form.Control
-                  type="number"
-                  min="0"
-                  max="4"
-                  value={marks}
-                  onChange={(e) => {
-                    const value = e.target.value;
-                    if (value > 4) {
-                      toast.error(`The marks cannot exceed 4, Please add marks out`)
-                    }
-                    setMarks(Math.min(4, Math.max(0, value))); // Enforce the range
-                  }}
+                  type="text"
+                  value={newCODescription}
+                  onChange={(e) => setNewCODescription(e.target.value)}
+                  placeholder="Enter CO Description"
                 />
               </Form.Group>
               <Form.Group className="mb-3">
-                <Form.Label>Justification</Form.Label>
+                <Form.Label>Bloom Taxonomy Level</Form.Label>
                 <Form.Control
-                  as="textarea"
-                  rows={3}
-                  value={reason}
-                  onChange={(e) => setReason(e.target.value)}
-                  placeholder="Enter reason for marks..."
+                  type="text"
+                  value={newBloomTaxonomy}
+                  onChange={(e) => setNewBloomTaxonomy(e.target.value)}
+                  placeholder="Enter Bloom Taxonomy Level"
                 />
               </Form.Group>
-            </Form>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={() => setShowModal(false)}>
-              Cancel
-            </Button>
-            <Button variant="primary" onClick={handleSave}>
-              Save
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </Card.Body>
-    </Card>
+              <Button variant="success" onClick={addCO}>Add CO</Button>
+            </div>
+          )}
+
+          <Modal show={showModal} onHide={() => setShowModal(false)}>
+            <Modal.Header closeButton>
+              <Modal.Title>
+                {selectedCell ? `${selectedCell.co} - ${selectedCell.po}` : ""}
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <Form.Group className="mb-3">
+                  <Form.Label className="fw-medium">PO Description</Form.Label>
+                  <p className="text-muted">
+                    {selectedCell ? poDescriptions[selectedCell.po] : ''}
+                  </p>
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+                  <Form.Label>Marks (out of 4)</Form.Label>
+                  <Form.Control
+                    type="number"
+                    min="0"
+                    max="4"
+                    value={marks}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      if (value > 4) {
+                        toast.error(`The marks cannot exceed 4, Please add marks out`)
+                      }
+                      setMarks(Math.min(4, Math.max(0, value))); // Enforce the range
+                    }}
+                  />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label>Justification</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    value={reason}
+                    onChange={(e) => setReason(e.target.value)}
+                    placeholder="Enter reason for marks..."
+                  />
+                </Form.Group>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={() => setShowModal(false)}>
+                Cancel
+              </Button>
+              <Button variant="primary" onClick={handleSave}>
+                Save
+              </Button>
+            </Modal.Footer>
+          </Modal>
+
+        </Card.Body>
+        <Card.Footer className="d-flex justify-content-between">
+          <Button onClick={() => setShowCOForm(true)}>Add New CO</Button>
+        </Card.Footer>
+      </Card>
+      <div>
+
+      </div>
+    </>
   );
 });
 
