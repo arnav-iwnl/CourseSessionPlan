@@ -6,7 +6,6 @@ import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import toast from 'react-hot-toast';
-import 'jspdf-autotable';
 import ComboBox from '../ComboBox/ComboBox.js';
 import { fetchJsonData, fetchSessionDates, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
 import MappingCO from '../MappingCO/MappingCO.js';
@@ -14,7 +13,7 @@ import { exportToExcel } from '../ExportExcel/exportToExcel.js';
 
 
 const HODPage = () => {
-  // const [data, setData] = useState([]);
+
   const [courses, setCourses] = useState([]);
   const [supaBaseData, setSupaBaseData] = useState([]);
   const [workingDays, setWorkingDays] = useState([]);
@@ -32,10 +31,10 @@ const HODPage = () => {
 
 
 
-  const [courseCode,setcourseCode] = useState('Please choose subject first');
+  const [courseCode, setcourseCode] = useState('Please choose subject first');
 
   useEffect(() => {
-  //  const fetchJsonData =  fetchJsonData();
+    //  const fetchJsonData =  fetchJsonData();
 
     const fetchDataAndAssign = async () => {
       try {
@@ -46,14 +45,8 @@ const HODPage = () => {
         // Set course name (assuming you're storing it in a state variable)
         setCourses([courseName]); // Wrap courseName in an array to match the courses variable structure
 
-          /// Fetch date range
-        const datesData = await fetchSessionDates(); 
-
-        setStartDate(datesData.startDate);
-        setEndDate(datesData.endDate);
-
         // Calculate working days between start and end date
-        const workingDaysList = calculateWorkingDays(datesData.startDate, datesData.endDate);
+        const workingDaysList = calculateWorkingDays(startDate, endDate);
         // console.log(workingDaysList)
 
         const holidaysData = await filterWorkingDays(workingDaysList);
@@ -90,7 +83,7 @@ const HODPage = () => {
       }
       currentDate.setDate(currentDate.getDate() + 1);
     }
-  
+
     return workingDaysList;
   };
 
@@ -113,106 +106,102 @@ const HODPage = () => {
 
   const assignCoursesModulesHours = () => {
     try {
-      
+
       // Validate required data
       if (!supaBaseData) {
         throw new Error('No Supabase data available');
       }
-  
+
       if (!courses || !Array.isArray(courses) || courses.length === 0) {
         throw new Error('Courses array is missing or empty');
       }
-  
+
       if (!workingDays || !Array.isArray(workingDays) || workingDays.length === 0) {
         throw new Error('Working days array is missing or empty');
       }
-  
+
       if (!courseDays || Object.keys(courseDays).length === 0) {
         throw new Error('Course days mapping is missing or empty');
       }
-  
+
       const jsonData = supaBaseData;
-  
+
       // Validate modules data
       const modules = jsonData.Modules;
       if (!modules || !Array.isArray(modules) || modules.length === 0) {
         throw new Error('No modules available in the data');
       }
-  
+
       const assignments = [];
       const courseModulesMap = new Map();
-  
-      // Log data for debugging
-      console.log('Input validation passed with:', {
-        coursesCount: courses.length,
-        workingDaysCount: workingDays.length,
-        modulesCount: modules.length,
-        courseDaysKeys: Object.keys(courseDays)
-      });
-  
+
+
       // Map the course to its respective modules and hours
       courses.forEach(course => {
         if (!course) {
           console.warn('Encountered null or undefined course in courses array');
           return; // Skip this iteration
         }
-  
+
         const courseModules = modules.flatMap(module => {
           if (!module || !module['Hour Distribution']) {
             console.warn(`Missing module or hour distribution for course: ${course}`);
             return [];
           }
-  
+
           return Object.entries(module['Hour Distribution']).map(([key, hour]) => ({
             course,
             module: module['Module Name'] || 'Unnamed Module',
             hour: hour?.Content || "",
-            hourNumber: hour?.['Hour Number'] || 0
+            hourNumber: hour?.['Hour Number'] || 0,
+            totalHours: module['Total Hours'] || 0
           }));
         });
-  
+
         if (courseModules.length > 0) {
           courseModulesMap.set(course, courseModules);
         } else {
           console.warn(`No valid modules mapped for course: ${course}`);
         }
       });
-  
+
       // Validate if we have any valid mappings
       if (courseModulesMap.size === 0) {
         throw new Error('No valid course-module mappings could be created');
       }
-  
+
       const usedModulesIndices = new Map();
       const assignedDates = new Set();
-  
+
       // Assign modules to working days
       workingDays.forEach(day => {
         if (!day || !day.date || !day.dayOfWeek) {
           console.warn('Invalid day object encountered:', day);
           return;
         }
-  
+
         courses.forEach(course => {
           // Check if this course should be scheduled on this day
           if (courseDays[course]?.[day.dayOfWeek]) {
             const courseModules = courseModulesMap.get(course);
-  
+
             if (courseModules?.length > 0) {
               const moduleIndex = usedModulesIndices.get(course) || 0;
-  
+
               if (moduleIndex < courseModules.length) {
                 const module = courseModules[moduleIndex];
-  
+
+
                 assignments.push({
                   date: day.date,
-                  dayOfWeek: day.dayOfWeek,
                   course: module.course,
                   module: module.module,
                   hour: module.hour,
-                  hourNumber: module.hourNumber
+                  hourNumber: module.hourNumber,
+                  totalHours: module.totalHours,
+                  courseCode: courseCode
                 });
-  
+
                 assignedDates.add(day.date);
                 usedModulesIndices.set(course, moduleIndex + 1);
               }
@@ -220,21 +209,15 @@ const HODPage = () => {
           }
         });
       });
-  
+
       // Calculate buffer dates
       const bufferDates = workingDays
         .filter(day => !assignedDates.has(day.date))
         .map(day => day.date);
-  
-      console.log('Assignment Results:', {
-        totalAssignments: assignments.length,
-        assignedDatesCount: assignedDates.size,
-        bufferDatesCount: bufferDates.length
-      });
-  
+
       setBufferDates(bufferDates);
       setAssignments(assignments);
-  
+
     } catch (error) {
       console.error('Error in assignCoursesModulesHours:', error);
       // You might want to set some error state here
@@ -258,69 +241,132 @@ const HODPage = () => {
   }
 
 
-
+  //
   const handleEXCEL = async () => {
     const tableData = assignments.map((assignment) => ({
       "Expected Date": assignment.date,
       "Actual Date": "", // Placeholder
-      "Day of the Week": assignment.dayOfWeek,
+      "Course Code": courseCode,
       Course: assignment.course,
       Module: assignment.module,
       Hour: assignment.hour,
+      "Total Hours": assignment.totalHours
+
     }));
+    console.log(tableData);
     return tableData;
   };
 
-  const handleExport = async() => {
-    const childDatainJSON = childRef.current?.getMappingData();
-    const childData = Object.values(childDatainJSON);
-    const parentData = await handleEXCEL();
 
+
+  const handleExport = async () => {
+    const childData = childRef.current?.getMappingData();
+    const transformedChildData = [];
+  
+    // Transform child data
+    if (childData?.cos && Array.isArray(childData.cos)) {
+      transformedChildData.push(
+        { section: "COS", id: "ID", description: "Description", bloomTaxonomy: "Bloom Taxonomy" },
+        ...childData.cos.map(({ id, description, bloomTaxonomy }) => ({
+          section: "COS",
+          id,
+          description,
+          bloomTaxonomy,
+        }))
+      );
+    }
+  
+    // Add dynamic key-value pairs
+    Object.entries(childData || {}).forEach(([key, value]) => {
+      if (key !== "cos" && typeof value === "object") {
+        transformedChildData.push({
+          section: key,
+          id: "",
+          description: `Marks: ${value.marks}`,
+          bloomTaxonomy: `Justification: ${value.justification}`,
+        });
+      }
+    });
+  
+    const parentData = await handleEXCEL();
+  
     if (!Array.isArray(parentData)) {
       console.error("Parent Data is not an array:", parentData);
       return;
     }
-
-    if (!Array.isArray(childData)) {
-      console.error("Child Data is not an array:", childData);
+  
+    if (!transformedChildData.length) {
+      console.error("No child data to export");
       return;
     }
-
+    console.log(transformedChildData)
     const datasets = [
-      {
-        data: parentData,
-        sheetName: 'Parent Data',
-      },
-      {
-        data: childData,
-        sheetName: 'Mapping Data',
-      },
+      { data: parentData, sheetName: 'Parent Data' },
+      { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
-
-    exportToExcel(datasets, 'CombinedData');
+  
+    exportToExcel(datasets, `Schedule for ${courseCode}`);
   };
+ 
 
   const handleSubjectCode = (code) => {
     setcourseCode(code);
   };
+
+  const handleStartDateChange = (e) => {
+    setStartDate(e.target.value);
+  };
+
+  const handleEndDateChange = (e) => {
+    setEndDate(e.target.value);
+  };
+
   return (
-    
+
     <Container>
       <div className='d-flex justify-content-between flex-row py-4'>
-        {name && <h2>Hello, HOD {name}! </h2>}
+        {name && <h2>Hello, Faculty {name}! </h2>}
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
       <ParentCalendar />
 
 
+
+      <div>
+        <Form>
+          <Row className="mb-3">
+            <Col>
+              <Form.Group controlId="startDate">
+                <Form.Label>Start Date for Schedule:</Form.Label>
+                <Form.Control
+                  type="date"
+                  value={startDate}
+                  onChange={handleStartDateChange}
+                />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Form.Group controlId="endDate">
+                <Form.Label>End Date for Schedule:</Form.Label>
+                <Form.Control
+                  type="date"
+                  value={endDate}
+                  onChange={handleEndDateChange}
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+        </Form>
+      </div>
+
       <div className='py-3'>
-        <ComboBox onSubjectCodeChange={handleSubjectCode}/>
+        <ComboBox onSubjectCodeChange={handleSubjectCode} />
       </div>
 
 
       <div className='my-2'>
-          <MappingCO ref={childRef} courseCode={courseCode} />
-        </div>
+        <MappingCO ref={childRef} courseCode={courseCode} />
+      </div>
 
       <div>
         <h2>Course Day Selection</h2>
@@ -362,12 +408,15 @@ const HODPage = () => {
                 <td className="text-center">{assignment.course}</td>
                 <td className="text-center">{assignment.module}</td>
                 <td className="text-center">{assignment.hour}</td>
+
               </tr>
             ))}
           </tbody>
         </Table>
 
-
+        {/* <Button variant="primary" className='m-2' onClick={handleDownloadPdf}>
+          Download PDF
+        </Button> */}
         <Button variant="success" onClick={handleExport}>
           Download EXCEL
         </Button>
