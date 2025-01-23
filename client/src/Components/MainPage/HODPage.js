@@ -10,6 +10,8 @@ import ComboBox from '../ComboBox/ComboBox.js';
 import { fetchJsonData, fetchSessionDates, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
 import MappingCO from '../MappingCO/MappingCO.js';
 import { exportToExcel } from '../ExportExcel/exportToExcel.js';
+import PdfDownloader from '../Calendar/pdf.js';
+
 
 
 const HODPage = () => {
@@ -413,22 +415,14 @@ const HODPage = () => {
             ))}
           </tbody>
         </Table>
-
-        {/* <Button variant="primary" className='m-2' onClick={handleDownloadPdf}>
-          Download PDF
-        </Button> */}
-        <Button variant="success" onClick={handleExport}>
+          <div className='d-flex justify-content-between'>
+          <Button variant="success" onClick={handleExport}>
           Download EXCEL
         </Button>
-
-        <h2> Buffer Dates </h2>
-        <div className='d-flex flex-row'>
-          <ul>
-            {bufferDates.map((date, index) => (
-              <li key={index}>{date}</li>
-            ))}
-          </ul>
-        </div>
+        <PdfDownloader formContentIds={[ 'co-content']}/>
+       
+          </div>
+       
       </div>
     </Container>
   );
