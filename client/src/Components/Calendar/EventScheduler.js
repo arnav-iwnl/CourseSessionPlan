@@ -6,6 +6,7 @@ import { createClient } from '@supabase/supabase-js';
 import 'react-calendar/dist/Calendar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/EventScheduler.css';
+import toast from 'react-hot-toast';
 
 // Create Supabase client with proper configuration
 const supabase = createClient(
@@ -184,7 +185,9 @@ const EventScheduler = ({ onEventCreate }) => {
       <h2>Event Scheduler</h2>
       <Calendar
         onClickDay={date => {
-          setSelectedDate(date);
+          let adjustDate = new Date(date); 
+          adjustDate.setDate(date.getDate()+1)
+          setSelectedDate(adjustDate);
           setModalIsOpen(true);
         }}
         value={selectedDate}
@@ -193,7 +196,7 @@ const EventScheduler = ({ onEventCreate }) => {
       
       <Modal show={modalIsOpen} onHide={handleModalClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{isUpdate ? 'Update Event' : 'Create New Event'}</Modal.Title>
+          <Modal.Title>{isUpdate ? `Update Event` : 'Create New Event'}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {error && (

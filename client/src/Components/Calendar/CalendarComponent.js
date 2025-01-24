@@ -15,28 +15,29 @@ const CalendarTable = () => {
   const [departmentEvents, setDepartmentEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [refresh, setRefresh] = useState(0);
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
+  const fetchData = async () => {
+    try {
+      const eventsData = await getEventData();
+      setEvents(eventsData.events || []);
+      setHolidays(eventsData.holidays || []);
+      setInstituteLevelEvents(eventsData.instituteLevelEvents || []);
+      setDepartmentEvents(eventsData.departmentEvents || []);
+      setLoading(false);
 
+    } catch (error) {
+      setError(error.message);
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const eventsData = await getEventData();
-        setEvents(eventsData.events || []);
-        setHolidays(eventsData.holidays || []);
-        setInstituteLevelEvents(eventsData.instituteLevelEvents || []);
-        setDepartmentEvents(eventsData.departmentEvents || []);
-        setLoading(false);
-
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
     fetchData();
-  }, [startDate || endDate]);
+    setRefresh(0);
+  }, [startDate || endDate ,refresh]);
 
   const getWeekdayName = (weekdayIndex) => {
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -59,7 +60,7 @@ const CalendarTable = () => {
       const eventDate = new Date(event.date);
       eventDate.setDate(eventDate.getDate() + 1);
       const actualDate = eventDate;
-      console.log(`EVENT : ${actualDate.toISOString().split('T')[0]}`); // Ensure event.date is parsed as a Date object
+      // console.log(`EVENT : ${actualDate.toISOString().split('T')[0]}`); // Ensure event.date is parsed as a Date object
       return actualDate.toISOString().split('T')[0] === date;
     });
 
@@ -248,9 +249,9 @@ const CalendarTable = () => {
                   </td>
                   <td>
                     {daysInCurrentMonth && Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
-                      const date = new Date(year, monthDate.getMonth(), dayIndex + 1).toISOString().split('T')[0];
+                      const date = new Date(year, monthDate.getMonth(), dayIndex).toISOString().split('T')[0];
                       return getEventsForType(date, instituteLevelEvents) && (
-                        <div key={`inst-event-${monthIndex}-${dayIndex}`} style={{ marginTop: '5px' }}>
+                        <div key={`inst-event-${monthIndex}-${dayIndex-1}`} style={{ marginTop: '5px' }}>
                           ● {getEventsForName(date, events)}
                           <br></br>
                           {new Date(date).toLocaleDateString()}
@@ -260,10 +261,10 @@ const CalendarTable = () => {
                   </td>
                   <td>
                     {daysInCurrentMonth && Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
-                      const date = new Date(year, monthDate.getMonth(), dayIndex + 1).toISOString().split('T')[0];
+                      const date = new Date(year, monthDate.getMonth(), dayIndex).toISOString().split('T')[0];
                       const name = date;
                       return getEventsForType(date, departmentEvents) && (
-                        <div key={`dept-event-${monthIndex}-${dayIndex}`} style={{ marginTop: '5px', padding: '20px', }}>
+                        <div key={`dept-event-${monthIndex}-${dayIndex-1}`} style={{ marginTop: '5px', padding: '20px', }}>
                           ● {getEventsForName(date, events)}
                           <br></br>
                           {new Date(date).toLocaleDateString()}
@@ -279,20 +280,9 @@ const CalendarTable = () => {
 
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '50px' }}>
-        <PdfDownloader
-          formContent="pdf-content"
-          style={{
-            background: '#ff8800',
-            border: 'none',
-            borderRadius: '5px',
-            color: 'white',
-            fontSize: '16px',
-            marginTop: '20px',
-            width: '200px',
-          }}
-        />
+        
         <button
-          onClick={() => window.history.back()}
+          onClick={() => {setStartDate('');setEndDate('')}}
           style={{
             background: '#ff8800',
             border: 'none',
@@ -303,7 +293,7 @@ const CalendarTable = () => {
             width: '200px',
           }}
         >
-          Back
+          Refresh
         </button>
       </div>
     </div>

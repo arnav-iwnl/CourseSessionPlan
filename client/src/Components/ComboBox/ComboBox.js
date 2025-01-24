@@ -33,6 +33,7 @@ const fetchSubjectCodes = (branch, semester) => {
 const handleSubjectCodeChange = (e) => {
   const code = e.target.value;
   setSelectedSubjectCode(code);
+  // console.log(selectedSubjectCode);
   onSubjectCodeChange(code);  // Pass the selected subject code to the parent
 };
 
