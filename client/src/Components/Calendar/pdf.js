@@ -1,53 +1,204 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
+
 import jsPDF from 'jspdf';
 
+//
+// const PdfDownloader = ({ formContentIds }) => {
+//   const downloadPDF = async () => {
+//     const pdf = new jsPDF();
+//     const pageWidth = pdf.internal.pageSize.getWidth();
+//     const pageHeight = pdf.internal.pageSize.getHeight();
+//     let currentYOffset = 0;
+
+//     for (const [index, formContentId] of formContentIds.entries()) {
+//       const input = document.getElementById(formContentId);
+
+//       if (!input) {
+//         console.error(`Element with ID "${formContentId}" not found.`);
+//         continue;
+//       }
+
+//       const canvas = await html2canvas(input, { scale: 2 });
+      
+//       const imgWidth = pageWidth;
+//       const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+//       // Add new page for contents after first three on the first page
+//       if (index > 2) {
+//         pdf.addPage();
+//         currentYOffset = 0;
+//       }
+
+//       // Check if image fits on current page
+//       if (currentYOffset + imgHeight > pageHeight) {
+//         pdf.addPage();
+//         currentYOffset = 0;
+//       }
+
+//       pdf.addImage(
+//         canvas.toDataURL('image/png'), 
+//         'PNG', 
+//         0, 
+//         currentYOffset, 
+//         imgWidth, 
+//         imgHeight
+//       );
+
+//       currentYOffset += imgHeight;
+//     }
+
+//     pdf.save('SessionPlan.pdf');
+//   };
+
+//   return (
+//     <button
+//       onClick={downloadPDF}
+//       style={{
+//         background: '#ff8800',
+//         border: 'none',
+//         padding: '20px',
+//         borderRadius: '5px',
+//         color: 'white',
+//         fontSize: '16px',
+//         marginBottom: '15px',
+//         width: '200px',
+//       }}
+//     >
+//       Download PDF
+//     </button>
+//   );
+// };
+
+
+// const PdfDownloader = ({ formContentIds }) => {
+//   const downloadPDF = async () => {
+//     const pdf = new jsPDF();
+//     const pageWidth = pdf.internal.pageSize.getWidth();
+//     const pageHeight = pdf.internal.pageSize.getHeight();
+//     let currentYOffset = 0;
+
+//     for (const [index, formContentId] of formContentIds.entries()) {
+//       const input = document.getElementById(formContentId);
+
+//       if (!input) {
+//         console.error(`Element with ID "${formContentId}" not found.`);
+//         continue;
+//       }
+
+//       const canvas = await html2canvas(input, { scale: 2 });
+      
+//       const imgWidth = pageWidth;
+//       const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+//       // Add new page for contents after first three on the first page
+//       if (index > 4) {
+//         pdf.addPage();
+//         currentYOffset = 0;
+//       }
+
+//       // Check if image fits on current page
+//       if (currentYOffset + imgHeight > pageHeight) {
+//         pdf.addPage();
+//         pdf.addPage();
+//         currentYOffset = 0;
+//       }
+
+//       pdf.addImage(
+//         canvas.toDataURL('image/png'), 
+//         'PNG', 
+//         0, 
+//         currentYOffset, 
+//         imgWidth, 
+//         imgHeight
+//       );
+
+//       currentYOffset += imgHeight;
+//     }
+
+//     pdf.save('SessionPlan.pdf');
+//   };
+
+
+
+//   return (
+//     <button
+//       onClick={downloadPDF}
+//       style={{
+//         background: '#ff8800',
+//         border: 'none',
+//         padding: '20px',
+//         borderRadius: '5px',
+//         color: 'white',
+//         fontSize: '16px',
+//         marginBottom: '15px',
+//         width: '200px',
+//       }}
+//     >
+//       Download PDF
+//     </button>
+//   );
+// };
+
 const PdfDownloader = ({ formContentIds }) => {
-  const downloadPDF = () => {
-    const promises = formContentIds.map((formContentId) => {
+  const downloadPDF = async () => {
+    const pdf = new jsPDF();
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    let currentYOffset = 0;
+
+    for (const [index, formContentId] of formContentIds.entries()) {
       const input = document.getElementById(formContentId);
 
       if (!input) {
         console.error(`Element with ID "${formContentId}" not found.`);
-        return Promise.resolve(); // Skip if the element is not found
+        continue;
       }
 
-      return html2canvas(input).then((canvas) => {
-        return canvas; // Return the canvas for each form
-      });
-    });
+      const canvas = await html2canvas(input, { scale: 2 });
+      
+      const imgWidth = pageWidth;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    // Wait for all promises to resolve
-    Promise.all(promises)
-      .then((canvases) => {
-        // Combine all canvases vertically
-        const totalHeight = canvases.reduce((sum, canvas) => sum + canvas.height, 0);
-        const maxWidth = Math.max(...canvases.map((canvas) => canvas.width));
+      // Add new page for contents after first three on the first page
+      if (index > 2) {
+        pdf.addPage();
+        currentYOffset = 0;
+      }
 
-        const combinedCanvas = document.createElement('canvas');
-        combinedCanvas.width = maxWidth;
-        combinedCanvas.height = totalHeight;
+      // Special handling for last content
+      if (index === formContentIds.length - 1) {
+        pdf.addPage();
+        pdf.addImage(
+          canvas.toDataURL('image/png'), 
+          'PNG', 
+          0, 
+          0, 
+          imgWidth, 
+          imgHeight
+        );
+        break;
+      }
 
-        const ctx = combinedCanvas.getContext('2d');
-        let yOffset = 0;
+      // Check if image fits on current page
+      if (currentYOffset + imgHeight > pageHeight) {
+        pdf.addPage();
+        currentYOffset = 0;
+      }
 
-        canvases.forEach((canvas) => {
-          ctx.drawImage(canvas, 0, yOffset);
-          yOffset += canvas.height;
-        });
+      pdf.addImage(
+        canvas.toDataURL('image/png'), 
+        'PNG', 
+        0, 
+        currentYOffset, 
+        imgWidth, 
+        imgHeight
+      );
 
-        // Convert combined canvas to image and generate PDF
-        const imgData = combinedCanvas.toDataURL('image/png');
-        const pdf = new jsPDF();
-        const imgWidth = 210; // A4 width in mm
-        const imgHeight = (combinedCanvas.height * imgWidth) / combinedCanvas.width;
+      currentYOffset += imgHeight;
+    }
 
-        pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-        pdf.save('SessionPlan.pdf');
-      })
-      .catch((error) => {
-        console.error('Error generating PDF:', error);
-      });
+    pdf.save('SessionPlan.pdf');
   };
 
   return (
@@ -56,10 +207,11 @@ const PdfDownloader = ({ formContentIds }) => {
       style={{
         background: '#ff8800',
         border: 'none',
+        padding: '20px',
         borderRadius: '5px',
         color: 'white',
         fontSize: '16px',
-        marginTop: '20px',
+        marginBottom: '15px',
         width: '200px',
       }}
     >
@@ -68,4 +220,11 @@ const PdfDownloader = ({ formContentIds }) => {
   );
 };
 
+
 export default PdfDownloader;
+
+
+
+
+
+

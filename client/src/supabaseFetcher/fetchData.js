@@ -9,29 +9,29 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export const fetchJsonData = async (courseCode) => {
     try {
       // Fetch updated data from Supabase
-      const { data, error } = await supabase
+      const { data:resultData, error } = await supabase
         .from('coursesessionplan') // Replace with your actual table name
         .select('Updated') // Replace with your actual column name
         .eq('Course Code', courseCode);
-
+      console.log(resultData[0].Updated.Modules);
       // Handle errors or empty responses
-      if (error || !data || data.length === 0 || !data[0].Updated) {
+      if (error || !resultData || resultData.length === 0 || !resultData[0].Updated) {
         throw new Error('Failed to fetch or no "Updated" data available in Supabase.');
       }
 
-      const updatedData = data[0].Updated;
-
+      const updatedData = resultData[0].Updated;
+      console.log(updatedData);
       // Check if the updated data is empty
-      const isEmpty = Array.isArray(updatedData)
-        ? updatedData.length === 0
-        : Object.keys(updatedData).length === 0;
+      // const isEmpty = Array.isArray(updatedData)
+      //   ? updatedData.length === 0
+      //   : Object.keys(updatedData).length === 0;
 
-      if (isEmpty) {
+      if (updatedData.length ===0) {
         throw new Error('"Updated" data is empty.');
       }
 
       // console.log(updatedData);
-      return updatedData;
+      return {fetchJson : updatedData, checker: 1};
     } catch (error) {
       console.error('Error fetching "Updated" data:', error.message);
 
@@ -46,9 +46,10 @@ export const fetchJsonData = async (courseCode) => {
         if (alphaError || !alphaData || alphaData.length === 0 || !alphaData[0].Original) {
           throw new Error('Failed to fetch "Original" data from Supabase.');
         }
-
+        const ogData = alphaData[0].Original;
         // console.log(alphaData[0].Original);
-        return alphaData[0].Original;
+      
+        return {fetchJson : ogData, checker: 0};
       } catch (alphaFetchError) {
         console.error('Error fetching "Original" data:', alphaFetchError.message);
         throw new Error('Unable to fetch any data from Supabase.');
@@ -222,3 +223,56 @@ export const getEventData = async () => {
     return { error: error.message };
   }
 };
+
+export const updateData = async (courseCode, updata) => {
+  try{
+    const { data: alphaData, error: alphaError } = await supabase
+          .from('coursesessionplan') // Replace with your actual table name
+          .select('Original') // Replace with your actual column name
+          .eq('Course Code', courseCode);
+
+        // Handle errors or empty responses
+        if (alphaError || !alphaData || alphaData.length === 0 || !alphaData[0].Original) {
+          throw new Error('Failed to fetch "Original" data from Supabase.');
+        }
+    const originalJson = alphaData[0].Original;
+
+    const moduleMap = {};
+    originalJson.Modules.forEach((module) => {
+    moduleMap[module["Module Name"]] = module;
+  });
+
+  updata.forEach((update) => {
+    const module = moduleMap[update.module];
+    if (module) {
+      const hourKey = `Hour ${update.hourNumber}`;
+      const newContent = JSON.parse(update.hour)[0];
+      console.log(newContent)
+      if (module["Hour Distribution"][hourKey]) {
+        module["Hour Distribution"][hourKey].Content = newContent;
+      }
+    }
+  })
+  const updatedJson = originalJson;
+  console.log(updatedJson);
+
+  try{
+    const { data:dataE, error:updateError } = await supabase
+    .from('coursesessionplan')
+    .update({ Updated: updatedJson })
+    .eq('Course Code', courseCode);
+    if (updateError) {
+      console.error('Error updating data in Supabase:', error);
+    } else {
+      console.log('Successfully updated data in Supabase:', dataE);
+    }
+   }
+   catch(updateError){
+    console.error('Error updating data in Supabase:', error);
+   }
+  }
+  catch(error){ 
+    console.log(error);
+  }
+  
+}

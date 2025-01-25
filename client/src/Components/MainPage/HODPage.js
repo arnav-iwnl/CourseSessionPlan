@@ -8,10 +8,14 @@ import 'react-tooltip/dist/react-tooltip.css';
 import sieslogo from './siesgst.png';
 import toast from 'react-hot-toast';
 import ComboBox from '../ComboBox/ComboBox.js';
-import { fetchJsonData, fetchSessionDates, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
+import { fetchJsonData, updateData, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
+import { generateTopicForEachLecture } from "./geminiApi.js";
 import MappingCO from '../MappingCO/MappingCO.js';
 import { exportToExcel } from '../ExportExcel/exportToExcel.js';
 import PdfDownloader from '../Calendar/pdf.js';
+import { formatDate } from '../../supabaseFetcher/formatDate.js';
+
+
 
 
 
@@ -30,21 +34,26 @@ const HODPage = () => {
   const { name } = location.state || {};
   const childRef = React.useRef();
 
-
-
-
-
   const [courseCode, setcourseCode] = useState('Please choose subject first');
+  const [checker, setchecker] = useState(0);
 
+  useEffect(() => {
+    console.log('Updated supabaseData:', supaBaseData);
+    console.log('Updated checker:', checker);
+  }, [supaBaseData, checker]);
   useEffect(() => {
     //  const fetchJsonData =  fetchJsonData();
 
     const fetchDataAndAssign = async () => {
       try {
-        const jsonData = await fetchJsonData(courseCode); // Fetch course data
+        const response = await fetchJsonData(courseCode); // Fetch course data
         // console.log(jsonData['Course Name']);
+        const jsonData = response.fetchJson;
+        setchecker(response.checker)
         const courseName = jsonData['Course Name']; // Extract course name
         setSupaBaseData(jsonData);
+        // console.log(supaBaseData);
+        console.log(supaBaseData);
         // Set course name (assuming you're storing it in a state variable)
         setCourses([courseName]); // Wrap courseName in an array to match the courses variable structure
 
@@ -64,8 +73,7 @@ const HODPage = () => {
       } catch (error) {
         console.error('Error fetching data and assigning courses:', error);
       }
-    };
-
+    }
     fetchDataAndAssign();
   }, [courseCode, startDate, endDate]);
 
@@ -107,7 +115,7 @@ const HODPage = () => {
 
 
 
-  const assignCoursesModulesHours = () => {
+  const assignCoursesModulesHours = async () => {
     try {
 
       // Validate required data
@@ -128,6 +136,32 @@ const HODPage = () => {
       }
 
       const jsonData = supaBaseData;
+      let promptResult;
+       if(checker===0){
+        let promptData = Object.values(jsonData?.Modules).map((mod) => {
+          // console.log("module", module); // Correct placement of console.log
+          return {
+            moduleName: mod["Module Name"],
+            totalHours: mod["Total Hours"],
+            hour1Content: mod?.["Hour Distribution"]?.["Hour 1"]?.Content,
+          };
+        });
+  
+        console.log("prompt data : ", promptData);
+        if (!Array.isArray(promptData)) {
+          // If obj is not an array, wrap it in an array
+          promptData = [promptData];
+        }
+  
+        console.log(typeof promptData); // Log the type of obj, it should be 'object', but obj will be an array now
+        promptResult = await generateTopicForEachLecture(promptData);
+        // promptResult = await promptResult.json;
+        // console.log("typeof prompt data", typeof promptData);
+        // if (promptResult) console.log("promptresult : ", promptResult);
+        promptResult = JSON.parse(promptResult);
+        // console.log(promptData);
+       }
+      
 
       // Validate modules data
       const modules = jsonData.Modules;
@@ -177,7 +211,8 @@ const HODPage = () => {
       const assignedDates = new Set();
 
       // Assign modules to working days
-      workingDays.forEach(day => {
+      let indexlist = 1;
+      workingDays.forEach((day) => {
         if (!day || !day.date || !day.dayOfWeek) {
           console.warn('Invalid day object encountered:', day);
           return;
@@ -196,16 +231,24 @@ const HODPage = () => {
 
 
                 assignments.push({
+                  index: indexlist++,
                   date: day.date,
                   course: module.course,
                   module: module.module,
-                  hour: module.hour,
+                  hour: (checker=== 1) ?
+                  module.hour : JSON.stringify(
+                    promptResult[`${module.module}`]?.[
+                      "topic_distribution"
+                    ].find((item) => item.hour == module.hourNumber)?.topics,
+                  ) ||
+                  "bruh",
                   hourNumber: module.hourNumber,
                   totalHours: module.totalHours,
                   courseCode: courseCode
                 });
 
                 assignedDates.add(day.date);
+                // console.log(assignments.hour);
                 usedModulesIndices.set(course, moduleIndex + 1);
               }
             }
@@ -220,6 +263,7 @@ const HODPage = () => {
 
       setBufferDates(bufferDates);
       setAssignments(assignments);
+      console.log(assignments);
 
     } catch (error) {
       console.error('Error in assignCoursesModulesHours:', error);
@@ -246,13 +290,15 @@ const HODPage = () => {
 
   //
   const handleEXCEL = async () => {
+
     const tableData = assignments.map((assignment) => ({
+
       "Expected Date": assignment.date,
       "Actual Date": "", // Placeholder
       "Course Code": courseCode,
       Course: assignment.course,
       Module: assignment.module,
-      Hour: assignment.hour,
+      Hour: handleArrayContent(assignment.hour),
       "Total Hours": assignment.totalHours
 
     }));
@@ -307,7 +353,7 @@ const HODPage = () => {
       { data: parentData, sheetName: 'Parent Data' },
       { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
-  
+    updateData(courseCode,courseCode)
     exportToExcel(datasets, `Schedule for ${courseCode}`);
   };
  
@@ -323,7 +369,14 @@ const HODPage = () => {
   const handleEndDateChange = (e) => {
     setEndDate(e.target.value);
   };
-
+  const handleArrayContent = (content) =>{
+    if(checker===0){
+      return JSON.parse(content)[0];
+    }
+    else{
+      return content;
+    }
+  };
   return (
 
     <Container>
@@ -377,60 +430,6 @@ const HODPage = () => {
         <MappingCO ref={childRef} courseCode={courseCode} />
       </div>
 
-      <div>
-        <h2>Course Day Selection</h2>
-        <div className='courses_field'>
-          {courses.map((course, index) => (
-            <div key={index}>
-              <h4 className='mx-2'>{course}</h4>
-              {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].map(day => (
-                <Form.Check
-                  key={day}
-                  type="checkbox"
-                  label={day}
-                  checked={courseDays[course] ? courseDays[course][day] : false}
-                  onChange={() => handleDayChange(course, day)}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-      <Button className="my-4" onClick={assignCoursesModulesHours}>Assign Modules</Button>
-      <div>
-        <h2>Schdeule Course</h2>
-        <Table striped bordered hover className="assignment-table">
-          <thead>
-            <tr>
-              <th className="text-center">Date</th>
-              <th className="text-center">Day of the Week</th>
-              <th className="text-center">Course</th>
-              <th className="text-center">Module</th>
-              <th className="text-center">Hour</th>
-            </tr>
-          </thead>
-          <tbody>
-            {assignments.map((assignment, index) => (
-              <tr key={index}>
-                <td className="text-center">{assignment.date}</td>
-                <td className="text-center">{assignment.dayOfWeek}</td>
-                <td className="text-center">{assignment.course}</td>
-                <td className="text-center">{assignment.module}</td>
-                <td className="text-center">{assignment.hour}</td>
-
-              </tr>
-            ))}
-          </tbody>
-        </Table>
-          <div className='d-flex justify-content-center'>
-          {/* <Button variant="success" onClick={handleExport}>
-          Download EXCEL
-        </Button> */}
-        <PdfDownloader formContentIds={[ 'logo','coursePlan','co-content']}/>
-       
-          </div>
-       
-      </div>
     </Container>
   );
 };
