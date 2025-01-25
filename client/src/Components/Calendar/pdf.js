@@ -43,7 +43,7 @@ const PdfDownloader = ({ formContentIds }) => {
         const imgHeight = (combinedCanvas.height * imgWidth) / combinedCanvas.width;
 
         pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-        pdf.save('combined-forms.pdf');
+        pdf.save('SessionPlan.pdf');
       })
       .catch((error) => {
         console.error('Error generating PDF:', error);
@@ -63,7 +63,7 @@ const PdfDownloader = ({ formContentIds }) => {
         width: '200px',
       }}
     >
-      Download Combined PDF
+      Download PDF
     </button>
   );
 };

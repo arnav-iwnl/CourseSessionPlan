@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Row, Col } from "react-bootstrap";
+import { Form, Row, Col, Table, Container } from "react-bootstrap";
 import jsonData from "./subjects.json"; // Import your JSON data
 
 
@@ -8,6 +8,7 @@ const data=jsonData.Branch;
 const [selectedBranch, setSelectedBranch] = useState('');
 const [selectedSemester, setSelectedSemester] = useState('');
 const [selectedSubjectCode, setSelectedSubjectCode] = useState('');
+const [selectedSubjectTitle, setSelectedSubjectTitle] = useState('');
 
 const fetchDepartmentNames = () => {
   return Object.keys(data[0]);
@@ -30,10 +31,29 @@ const fetchSubjectCodes = (branch, semester) => {
   return [];
 };
 
+function getYearOfStudy(semester) {
+  // Define the mapping between semesters and years of study
+  const semesterToYear = {
+    "Semester 1": " ",   // First year (Freshman Engineering)
+    "Semester 2": " ",   // First year (Freshman Engineering)
+    "Semester 3": "SE",   // Second year (Sophomore Engineering)
+    "Semester 4": "SE",   // Second year (Sophomore Engineering)
+    "Semester 5": "TE",   // Third year (Third Year Engineering)
+    "Semester 6": "TE",   // Third year (Third Year Engineering)
+    "Semester 7": "BE",   // Final year (Bachelor of Engineering)
+    "Semester 8": "BE"    // Final year (Bachelor of Engineering)
+  };
+
+  // Return the corresponding year or a default message if the semester is not found
+  return semesterToYear[semester] || " ";
+}
 const handleSubjectCodeChange = (e) => {
   const code = e.target.value;
   setSelectedSubjectCode(code);
-  // console.log(selectedSubjectCode);
+  const subT = data[0][selectedBranch][0][selectedSemester].courseCode.find(course => Object.keys(course)[0] === code);
+  const title = subT ? subT[code] : "Course not found";
+  setSelectedSubjectTitle(title);
+  console.log(selectedSubjectTitle)
   onSubjectCodeChange(code);  // Pass the selected subject code to the parent
 };
 
@@ -97,6 +117,41 @@ return (
         </Form.Select>
       </Form.Group>
     )}
+    <Container >
+      <Row className="justify-content-center">
+        <Col xs={12} md={8}>
+          <h2 className="text-center ">Course Plan</h2>
+          <Table striped bordered hover id="coursePlan">
+            <tbody>
+              <tr>
+                <td style={{ border: 'none' }}><b>Semester:</b> {parseInt(selectedSemester.replace(/[^0-9]/g, ""))}</td>
+                <td style={{ border: 'none' }}><b>Year:</b> {getYearOfStudy(selectedSemester)} {selectedBranch}</td>
+              </tr>
+              <tr>
+                <td style ={{ border: 'none' }}><b>Course Title:</b> {selectedSubjectTitle}</td>  
+                <td style={{ border: 'none' }}><b>Course Code:</b> {selectedSubjectCode}</td>
+              </tr>
+              <tr>
+                <td style={{ border: 'none' }}><b>Total Contact Hours:</b> 39</td>
+                <td style={{ border: 'none' }}><b>Duration of TEE:</b> 3 hrs.</td>
+              </tr>
+              <tr>
+                <td style={{ border: 'none' }}><b>TEE Marks:</b> 80</td>
+                <td style={{ border: 'none' }}><b>IA Marks:</b> 20</td>
+              </tr>
+              <tr>
+                <td style={{ border: 'none' }}><b>Subject In-charge:</b></td>
+                <td style={{ border: 'none' }}> </td>
+              </tr>
+              <tr>
+                <td style={{ border: 'none' }}><b>Course Coordinator:</b></td>
+                <td style={{ border: 'none' }}></td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+    </Container>
   </div>
 );
 };

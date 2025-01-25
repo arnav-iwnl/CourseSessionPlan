@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Form, Button, Table, Row, Col } from 'react-bootstrap';
+import { Container, Form, Button, Table, Row, Col, Image } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 import ParentCalendar from '../Calendar/ParentCalendar.js';
 import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
+import sieslogo from './siesgst.png';
 import toast from 'react-hot-toast';
 import ComboBox from '../ComboBox/ComboBox.js';
 import { fetchJsonData, fetchSessionDates, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
 import MappingCO from '../MappingCO/MappingCO.js';
 import { exportToExcel } from '../ExportExcel/exportToExcel.js';
+import PdfDownloader from '../Calendar/pdf.js';
+
 
 
 const FacultyPage = () => {
@@ -64,7 +67,7 @@ const FacultyPage = () => {
     };
 
     fetchDataAndAssign();
-  }, [courseCode]);
+  }, [courseCode, startDate, endDate]);
 
 
   const calculateWorkingDays = (start, end) => {
@@ -253,6 +256,7 @@ const FacultyPage = () => {
       "Total Hours": assignment.totalHours
 
     }));
+    console.log(tableData);
     return tableData;
   };
 
@@ -323,8 +327,14 @@ const FacultyPage = () => {
   return (
 
     <Container>
+      
+      <div id='logo' >
+      <img src={sieslogo} style={{ maxWidth: "200px", width: "100%" }}  />
+      <h1 className='text-center'>Course Plan </h1>
+      </div>
+
       <div className='d-flex justify-content-between flex-row py-4'>
-        {name && <h2>Hello, Faculty {name}! </h2>}
+        {name && <h2>Hello, Facutly {name}! </h2>}
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
       <ParentCalendar />
@@ -412,22 +422,14 @@ const FacultyPage = () => {
             ))}
           </tbody>
         </Table>
-
-        {/* <Button variant="primary" className='m-2' onClick={handleDownloadPdf}>
-          Download PDF
-        </Button> */}
-        <Button variant="success" onClick={handleExport}>
+          <div className='d-flex justify-content-between'>
+          <Button variant="success" onClick={handleExport}>
           Download EXCEL
         </Button>
-
-        <h2> Buffer Dates </h2>
-        <div className='d-flex flex-row'>
-          <ul>
-            {bufferDates.map((date, index) => (
-              <li key={index}>{date}</li>
-            ))}
-          </ul>
-        </div>
+        <PdfDownloader formContentIds={[ 'logo','coursePlan','co-content']}/>
+       
+          </div>
+       
       </div>
     </Container>
   );

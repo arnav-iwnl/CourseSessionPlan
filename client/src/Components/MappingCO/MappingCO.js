@@ -1,6 +1,6 @@
-import React, { useState, useEffect, forwardRef, useImperativeHandle ,useRef} from "react";
+import React, { useState, useEffect, forwardRef, useImperativeHandle, useRef } from "react";
 
-import { Table, Modal, Form, Button, Card, Badge } from "react-bootstrap";
+import { Table, Modal, Form, Button, Card, Badge, Tooltip, OverlayTrigger } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
@@ -24,8 +24,16 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   const [cos, setCos] = useState([]); // Defaulting to an empty array
   const [newCODescription, setNewCODescription] = useState("");
   const [newBloomTaxonomy, setNewBloomTaxonomy] = useState("");
-  const pos = Array.from({ length: 12 }, (_, i) => `PO${i + 1}`);
   const cardRef = useRef();
+  const pos = Array.from({ length: 15 }, (_, i) => {
+
+    if(i<12){
+      return `PO${i + 1}`
+    }
+    else{
+      return `PSO${i - 11}`
+    }
+  });
 
   const poDescriptions = {
     PO1: "Engineering Knowledge: Apply knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to solve complex engineering problems.",
@@ -39,10 +47,14 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
     PO9: "Individual and Teamwork: Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary settings.",
     PO10: "Communication: Communicate effectively on complex engineering activities with the engineering community and society at large, such as writing effective reports and design documentation, making effective presentations, and giving and receiving clear instructions.",
     PO11: "Project Management and Finance: Demonstrate knowledge and understanding of engineering and management principles and apply them to manage projects in multidisciplinary environments.",
-    PO12: "Life-long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+    PO12: "Life-long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+    PSO1: 'Please Check your Department PSO1 for that',
+    PSO2: 'Please Check your Department PSO2 for that',
+    PSO3: 'Please Check your Department PSO3 for that'
   };
 
-  useEffect(() => {
+    
+    useEffect(() => {
     setCos([])
     fetchMappingData();
   }, [courseCode]);
@@ -145,19 +157,6 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
     }
   };
 
-  const downloadPDF = () => {
-    const doc = new jsPDF();
-
-    // Capture the Card content as HTML
-    doc.html(cardRef.current, {
-      callback: (doc) => {
-        doc.save("course_objectives.pdf"); // Save the PDF with the desired name
-      },
-      margin: [10, 10, 10, 10], // Add some margin
-      autoPaging: true, // Automatically add pages if content overflows
-    });
-  };
-
   useImperativeHandle(ref, () => ({
     getMappingData: () => {
       return mappingData;
@@ -222,14 +221,22 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
                 <tr key={co.id}>
                   <td className="fw-medium bg-light">{co.id}</td>
                   {pos.map((po) => (
-                    <td
-                      key={`${co.id}-${po}`}
-                      className="text-center"
-                      style={{ cursor: "pointer" }}
-                      onClick={() => handleCellClick(co.id, po)}
+                    <OverlayTrigger
+                      placement="top"
+                      overlay={<Tooltip id={`${co.id}-${po}-tooltip`}>PO : {poDescriptions[po]}</Tooltip>}
                     >
-                      {mappingData[`${co.id}-${po}`]?.marks || ""}
-                    </td>
+
+                      <td
+                        key={`${co.id}-${po}`}
+                        className="text-center"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => handleCellClick(co.id, po)}
+                      >
+
+                        <span>{mappingData[`${co.id}-${po}`]?.marks || ""}</span>
+                        {/* {mappingData[`${co.id}-${po}`]?.marks || ""} */}
+                      </td>
+                    </OverlayTrigger>
                   ))}
                 </tr>
               ))}
