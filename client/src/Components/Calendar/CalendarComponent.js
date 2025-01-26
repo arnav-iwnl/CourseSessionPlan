@@ -37,7 +37,7 @@ const CalendarTable = () => {
   useEffect(() => {
     fetchData();
     setRefresh(0);
-  }, [startDate || endDate ,refresh]);
+  }, [startDate || endDate, refresh]);
 
   const getWeekdayName = (weekdayIndex) => {
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -59,11 +59,12 @@ const CalendarTable = () => {
     const matchingEvent = eventType.find(event => {
       const eventDate = new Date(event.date);
       eventDate.setDate(eventDate.getDate() + 1);
+
       const actualDate = eventDate;
       // console.log(`EVENT : ${actualDate.toISOString().split('T')[0]}`); // Ensure event.date is parsed as a Date object
       return actualDate.toISOString().split('T')[0] === date;
     });
-
+    // console.log(matchingEvent)
     return matchingEvent ? matchingEvent.name : 'YOLO';
   };
 
@@ -99,32 +100,32 @@ const CalendarTable = () => {
   };
   return (
     <div className="calendar-container">
-       <div>
-      <Form>
-        <Row className="mb-3">
-          <Col>
-            <Form.Group controlId="startDate">
-              <Form.Label className=''>Start Date for Calendar:</Form.Label>
-              <Form.Control
-                type="date"
-                value={startDate}
-                onChange={handleStartDateChange}
-              />
-            </Form.Group>
-          </Col>
-          <Col>
-            <Form.Group controlId="endDate">
-              <Form.Label>End Date for Calendar:</Form.Label>
-              <Form.Control
-                type="date"
-                value={endDate}
-                onChange={handleEndDateChange}
-              />
-            </Form.Group>
-          </Col>
-        </Row>
-      </Form>
-    </div>
+      <div>
+        <Form>
+          <Row className="mb-3">
+            <Col>
+              <Form.Group controlId="startDate">
+                <Form.Label className=''>Start Date for Calendar:</Form.Label>
+                <Form.Control
+                  type="date"
+                  value={startDate}
+                  onChange={handleStartDateChange}
+                />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Form.Group controlId="endDate">
+                <Form.Label>End Date for Calendar:</Form.Label>
+                <Form.Control
+                  type="date"
+                  value={endDate}
+                  onChange={handleEndDateChange}
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+        </Form>
+      </div>
       <div id="pdf-content">
         <table>
           <thead>
@@ -248,30 +249,49 @@ const CalendarTable = () => {
                     ))}
                   </td>
                   <td>
-                    {daysInCurrentMonth && Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
-                      const date = new Date(year, monthDate.getMonth(), dayIndex).toISOString().split('T')[0];
-                      return getEventsForType(date, instituteLevelEvents) && (
-                        <div key={`inst-event-${monthIndex}-${dayIndex-1}`} style={{ marginTop: '5px' }}>
-                          ● {getEventsForName(date, events)}
-                          <br></br>
-                          {new Date(date).toLocaleDateString()}
-                        </div>
-                      );
-                    })}
-                  </td>
-                  <td>
-                    {daysInCurrentMonth && Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
-                      const date = new Date(year, monthDate.getMonth(), dayIndex).toISOString().split('T')[0];
-                      const name = date;
-                      return getEventsForType(date, departmentEvents) && (
-                        <div key={`dept-event-${monthIndex}-${dayIndex-1}`} style={{ marginTop: '5px', padding: '20px', }}>
-                          ● {getEventsForName(date, events)}
-                          <br></br>
-                          {new Date(date).toLocaleDateString()}
-                        </div>
-                      );
-                    })}
-                  </td>
+  {daysInCurrentMonth &&
+    Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
+      const date = new Date(year, monthDate.getMonth(), dayIndex + 1); // Correct day
+      // Adjust for timezone offset
+      const adjustedDate = new Date(date.getTime() - date.getTimezoneOffset() * 60000);
+      const newDate =  new Date(adjustedDate);
+      newDate.setDate(newDate.getDate()-1);
+      const formatnewDate = newDate.toLocaleDateString(); 
+      const formattedDate = adjustedDate.toISOString().split("T")[0]; // Format to YYYY-MM-DD
+      return (
+        getEventsForType(formattedDate, instituteLevelEvents) && (
+          <div key={`inst-event-${monthIndex}-${dayIndex}`} style={{ marginTop: "5px" }}>
+            ● {getEventsForName(formattedDate, events)}
+            <br></br>
+            {formatnewDate}
+          </div>
+        )
+      );
+    })}
+</td>
+<td>
+  {daysInCurrentMonth &&
+    Array.from({ length: daysInCurrentMonth }).map((_, dayIndex) => {
+      const date = new Date(year, monthDate.getMonth(), dayIndex + 1); // Correct day
+      // Adjust for timezone offset
+      const adjustedDate = new Date(date.getTime() - date.getTimezoneOffset() * 60000);
+      const newDate =  new Date(adjustedDate);
+      newDate.setDate(newDate.getDate()-1);
+      const formatnewDate = newDate.toLocaleDateString(); 
+      const formattedDate = adjustedDate.toISOString().split("T")[0];
+
+      return (
+        getEventsForType(formattedDate, departmentEvents) && (
+          <div key={`dept-event-${monthIndex}-${dayIndex}`} style={{ marginTop: "5px", padding: "20px" }}>
+            ● {getEventsForName(formattedDate, events)}
+            <br></br>
+            {formatnewDate}
+          </div>
+        )
+      );
+    })}
+</td>
+
                 </tr>
               );
             })}
@@ -280,9 +300,9 @@ const CalendarTable = () => {
 
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '50px' }}>
-        
+
         <button
-          onClick={() => {setStartDate('');setEndDate('')}}
+          onClick={() => { setStartDate(''); setEndDate('') }}
           style={{
             background: '#ff8800',
             border: 'none',
