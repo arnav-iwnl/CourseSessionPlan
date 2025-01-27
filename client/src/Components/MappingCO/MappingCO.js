@@ -14,7 +14,7 @@ const supabaseKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-const MappingCO = forwardRef(({ courseCode }, ref) => {
+const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
   const [showModal, setShowModal] = useState(false);
   const [showCOForm, setShowCOForm] = useState(false);
   const [selectedCell, setSelectedCell] = useState(null);
@@ -27,10 +27,10 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
   const cardRef = useRef();
   const pos = Array.from({ length: 15 }, (_, i) => {
 
-    if(i<12){
+    if (i < 12) {
       return `PO${i + 1}`
     }
-    else{
+    else {
       return `PSO${i - 11}`
     }
   });
@@ -48,15 +48,60 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
     PO10: "Communication: Communicate effectively on complex engineering activities with the engineering community and society at large, such as writing effective reports and design documentation, making effective presentations, and giving and receiving clear instructions.",
     PO11: "Project Management and Finance: Demonstrate knowledge and understanding of engineering and management principles and apply them to manage projects in multidisciplinary environments.",
     PO12: "Life-long Learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
-    PSO1: 'Please Check your Department PSO1 for that',
-    PSO2: 'Please Check your Department PSO2 for that',
-    PSO3: 'Please Check your Department PSO3 for that'
+    IT: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    CE: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    AIDS: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    AIML: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    EXTC: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    ECS: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    MECH: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    IOT: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+    FE: {
+      PSO1: 'Please Check your Department PSO1 for that',
+      PSO2: 'Please Check your Department PSO2 for that',
+      PSO3: 'Please Check your Department PSO3 for that'
+    },
+
   };
 
-    
-    useEffect(() => {
+
+  useEffect(() => {
     setCos([])
     fetchMappingData();
+    console.log(DepartmentName);
+    // console.log(poDescriptions)
   }, [courseCode]);
 
   const fetchMappingData = async () => {
@@ -223,7 +268,23 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
                   {pos.map((po) => (
                     <OverlayTrigger
                       placement="top"
-                      overlay={<Tooltip id={`${co.id}-${po}-tooltip`}>PO : {poDescriptions[po]}</Tooltip>}
+                      overlay={<Tooltip id={`${co.id}-${po}-tooltip`}>PO : {
+
+                        // poDescriptions[po]
+                        po.startsWith('PO') && poDescriptions[po] ? (
+                          // Show PO description if it's PO1 to PO12
+                          `PO : ${poDescriptions[po]}`
+
+                        ) : (
+                          // If the PO is beyond PO12, check for the department and show PSOs
+                          <>
+                            {poDescriptions[DepartmentName] && poDescriptions[DepartmentName][po]
+                              ? `${po}: ${poDescriptions[DepartmentName][po]}`
+                              : `PO Description not available for this department`}
+                          </>
+                        )
+
+                      }</Tooltip>}
                     >
 
                       <td
@@ -276,9 +337,19 @@ const MappingCO = forwardRef(({ courseCode }, ref) => {
             <Modal.Body>
               <Form>
                 <Form.Group className="mb-3">
-                  <Form.Label className="fw-medium">PO Description</Form.Label>
+                  <Form.Label className="fw-medium">{selectedCell ? `${selectedCell.po} Description` : ''}</Form.Label>
                   <p className="text-muted">
-                    {selectedCell ? poDescriptions[selectedCell.po] : ''}
+                    {selectedCell ? (
+                      // Check if the PO is within PO1 to PO12 and is a string
+                      typeof poDescriptions[selectedCell.po] === 'string' ? (
+                        poDescriptions[selectedCell.po]
+                      ) : (
+                        // For PO greater than PO12, check the DepartmentName and show PSO descriptions
+                        DepartmentName && poDescriptions[DepartmentName] && typeof poDescriptions[DepartmentName][selectedCell.po] === 'string'
+                          ? poDescriptions[DepartmentName][selectedCell.po]
+                          : `PO Description not available for this department`
+                      )
+                    ) : ''}
                   </p>
                 </Form.Group>
 

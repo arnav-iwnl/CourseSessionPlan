@@ -351,7 +351,7 @@ const HODPage = () => {
     console.log(transformedChildData)
     const datasets = [
       { data: parentData, sheetName: 'Parent Data' },
-      { data: transformedChildData, sheetName: 'Mapping Data' }
+      // { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
     updateData(courseCode,courseCode)
     exportToExcel(datasets, `Schedule for ${courseCode}`);

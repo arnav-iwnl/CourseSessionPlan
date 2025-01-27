@@ -36,6 +36,8 @@ const FacultyPage = () => {
 
   const [courseCode, setcourseCode] = useState('Please choose subject first');
   const [checker, setchecker] = useState(0);
+  const [DepartmentName, setDepartmentName] = useState('');
+
 
   useEffect(() => {
     console.log('Updated supabaseData:', supaBaseData);
@@ -296,7 +298,7 @@ const FacultyPage = () => {
       "Expected Date": assignment.date,
       "Actual Date": "", // Placeholder
       "Course Code": courseCode,
-      Course: assignment.course,
+      // Course: assignment.course,
       Module: assignment.module,
       Hour: handleArrayContent(assignment.hour),
       "Total Hours": assignment.totalHours
@@ -351,7 +353,7 @@ const FacultyPage = () => {
     console.log(transformedChildData)
     const datasets = [
       { data: parentData, sheetName: 'Parent Data' },
-      { data: transformedChildData, sheetName: 'Mapping Data' }
+      // { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
     updateData(courseCode,courseCode)
     exportToExcel(datasets, `Schedule for ${courseCode}`);
@@ -377,6 +379,11 @@ const FacultyPage = () => {
       return content;
     }
   };
+
+  const handleDepartment = (code) =>{
+    console.log(code);
+    setDepartmentName(code);
+  }
   return (
 
     <Container>
@@ -399,7 +406,7 @@ const FacultyPage = () => {
           <Row className="mb-3">
             <Col>
               <Form.Group controlId="startDate">
-                <Form.Label>Start Date for Schedule:</Form.Label>
+                <Form.Label><h2>Start Date for Schedule:</h2></Form.Label>
                 <Form.Control
                   type="date"
                   value={startDate}
@@ -409,7 +416,7 @@ const FacultyPage = () => {
             </Col>
             <Col>
               <Form.Group controlId="endDate">
-                <Form.Label>End Date for Schedule:</Form.Label>
+                <Form.Label><h2>End Date for Schedule:</h2></Form.Label>
                 <Form.Control
                   type="date"
                   value={endDate}
@@ -422,12 +429,12 @@ const FacultyPage = () => {
       </div>
 
       <div className='py-3'>
-        <ComboBox onSubjectCodeChange={handleSubjectCode} />
+        <ComboBox onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment}/>
       </div>
 
 
       <div className='my-2'>
-        <MappingCO ref={childRef} courseCode={courseCode} />
+        <MappingCO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName}/>
       </div>
 
       <div>

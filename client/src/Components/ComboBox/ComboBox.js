@@ -3,7 +3,7 @@ import { Form, Row, Col, Table, Container } from "react-bootstrap";
 import jsonData from "./subjects.json"; // Import your JSON data
 
 
-const ComboBox = ({onSubjectCodeChange }) => {
+const ComboBox = ({onSubjectCodeChange , onDepartmentNameChange}) => {
 const data=jsonData.Branch;
 const [selectedBranch, setSelectedBranch] = useState('');
 const [selectedSemester, setSelectedSemester] = useState('');
@@ -53,8 +53,9 @@ const handleSubjectCodeChange = (e) => {
   const subT = data[0][selectedBranch][0][selectedSemester].courseCode.find(course => Object.keys(course)[0] === code);
   const title = subT ? subT[code] : "Course not found";
   setSelectedSubjectTitle(title);
-  console.log(selectedSubjectTitle)
-  onSubjectCodeChange(code);  // Pass the selected subject code to the parent
+  // console.log(selectedSubjectTitle);
+  onDepartmentNameChange(selectedBranch); // Pass the selected subject code to the parent
+  onSubjectCodeChange(code);
 };
 
 return (
