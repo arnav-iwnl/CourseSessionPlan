@@ -139,7 +139,7 @@ const FacultyPage = () => {
 
       const jsonData = supaBaseData;
       let promptResult;
-       if(checker===0){
+      if (checker === 0) {
         let promptData = Object.values(jsonData?.Modules).map((mod) => {
           // console.log("module", module); // Correct placement of console.log
           return {
@@ -148,13 +148,13 @@ const FacultyPage = () => {
             hour1Content: mod?.["Hour Distribution"]?.["Hour 1"]?.Content,
           };
         });
-  
+
         console.log("prompt data : ", promptData);
         if (!Array.isArray(promptData)) {
           // If obj is not an array, wrap it in an array
           promptData = [promptData];
         }
-  
+
         console.log(typeof promptData); // Log the type of obj, it should be 'object', but obj will be an array now
         promptResult = await generateTopicForEachLecture(promptData);
         // promptResult = await promptResult.json;
@@ -162,8 +162,8 @@ const FacultyPage = () => {
         // if (promptResult) console.log("promptresult : ", promptResult);
         promptResult = JSON.parse(promptResult);
         // console.log(promptData);
-       }
-      
+      }
+
 
       // Validate modules data
       const modules = jsonData.Modules;
@@ -237,13 +237,13 @@ const FacultyPage = () => {
                   date: day.date,
                   course: module.course,
                   module: module.module,
-                  hour: (checker=== 1) ?
-                  module.hour : JSON.stringify(
-                    promptResult[`${module.module}`]?.[
-                      "topic_distribution"
-                    ].find((item) => item.hour == module.hourNumber)?.topics,
-                  ) ||
-                  "bruh",
+                  hour: (checker === 1) ?
+                    module.hour : JSON.stringify(
+                      promptResult[`${module.module}`]?.[
+                        "topic_distribution"
+                      ].find((item) => item.hour == module.hourNumber)?.topics,
+                    ) ||
+                    "bruh",
                   hourNumber: module.hourNumber,
                   totalHours: module.totalHours,
                   courseCode: courseCode
@@ -313,7 +313,7 @@ const FacultyPage = () => {
   const handleExport = async () => {
     const childData = childRef.current?.getMappingData();
     const transformedChildData = [];
-  
+
     // Transform child data
     if (childData?.cos && Array.isArray(childData.cos)) {
       transformedChildData.push(
@@ -326,7 +326,7 @@ const FacultyPage = () => {
         }))
       );
     }
-  
+
     // Add dynamic key-value pairs
     Object.entries(childData || {}).forEach(([key, value]) => {
       if (key !== "cos" && typeof value === "object") {
@@ -338,14 +338,14 @@ const FacultyPage = () => {
         });
       }
     });
-  
+
     const parentData = await handleEXCEL();
-  
+
     if (!Array.isArray(parentData)) {
       console.error("Parent Data is not an array:", parentData);
       return;
     }
-  
+
     if (!transformedChildData.length) {
       console.error("No child data to export");
       return;
@@ -355,10 +355,10 @@ const FacultyPage = () => {
       { data: parentData, sheetName: 'Parent Data' },
       // { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
-    updateData(courseCode,courseCode)
+    updateData(courseCode, courseCode)
     exportToExcel(datasets, `Schedule for ${courseCode}`);
   };
- 
+
 
   const handleSubjectCode = (code) => {
     setcourseCode(code);
@@ -371,27 +371,36 @@ const FacultyPage = () => {
   const handleEndDateChange = (e) => {
     setEndDate(e.target.value);
   };
-  const handleArrayContent = (content) =>{
-    if(checker===0){
+  const handleArrayContent = (content) => {
+    if (checker === 0) {
       return JSON.parse(content)[0];
     }
-    else{
+    else {
       return content;
     }
   };
 
-  const handleDepartment = (code) =>{
+  const handleDepartment = (code) => {
     console.log(code);
     setDepartmentName(code);
   }
+
+  const handleUpload = () => {
+    updateData(courseCode, assignments); // Update the data
+    setchecker(0);
+    setAssignments([]); // Clear the assignments
+    console.log(`YEEEEEEEEE: ${assignments}`)
+    setcourseCode('Please choose subject first'); // Reset the course code
+    console.log(`YEEEEEEEEE: ${courseCode}`)
+  };
   return (
 
     <Container>
-      
+
       <div id='logo' >
-      <img src={sieslogo} style={{ maxWidth: "200px", width: "100%" }}  />
-      <h1 className='text-center'>Course Plan </h1>
+        <img src={sieslogo} style={{ maxWidth: "200px", width: "100%" }} />
       </div>
+      <h1 className='text-center'>Course Plan </h1>
 
       <div className='d-flex justify-content-between flex-row py-4'>
         {name && <h2>Hello, Facutly {name}! </h2>}
@@ -429,12 +438,12 @@ const FacultyPage = () => {
       </div>
 
       <div className='py-3'>
-        <ComboBox onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment}/>
+        <ComboBox onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment} />
       </div>
 
 
       <div className='my-2'>
-        <MappingCO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName}/>
+        <MappingCO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName} />
       </div>
 
       <div>
@@ -470,31 +479,42 @@ const FacultyPage = () => {
             </tr>
           </thead>
           <tbody>
-            {
-              
-            assignments.map((assignment, index) => (
-              
-              <tr key={index}>
-                {/* <td className="text-center">{assignment?.index}</td> */}
-                <td className="text-center">{formatDate(assignment.date)}</td>
-                <td className="text-center">{assignment.dayOfWeek}</td>
-                <td className="text-center">{assignment.course}</td>
-                <td className="text-center">{assignment.module}</td>
-                <td className="text-center">{handleArrayContent(assignment.hour)}</td>
-
+            {assignments && assignments.length > 0 ? (
+              assignments.map((assignment, index) => (
+                <tr key={index}>
+                  <td className="text-center">{formatDate(assignment.date)}</td>
+                  <td className="text-center">{assignment.dayOfWeek}</td>
+                  <td className="text-center">{assignment.course}</td>
+                  <td className="text-center">{assignment.module}</td>
+                  <td className="text-center">{assignment.hour ? handleArrayContent(assignment.hour) : ''}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td className="text-center" colSpan="5">
+                  No data available. Please update the course code.
+                </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </Table>
-          <div className='d-flex justify-content-between'>
-          <Button variant="success" onClick={handleExport}>
+      </div>
+      <div className='d-flex justify-content-evenly'>
+        <div>
+        <Button variant="success" className='p-4' onClick={handleExport}>
           Download EXCEL
         </Button>
-        <PdfDownloader formContentIds={[ 'logo','coursePlan','co-content','lectureTable']}/>
-       
-          </div>
-       
+        </div>
+        <div>
+        <Button variant="secondary" className='p-4' onClick={handleUpload}>
+          Upload to Database
+        </Button>
+        </div>
+        <div>
+        <PdfDownloader formContentIds={['logo', 'coursePlan', 'co-content', 'lectureTable']} />
+        </div>
       </div>
+
     </Container>
   );
 };

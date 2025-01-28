@@ -4,7 +4,26 @@
             "FE": [
                 {
                     "Semester 2": {
-                        "courseCode": []
+                        "courseCode": [
+                            {
+                                "FEC201": "Applied Mathematics-II"
+                              },
+                              {
+                                "FEC202": "Applied Physics"
+                              },
+                              {
+                                "FEC203": "Engineering Graphics"
+                              },
+                              {
+                                "FEC204": "Digital System Design"
+                              },
+                              {
+                                "FEC205": "Professional Communication Techniques"
+                              },
+                              {
+                                "FEC2022": "Applied Chemistry"
+                              }
+                        ]
                     }
                 }
             ],

@@ -4,10 +4,6 @@ import { Table, Modal, Form, Button, Card, Badge, Tooltip, OverlayTrigger } from
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
-import { jsPDF } from "jspdf";
-import PdfDownloader from "../Calendar/pdf.js";
-
-
 
 const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
 const supabaseKey =
@@ -268,12 +264,12 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
                   {pos.map((po) => (
                     <OverlayTrigger
                       placement="top"
-                      overlay={<Tooltip id={`${co.id}-${po}-tooltip`}>PO : {
+                      overlay={<Tooltip id={`${co.id}-${po}-tooltip`}> {
 
                         // poDescriptions[po]
                         po.startsWith('PO') && poDescriptions[po] ? (
                           // Show PO description if it's PO1 to PO12
-                          `PO : ${poDescriptions[po]}`
+                          `${po} : ${poDescriptions[po]}`
 
                         ) : (
                           // If the PO is beyond PO12, check for the department and show PSOs

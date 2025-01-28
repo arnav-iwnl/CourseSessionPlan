@@ -5,9 +5,6 @@ import { getEventData } from '../../supabaseFetcher/fetchData.js';
 import { Col, Form, Row } from 'react-bootstrap';
 
 
-
-
-
 const CalendarTable = () => {
   const [events, setEvents] = useState([]);
   const [holidays, setHolidays] = useState([]);

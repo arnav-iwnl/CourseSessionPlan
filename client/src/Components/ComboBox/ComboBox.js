@@ -118,7 +118,7 @@ return (
         </Form.Select>
       </Form.Group>
     )}
-    <Container >
+    <Container id="coursePlan">
       <Row className="justify-content-center">
         <Col xs={12} md={8}>
           <h2 className="text-center ">Course Plan</h2>
