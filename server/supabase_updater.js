@@ -8,59 +8,192 @@ const supabaseKey =
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 
-const subjetCode = "ECC401";
+// const subjetCode = "ECC401";
 
 // Define a function to upload the JSON data
+  // async function uploadSessionPlans() {
+  //   const sub ='AIML';
+  //   try {
+
+  //     const { data : currentIndexArray, error:get_max_error } = await supabase.rpc('get_max_index');
+
+  //     if (get_max_error) {
+  //       console.error('Error executing RPC:', error);
+  //       return;
+  //     }
+  //     const currentIndex = currentIndexArray[0].current_index;
+
+  //     // Step 1: Retrieve the file from the bucket
+  //     const { data: fileData, error: fileError } = await supabase
+  //       .storage
+  //       .from('Course Session Bucket')
+  //       .download(`./${sub}/BE_${sub}.json`); // Corrected path
+
+  //     if (fileError) {
+  //       console.error('Error fetching file:', fileError);
+  //       return;
+  //     }
+
+  //     // Step 2: Parse the JSON data
+  //     const fileText = await fileData.text();
+  //     const jsonData = JSON.parse(fileText);
+
+  //     // Step 3: Prepare and push data into the `CourseSessionPlan` table
+  //     const rows = Object.entries(jsonData).map(([courseCode, courseData], idx) => ({
+  //       index: currentIndex + idx + 1, // Auto-incrementing index value
+  //       "Course Code": courseCode, // Matches database column
+  //       Original: courseData // Matches database column
+  //     }));
+
+  
+  //     // Step 4: Insert rows into the database
+  //     const { data: insertData, error: insertError } = await supabase
+  //       .from('coursesessionplan')
+  //       .insert(rows);
+
+  //     if (insertError) {
+  //       console.error('Error inserting data:', insertError);
+  //     } else {
+  //       console.log('Data inserted successfully:', insertData);
+  //     }
+  //   } catch (err) {
+  //     console.error('Unexpected error:', err);
+  //   }
+  // }
+  // async function uploadSessionPlans() {
+  //   const sub = 'IOT';
+  //   try {
+  //     // Step 1: Get the current index
+  //     const { data: currentIndexArray, error: get_max_error } = await supabase.rpc('get_max_index');
+  //     if (get_max_error) {
+  //       console.error('Error executing RPC:', get_max_error);
+  //       return;
+  //     }
+  //     const currentIndex = currentIndexArray[0].current_index;
+  
+  //     // Step 2: Retrieve the file from the bucket
+  //     const { data: fileData, error: fileError } = await supabase
+  //       .storage
+  //       .from('Course Session Bucket')
+  //       .download(`./${sub}/BE_${sub}.json`); // Corrected path
+  
+  //     if (fileError) {
+  //       console.error('Error fetching file:', fileError);
+  //       return;
+  //     }
+  
+  //     // Step 3: Parse the JSON data
+  //     const fileText = await fileData.text();
+  //     const jsonData = JSON.parse(fileText);
+  
+  //     // Step 4: Iterate through the data and insert or skip
+  //     for (const [courseCode, courseData] of Object.entries(jsonData)) {
+  //       // Check if the courseCode already exists
+  //       const { data: existingData, error: fetchError } = await supabase
+  //         .from('coursesessionplan')
+  //         .select('"Course Code"') // Wrap in double quotes to handle case sensitivity or spaces
+  //         .eq('"Course Code"', courseCode); // Query using the exact column name
+  
+  //       if (fetchError) {
+  //         console.error('Error checking existing course:', fetchError);
+  //         continue; // Skip to the next record
+  //       }
+  
+  //       if (existingData && existingData.length > 0) {
+  //         console.log(`Course Code already exists: ${courseCode}`);
+  //         continue; // Skip insertion for this courseCode
+  //       }
+  
+  //       // Prepare the row for insertion
+  //       const row = {
+  //         index: currentIndex + 1, // Incrementing index
+  //         "Course Code": courseCode, // Matches database column
+  //         Original: courseData // Matches database column
+  //       };
+  
+  //       // Insert the row
+  //       const { data: insertData, error: insertError } = await supabase
+  //         .from('coursesessionplan')
+  //         .insert(row);
+  
+  //       if (insertError) {
+  //         console.error('Error inserting data:', insertError);
+  //       } else {
+  //         console.log('Data inserted successfully:', insertData);
+  //       }
+  //     }
+  //   } catch (err) {
+  //     console.error('Unexpected error:', err);
+  //   }
+  // }
   async function uploadSessionPlans() {
-    const sub ='ME';
+    const sub = 'ME';
     try {
-
-      const { data : currentIndexArray, error:get_max_error } = await supabase.rpc('get_max_index');
-
-      if (get_max_error) {
-        console.error('Error executing RPC:', error);
-        return;
-      }
-      const currentIndex = currentIndexArray[0].current_index;
-
       // Step 1: Retrieve the file from the bucket
       const { data: fileData, error: fileError } = await supabase
         .storage
         .from('Course Session Bucket')
-        .download(`./${sub}/TE_${sub}.json`); // Corrected path
-
+        .download(`./${sub}/BE_${sub}.json`);
+  
       if (fileError) {
         console.error('Error fetching file:', fileError);
         return;
       }
-
+  
       // Step 2: Parse the JSON data
       const fileText = await fileData.text();
       const jsonData = JSON.parse(fileText);
-
-      // Step 3: Prepare and push data into the `CourseSessionPlan` table
-      const rows = Object.entries(jsonData).map(([courseCode, courseData], idx) => ({
-        index: currentIndex + idx + 1, // Auto-incrementing index value
-        "Course Code": courseCode, // Matches database column
-        Original: courseData // Matches database column
-      }));
-
   
-      // Step 4: Insert rows into the database
-      const { data: insertData, error: insertError } = await supabase
-        .from('coursesessionplan')
-        .insert(rows);
-
-      if (insertError) {
-        console.error('Error inserting data:', insertError);
-      } else {
-        console.log('Data inserted successfully:', insertData);
+      // Step 3: Iterate through the data and insert or skip
+      for (const [courseCode, courseData] of Object.entries(jsonData)) {
+        // Check if the courseCode already exists
+        const { data: existingData, error: fetchError } = await supabase
+          .from('coursesessionplan')
+          .select('"Course Code"')
+          .eq('"Course Code"', courseCode);
+  
+        if (fetchError) {
+          console.error('Error checking existing course:', fetchError);
+          continue;
+        }
+  
+        if (existingData && existingData.length > 0) {
+          console.log(`Course Code already exists: ${courseCode}`);
+          continue;
+        }
+  
+        // Get the max index to calculate a new unique index
+        const { data: maxIndexData, error: maxIndexError } = await supabase.rpc('get_max_index');
+        if (maxIndexError) {
+          console.error('Error fetching max index:', maxIndexError);
+          continue;
+        }
+        const maxIndex = maxIndexData[0].current_index || 0;
+  
+        // Prepare the row for insertion with a new unique index
+        const row = {
+          index: maxIndex + 1, // Ensure unique index
+          "Course Code": courseCode,
+          Original: courseData
+        };
+  
+        // Insert the row
+        const { data: insertData, error: insertError } = await supabase
+          .from('coursesessionplan')
+          .insert(row);
+  
+        if (insertError) {
+          console.error('Error inserting data:', insertError);
+        } else {
+          console.log('Data inserted successfully:', insertData);
+        }
       }
     } catch (err) {
       console.error('Unexpected error:', err);
     }
   }
-
+  
+  
 uploadSessionPlans()
 // const fetchJsonData = async () => {
 //         try {
