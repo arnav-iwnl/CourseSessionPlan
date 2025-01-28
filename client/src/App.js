@@ -7,7 +7,7 @@ import AuthPage from './Components/LoginPage/AuthPage.js';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './Context/authContext.js';
-import MappingCO from './Components/MappingCO/MappingCO.js';
+
 
 function App() {
   const [user, setUser] = useState(null); // User state to track logged-in user
