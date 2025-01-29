@@ -312,51 +312,59 @@ const FacultyPage = () => {
 
   const handleExport = async () => {
     const childData = childRef.current?.getMappingData();
-    const transformedChildData = [];
+    // const transformedChildData = [];
 
-    // Transform child data
-    if (childData?.cos && Array.isArray(childData.cos)) {
-      transformedChildData.push(
-        { section: "COS", id: "ID", description: "Description", bloomTaxonomy: "Bloom Taxonomy" },
-        ...childData.cos.map(({ id, description, bloomTaxonomy }) => ({
-          section: "COS",
-          id,
-          description,
-          bloomTaxonomy,
-        }))
-      );
-    }
+    // // Transform child data
+    // if (childData?.cos && Array.isArray(childData.cos)) {
+    //   transformedChildData.push(
+    //     { section: "COS", id: "ID", description: "Description", bloomTaxonomy: "Bloom Taxonomy" },
+    //     ...childData.cos.map(({ id, description, bloomTaxonomy }) => ({
+    //       section: "COS",
+    //       id,
+    //       description,
+    //       bloomTaxonomy,
+    //     }))
+    //   );
+    // }
 
     // Add dynamic key-value pairs
-    Object.entries(childData || {}).forEach(([key, value]) => {
-      if (key !== "cos" && typeof value === "object") {
-        transformedChildData.push({
-          section: key,
-          id: "",
-          description: `Marks: ${value.marks}`,
-          bloomTaxonomy: `Justification: ${value.justification}`,
-        });
-      }
-    });
+    // Object.entries(childData || {}).forEach(([key, value]) => {
+    //   if (key !== "cos" && typeof value === "object") {
+    //     transformedChildData.push({
+    //       section: key,
+    //       id: "",
+    //       description: `Marks: ${value.marks}`,
+    //       bloomTaxonomy: `Justification: ${value.justification}`,
+    //     });
+    //   }
+    // });
 
     const parentData = await handleEXCEL();
 
     if (!Array.isArray(parentData)) {
-      // console.error("Parent Data is not an array:", parentData);
+      toast.error("Please choose assign lectures", parentData);
       return;
     }
 
-    if (!transformedChildData.length) {
-      // console.error("No child data to export");
-      return;
-    }
+    // if (!transformedChildData.length) {
+    //   toast.error("No CO/PO data to export");
+    //   return
+    // }
     // console.log(transformedChildData)
     const datasets = [
       { data: parentData, sheetName: 'Parent Data' },
       // { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
-    updateData(courseCode, courseCode)
+    if(courseCode==='Please choose subject first'){
+      toast.error(`Please choose subject first`);
+      return
+    }
+    updateData(courseCode, courseCode);
     exportToExcel(datasets, `Schedule for ${courseCode}`);
+    setchecker(0);
+    setAssignments([]); // Clear the assignments
+    // console.log(`YEEEEEEEEE: ${assignments}`)
+    setcourseCode('Please choose subject first'); // Reset the course code
   };
 
 
