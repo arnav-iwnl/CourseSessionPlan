@@ -6,12 +6,12 @@ import { createClient } from '@supabase/supabase-js';
 import 'react-calendar/dist/Calendar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/EventScheduler.css';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 
 // Create Supabase client with proper configuration
 const supabase = createClient(
-  process.env.supabaseUrl,
-  process.env.supabaseKey,
+  process.env.REACT_APP_SUPABASE_URL,
+  process.env.REACT_APP_SUPABASE_KEY,
   {
     headers: {
       'Content-Type': 'application/json',

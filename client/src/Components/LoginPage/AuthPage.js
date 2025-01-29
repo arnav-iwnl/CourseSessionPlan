@@ -7,7 +7,7 @@ import { createClient } from '@supabase/supabase-js';
 import bcrypt from 'bcryptjs';
 
 
-const supabase = createClient(process.env.supabaseUrl, process.env.supabaseKey);
+const supabase = createClient(process.env.REACT_APP_SUPABASE_URL,  process.env.REACT_APP_SUPABASE_KEY);
 
 const AuthPage = ({ onLogin }) => {
   const [email, setEmail] = useState('');
