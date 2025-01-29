@@ -37,7 +37,8 @@ const HODPage = () => {
       toast.success(`${name} logged out successfully`)
       navigate('/auth');
     } catch (error) {
-      console.error('Error during logout:', error);
+      toast.error(error.message || 'An error occurred');
+
     };
   }
 

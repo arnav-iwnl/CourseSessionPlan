@@ -84,7 +84,7 @@ const EventScheduler = ({ onEventCreate }) => {
           resetFormFields();
         }
       } catch (err) {
-        console.error('Error fetching holiday data:', err);
+        // console.error('Error fetching holiday data:', err);
         setError(err.message);
         resetFormFields();
       } finally {
@@ -161,7 +161,7 @@ const EventScheduler = ({ onEventCreate }) => {
       onEventCreate?.();
       handleModalClose();
     } catch (err) {
-      console.error('Database operation failed:', err);
+      // console.error('Database operation failed:', err);
       setError(err.message || 'An error occurred while saving the event');
     } finally {
       setLoading(false);

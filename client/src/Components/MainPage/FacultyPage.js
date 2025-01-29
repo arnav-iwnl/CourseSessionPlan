@@ -73,7 +73,7 @@ const FacultyPage = () => {
         setCourseDays(initialCourseDays);
 
       } catch (error) {
-        console.error('Error fetching data and assigning courses:', error);
+        // console.error('Error fetching data and assigning courses:', error);
       }
     }
     fetchDataAndAssign();
@@ -268,7 +268,7 @@ const FacultyPage = () => {
       // console.log(assignments);
 
     } catch (error) {
-      console.error('Error in assignCoursesModulesHours:', error);
+      // console.error('Error in assignCoursesModulesHours:', error);
       // You might want to set some error state here
       setAssignments([]);
       setBufferDates([]);
@@ -285,7 +285,7 @@ const FacultyPage = () => {
       toast.success(`${name} logged out successfully`)
       navigate('/auth');
     } catch (error) {
-      console.error('Error during logout:', error);
+      toast.error(error.message || 'An error occurred');
     };
   }
 
@@ -342,12 +342,12 @@ const FacultyPage = () => {
     const parentData = await handleEXCEL();
 
     if (!Array.isArray(parentData)) {
-      console.error("Parent Data is not an array:", parentData);
+      // console.error("Parent Data is not an array:", parentData);
       return;
     }
 
     if (!transformedChildData.length) {
-      console.error("No child data to export");
+      // console.error("No child data to export");
       return;
     }
     // console.log(transformedChildData)

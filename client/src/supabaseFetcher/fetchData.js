@@ -30,7 +30,7 @@ export const fetchJsonData = async (courseCode) => {
       // console.log(updatedData);
       return {fetchJson : updatedData, checker: 1};
     } catch (error) {
-      console.error('Error fetching "Updated" data:', error.message);
+      // console.error('Error fetching "Updated" data:', error.message);
 
       try {
         // If there's an error or no updated data, fetch original data
@@ -48,8 +48,8 @@ export const fetchJsonData = async (courseCode) => {
       
         return {fetchJson : ogData, checker: 0};
       } catch (alphaFetchError) {
-        console.error('Error fetching "Original" data:', alphaFetchError.message);
-        throw new Error('Unable to fetch any data from Supabase.');
+        // console.error('Error fetching "Original" data:', alphaFetchError.message);
+        // throw new Error('Unable to fetch any data from Supabase.');
       }
     }
   };
@@ -64,8 +64,8 @@ export const fetchSessionDates = async () => {
             .single();
 
         if (startDateError) {
-            console.error("Error Fetching Start Date", startDateError.message);
-            throw new Error("Error fetching start date");
+            // console.error("Error Fetching Start Date", startDateError.message);
+            // throw new Error("Error fetching start date");
         }
 
         // Fetch end date from Supabase
@@ -76,8 +76,8 @@ export const fetchSessionDates = async () => {
             .single();
 
         if (endDateError) {
-            console.error("Error Fetching End Date", endDateError.message);
-            throw new Error("Error fetching end date");
+            // console.error("Error Fetching End Date", endDateError.message);
+            // throw new Error("Error fetching end date");
         }
 
         // Return formatted dates
@@ -86,8 +86,8 @@ export const fetchSessionDates = async () => {
             endDate: endDateData.date.split('T')[0],     // Convert to YYYY-MM-DD
         };
     } catch (err) {
-        console.error("Unexpected error:", err);
-        throw new Error("Unexpected error occurred");
+        // console.error("Unexpected error:", err);
+        // throw new Error("Unexpected error occurred");
     }
 };
 
@@ -104,14 +104,14 @@ export const filterWorkingDays = async (dates) => {
 
     const isValidDateFormat = (dateStr) => {
         if (typeof dateStr !== 'string') {
-            console.error(`Invalid type for date: ${typeof dateStr}`);
+            // console.error(`Invalid type for date: ${typeof dateStr}`);
             return false;
         }
 
         // Check for YYYY-MM-DD format using regex
         const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/;
         if (!isoDateRegex.test(dateStr)) {
-            console.error(`Date doesn't match YYYY-MM-DD format: ${dateStr}`);
+            // console.error(`Date doesn't match YYYY-MM-DD format: ${dateStr}`);
             return false;
         }
 
@@ -128,8 +128,8 @@ export const filterWorkingDays = async (dates) => {
     // Validate all dates
     const invalidDates = dateStrings.filter(date => !isValidDateFormat(date));
     if (invalidDates.length > 0) {
-        console.error('Invalid dates found:', invalidDates);
-        throw new Error(`Invalid date formats found. Dates must be in YYYY-MM-DD format. Invalid dates: ${invalidDates.join(', ')}`);
+        // console.error('Invalid dates found:', invalidDates);
+        // throw new Error(`Invalid date formats found. Dates must be in YYYY-MM-DD format. Invalid dates: ${invalidDates.join(', ')}`);
     }
 
     try {
@@ -164,8 +164,8 @@ export const filterWorkingDays = async (dates) => {
 
     } 
      catch (err) {
-        console.error('Error in filterWorkingDays:', err);
-        throw new Error(`Error filtering working days: ${err.message}`);
+        // console.error('Error in filterWorkingDays:', err);
+        // throw new Error(`Error filtering working days: ${err.message}`);
     }
 };
 
@@ -259,13 +259,13 @@ export const updateData = async (courseCode, updata) => {
     .update({ Updated: updatedJson })
     .eq('Course Code', courseCode);
     if (updateError) {
-      console.error('Error updating data in Supabase:', error);
+      // console.error('Error updating data in Supabase:', error);
     } else {
       console.log('Successfully updated data in Supabase:', dataE);
     }
    }
    catch(updateError){
-    console.error('Error updating data in Supabase:', error);
+    // console.error('Error updating data in Supabase:', error);
    }
   }
   catch(error){ 

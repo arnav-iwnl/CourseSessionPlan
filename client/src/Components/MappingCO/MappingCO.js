@@ -114,7 +114,8 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
         setCos(parsedData.cos || []); // Default to empty array if not present
       }
     } catch (error) {
-      console.error("Error fetching data:", error);
+      // console.error("Error fetching data:", error);
+      
     }
   };
 
@@ -150,7 +151,7 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
     if (!selectedCell.co || !selectedCell.po) {
       // console.log(selectedCell.co);
       // console.log(selectedCell.po);
-      console.error("Invalid CO or PO selected:", selectedCell);
+      // console.error("Invalid CO or PO selected:", selectedCell);
       return; // Stop execution if CO or PO is undefined
     }
 
@@ -192,7 +193,7 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
       setMappingData(updatedMapping);
       setShowModal(false);
     } catch (error) {
-      console.error('Error saving data:', error);
+      toast.error(error.message || 'An error occurred during save');
     }
   };
 

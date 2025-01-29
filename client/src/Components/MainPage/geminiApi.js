@@ -60,7 +60,9 @@ export async function generateTopicForEachLecture(promptData) {
     return jsonResponse;
     // return result.response.text();
   } catch (error) {
-    console.error("Error generating content:", error);
+    toast.error(error.message || 'An error occurred');
+
+    // console.error("Error generating content:", error);
   }
 }
 

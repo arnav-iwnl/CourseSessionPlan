@@ -100,7 +100,7 @@ const AuthPage = ({ onLogin }) => {
         navigate(userRole === 'hod' ? '/hod' : '/faculty', { state: { name: user.name } });
       }
     } catch (error) {
-      console.error('Error:', error);
+      // console.error('Error:', error);
       toast.error(error.message || 'An error occurred');
     } finally {
       setIsLoading(false);
