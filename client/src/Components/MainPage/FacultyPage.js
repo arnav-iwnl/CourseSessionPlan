@@ -60,7 +60,10 @@ const FacultyPage = () => {
         setCourses([courseName]); // Wrap courseName in an array to match the courses variable structure
 
         // Calculate working days between start and end date
-        const workingDaysList = calculateWorkingDays(startDate, endDate);
+        const workingDaysList =  calculateWorkingDays(startDate, endDate);
+        if(workingDaysList == []){
+          toast.error('Check Schedule Start and End Date');
+        }
         // console.log(workingDaysList)
 
         const holidaysData = await filterWorkingDays(workingDaysList);
@@ -73,18 +76,19 @@ const FacultyPage = () => {
         setCourseDays(initialCourseDays);
 
       } catch (error) {
-        // console.error('Error fetching data and assigning courses:', error);
+        // toast.error(`${error.message}`, error);
       }
     }
     fetchDataAndAssign();
   }, [courseCode, startDate, endDate]);
 
 
-  const calculateWorkingDays = (start, end) => {
+  const calculateWorkingDays =  (start, end) => {
+
+
     const workingDaysList = [];
     let currentDate = new Date(start);
     const endDateObj = new Date(end);
-
     while (currentDate <= endDateObj) {
       const dayOfWeek = currentDate.getDay();
       if (dayOfWeek !== 0 && dayOfWeek !== 6) {
@@ -96,8 +100,9 @@ const FacultyPage = () => {
       }
       currentDate.setDate(currentDate.getDate() + 1);
     }
-
     return workingDaysList;
+   
+  
   };
 
   const getDayOfWeek = (date) => {
@@ -122,19 +127,19 @@ const FacultyPage = () => {
 
       // Validate required data
       if (!supaBaseData) {
-        throw new Error('No Supabase data available');
+        toast.error('No Supabase data available');
       }
 
       if (!courses || !Array.isArray(courses) || courses.length === 0) {
-        throw new Error('Courses array is missing or empty');
+        toast.error('Courses array is missing or empty');
       }
 
       if (!workingDays || !Array.isArray(workingDays) || workingDays.length === 0) {
-        throw new Error('Working days array is missing or empty');
+        toast.error('Please check your Start and End Schedule Dates');
       }
 
       if (!courseDays || Object.keys(courseDays).length === 0) {
-        throw new Error('Course days mapping is missing or empty');
+        toast.error('Course days mapping is missing or empty');
       }
 
       const jsonData = supaBaseData;
@@ -268,7 +273,7 @@ const FacultyPage = () => {
       // console.log(assignments);
 
     } catch (error) {
-      // console.error('Error in assignCoursesModulesHours:', error);
+      // toast.error('Error in assignCoursesModulesHours:', error);
       // You might want to set some error state here
       setAssignments([]);
       setBufferDates([]);

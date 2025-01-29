@@ -1,5 +1,7 @@
 
 import { createClient } from '@supabase/supabase-js';
+import toast from 'react-hot-toast';
+
 
 const supabase = createClient(process.env.REACT_APP_SUPABASE_URL,  process.env.REACT_APP_SUPABASE_KEY);
 
@@ -10,14 +12,14 @@ export const fetchJsonData = async (courseCode) => {
         .from('coursesessionplan') // Replace with your actual table name
         .select('Updated') // Replace with your actual column name
         .eq('Course Code', courseCode);
-      console.log(resultData[0].Updated.Modules);
+      // console.log(resultData[0].Updated.Modules);
       // Handle errors or empty responses
       if (error || !resultData || resultData.length === 0 || !resultData[0].Updated) {
         throw new Error('Failed to fetch or no "Updated" data available in Supabase.');
       }
 
       const updatedData = resultData[0].Updated;
-      console.log(updatedData);
+      // console.log(updatedData);
       // Check if the updated data is empty
       // const isEmpty = Array.isArray(updatedData)
       //   ? updatedData.length === 0
@@ -244,14 +246,14 @@ export const updateData = async (courseCode, updata) => {
     if (module) {
       const hourKey = `Hour ${update.hourNumber}`;
       const newContent = JSON.parse(update.hour)[0];
-      console.log(newContent)
+      // console.log(newContent)
       if (module["Hour Distribution"][hourKey]) {
         module["Hour Distribution"][hourKey].Content = newContent;
       }
     }
   })
   const updatedJson = originalJson;
-  console.log(updatedJson);
+  // console.log(updatedJson);
 
   try{
     const { data:dataE, error:updateError } = await supabase
@@ -261,7 +263,7 @@ export const updateData = async (courseCode, updata) => {
     if (updateError) {
       // console.error('Error updating data in Supabase:', error);
     } else {
-      console.log('Successfully updated data in Supabase:', dataE);
+      toast.success('Successfully updated data in Supabase');
     }
    }
    catch(updateError){
