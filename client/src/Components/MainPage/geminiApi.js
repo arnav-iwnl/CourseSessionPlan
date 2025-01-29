@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import toast from 'react-hot-toast';
 
 // Initialize the model
 const genAI = new GoogleGenerativeAI("AIzaSyCM8cUdeVj-fKL2kX3UKMwb7UX221nNvPc");
