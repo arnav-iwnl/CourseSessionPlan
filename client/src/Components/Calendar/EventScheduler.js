@@ -10,8 +10,8 @@ import toast from 'react-hot-toast';
 
 // Create Supabase client with proper configuration
 const supabase = createClient(
-  'https://bogosjbvzcfcldahqzqv.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc',
+  process.env.supabaseUrl,
+  process.env.supabaseKey,
   {
     headers: {
       'Content-Type': 'application/json',

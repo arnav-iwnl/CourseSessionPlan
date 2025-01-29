@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../../Context/authContext.js';
 import { createClient } from '@supabase/supabase-js';
-const supabaseUrl = 'https://bogosjbvzcfcldahqzqv.supabase.co';
-const supabaseKey =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc';
-const supabase = createClient(supabaseUrl, supabaseKey);
+import bcrypt from 'bcryptjs';
+
+
+const supabase = createClient(process.env.supabaseUrl, process.env.supabaseKey);
 
 const AuthPage = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -32,80 +32,72 @@ const AuthPage = ({ onLogin }) => {
 
     try {
       if (isSignup) {
-        // Check if user already exists in the 'users' table
+        // Check if user already exists
         const { data: existingUser, error: fetchError } = await supabase
           .from('users')
-          .select('email')
-          .eq('email', email)
-          .single();
+          .select('id')
+          .eq('email', email);
 
         if (fetchError) throw fetchError;
 
-        if (existingUser) {
+        if (existingUser.length > 0) {
           setError('User already exists');
+          setIsLoading(false);
           return;
         }
 
-        // Insert user data into the 'users' table after successful sign-up
-        const { error: dbError } = await supabase
-          .from('users')
-          .insert([
-            {
-              email: email,
-              password: password, // Storing plain password
-              name: name, // User name
-            }
-          ]);
+        // Hash password before storing
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Insert user into database
+        const { error: dbError } = await supabase.from('users').insert([
+          {
+            email: email,
+            password: hashedPassword, // Store hashed password
+            name: name,
+          },
+        ]);
 
         if (dbError) throw dbError;
 
-        // Successful sign-up
         toast.success(`${email} signed up successfully`);
         onLogin(email);
 
         const userRole = email.startsWith('hod') ? 'hod' : 'faculty';
         login({ email, role: userRole, name });
 
-        // Navigate based on role
-        if (userRole === 'hod') {
-          navigate('/hod', { state: { name } });
-        } else {
-          navigate('/faculty', { state: { name } });
-        }
+        navigate(userRole === 'hod' ? '/hod' : '/faculty', { state: { name } });
       } else {
-        // Log in: Check if the user exists in the 'users' table
+        // Login logic
         const { data, error: dbError } = await supabase
           .from('users')
           .select('*')
-          .eq('email', email)
-          .single();
+          .eq('email', email);
 
         if (dbError) throw dbError;
 
-        if (!data) {
+        if (!data || data.length === 0) {
           setError('User does not exist');
+          setIsLoading(false);
           return;
         }
 
-        // Check if password matches
-        if (password !== data.password) {
+        const user = data[0];
+
+        // Compare the entered password with the stored hashed password
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
           setError('Invalid password');
           return;
         }
 
-        // Successful login
         toast.success(`${email} logged in successfully`);
         onLogin(email);
 
         const userRole = email.startsWith('hod') ? 'hod' : 'faculty';
-        login({ email, role: userRole, name: data.name });
+        login({ email, role: userRole, name: user.name });
 
-        // Navigate based on role
-        if (userRole === 'hod') {
-          navigate('/hod', { state: { name: data.name } });
-        } else {
-          navigate('/faculty', { state: { name: data.name } });
-        }
+        navigate(userRole === 'hod' ? '/hod' : '/faculty', { state: { name: user.name } });
       }
     } catch (error) {
       console.error('Error:', error);

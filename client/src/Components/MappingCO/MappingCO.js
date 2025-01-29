@@ -5,10 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createClient } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
 
-const supabaseUrl = "https://bogosjbvzcfcldahqzqv.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvZ29zamJ2emNmY2xkYWhxenF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY4NTg2NjEsImV4cCI6MjA1MjQzNDY2MX0.UlaFnLDqXJgVF9tYCOL0c0hjCAd4__Yq47K5mVYdXcc";
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(process.env.supabaseUrl, process.env.supabaseKey);
 
 const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
   const [showModal, setShowModal] = useState(false);
