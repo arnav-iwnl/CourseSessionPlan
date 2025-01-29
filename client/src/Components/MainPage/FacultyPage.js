@@ -297,10 +297,10 @@ const FacultyPage = () => {
 
       "Expected Date": assignment.date,
       "Actual Date": "", // Placeholder
-      "Course Code": courseCode,
+      // "Course Code": courseCode,
       // Course: assignment.course,
       Module: assignment.module,
-      Hour: handleArrayContent(assignment.hour),
+      'Lectures': handleArrayContent(assignment.hour),
       "Total Hours": assignment.totalHours
 
     }));
