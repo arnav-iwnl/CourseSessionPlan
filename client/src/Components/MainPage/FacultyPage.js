@@ -352,7 +352,7 @@ const FacultyPage = () => {
     // }
     // console.log(transformedChildData)
     const datasets = [
-      { data: parentData, sheetName: 'Parent Data' },
+      { data: parentData, sheetName: `${courseCode} - ${DepartmentName}` },
       // { data: transformedChildData, sheetName: 'Mapping Data' }
     ];
     if(courseCode==='Please choose subject first'){
