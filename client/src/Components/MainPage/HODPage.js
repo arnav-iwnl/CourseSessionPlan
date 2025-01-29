@@ -53,7 +53,7 @@ const HODPage = () => {
     setEndDate(e.target.value);
   };
   const handleDepartment = (code) => {
-    console.log(code);
+    // console.log(code);
     setDepartmentName(code);
   }
 

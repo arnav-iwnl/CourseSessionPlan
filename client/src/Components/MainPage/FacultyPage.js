@@ -40,8 +40,8 @@ const FacultyPage = () => {
 
 
   useEffect(() => {
-    console.log('Updated supabaseData:', supaBaseData);
-    console.log('Updated checker:', checker);
+    // console.log('Updated supabaseData:', supaBaseData);
+    // console.log('Updated checker:', checker);
   }, [supaBaseData, checker]);
   useEffect(() => {
     //  const fetchJsonData =  fetchJsonData();
@@ -55,7 +55,7 @@ const FacultyPage = () => {
         const courseName = jsonData['Course Name']; // Extract course name
         setSupaBaseData(jsonData);
         // console.log(supaBaseData);
-        console.log(supaBaseData);
+        // console.log(supaBaseData);
         // Set course name (assuming you're storing it in a state variable)
         setCourses([courseName]); // Wrap courseName in an array to match the courses variable structure
 
@@ -149,13 +149,13 @@ const FacultyPage = () => {
           };
         });
 
-        console.log("prompt data : ", promptData);
+        // console.log("prompt data : ", promptData);
         if (!Array.isArray(promptData)) {
           // If obj is not an array, wrap it in an array
           promptData = [promptData];
         }
 
-        console.log(typeof promptData); // Log the type of obj, it should be 'object', but obj will be an array now
+        // console.log(typeof promptData); // Log the type of obj, it should be 'object', but obj will be an array now
         promptResult = await generateTopicForEachLecture(promptData);
         // promptResult = await promptResult.json;
         // console.log("typeof prompt data", typeof promptData);
@@ -265,7 +265,7 @@ const FacultyPage = () => {
 
       setBufferDates(bufferDates);
       setAssignments(assignments);
-      console.log(assignments);
+      // console.log(assignments);
 
     } catch (error) {
       console.error('Error in assignCoursesModulesHours:', error);
@@ -304,7 +304,7 @@ const FacultyPage = () => {
       "Total Hours": assignment.totalHours
 
     }));
-    console.log(tableData);
+    // console.log(tableData);
     return tableData;
   };
 
@@ -350,7 +350,7 @@ const FacultyPage = () => {
       console.error("No child data to export");
       return;
     }
-    console.log(transformedChildData)
+    // console.log(transformedChildData)
     const datasets = [
       { data: parentData, sheetName: 'Parent Data' },
       // { data: transformedChildData, sheetName: 'Mapping Data' }
@@ -381,7 +381,7 @@ const FacultyPage = () => {
   };
 
   const handleDepartment = (code) => {
-    console.log(code);
+    // console.log(code);
     setDepartmentName(code);
   }
 
@@ -389,9 +389,9 @@ const FacultyPage = () => {
     updateData(courseCode, assignments); // Update the data
     setchecker(0);
     setAssignments([]); // Clear the assignments
-    console.log(`YEEEEEEEEE: ${assignments}`)
+    // console.log(`YEEEEEEEEE: ${assignments}`)
     setcourseCode('Please choose subject first'); // Reset the course code
-    console.log(`YEEEEEEEEE: ${courseCode}`)
+    // console.log(`YEEEEEEEEE: ${courseCode}`)
   };
   return (
 

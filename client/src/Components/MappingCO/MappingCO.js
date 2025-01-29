@@ -93,7 +93,7 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
   useEffect(() => {
     setCos([])
     fetchMappingData();
-    console.log(DepartmentName);
+    // console.log(DepartmentName);
     // console.log(poDescriptions)
   }, [courseCode]);
 
@@ -128,18 +128,18 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
       ...mappingData,
       cos: [...cos, newCO],
     });
-    console.log(mappingData);
+    // console.log(mappingData);
     setNewCODescription("");
     setNewBloomTaxonomy("");
     setShowCOForm(false);
   };
 
   const handleCellClick = (co, po) => {
-    console.log(co);
-    console.log(po);
+    // console.log(co);
+    // console.log(po);
     const cellData = mappingData[`${co}-${po}`] || {};
     setSelectedCell({ co, po });
-    console.log(selectedCell)
+    // console.log(selectedCell)
     setMarks(cellData.marks || "");
     setReason(cellData.justification || "");
     setShowModal(true);
@@ -147,8 +147,8 @@ const MappingCO = forwardRef(({ courseCode, DepartmentName }, ref) => {
 
   const handleSave = async () => {
     if (!selectedCell.co || !selectedCell.po) {
-      console.log(selectedCell.co);
-      console.log(selectedCell.po);
+      // console.log(selectedCell.co);
+      // console.log(selectedCell.po);
       console.error("Invalid CO or PO selected:", selectedCell);
       return; // Stop execution if CO or PO is undefined
     }
