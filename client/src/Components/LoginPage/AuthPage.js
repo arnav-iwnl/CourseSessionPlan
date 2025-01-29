@@ -5,9 +5,9 @@ import toast from 'react-hot-toast';
 import { useAuth } from '../../Context/authContext.js';
 import { createClient } from '@supabase/supabase-js';
 import bcrypt from 'bcryptjs';
+import sieslogo from '../MainPage/siesgst.png';
 
-
-const supabase = createClient(process.env.REACT_APP_SUPABASE_URL,  process.env.REACT_APP_SUPABASE_KEY);
+const supabase = createClient(process.env.REACT_APP_SUPABASE_URL, process.env.REACT_APP_SUPABASE_KEY);
 
 const AuthPage = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -108,69 +108,77 @@ const AuthPage = ({ onLogin }) => {
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-      <Row className="w-100 justify-content-center">
-        <Col md="6" lg="5">
-          <Card className="shadow-sm">
-            <Card.Body>
-              <h2 className="text-center mb-4">{isSignup ? 'Sign Up' : 'Login'}</h2>
-              {error && <Alert variant="danger">{error}</Alert>}
-              <Form onSubmit={handleSubmit}>
-                {isSignup && (
-                  <Form.Group controlId="formBasicName">
-                    <Form.Label>Name</Form.Label>
+    <div className=''>
+        <div className='d-flex flex-row justify-content-center pt-3'>
+        <img src={sieslogo} style={{ maxWidth: "300px", width: "100%" }} />
+        </div>
+      <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '75vh' }}>
+
+        <Row className="w-100 justify-content-center">
+
+          <Col md="6" lg="5">
+
+            <Card className="shadow-sm">
+              <Card.Body>
+                <h2 className="text-center mb-4">{isSignup ? 'Sign Up' : 'Login'}</h2>
+                {error && <Alert variant="danger">{error}</Alert>}
+                <Form onSubmit={handleSubmit}>
+                  {isSignup && (
+                    <Form.Group controlId="formBasicName">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="Enter your name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                      />
+                    </Form.Group>
+                  )}
+
+                  <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
                     <Form.Control
-                      type="text"
-                      placeholder="Enter your name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      type="email"
+                      placeholder="Enter email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </Form.Group>
-                )}
 
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="Enter email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </Form.Group>
+                  <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      type="password"
+                      placeholder="Password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      required
+                    />
+                  </Form.Group>
 
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </Form.Group>
+                  <Button variant="primary" type="submit" className="w-100 mt-3" disabled={isLoading}>
+                    {isLoading ? 'Processing...' : isSignup ? 'Sign Up' : 'Login'}
+                  </Button>
 
-                <Button variant="primary" type="submit" className="w-100 mt-3" disabled={isLoading}>
-                  {isLoading ? 'Processing...' : isSignup ? 'Sign Up' : 'Login'}
-                </Button>
-
-                <Button
-                  variant="link"
-                  onClick={() => {
-                    setIsSignup(!isSignup);
-                    setError('');
-                  }}
-                  className="w-100 mt-2"
-                >
-                  {isSignup ? 'Already have an account? Log In' : "Don't have an account? Sign Up"}
-                </Button>
-              </Form>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+                  <Button
+                    variant="link"
+                    onClick={() => {
+                      setIsSignup(!isSignup);
+                      setError('');
+                    }}
+                    className="w-100 mt-2"
+                  >
+                    {isSignup ? 'Already have an account? Log In' : "Don't have an account? Sign Up"}
+                  </Button>
+                </Form>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 
