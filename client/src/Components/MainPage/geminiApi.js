@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import toast from 'react-hot-toast';
 
 // Initialize the model
-const genAI = new GoogleGenerativeAI("AIzaSyCM8cUdeVj-fKL2kX3UKMwb7UX221nNvPc");
+const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Define the prompt structure (general template for Gemini)

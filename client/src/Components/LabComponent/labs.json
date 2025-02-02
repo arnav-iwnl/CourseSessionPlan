@@ -1,0 +1,270 @@
+{
+    "Branch": [
+      {
+        "FE": [
+          {
+            "Semester 2": {
+              "courseCode": [
+                {"FEL201": "Engineering Physics-II"}                  ,
+                {"FEL202": "Engineering Chemistry-II"}                ,
+                {"FEL203": "Engineering Graphics"}                    ,
+                {"FEL204": "C programming"}                           ,
+                {"FEL205": "Professional Communication and Ethics- I"},
+                {"FEL206": "Basic Workshop practice-II"}
+              ]
+            }
+          }
+        ],
+        "CE": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"CSL401": "Analysis of Algorithm Lab"}                ,
+                {"CSL402": "Database Management System Lab"}           ,
+                {"CSL403": "Operating System Lab"}                     ,
+                {"CSL404": "Microprocessor Lab"}                       ,
+                {"CSL405": "Skill Base Lab Course: Python Programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"CSL601": "Data Analytics and Visualization Lab"}  ,
+                {"CSL602": "Cryptography & System Security Lab"}    ,
+                {"CSL603": "Mobile Computing Lab"}                  ,
+                {"CSL604": "Artificial Intelligence Lab"}           ,
+                {"CSL605": "Skill base Lab Course: Cloud Computing"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"CSL801": "Advanced Artificial Intelligence Lab"}  ,
+                {"CSDL8011": "Deep Learning Lab"}                   ,
+                {"CSDL8012": "Digital Forensic Lab"}                ,
+                {"CSDL8013": "Applied Data Science Lab"}            ,
+                {"CSDL8021": "Optimization in Machine Learning Lab"},
+                {"CSDL8022": "High Performance Computing Lab"}      ,
+                {"CSDL8023": "Social Media Analytics Lab"}
+              ]
+            }
+          }
+        ],
+        "IT": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"ITL401": "Network Lab"}       ,
+                {"ITL402": "Unix Lab"}          ,
+                {"ITL403": "Microprocessor Lab"},
+                {"ITL404": "Python Lab (SBL)"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"ITL601": "BI Lab"}                         ,
+                {"ITL602": "Web Lab"}                        ,
+                {"ITL603": "Sensor Lab"}                     ,
+                {"ITL604": "MAD & PWA Lab"}                  ,
+                {"ITL605": "DS using Python Skill based Lab"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"ITL801": "Blockchain Lab"                             },
+                {                            "ITL802": "Cloud computing"}
+              ]
+            }
+          }
+        ],
+        "IOT": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"CSL401": "Analysis of Algorithm Lab"}                ,
+                {"CSL402": "Database Management System Lab"}           ,
+                {"CSL403": "Operating System Lab"}                     ,
+                {"CSL404": "Microprocessor Lab"}                       ,
+                {"CSL405": "Skill Base Lab Course: Python Programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"CSL601": "Data Analytics and Visualization Lab"}  ,
+                {"CSL602": "Cryptography & System Security Lab"}    ,
+                {"CSL603": "Mobile Computing Lab"}                  ,
+                {"CSL604": "Artificial Intelligence Lab"}           ,
+                {"CSL605": "Skill base Lab Course: Cloud Computing"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"CSL801": "Advanced Artificial Intelligence Lab"}  ,
+                {"CSDL8011": "Deep Learning Lab"}                   ,
+                {"CSDL8012": "Digital Forensic Lab"}                ,
+                {"CSDL8013": "Applied Data Science Lab"}            ,
+                {"CSDL8021": "Optimization in Machine Learning Lab"},
+                {"CSDL8022": "High Performance Computing Lab"}      ,
+                {"CSDL8023": "Social Media Analytics Lab"}
+              ]
+            }
+          }
+        ],
+        "AIDS": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"CSL401": "Analysis of Algorithm Lab"}                ,
+                {"CSL402": "Database Management System Lab"}           ,
+                {"CSL403": "Operating System Lab"}                     ,
+                {"CSL404": "Microprocessor Lab"}                       ,
+                {"CSL405": "Skill Base Lab Course: Python Programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"CSL601": "Data Analytics and Visualization Lab"}  ,
+                {"CSL602": "Cryptography & System Security Lab"}    ,
+                {"CSL603": "Mobile Computing Lab"}                  ,
+                {"CSL604": "Artificial Intelligence Lab"}           ,
+                {"CSL605": "Skill base Lab Course: Cloud Computing"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"CSL801": "Advanced Artificial Intelligence Lab"}  ,
+                {"CSDL8011": "Deep Learning Lab"}                   ,
+                {"CSDL8012": "Digital Forensic Lab"}                ,
+                {"CSDL8013": "Applied Data Science Lab"}            ,
+                {"CSDL8021": "Optimization in Machine Learning Lab"},
+                {"CSDL8022": "High Performance Computing Lab"}      ,
+                {"CSDL8023": "Social Media Analytics Lab"}
+              ]
+            }
+          }
+        ],
+        "AIML": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"CSL401": "Analysis of Algorithm Lab"}                ,
+                {"CSL402": "Database Management System Lab"}           ,
+                {"CSL403": "Operating System Lab"}                     ,
+                {"CSL404": "Microprocessor Lab"}                       ,
+                {"CSL405": "Skill Base Lab Course: Python Programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"CSL601": "Data Analytics and Visualization Lab"}  ,
+                {"CSL602": "Cryptography & System Security Lab"}    ,
+                {"CSL603": "Mobile Computing Lab"}                  ,
+                {"CSL604": "Artificial Intelligence Lab"}           ,
+                {"CSL605": "Skill base Lab Course: Cloud Computing"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"CSL801": "Advanced Artificial Intelligence Lab"}  ,
+                {"CSDL8011": "Deep Learning Lab"}                   ,
+                {"CSDL8012": "Digital Forensic Lab"}                ,
+                {"CSDL8013": "Applied Data Science Lab"}            ,
+                {"CSDL8021": "Optimization in Machine Learning Lab"},
+                {"CSDL8022": "High Performance Computing Lab"}      ,
+                {"CSDL8023": "Social Media Analytics Lab"}
+              ]
+            }
+          }
+        ],
+        "EXTC": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"ECL401": "Electronic Circuits Lab"}                 ,
+                {"ECL402": "Controls and Instrumentation Lab"}        ,
+                {"ECL403": "Microprocessors and Microcontrollers Lab"},
+                {"ECL404": "Skill-based Lab: Python programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"ECL601": "Embedded Systems Lab"},
+                {"ECL602": "Artificial Intelligence and Computer Networks Lab"},
+                {"ECL603": "Data Warehousing and Mining"},
+                {
+                  "ECL604": "Skill-based Lab: Linux and Networking and Server Configuration"
+                }
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"ECL801": "Robotics Lab"}                ,
+                {"ECL8021": "MEMS Technology"}            ,
+                {"ECL8022": "Natural Language Processing"},
+                {"ECL8023": "3D printing and Design Lab"} ,
+                {"ECL8024": "Advanced Algorithms Lab"}
+              ]
+            }
+          }
+        ],
+        "ECS": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"ECL401": "Electronic Circuits Lab"}                 ,
+                {"ECL402": "Controls and Instrumentation Lab"}        ,
+                {"ECL403": "Microprocessors and Microcontrollers Lab"},
+                {"ECL404": "Skill-based Lab: Python programming"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"ECL601": "Embedded Systems Lab"},
+                {"ECL602": "Artificial Intelligence and Computer Networks Lab"},
+                {"ECL603": "Data Warehousing and Mining"},
+                {
+                  "ECL604": "Skill-based Lab: Linux and Networking and Server Configuration"
+                }
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"ECL801": "Robotics Lab"}                ,
+                {"ECL8021": "MEMS Technology"}            ,
+                {"ECL8022": "Natural Language Processing"},
+                {"ECL8023": "3D printing and Design Lab"} ,
+                {"ECL8024": "Advanced Algorithms Lab"}
+              ]
+            }
+          }
+        ],
+        "MECH": [
+          {
+            "Semester 4": {
+              "courseCode": [
+                {"MEL401": "Industrial Electronics"} ,
+                {"MEL402": "Kinematics of Machinery"},
+                {"MEL403": "Python Programming"}     ,
+                {"MESBL401": "CNC and 3-D Printing"}
+              ]
+            },
+            "Semester 6": {
+              "courseCode": [
+                {"MEL601": "Machine Design"},
+                {"MEL602": "Turbo Machinery"},
+                {
+                  "MEL603": "Heating, Ventilation, Air conditioning and Refrigeration"
+                },
+                {"MESBL601": "Measurements and Automation"}
+              ]
+            },
+            "Semester 8": {
+              "courseCode": [
+                {"MEL801": "Product Design and Development"},
+                {"MEL802": "Laboratory based on IoT"}
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

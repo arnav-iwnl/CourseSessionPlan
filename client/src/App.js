@@ -7,6 +7,7 @@ import AuthPage from './Components/LoginPage/AuthPage.js';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './Context/authContext.js';
+import LabPage from './Components/LabPage/LabPage.js';
 
 
 function App() {
@@ -17,33 +18,33 @@ function App() {
   };
 
   return (
-    <AuthProvider>
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/auth" element={<AuthPage onLogin={handleLogin} />} />
-            <Route
-              path="/faculty"
-              element={
-                <ProtectedRoute isAllowed={user}>
-                  <FacultyPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/hod"
-              element={
-                <ProtectedRoute isAllowed={user && user.email.startsWith('hod')}>
-                  <HODPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="*" element={<Navigate to="/auth" />} />
-          </Routes>
-        </Router>
-      </div>
-    </AuthProvider>
-    
+    // <AuthProvider>
+    //   <div className="App">
+    //     <Router>
+    //       <Routes>
+    //         <Route path="/auth" element={<AuthPage onLogin={handleLogin} />} />
+    //         <Route
+    //           path="/faculty"
+    //           element={
+    //             <ProtectedRoute isAllowed={user}>
+    //               <FacultyPage />
+    //             </ProtectedRoute>
+    //           }
+    //         />
+    //         <Route
+    //           path="/hod"
+    //           element={
+    //             <ProtectedRoute isAllowed={user && user.email.startsWith('hod')}>
+    //               <HODPage />
+    //             </ProtectedRoute>
+    //           }
+    //         />
+    //         <Route path="*" element={<Navigate to="/auth" />} />
+    //       </Routes>
+    //     </Router>
+    //   </div>
+    // </AuthProvider>
+    <LabPage />
   );
 }
 

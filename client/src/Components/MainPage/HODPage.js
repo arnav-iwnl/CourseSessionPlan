@@ -7,7 +7,7 @@ import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import sieslogo from './siesgst.png';
 import toast from 'react-hot-toast';
-import ComboBox from '../ComboBox/ComboBox.js';
+import ComboBox from '../SubjectComponent/ComboBox.js';
 import MappingCO from '../MappingCO/MappingCO.js';
 
 

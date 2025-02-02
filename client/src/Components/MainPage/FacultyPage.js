@@ -2,19 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table, Row, Col, Image } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 import ParentCalendar from '../Calendar/ParentCalendar.js';
+import { fetchJsonData, updateData, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
 import 'react-calendar/dist/Calendar.css';
 import '../calendarBG.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import sieslogo from './siesgst.png';
 import toast from 'react-hot-toast';
-import ComboBox from '../ComboBox/ComboBox.js';
-import { fetchJsonData, updateData, filterWorkingDays } from '../../supabaseFetcher/fetchData.js';
+import SubjectComponent from '../SubjectComponent/SubjectComponent.js';
+import LabComponent from '../LabComponent/LabComponent.js'
 import { generateTopicForEachLecture } from "./geminiApi.js";
-import MappingCO from '../MappingCO/MappingCO.js';
+import MappingCO from '../Mapping/MappingCO.js';
+import MappingLO from '../Mapping/MappingLO.js'
 import { exportToExcel } from '../ExportExcel/exportToExcel.js';
 import PdfDownloader from '../Calendar/pdf.js';
 import { formatDate } from '../../supabaseFetcher/formatDate.js';
-
 
 
 
@@ -29,6 +30,7 @@ const FacultyPage = () => {
   const [assignments, setAssignments] = useState([]);
   const [courseDays, setCourseDays] = useState({});
   const [bufferDates, setBufferDates] = useState([]);
+ const [islab, setisLab] = useState(0)
   const navigate = useNavigate();
   const location = useLocation();
   const { name } = location.state || {};
@@ -42,7 +44,7 @@ const FacultyPage = () => {
   useEffect(() => {
     // console.log('Updated supabaseData:', supaBaseData);
     // console.log('Updated checker:', checker);
-  }, [supaBaseData, checker]);
+  }, [supaBaseData, checker, islab]);
   useEffect(() => {
     //  const fetchJsonData =  fetchJsonData();
 
@@ -281,6 +283,163 @@ const FacultyPage = () => {
   };
 
 
+  const assignLabHours = async () => {
+    try {
+
+      // Validate required data
+      if (!supaBaseData) {
+        toast.error('No Supabase data available');
+      }
+
+      if (!courses || !Array.isArray(courses) || courses.length === 0) {
+        toast.error('Courses array is missing or empty');
+      }
+
+      if (!workingDays || !Array.isArray(workingDays) || workingDays.length === 0) {
+        toast.error('Please check your Start and End Schedule Dates');
+      }
+
+      if (!courseDays || Object.keys(courseDays).length === 0) {
+        toast.error('Course days mapping is missing or empty');
+      }
+
+      const jsonData = supaBaseData;
+      let promptResult;
+      if (checker === 0) {
+        let promptData = Object.values(jsonData?.Modules).map((mod) => {
+          // console.log("module", module); // Correct placement of console.log
+          return {
+            moduleName: mod["Module Name"],
+            totalHours: mod["Total Hours"],
+            hour1Content: mod?.["Hour Distribution"]?.["Hour 1"]?.Content,
+          };
+        });
+
+        // console.log("prompt data : ", promptData);
+        if (!Array.isArray(promptData)) {
+          // If obj is not an array, wrap it in an array
+          promptData = [promptData];
+        }
+
+        // console.log(typeof promptData); // Log the type of obj, it should be 'object', but obj will be an array now
+        promptResult = await generateTopicForEachLecture(promptData);
+        // promptResult = await promptResult.json;
+        // console.log("typeof prompt data", typeof promptData);
+        // if (promptResult) console.log("promptresult : ", promptResult);
+        promptResult = JSON.parse(promptResult);
+        // console.log(promptData);
+      }
+
+
+      // Validate modules data
+      const modules = jsonData.Modules;
+      if (!modules || !Array.isArray(modules) || modules.length === 0) {
+        throw new Error('No modules available in the data');
+      }
+
+      const assignments = [];
+      const courseModulesMap = new Map();
+
+
+      // Map the course to its respective modules and hours
+      courses.forEach(course => {
+        if (!course) {
+          console.warn('Encountered null or undefined course in courses array');
+          return; // Skip this iteration
+        }
+
+        const courseModules = modules.flatMap(module => {
+          if (!module || !module['Hour Distribution']) {
+            console.warn(`Missing module or hour distribution for course: ${course}`);
+            return [];
+          }
+
+          return Object.entries(module['Hour Distribution']).map(([key, hour]) => ({
+            course,
+            module: module['Module Name'] || 'Unnamed Module',
+            hour: hour?.Content || "",
+            hourNumber: hour?.['Hour Number'] || 0,
+            totalHours: module['Total Hours'] || 0
+          }));
+        });
+
+        if (courseModules.length > 0) {
+          courseModulesMap.set(course, courseModules);
+        } else {
+          console.warn(`No valid modules mapped for course: ${course}`);
+        }
+      });
+
+      // Validate if we have any valid mappings
+      if (courseModulesMap.size === 0) {
+        throw new Error('No valid course-module mappings could be created');
+      }
+
+      const usedModulesIndices = new Map();
+      const assignedDates = new Set();
+
+      // Assign modules to working days
+      let indexlist = 1;
+      workingDays.forEach((day) => {
+        if (!day || !day.date || !day.dayOfWeek) {
+          console.warn('Invalid day object encountered:', day);
+          return;
+        }
+
+        courses.forEach(course => {
+          // Check if this course should be scheduled on this day
+          if (courseDays[course]?.[day.dayOfWeek]) {
+            const courseModules = courseModulesMap.get(course);
+
+            if (courseModules?.length > 0) {
+              const moduleIndex = usedModulesIndices.get(course) || 0;
+
+              if (moduleIndex < courseModules.length) {
+                const module = courseModules[moduleIndex];
+
+
+                assignments.push({
+                  index: indexlist++,
+                  date: day.date,
+                  course: module.course,
+                  module: module.module,
+                  hour: (checker === 1) ?
+                    module.hour : JSON.stringify(
+                      promptResult[`${module.module}`]?.[
+                        "topic_distribution"
+                      ].find((item) => item.hour == module.hourNumber)?.topics,
+                    ) ||
+                    "bruh",
+                  hourNumber: module.hourNumber,
+                  totalHours: module.totalHours,
+                  courseCode: courseCode
+                });
+
+                assignedDates.add(day.date);
+                // console.log(assignments.hour);
+                usedModulesIndices.set(course, moduleIndex + 1);
+              }
+            }
+          }
+        });
+      });
+
+      // Calculate buffer dates
+      const bufferDates = workingDays
+        .filter(day => !assignedDates.has(day.date))
+        .map(day => day.date);
+
+      setBufferDates(bufferDates);
+      setAssignments(assignments);
+      // console.log(assignments);
+
+    } catch (error) {
+      // toast.error('Error in assignCoursesModulesHours:', error);
+      // You might want to set some error state here
+      setAssignments([]);
+      setBufferDates([]);
+    }
+  };
 
 
 
@@ -417,6 +576,11 @@ const FacultyPage = () => {
 
       <div className='d-flex justify-content-between flex-row py-4'>
         {name && <h2>Hello, Facutly {name}! </h2>}
+        {islab===1 ? (
+          <Button className="px-5 py-2" variant="success" onClick={setisLab(0)}>Change into Lecture</Button>
+        ): (
+          <Button className="px-5 py-2" variant="success" onClick={setisLab(1)}>Change into LAB</Button>
+        ) }
         <Button className="px-5 py-2" variant="danger" onClick={handleLogout}>Logout</Button>
       </div>
       <ParentCalendar />
@@ -451,12 +615,20 @@ const FacultyPage = () => {
       </div>
 
       <div className='py-3'>
-        <ComboBox onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment} />
+        {islab===1 ? (
+          <LabComponent onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment} />
+        ): (
+          <SubjectComponent onSubjectCodeChange={handleSubjectCode} onDepartmentNameChange={handleDepartment} />
+        ) }
       </div>
 
 
       <div className='my-2'>
-        <MappingCO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName} />
+      {islab===1 ? (
+           <MappingLO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName} />
+        ): (
+          <MappingCO ref={childRef} courseCode={courseCode} DepartmentName={DepartmentName} />
+        ) }
       </div>
 
       <div>

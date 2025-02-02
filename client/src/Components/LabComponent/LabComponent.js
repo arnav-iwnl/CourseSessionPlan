@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Table, Container } from "react-bootstrap";
-import jsonData from "./subjects.json"; // Import your JSON data
+import jsonData from "./labs.json"; // Import your JSON data
 
 
-const ComboBox = ({onSubjectCodeChange , onDepartmentNameChange}) => {
+const LabComponent = ({onSubjectCodeChange , onDepartmentNameChange}) => {
 const data=jsonData.Branch;
 const [selectedBranch, setSelectedBranch] = useState('');
 const [selectedSemester, setSelectedSemester] = useState('');
@@ -157,4 +157,4 @@ return (
 );
 };
 
-export default ComboBox;
+export default LabComponent;
